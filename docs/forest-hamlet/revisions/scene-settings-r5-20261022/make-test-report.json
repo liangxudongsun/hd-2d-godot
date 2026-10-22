@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "command_label": "make test",
+  "returncode": 0,
+  "passed": true,
+  "elapsed_s": 10.974,
+  "log": "build/forest-hamlet/scene-settings-r5-final/make-test.log"
+}

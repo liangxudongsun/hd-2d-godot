@@ -1,0 +1,699 @@
+{
+  "schema_version": 1,
+  "profile": "scene-settings",
+  "project_id": "5af64d90-66bc-471c-ab66-dcabe72ed9d3",
+  "scene_classification_id": "fa2c56c8-722e-4f41-b9d2-04d839544457",
+  "case_id": "65750774-e5a4-4a18-822d-e9a203599ab2",
+  "round_id": "4218cd07-3f55-429b-8a41-27495c9c7f26",
+  "previous_round_id": "1047b04f-01d0-49ff-a4cd-f6fb13841eec",
+  "context_run_id": "forest-hamlet-20261022-vegetation-r2-review",
+  "assets": [
+    {
+      "key": "snow-atmosphere",
+      "asset_key": "forest-hamlet-snow-atmosphere",
+      "asset_id": "52975eea-0437-4f23-96a3-13326f54e762",
+      "revision_id": "810e06ff-8649-489c-9e61-db0bbae36e3c",
+      "stage": "concept_design",
+      "main_output_count": 3,
+      "status": "pending_review",
+      "check_receipt": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/atmosphere-check.response.json",
+      "previous_revision_id": "22f17788-3910-4bb3-92ea-c0ba7e376a28"
+    }
+  ],
+  "review_status": "pending",
+  "decisions_created": 0,
+  "stage_admissions_created": 0,
+  "bundle_file_count": 20,
+  "logical_file_count": 82,
+  "transport_files": [
+    {
+      "source": "art/inputs/forest-hamlet/snow-r1/source/snow-master.png",
+      "archive_name": "closure-017-snow-master.png",
+      "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+      "bytes": 1697185,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/bundle/closure-017-snow-master.png",
+      "kind": "direct",
+      "role": "original"
+    },
+    {
+      "source": "assets/forest-hamlet/backdrop/color.png",
+      "archive_name": "snow-color.png",
+      "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+      "bytes": 1697185,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/bundle/snow-color.png",
+      "kind": "direct",
+      "role": "primary"
+    },
+    {
+      "source": "assets/forest-hamlet/backdrop/normal.png",
+      "archive_name": "snow-normal.png",
+      "sha256": "9c840176d4002826091098449e7126c45b5b410a67c56eb43a0d3d29893987a6",
+      "bytes": 97589,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/bundle/snow-normal.png",
+      "kind": "direct",
+      "role": "primary"
+    },
+    {
+      "source": "assets/forest-hamlet/backdrop/regions.png",
+      "archive_name": "snow-regions.png",
+      "sha256": "ade0cbaba208f37219644571127ced57ab142cb56593aa126b21b3e3c4d1c153",
+      "bytes": 126254,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/bundle/snow-regions.png",
+      "kind": "direct",
+      "role": "primary"
+    },
+    {
+      "source": "build/forest-hamlet/scene-settings-r5-final/scene-settings-dof-off.png",
+      "archive_name": "closure-025-scene-settings-dof-off.png",
+      "sha256": "f86834839896cb5277612a9d52053433f76a45662c9e259c8f12bade3633ef10",
+      "bytes": 2603034,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/bundle/closure-025-scene-settings-dof-off.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "source": "build/forest-hamlet/scene-settings-r5-final/scene-settings-dof-strong.png",
+      "archive_name": "closure-026-scene-settings-dof-strong.png",
+      "sha256": "9d96be3871a50a029b59ae764579605862cdc71d91f3533a75d5d1e425d8f009",
+      "bytes": 1456496,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/bundle/closure-026-scene-settings-dof-strong.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "source": "build/forest-hamlet/scene-settings-r5-final/scene-settings-dusk-restored.png",
+      "archive_name": "closure-027-scene-settings-dusk-restored.png",
+      "sha256": "0d428acd310dbe06d9bb7a24ad353c817e8b230e43fab6511ba119897e5d722c",
+      "bytes": 2159805,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/bundle/closure-027-scene-settings-dusk-restored.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "source": "build/forest-hamlet/scene-settings-r5-final/scene-settings-dusk-saved.png",
+      "archive_name": "closure-028-scene-settings-dusk-saved.png",
+      "sha256": "0ec2217820bbd5573c9c503d01cfe8562a8ba4d7d92fc895a205b7a985ff445b",
+      "bytes": 2157253,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/bundle/closure-028-scene-settings-dusk-saved.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "source": "build/forest-hamlet/scene-settings-r5-final/scene-settings-glow-off.png",
+      "archive_name": "closure-029-scene-settings-glow-off.png",
+      "sha256": "603815165df76ad1b855e426b8aaf5c706926f1a6b498633745551682c462fa8",
+      "bytes": 2010959,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/bundle/closure-029-scene-settings-glow-off.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "source": "build/forest-hamlet/scene-settings-r5-final/scene-settings-glow-strong.png",
+      "archive_name": "closure-030-scene-settings-glow-strong.png",
+      "sha256": "cbe1218f41fd7235afbfb9b6c76bb1c34408ce09e5420dfa16f6394d4a6172c2",
+      "bytes": 1695464,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/bundle/closure-030-scene-settings-glow-strong.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "source": "build/forest-hamlet/scene-settings-r5-final/scene-settings-input-dof-720.png",
+      "archive_name": "closure-032-scene-settings-input-dof-720.png",
+      "sha256": "dc045b78a7db2b103e231fc83b9c66ba627d2191d046b9601b78fcf584f74df1",
+      "bytes": 862461,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/bundle/closure-032-scene-settings-input-dof-720.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "source": "build/forest-hamlet/scene-settings-r5-final/scene-settings-input-glow-720.png",
+      "archive_name": "closure-033-scene-settings-input-glow-720.png",
+      "sha256": "ec77491f02c45b19d7fd87fb5c2418818c4194c77b03afddbacb2821cf3bdb72",
+      "bytes": 848789,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/bundle/closure-033-scene-settings-input-glow-720.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "source": "build/forest-hamlet/scene-settings-r5-final/scene-settings-panel-clouds-1080.png",
+      "archive_name": "closure-034-scene-settings-panel-clouds-1080.png",
+      "sha256": "9a10adaa1bb327acbac4831e391475d4a3681e771171f3a18a1bf10a2808f5e3",
+      "bytes": 1910931,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/bundle/closure-034-scene-settings-panel-clouds-1080.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "source": "build/forest-hamlet/scene-settings-r5-final/scene-settings-panel-dof-1080.png",
+      "archive_name": "closure-035-scene-settings-panel-dof-1080.png",
+      "sha256": "4fe1fde0c7b90a3e72e16747bf7fdfd1a03dc03408da3dc6d7c018e17b7cbc21",
+      "bytes": 1900292,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/bundle/closure-035-scene-settings-panel-dof-1080.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "source": "build/forest-hamlet/scene-settings-r5-final/scene-settings-panel-dof-720.png",
+      "archive_name": "closure-036-scene-settings-panel-dof-720.png",
+      "sha256": "7456c6c37aa8d14131447c88ba69ccb547d9e227cfab9ee980b15fc9fcaacba4",
+      "bytes": 894902,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/bundle/closure-036-scene-settings-panel-dof-720.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "source": "build/forest-hamlet/scene-settings-r5-final/scene-settings-panel-environment-1080.png",
+      "archive_name": "closure-037-scene-settings-panel-environment-1080.png",
+      "sha256": "c38ca7d4740ea0c497919f5e9039287385496854f90ef4cdbc238974d3cece5b",
+      "bytes": 1890832,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/bundle/closure-037-scene-settings-panel-environment-1080.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "source": "build/forest-hamlet/scene-settings-r5-final/scene-settings-panel-glow-1080.png",
+      "archive_name": "closure-038-scene-settings-panel-glow-1080.png",
+      "sha256": "f4d723251db0b7cd7b1d550fac234ae348dfb940b9af8cd9a65e2bf9723cd41f",
+      "bytes": 1892928,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/bundle/closure-038-scene-settings-panel-glow-1080.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "source": "build/forest-hamlet/scene-settings-r5-final/scene-settings-panel-glow-720.png",
+      "archive_name": "closure-039-scene-settings-panel-glow-720.png",
+      "sha256": "26f89e6810e907b0b77dbc905db636d7cdc64992b614f0d729638a99e07d65cb",
+      "bytes": 861113,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/bundle/closure-039-scene-settings-panel-glow-720.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "source": "build/forest-hamlet/scene-settings-r5-final/scene-settings-panel-other-1080.png",
+      "archive_name": "closure-040-scene-settings-panel-other-1080.png",
+      "sha256": "eecc09366f4834f2d8a70699ae650a7315d5b4e8ae0d6e73a207a09eca741fda",
+      "bytes": 1904593,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/bundle/closure-040-scene-settings-panel-other-1080.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "archive_name": "evidence.zip",
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/transport/evidence.zip",
+      "sha256": "f85fb840c333fe46a0589cb323550f7d7ea5f891b6e2813c4d1f28e7a5e6c241",
+      "bytes": 8710723,
+      "kind": "evidence_zip",
+      "role": "dependency",
+      "index_sha256": "a670a8120d96af530f982bd1a355157a72da11926c87df4faf5756cc47f38ad5",
+      "member_count": 64
+    }
+  ],
+  "packed_dependencies": [
+    {
+      "source": "art/derived/forest-hamlet/forest-hamlet-20261022-cloud-tuning-r4/native-godot/summary.json",
+      "archive_name": "closure-000-summary.json",
+      "sha256": "bb0415b344ba11ab92a3b6cb3348b7e9dc6dc3c898aa670ccd3f09a675cc86be",
+      "bytes": 1828,
+      "entry": "dependencies/closure-000-summary.json"
+    },
+    {
+      "source": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/aw-delivery-export.response.json",
+      "archive_name": "closure-001-aw-delivery-export.response.json",
+      "sha256": "e163e6e15632b86dae33f751e4fdf40383b3582a0ca7dff285693f8c24055538",
+      "bytes": 1068,
+      "entry": "dependencies/closure-001-aw-delivery-export.response.json"
+    },
+    {
+      "source": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/aw-delivery-verify.response.json",
+      "archive_name": "closure-002-aw-delivery-verify.response.json",
+      "sha256": "057fe312bbdcccabb190f737debb125982aedfda55f64b85c9cd18675242f951",
+      "bytes": 27073,
+      "entry": "dependencies/closure-002-aw-delivery-verify.response.json"
+    },
+    {
+      "source": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/aw-delivery.selection.json",
+      "archive_name": "closure-003-aw-delivery.selection.json",
+      "sha256": "42d633f6d785dbf79953493e36ace6ace4108db4cd8a5e6caaf043d2c1546654",
+      "bytes": 6274,
+      "entry": "dependencies/closure-003-aw-delivery.selection.json"
+    },
+    {
+      "source": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/native-godot/summary.json",
+      "archive_name": "closure-004-summary.json",
+      "sha256": "b7ed310c99c68ef906a395877f4739a7a7ee48bcb38872129878317ec3d6c0b9",
+      "bytes": 1882,
+      "entry": "dependencies/closure-004-summary.json"
+    },
+    {
+      "source": "art/derived/workbench/delivery/forest-hamlet-20261022-scene-settings-r5-final/delivery.json",
+      "archive_name": "closure-005-delivery.json",
+      "sha256": "5691c1f6094f6102c5c7aeca11bfa1142e9f4ff0622c64101fda923320e708cb",
+      "bytes": 11735,
+      "entry": "dependencies/closure-005-delivery.json"
+    },
+    {
+      "source": "art/derived/workbench/delivery/forest-hamlet-20261022-scene-settings-r5-final/delivery.zip",
+      "archive_name": "closure-006-delivery.zip",
+      "sha256": "aea5c946553948ff35b22b97cb1075e390b0418cee582cbbf6f202658d19d30b",
+      "bytes": 5281197,
+      "entry": "dependencies/closure-006-delivery.zip"
+    },
+    {
+      "source": "art/derived/workbench/delivery/forest-hamlet-20261022-scene-settings-r5-final/technical.json",
+      "archive_name": "closure-007-technical.json",
+      "sha256": "f3b09cf2333d629c5826de04d7870af7aed69f7a93bc68d09fd9068738608183",
+      "bytes": 339,
+      "entry": "dependencies/closure-007-technical.json"
+    },
+    {
+      "source": "art/derived/workbench/godot/forest-hamlet-20261022-scene-settings-r5-final/inputs/input.json",
+      "archive_name": "closure-008-input.json",
+      "sha256": "e5a8fbb4e8eb6c7e81189d14cb98b380a5ac1763a4cfbb8f8f035ccb5dc599f5",
+      "bytes": 107192,
+      "entry": "dependencies/closure-008-input.json"
+    },
+    {
+      "source": "art/derived/workbench/godot/forest-hamlet-20261022-scene-settings-r5-final/run.json",
+      "archive_name": "closure-009-run.json",
+      "sha256": "3c0a76f8a70cc68b89b85bbefa9fbfc419a1e5c42b84d150983f499b810eed3b",
+      "bytes": 1048302,
+      "entry": "dependencies/closure-009-run.json"
+    },
+    {
+      "source": "art/derived/workbench/godot/forest-hamlet-20261022-scene-settings-r5-final/steps/scene-settings-runtime/attempt-001/scene-settings-runtime-report.json",
+      "archive_name": "closure-010-scene-settings-runtime-report.json",
+      "sha256": "e21fc69654877ec4ef9b3646ff9546d0c3cdab54d636daa49cd22f9239f642a7",
+      "bytes": 51708,
+      "entry": "dependencies/closure-010-scene-settings-runtime-report.json"
+    },
+    {
+      "source": "art/inputs/forest-hamlet/cloud-tuning-native-r4/snapshot.json",
+      "archive_name": "closure-011-snapshot.json",
+      "sha256": "04644465fb89115a1f8aee0472a3c8046ac8be9fe0a1dffb517a0c1d8bdc2746",
+      "bytes": 423331,
+      "entry": "dependencies/closure-011-snapshot.json"
+    },
+    {
+      "source": "art/inputs/forest-hamlet/scene-settings-native-r5-final/godot-verify.recipe.json",
+      "archive_name": "closure-012-godot-verify.recipe.json",
+      "sha256": "e5a8fbb4e8eb6c7e81189d14cb98b380a5ac1763a4cfbb8f8f035ccb5dc599f5",
+      "bytes": 107192,
+      "entry": "dependencies/closure-012-godot-verify.recipe.json"
+    },
+    {
+      "source": "art/inputs/forest-hamlet/scene-settings-native-r5-final/snapshot.json",
+      "archive_name": "closure-013-snapshot.json",
+      "sha256": "d162b79a67014b59143bc120584148d38774131d9e3f84a65ea41c1af4c2c0ac",
+      "bytes": 426406,
+      "entry": "dependencies/closure-013-snapshot.json"
+    },
+    {
+      "source": "art/inputs/forest-hamlet/scene-settings-r5/selection.json",
+      "archive_name": "closure-014-selection.json",
+      "sha256": "1d1c376b86257a7a74209037a3029a0cc175f9e90f38907b273fe01a53e2c344",
+      "bytes": 1439,
+      "entry": "dependencies/closure-014-selection.json"
+    },
+    {
+      "source": "art/inputs/forest-hamlet/scene-settings-r5/workbench-project.yaml",
+      "archive_name": "closure-015-workbench-project.yaml",
+      "sha256": "f63ba8620902f6fef7c5ccf346355871554ad7fde9a4f8f10d14e4fb323931d3",
+      "bytes": 2317,
+      "entry": "dependencies/closure-015-workbench-project.yaml"
+    },
+    {
+      "source": "art/inputs/forest-hamlet/snow-r1/normal-rig.json",
+      "archive_name": "closure-016-normal-rig.json",
+      "sha256": "69fe9e7fb842ef046013241c8b88283f24198ca54a2229bbdcd5dad9cd07dad6",
+      "bytes": 2755,
+      "entry": "dependencies/closure-016-normal-rig.json"
+    },
+    {
+      "source": "art/inputs/forest-hamlet/snow-r1/technical-notes.md",
+      "archive_name": "closure-018-technical-notes.md",
+      "sha256": "ce100f1aa9db57a99c6c6fa4992d1c8e97ca0fb1fa98bb5b9939a9d5a29a8de8",
+      "bytes": 5913,
+      "entry": "dependencies/closure-018-technical-notes.md"
+    },
+    {
+      "source": "assets/forest-hamlet/backdrop/manifest.json",
+      "archive_name": "closure-020-manifest.json",
+      "sha256": "d951c0be245d782a49e1edec327bbbc81cd07965cadd344de99886ad0a037cb6",
+      "bytes": 2337,
+      "entry": "dependencies/closure-020-manifest.json"
+    },
+    {
+      "source": "build/forest-hamlet/scene-settings-r5-final/make-test-report.json",
+      "archive_name": "closure-023-make-test-report.json",
+      "sha256": "de83575e89a1bae34c624dcc8b61ce926798679204dda5853ad43671ec7a22a8",
+      "bytes": 188,
+      "entry": "dependencies/closure-023-make-test-report.json"
+    },
+    {
+      "source": "build/forest-hamlet/scene-settings-r5-final/runtime-fingerprint.json",
+      "archive_name": "closure-024-runtime-fingerprint.json",
+      "sha256": "41a851ab1e77b3bd57d633c196ce82f07ce6cff61cc53f735884f297bf418354",
+      "bytes": 56802,
+      "entry": "dependencies/closure-024-runtime-fingerprint.json"
+    },
+    {
+      "source": "build/forest-hamlet/scene-settings-r5-final/scene-settings-gpu-report.json",
+      "archive_name": "closure-031-scene-settings-gpu-report.json",
+      "sha256": "320eb470501bdadbbae34b43f90b25b5c1dc2a4f47cb292427805913a7e89d16",
+      "bytes": 403969,
+      "entry": "dependencies/closure-031-scene-settings-gpu-report.json"
+    },
+    {
+      "source": "build/forest-hamlet/scene-settings-r5-final/scene-settings-pixel-report.json",
+      "archive_name": "closure-041-scene-settings-pixel-report.json",
+      "sha256": "19e0bf474585e96c75e66174a81d52a0a907c872638d167aa5f359e532029861",
+      "bytes": 20136,
+      "entry": "dependencies/closure-041-scene-settings-pixel-report.json"
+    },
+    {
+      "source": "build/forest-hamlet/scene-settings-r5-final/scene-settings-runtime-report.json",
+      "archive_name": "closure-042-scene-settings-runtime-report.json",
+      "sha256": "9ffc2fdefbc344815de88e464d5f83e87c39648d775246adeb805f4df4fc6799",
+      "bytes": 51806,
+      "entry": "dependencies/closure-042-scene-settings-runtime-report.json"
+    },
+    {
+      "source": "build/forest-hamlet/scene-settings-r5-final/source-fingerprint.json",
+      "archive_name": "closure-043-source-fingerprint.json",
+      "sha256": "0a6078299ad551482aeff6444d95e7d137d13b3735a609267d1eb3034d085ac2",
+      "bytes": 58427,
+      "entry": "dependencies/closure-043-source-fingerprint.json"
+    },
+    {
+      "source": "docs/forest-hamlet/cloud-lighting-r3.md",
+      "archive_name": "closure-044-cloud-lighting-r3.md",
+      "sha256": "fa5992e5c605fe8d3a1e4eecfee59cc976eaf41620edbd61758aec2711f159c0",
+      "bytes": 19015,
+      "entry": "dependencies/closure-044-cloud-lighting-r3.md"
+    },
+    {
+      "source": "docs/forest-hamlet/global-lighting.md",
+      "archive_name": "closure-045-global-lighting.md",
+      "sha256": "4766f695dea0a00964caabf635d875b138cfe1981e05566b55d139ed915b1498",
+      "bytes": 3713,
+      "entry": "dependencies/closure-045-global-lighting.md"
+    },
+    {
+      "source": "docs/forest-hamlet/scene-settings-r5.md",
+      "archive_name": "closure-046-scene-settings-r5.md",
+      "sha256": "555f16e102a67cf64a6dbac6f0c08ac4803db6416d718c4248748ad0f773dce3",
+      "bytes": 10969,
+      "entry": "dependencies/closure-046-scene-settings-r5.md"
+    },
+    {
+      "source": "project.godot",
+      "archive_name": "closure-047-project.godot",
+      "sha256": "16845c304c897c5e0cc74589480e27f32701df5ed613bbd824321bd61a3255d5",
+      "bytes": 1085,
+      "entry": "dependencies/closure-047-project.godot"
+    },
+    {
+      "source": "scenes/forest_hamlet.tscn",
+      "archive_name": "closure-048-forest_hamlet.tscn",
+      "sha256": "f38fcd89dd6c47da3b0763a37f6356caabd097ac4c1c0b5e4c625eef40c21e3c",
+      "bytes": 182,
+      "entry": "dependencies/closure-048-forest_hamlet.tscn"
+    },
+    {
+      "source": "scenes/forest_hamlet_close.tscn",
+      "archive_name": "closure-049-forest_hamlet_close.tscn",
+      "sha256": "cfa68970e658cf242493129a67bad71360c7acbd7e96e049d4e709bc0231a817",
+      "bytes": 193,
+      "entry": "dependencies/closure-049-forest_hamlet_close.tscn"
+    },
+    {
+      "source": "scripts/forest_hamlet/close_scene.gd",
+      "archive_name": "closure-050-close_scene.gd",
+      "sha256": "e5f78a2ebced10a5d470155187db8c7b8d8e8793b4c07cc8372284d631fccce8",
+      "bytes": 1797,
+      "entry": "dependencies/closure-050-close_scene.gd"
+    },
+    {
+      "source": "scripts/forest_hamlet/cloud_lighting.gd",
+      "archive_name": "closure-051-cloud_lighting.gd",
+      "sha256": "c13b224096bcdd1674ef4bbb6f919a1e91d57801d6b1e1b9cb353f1ba38395a2",
+      "bytes": 21262,
+      "entry": "dependencies/closure-051-cloud_lighting.gd"
+    },
+    {
+      "source": "scripts/forest_hamlet/global_lighting.gd",
+      "archive_name": "closure-052-global_lighting.gd",
+      "sha256": "438e1595906bbdc193cc05602a38210c203bdfe5b896a4dbb204703752497e6a",
+      "bytes": 6008,
+      "entry": "dependencies/closure-052-global_lighting.gd"
+    },
+    {
+      "source": "scripts/forest_hamlet/scene.gd",
+      "archive_name": "closure-053-scene.gd",
+      "sha256": "7df0d90eafdc0d8fc24513cbac2f130802d11ff901687de5d558adb1468927f2",
+      "bytes": 30182,
+      "entry": "dependencies/closure-053-scene.gd"
+    },
+    {
+      "source": "scripts/forest_hamlet/scene_settings.gd",
+      "archive_name": "closure-054-scene_settings.gd",
+      "sha256": "d306edbac1420c5151fd5f5e380adcb1226ed5485fdfbdefed04cb8d5c99a2df",
+      "bytes": 10843,
+      "entry": "dependencies/closure-054-scene_settings.gd"
+    },
+    {
+      "source": "scripts/forest_hamlet/settings_panel.gd",
+      "archive_name": "closure-055-settings_panel.gd",
+      "sha256": "898fd8ee6043fa16a90ba5c5bdfa45f58732d0cff70ead7aa35c1f23c27d1b7e",
+      "bytes": 12380,
+      "entry": "dependencies/closure-055-settings_panel.gd"
+    },
+    {
+      "source": "scripts/forest_hamlet/snow_backdrop.gd",
+      "archive_name": "closure-056-snow_backdrop.gd",
+      "sha256": "50c6dc8ce119ccd64442633433784ec89896d8a3c4cad993d6dbd82b0ff1f801",
+      "bytes": 8814,
+      "entry": "dependencies/closure-056-snow_backdrop.gd"
+    },
+    {
+      "source": "shaders/forest_hamlet/cloud_occluder.gdshader",
+      "archive_name": "closure-057-cloud_occluder.gdshader",
+      "sha256": "e70591cabd53eee8dd4a89c47d93397825c5d36394319acf0902666c689c4b65",
+      "bytes": 3007,
+      "entry": "dependencies/closure-057-cloud_occluder.gdshader"
+    },
+    {
+      "source": "shaders/forest_hamlet/snow_backdrop.gdshader",
+      "archive_name": "closure-058-snow_backdrop.gdshader",
+      "sha256": "4a751744aee0196df96b7ac113c7073cd8aab41a6c2ad1bb43d001cda135964f",
+      "bytes": 2105,
+      "entry": "dependencies/closure-058-snow_backdrop.gdshader"
+    },
+    {
+      "source": "tests/check_project.py",
+      "archive_name": "closure-059-check_project.py",
+      "sha256": "f9660b276033b54accb5a86a07bf9c797d05d2731a1a015ded134ceab6dd316f",
+      "bytes": 3983,
+      "entry": "dependencies/closure-059-check_project.py"
+    },
+    {
+      "source": "tests/forest_hamlet/atmosphere_runtime.gd",
+      "archive_name": "closure-060-atmosphere_runtime.gd",
+      "sha256": "742655c1c2c7765d9117f6ebae5867da5e5f2d063293e3ca932fb742997f3f7d",
+      "bytes": 20029,
+      "entry": "dependencies/closure-060-atmosphere_runtime.gd"
+    },
+    {
+      "source": "tests/forest_hamlet/scene_settings_runtime.gd",
+      "archive_name": "closure-061-scene_settings_runtime.gd",
+      "sha256": "1f6de0ac4571f7b3f420ec2487f79f9f99d4764ceb60e28dfbec640abdc27b3f",
+      "bytes": 24248,
+      "entry": "dependencies/closure-061-scene_settings_runtime.gd"
+    },
+    {
+      "source": "tools/forest_hamlet/archive_cloud_tuning_evidence.py",
+      "archive_name": "closure-062-archive_cloud_tuning_evidence.py",
+      "sha256": "3ed99f03dfd015ba03289b8201097daf8cb405f3efa091e7812c95bbd5670743",
+      "bytes": 16385,
+      "entry": "dependencies/closure-062-archive_cloud_tuning_evidence.py"
+    },
+    {
+      "source": "tools/forest_hamlet/atmosphere_checks.py",
+      "archive_name": "closure-063-atmosphere_checks.py",
+      "sha256": "c97a8d65a497506d38328c0261c9fe7c6b6040d240e0a9ebb7f8c3e731f39c19",
+      "bytes": 27002,
+      "entry": "dependencies/closure-063-atmosphere_checks.py"
+    },
+    {
+      "source": "tools/forest_hamlet/atmosphere_workflow_profiles.py",
+      "archive_name": "closure-064-atmosphere_workflow_profiles.py",
+      "sha256": "f0533845a976975760f59ef09b435f3f48baead1ac08317aa6e1047779cf51a8",
+      "bytes": 20366,
+      "entry": "dependencies/closure-064-atmosphere_workflow_profiles.py"
+    },
+    {
+      "source": "tools/forest_hamlet/capture.gd",
+      "archive_name": "closure-065-capture.gd",
+      "sha256": "ff0922e239b72cf360d083896be153f14c9df40f09040202b627f545dc1a4fe0",
+      "bytes": 11309,
+      "entry": "dependencies/closure-065-capture.gd"
+    },
+    {
+      "source": "tools/forest_hamlet/capture_atmosphere.gd",
+      "archive_name": "closure-066-capture_atmosphere.gd",
+      "sha256": "0094942d3adcf290afb05fe20354ba9ae04683b83ce0196db5be06de77b5e510",
+      "bytes": 16739,
+      "entry": "dependencies/closure-066-capture_atmosphere.gd"
+    },
+    {
+      "source": "tools/forest_hamlet/capture_cloud_transmission.gd",
+      "archive_name": "closure-067-capture_cloud_transmission.gd",
+      "sha256": "53bcee887dbd3f6fe7df3623555be33b64a350ad3e221631ab72865bdd311b18",
+      "bytes": 12803,
+      "entry": "dependencies/closure-067-capture_cloud_transmission.gd"
+    },
+    {
+      "source": "tools/forest_hamlet/capture_scene_settings.gd",
+      "archive_name": "closure-068-capture_scene_settings.gd",
+      "sha256": "fbfc6f930e1f80abd43f737a6927cb46b3167ea50a205d497a149fc12c8502c9",
+      "bytes": 16648,
+      "entry": "dependencies/closure-068-capture_scene_settings.gd"
+    },
+    {
+      "source": "tools/forest_hamlet/cloud_transmission_checks.py",
+      "archive_name": "closure-069-cloud_transmission_checks.py",
+      "sha256": "e2f6db92e516cdc49a62d4306a7f815b6238f66136032c6630221e5a9638aa63",
+      "bytes": 13354,
+      "entry": "dependencies/closure-069-cloud_transmission_checks.py"
+    },
+    {
+      "source": "tools/forest_hamlet/prepare_snow_backdrop.py",
+      "archive_name": "closure-070-prepare_snow_backdrop.py",
+      "sha256": "d7dc2b2e6bede49406e29c32a308fbeb42fa00aa5778dbc4a0e70ae67abf4ac1",
+      "bytes": 7363,
+      "entry": "dependencies/closure-070-prepare_snow_backdrop.py"
+    },
+    {
+      "source": "tools/forest_hamlet/process_atmosphere_aw.py",
+      "archive_name": "closure-071-process_atmosphere_aw.py",
+      "sha256": "86f4cca9594902a838c67bfc4f80dbe3481c00a2eaed239faae85aa8382cf74e",
+      "bytes": 42996,
+      "entry": "dependencies/closure-071-process_atmosphere_aw.py"
+    },
+    {
+      "source": "tools/forest_hamlet/register_atmosphere_vgp.py",
+      "archive_name": "closure-072-register_atmosphere_vgp.py",
+      "sha256": "9934f31b471304cb239594e422ac074a4d0848f4de90d0e8c679e02e65b16cbb",
+      "bytes": 36112,
+      "entry": "dependencies/closure-072-register_atmosphere_vgp.py"
+    },
+    {
+      "source": "tools/forest_hamlet/register_vgp.py",
+      "archive_name": "closure-073-register_vgp.py",
+      "sha256": "b5c607ff2fc53a113f8584297e5fdd5a75499048b64ad3ae2187e127da2b3d5f",
+      "bytes": 20049,
+      "entry": "dependencies/closure-073-register_vgp.py"
+    },
+    {
+      "source": "tools/forest_hamlet/run.py",
+      "archive_name": "closure-074-run.py",
+      "sha256": "7ef71777c38a20e09c1c498197f63da226bb52ec0f4bd4f3e667dc17dfe27117",
+      "bytes": 11959,
+      "entry": "dependencies/closure-074-run.py"
+    },
+    {
+      "source": "tools/forest_hamlet/run_atmosphere.py",
+      "archive_name": "closure-075-run_atmosphere.py",
+      "sha256": "c4c57c972b18255bcb4ef5b3e8937e8bfde6cd0d930d6bee09eb6c532d7df663",
+      "bytes": 3435,
+      "entry": "dependencies/closure-075-run_atmosphere.py"
+    },
+    {
+      "source": "tools/forest_hamlet/run_scene_settings.py",
+      "archive_name": "closure-076-run_scene_settings.py",
+      "sha256": "4493f75eda65e4ce3b8228bbc585635231f631ee6b6fba8031a53508d1b944f3",
+      "bytes": 3199,
+      "entry": "dependencies/closure-076-run_scene_settings.py"
+    },
+    {
+      "source": "tools/forest_hamlet/scene_settings_checks.py",
+      "archive_name": "closure-077-scene_settings_checks.py",
+      "sha256": "c86242b8fa5c223bbfee1ba70c348248a2525cdf5aed84a880ea8dd8e843581a",
+      "bytes": 19116,
+      "entry": "dependencies/closure-077-scene_settings_checks.py"
+    },
+    {
+      "source": "tools/forest_hamlet/verify_atmosphere_godot_aw.py",
+      "archive_name": "closure-078-verify_atmosphere_godot_aw.py",
+      "sha256": "6665eacaa923f6c562843090df7d88162b5851bb762cd0417f4464bdf9bbf018",
+      "bytes": 11456,
+      "entry": "dependencies/closure-078-verify_atmosphere_godot_aw.py"
+    },
+    {
+      "source": "tools/project.py",
+      "archive_name": "closure-079-project.py",
+      "sha256": "d423ef838f759af9a5a364bd71ea45900592a576e6ce8d2107754f99f70f2b41",
+      "bytes": 4709,
+      "entry": "dependencies/closure-079-project.py"
+    },
+    {
+      "source": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/atmosphere-summary.json",
+      "archive_name": "native-00-atmosphere-summary.json",
+      "sha256": "51316310909a70bbe69d16d6c8ebef529fe2cfa3c9469d8392eadd1aff2dbe59",
+      "bytes": 54112,
+      "entry": "dependencies/native-00-atmosphere-summary.json"
+    },
+    {
+      "source": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/delivery-frozen-inputs.json",
+      "archive_name": "native-05-delivery-frozen-inputs.json",
+      "sha256": "efd678c2c33af44ded9951c94c665d27f65d4b7920b28eed4fa82bca2950756a",
+      "bytes": 46993,
+      "entry": "dependencies/native-05-delivery-frozen-inputs.json"
+    }
+  ],
+  "logical_frozen": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/atmosphere.frozen-files.json",
+  "logical_frozen_sha256": "ca7100c14236e4a56a5be9e840e06ca441c52687209b0c1e3028a903257d2941",
+  "transport_manifest": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/transport-files.json",
+  "transport_manifest_sha256": "70751d3bd5b035dc59c6fbe9d75dddab026949e82da9c5a90ba2701d5174f144",
+  "packed_manifest": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/packed-dependencies.json",
+  "packed_manifest_sha256": "50f3f3bbbef5c09874972283c525b46240754a21583195dc8232326d21a011d1",
+  "server_verification": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/transport-server-verification.json",
+  "server_verification_sha256": "b103bf0c8fea5bc2031d8786f1f6267000aa8c45254d91a824e7720ebeb29931",
+  "materials": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/vgp/atmosphere-materials.json",
+  "materials_sha256": "7a26c0a5832e37afa9cc267953745ad40477f2902767ea6d8c5bfe86ae20005e",
+  "native_godot": {
+    "workflow": "godot.verify",
+    "execution_status": "completed",
+    "aw_run": "art/derived/workbench/godot/forest-hamlet-20261022-scene-settings-r5-final/run.json",
+    "aw_run_sha256": "3c0a76f8a70cc68b89b85bbefa9fbfc419a1e5c42b84d150983f499b810eed3b",
+    "recipe": "art/inputs/forest-hamlet/scene-settings-native-r5-final/godot-verify.recipe.json",
+    "recipe_sha256": "e5a8fbb4e8eb6c7e81189d14cb98b380a5ac1763a4cfbb8f8f035ccb5dc599f5",
+    "snapshot": "art/inputs/forest-hamlet/scene-settings-native-r5-final/snapshot.json",
+    "snapshot_sha256": "d162b79a67014b59143bc120584148d38774131d9e3f84a65ea41c1af4c2c0ac",
+    "native_frozen_recipe": "art/derived/workbench/godot/forest-hamlet-20261022-scene-settings-r5-final/inputs/input.json",
+    "native_frozen_recipe_sha256": "e5a8fbb4e8eb6c7e81189d14cb98b380a5ac1763a4cfbb8f8f035ccb5dc599f5",
+    "test_report": "art/derived/workbench/godot/forest-hamlet-20261022-scene-settings-r5-final/steps/scene-settings-runtime/attempt-001/scene-settings-runtime-report.json",
+    "test_report_sha256": "e21fc69654877ec4ef9b3646ff9546d0c3cdab54d636daa49cd22f9239f642a7",
+    "source_closure_sha256": "cadb68cb81f9c69a33ba2cb815aae2e645d2620b5d03abba5f080dc6a6fe82bc",
+    "file_count": 1574,
+    "total_bytes": 110706742,
+    "test_checks": 89,
+    "engine_version": "4.7.2.stable.official.ed1daf0bf",
+    "engine_sha256": "8d106cbe6144c2dc7e881d61d2429c1a8a76e6b22ef48bd5e48dcf934953f71e",
+    "rendered": false,
+    "summary": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/native-godot/summary.json",
+    "summary_sha256": "b7ed310c99c68ef906a395877f4739a7a7ee48bcb38872129878317ec3d6c0b9",
+    "profile": "scene-settings"
+  },
+  "aw_delivery": {
+    "delivery_id": "delivery-b829d388364d42cc3bee8230bdb38b736044997faee7e424a6fa30e0a0c71f46",
+    "aw_manifest": "art/derived/workbench/delivery/forest-hamlet-20261022-scene-settings-r5-final/delivery.json",
+    "aw_manifest_sha256": "5691c1f6094f6102c5c7aeca11bfa1142e9f4ff0622c64101fda923320e708cb",
+    "aw_archive": "art/derived/workbench/delivery/forest-hamlet-20261022-scene-settings-r5-final/delivery.zip",
+    "aw_archive_sha256": "aea5c946553948ff35b22b97cb1075e390b0418cee582cbbf6f202658d19d30b",
+    "verify_receipt": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/aw-delivery-verify.response.json",
+    "verify_receipt_sha256": "057fe312bbdcccabb190f737debb125982aedfda55f64b85c9cd18675242f951"
+  },
+  "note": "Native VGP candidate/round completed. AW godot.verify ran the runtime test; AW delivery export/verify packaged selected frozen-run files. External GPU evidence and authored sources have a separate project SHA256 freeze and are included in the candidate dependencies. AW did not draw art/normals or render/verify the external GPU captures. No aesthetic approval synthesized.",
+  "previous_run_id": "forest-hamlet-20261022-cloud-tuning-r4"
+}

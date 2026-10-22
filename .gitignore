@@ -37,3 +37,7 @@ art/derived/forest-hamlet/*/native-godot/run.response.json
 art/derived/forest-hamlet/**/aw-delivery-*.response.json
 art/derived/forest-hamlet/*/frozen-source/art/derived/workbench/
 art/derived/forest-hamlet/*-vegetation-*/*.command.json
+
+# Native AW failure logs contain local execution paths; retain them locally.
+art/derived/forest-hamlet/*/native-godot/*.failed.stdout.txt
+art/derived/forest-hamlet/*/native-godot/*.failed.stderr.txt

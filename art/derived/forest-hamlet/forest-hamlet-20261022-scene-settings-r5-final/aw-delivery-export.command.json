@@ -1,0 +1,18 @@
+[
+  "aw",
+  "--project",
+  ".",
+  "--project-config",
+  "art/inputs/forest-hamlet/scene-settings-r5/workbench-project.yaml",
+  "delivery",
+  "export",
+  "--run",
+  "art/derived/workbench/godot/forest-hamlet-20261022-scene-settings-r5-final",
+  "--output",
+  "art/derived/workbench/delivery/forest-hamlet-20261022-scene-settings-r5-final",
+  "--selection",
+  "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/aw-delivery.selection.json",
+  "--request-id",
+  "forest-hamlet-20261022-scene-settings-r5-final:delivery:v1",
+  "--json"
+]

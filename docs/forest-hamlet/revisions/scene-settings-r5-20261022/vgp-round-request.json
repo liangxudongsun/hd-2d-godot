@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "operation": "review.submit",
+  "payload": {
+    "previous_round_id": "1047b04f-01d0-49ff-a4cd-f6fb13841eec",
+    "items": [
+      {
+        "subject_key": "forest-hamlet-snow-atmosphere",
+        "title": "场景参数 · 景深、辉光与完整保存恢复",
+        "requirements": "Review live native DOF and Glow numerical controls, environment/day-dusk/cloud/other effect controls, five Chinese panel sections, keyboard/mouse operation at 1920x1080 and 1280x720, full-profile atomic save/load/reset, fresh-start restore and read-only migration of legacy cloud settings including 70 percent contrast / 48 percent density. Validate the complete runtime and verification-source fingerprints, unchanged original r4 assets and explicit r4 parent Revision and review round. Fifteen original GPU frames cover focused effects, persistence and UI; the runtime suite records its physical-route regression, while previous GPU route captures and calibrated radiometry remain historical. Technical checks do not grant aesthetic approval or stage admission.",
+        "candidates": [
+          {
+            "revision_id": "810e06ff-8649-489c-9e61-db0bbae36e3c",
+            "label": "forest-hamlet-20261022-scene-settings-r5-final"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "65750774-e5a4-4a18-822d-e9a203599ab2",
+  "expected_version": 8,
+  "idempotency_key": "forest-hamlet-20261022-scene-settings-r5-final:review-submit:v1"
+}

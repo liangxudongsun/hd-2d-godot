@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "workflow": "godot.verify",
+  "status": "completed",
+  "producer_version": "0.6.1",
+  "engine": {
+    "version": "4.7.2.stable.official.ed1daf0bf",
+    "sha256": "8d106cbe6144c2dc7e881d61d2429c1a8a76e6b22ef48bd5e48dcf934953f71e"
+  },
+  "recipe": "art/inputs/forest-hamlet/scene-settings-native-r5-final/godot-verify.recipe.json",
+  "recipe_sha256": "e5a8fbb4e8eb6c7e81189d14cb98b380a5ac1763a4cfbb8f8f035ccb5dc599f5",
+  "source_receipt": "art/derived/workbench/godot/forest-hamlet-20261022-scene-settings-r5-final/run.json",
+  "source_receipt_sha256": "3c0a76f8a70cc68b89b85bbefa9fbfc419a1e5c42b84d150983f499b810eed3b",
+  "scope": "Public projection of the verified original native run receipt; host-specific source and executable paths are omitted. The unchanged original receipt is bound by its SHA256."
+}

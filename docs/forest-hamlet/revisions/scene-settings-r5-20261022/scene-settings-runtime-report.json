@@ -1,0 +1,2062 @@
+{
+  "checks": [
+    {
+      "label": "unsaved scene keeps all accepted scene defaults",
+      "passed": true
+    },
+    {
+      "label": "accepted defaults reach the actual camera environment shader and lighting controllers",
+      "passed": true
+    },
+    {
+      "label": "all twenty numeric settings have actual live slider and value-label controls",
+      "passed": true
+    },
+    {
+      "label": "legacy cloud slider references retain their two-control contract",
+      "passed": true
+    },
+    {
+      "label": "cloud_contrast: actual HSlider value_changed updates the persisted setting and its live production effect",
+      "passed": true
+    },
+    {
+      "label": "cloud_contrast: visible numeric label follows the slider",
+      "passed": true
+    },
+    {
+      "label": "cloud_density: actual HSlider value_changed updates the persisted setting and its live production effect",
+      "passed": true
+    },
+    {
+      "label": "cloud_density: visible numeric label follows the slider",
+      "passed": true
+    },
+    {
+      "label": "dof_amount: actual HSlider value_changed updates the persisted setting and its live production effect",
+      "passed": true
+    },
+    {
+      "label": "dof_amount: visible numeric label follows the slider",
+      "passed": true
+    },
+    {
+      "label": "dof_near_margin: actual HSlider value_changed updates the persisted setting and its live production effect",
+      "passed": true
+    },
+    {
+      "label": "dof_near_margin: visible numeric label follows the slider",
+      "passed": true
+    },
+    {
+      "label": "dof_near_transition: actual HSlider value_changed updates the persisted setting and its live production effect",
+      "passed": true
+    },
+    {
+      "label": "dof_near_transition: visible numeric label follows the slider",
+      "passed": true
+    },
+    {
+      "label": "dof_far_margin: actual HSlider value_changed updates the persisted setting and its live production effect",
+      "passed": true
+    },
+    {
+      "label": "dof_far_margin: visible numeric label follows the slider",
+      "passed": true
+    },
+    {
+      "label": "dof_far_transition: actual HSlider value_changed updates the persisted setting and its live production effect",
+      "passed": true
+    },
+    {
+      "label": "dof_far_transition: visible numeric label follows the slider",
+      "passed": true
+    },
+    {
+      "label": "glow_intensity: actual HSlider value_changed updates the persisted setting and its live production effect",
+      "passed": true
+    },
+    {
+      "label": "glow_intensity: visible numeric label follows the slider",
+      "passed": true
+    },
+    {
+      "label": "glow_strength: actual HSlider value_changed updates the persisted setting and its live production effect",
+      "passed": true
+    },
+    {
+      "label": "glow_strength: visible numeric label follows the slider",
+      "passed": true
+    },
+    {
+      "label": "glow_bloom: actual HSlider value_changed updates the persisted setting and its live production effect",
+      "passed": true
+    },
+    {
+      "label": "glow_bloom: visible numeric label follows the slider",
+      "passed": true
+    },
+    {
+      "label": "glow_hdr_threshold: actual HSlider value_changed updates the persisted setting and its live production effect",
+      "passed": true
+    },
+    {
+      "label": "glow_hdr_threshold: visible numeric label follows the slider",
+      "passed": true
+    },
+    {
+      "label": "glow_hdr_scale: actual HSlider value_changed updates the persisted setting and its live production effect",
+      "passed": true
+    },
+    {
+      "label": "glow_hdr_scale: visible numeric label follows the slider",
+      "passed": true
+    },
+    {
+      "label": "exposure: actual HSlider value_changed updates the persisted setting and its live production effect",
+      "passed": true
+    },
+    {
+      "label": "exposure: visible numeric label follows the slider",
+      "passed": true
+    },
+    {
+      "label": "contrast: actual HSlider value_changed updates the persisted setting and its live production effect",
+      "passed": true
+    },
+    {
+      "label": "contrast: visible numeric label follows the slider",
+      "passed": true
+    },
+    {
+      "label": "saturation: actual HSlider value_changed updates the persisted setting and its live production effect",
+      "passed": true
+    },
+    {
+      "label": "saturation: visible numeric label follows the slider",
+      "passed": true
+    },
+    {
+      "label": "wind_strength: actual HSlider value_changed updates the persisted setting and its live production effect",
+      "passed": true
+    },
+    {
+      "label": "wind_strength: visible numeric label follows the slider",
+      "passed": true
+    },
+    {
+      "label": "parallax_strength: actual HSlider value_changed updates the persisted setting and its live production effect",
+      "passed": true
+    },
+    {
+      "label": "parallax_strength: visible numeric label follows the slider",
+      "passed": true
+    },
+    {
+      "label": "fog_density_scale: actual HSlider value_changed updates the persisted setting and its live production effect",
+      "passed": true
+    },
+    {
+      "label": "fog_density_scale: visible numeric label follows the slider",
+      "passed": true
+    },
+    {
+      "label": "sun_variation: actual HSlider value_changed updates the persisted setting and its live production effect",
+      "passed": true
+    },
+    {
+      "label": "sun_variation: visible numeric label follows the slider",
+      "passed": true
+    },
+    {
+      "label": "ambient_variation: actual HSlider value_changed updates the persisted setting and its live production effect",
+      "passed": true
+    },
+    {
+      "label": "ambient_variation: visible numeric label follows the slider",
+      "passed": true
+    },
+    {
+      "label": "day dusk and camera updates preserve all twenty chosen numeric effects",
+      "passed": true
+    },
+    {
+      "label": "changing effects and presets never resets either independent lighting clock",
+      "passed": true
+    },
+    {
+      "label": "zero variation amplitudes remove native energy modulation at a nonzero clock",
+      "passed": true
+    },
+    {
+      "label": "nonzero variation controls restore actual native light changes without resetting time",
+      "passed": true
+    },
+    {
+      "label": "nonfinite input to every public numeric setter is rejected atomically",
+      "passed": true
+    },
+    {
+      "label": "unknown parameter names cannot alter any live setting",
+      "passed": true
+    },
+    {
+      "label": "finite out-of-range effect input clamps safely and synchronizes visible controls",
+      "passed": true
+    },
+    {
+      "label": "real preset buttons and feature toggles drive all nine live switches",
+      "passed": true
+    },
+    {
+      "label": "feature toggles preserve the numeric settings they temporarily disable",
+      "passed": true
+    },
+    {
+      "label": "save button writes a complete isolated profile and removes its atomic temporary file",
+      "passed": true
+    },
+    {
+      "label": "saved file is version two while retaining the version one cloud compatibility section",
+      "passed": true
+    },
+    {
+      "label": "restore-default button resets every numeric value all switches and the time preset",
+      "passed": true
+    },
+    {
+      "label": "load button round-trips all twenty numbers nine flags and the dusk preset",
+      "passed": true
+    },
+    {
+      "label": "invalid fixture starts from a complete saved profile: unsupported-schema",
+      "passed": true
+    },
+    {
+      "label": "invalid fixture writes in the isolated output: unsupported-schema",
+      "passed": true
+    },
+    {
+      "label": "invalid unsupported-schema rejects the whole load without changing any settings native outputs or visible controls",
+      "passed": true
+    },
+    {
+      "label": "invalid fixture starts from a complete saved profile: unknown-preset",
+      "passed": true
+    },
+    {
+      "label": "invalid fixture writes in the isolated output: unknown-preset",
+      "passed": true
+    },
+    {
+      "label": "invalid unknown-preset rejects the whole load without changing any settings native outputs or visible controls",
+      "passed": true
+    },
+    {
+      "label": "invalid fixture starts from a complete saved profile: non-boolean-feature",
+      "passed": true
+    },
+    {
+      "label": "invalid fixture writes in the isolated output: non-boolean-feature",
+      "passed": true
+    },
+    {
+      "label": "invalid non-boolean-feature rejects the whole load without changing any settings native outputs or visible controls",
+      "passed": true
+    },
+    {
+      "label": "invalid fixture starts from a complete saved profile: invalid-late-number",
+      "passed": true
+    },
+    {
+      "label": "invalid fixture writes in the isolated output: invalid-late-number",
+      "passed": true
+    },
+    {
+      "label": "invalid invalid-late-number rejects the whole load without changing any settings native outputs or visible controls",
+      "passed": true
+    },
+    {
+      "label": "invalid public profile application is all-or-nothing across early and late settings",
+      "passed": true
+    },
+    {
+      "label": "partial version two fixture writes in the isolated output",
+      "passed": true
+    },
+    {
+      "label": "a missing new version two numeric key receives its accepted default while other saved values restore",
+      "passed": true
+    },
+    {
+      "label": "legacy clouds-only fixture writes in the isolated output",
+      "passed": true
+    },
+    {
+      "label": "legacy clouds-only preferences migrate with their original cloud values and accepted defaults elsewhere",
+      "passed": true
+    },
+    {
+      "label": "migrated legacy preferences can be saved as a full version two profile",
+      "passed": true
+    },
+    {
+      "label": "legacy save produces the version two configuration schema",
+      "passed": true
+    },
+    {
+      "label": "save-failure fixture exists",
+      "passed": true
+    },
+    {
+      "label": "failed save preserves the current preview the last valid saved profile and a competing temporary file",
+      "passed": true
+    },
+    {
+      "label": "child scene instantiation does not read existing preferences even when loading is enabled",
+      "passed": true
+    },
+    {
+      "label": "the explicit loading opt-out also protects main-scene tests and captures",
+      "passed": true
+    },
+    {
+      "label": "a fresh main scene automatically restores the saved dusk profile after ready",
+      "passed": true
+    },
+    {
+      "label": "startup loading never rewrites the saved preference file",
+      "passed": true
+    },
+    {
+      "label": "original close camera and actor screen proportion remain unchanged",
+      "passed": true
+    },
+    {
+      "label": "all 218 plants and original character world scale remain intact",
+      "passed": true
+    },
+    {
+      "label": "all four original color normal and silver animation directions remain available",
+      "passed": true
+    },
+    {
+      "label": "the original six route waypoints are unchanged",
+      "passed": true
+    },
+    {
+      "label": "the original six-waypoint route still completes with real character physics and saved effects",
+      "passed": true
+    },
+    {
+      "label": "the full original actor stays on terrain in frame and inside the edited sharp DOF interval throughout the route",
+      "passed": true
+    },
+    {
+      "label": "normal camera follow and route movement never replace chosen numeric settings with defaults",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "initial": {
+    "backdrop": {
+      "board_size": [
+        255.0,
+        130.0
+      ],
+      "camera_x": 0.0,
+      "cast_shadow": 0,
+      "elapsed": 0.750000000000001,
+      "geometry_count": 1,
+      "independent_color_layers": 1,
+      "landmarks": [
+        {
+          "id": "main_peak",
+          "in_frame": false,
+          "projected_normalized": [
+            0.505000019073486,
+            -0.0150084495544434
+          ],
+          "projected_pixels": [
+            969.600036621094,
+            -16.2091255187988
+          ],
+          "uv": [
+            0.620000004768372,
+            0.287999987602234
+          ],
+          "world": [
+            0.849885761737823,
+            19.2035980224609,
+            -128.630935668945
+          ]
+        },
+        {
+          "id": "main_snow_ridge",
+          "in_frame": true,
+          "projected_normalized": [
+            0.518501885732015,
+            0.0297863501089591
+          ],
+          "projected_pixels": [
+            995.523620605469,
+            32.1692581176758
+          ],
+          "uv": [
+            0.629000008106232,
+            0.330000013113022
+          ],
+          "world": [
+            3.14488673210144,
+            15.0479011535645,
+            -127.594802856445
+          ]
+        },
+        {
+          "id": "left_shoulder",
+          "in_frame": true,
+          "projected_normalized": [
+            0.453993034362793,
+            0.0671153951574255
+          ],
+          "projected_pixels": [
+            871.666625976562,
+            72.4846267700195
+          ],
+          "uv": [
+            0.586000025272369,
+            0.365000009536743
+          ],
+          "world": [
+            -7.82010889053345,
+            11.5848159790039,
+            -126.73136138916
+          ]
+        },
+        {
+          "id": "left_peak",
+          "in_frame": false,
+          "projected_normalized": [
+            -0.168592389424642,
+            0.0916458695023148
+          ],
+          "projected_pixels": [
+            -323.697387695312,
+            98.9775390625
+          ],
+          "uv": [
+            0.171000003814697,
+            0.388000011444092
+          ],
+          "world": [
+            -113.645111083984,
+            9.30907821655273,
+            -126.163955688477
+          ]
+        },
+        {
+          "id": "right_ridge",
+          "in_frame": true,
+          "projected_normalized": [
+            0.784038225809733,
+            0.130041546291775
+          ],
+          "projected_pixels": [
+            1505.35339355469,
+            140.444869995117
+          ],
+          "uv": [
+            0.805999994277954,
+            0.42399999499321
+          ],
+          "world": [
+            48.2798843383789,
+            5.74704742431641,
+            -125.275840759277
+          ]
+        }
+      ],
+      "lighting_method": "dynamic_tangent_normal_relighting",
+      "local_light_direction": [
+        -0.402692884206772,
+        0.666716575622559,
+        0.627158284187317
+      ],
+      "normal_geometric_facets": 20.0,
+      "normal_map": "res://assets/forest-hamlet/backdrop/normal.png",
+      "normal_strength": 0.8,
+      "normals_enabled": true,
+      "overscan_margin_px": [
+        480.197631835938,
+        194.226776123047,
+        480.19775390625,
+        194.210083007812
+      ],
+      "parallax_enabled": true,
+      "parallax_kind": "single_distant_board",
+      "parallax_strength": 0.35,
+      "peak_screen_target": [
+        0.505,
+        -0.015
+      ],
+      "preset": "day",
+      "projected_quad_corners": [
+        [
+          -480.197631835938,
+          1274.21008300781
+        ],
+        [
+          2400.19775390625,
+          1274.21008300781
+        ],
+        [
+          2400.19775390625,
+          -194.226776123047
+        ],
+        [
+          -480.197631835938,
+          -194.226776123047
+        ]
+      ],
+      "ready": true,
+      "reference_camera_x": 0.0,
+      "source_color_byte_identical": true,
+      "source_dimensions": [
+        1983.0,
+        793.0
+      ],
+      "source_horizontal_offset": -29.7501154327393,
+      "source_sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+      "source_vertical_offset": 27.6216399517434,
+      "source_world_height": 101.974281391831,
+      "view_depth": 135.0,
+      "viewport_coverage_ok": true,
+      "within_camera_far": true
+    },
+    "camera": [
+      0.0,
+      4.08473825454712,
+      14.2712707519531
+    ],
+    "clouds": {
+      "alpha_hash_scale": 1.0,
+      "atmosphere_enabled": true,
+      "attenuation_range": [
+        0.0,
+        0.3
+      ],
+      "caster_layers": 524288,
+      "clock_seconds": 0.750000000000001,
+      "cloud_body_attenuation_range": [
+        0.1,
+        0.3
+      ],
+      "cloud_height_m": 24.0,
+      "cloud_tuning": {
+        "active_attenuation_bounds": [
+          0.0,
+          0.3
+        ],
+        "active_bounds_scope": "possible raw density values inside caster; not measured pixel coverage",
+        "active_direct_transmittance_bounds": [
+          0.7,
+          1.0
+        ],
+        "cloud_density": 0.5,
+        "contrast_strength": 0.3,
+        "contrast_unit": "fraction of direct sunlight attenuated by thick cloud",
+        "default_cloud_density": 0.5,
+        "default_contrast_strength": 0.3,
+        "density_bias": 0.0,
+        "hard_attenuation_cap": 0.8,
+        "maximum_attenuation": 0.3,
+        "thin_attenuation": 0.1,
+        "uniform_calibration_bypasses_user_controls": false
+      },
+      "cloud_width_m": 220.0,
+      "density_transfer": "smooth_clear_edge_then_thin_to_thick",
+      "direct_transmittance_bounds": [
+        0.7,
+        1.0
+      ],
+      "enabled": true,
+      "fog_density": 0.00300000002607703,
+      "light_split": {
+        "base70": {
+          "angular_distance": 0.649999976158142,
+          "available": true,
+          "color": [
+            1.0,
+            0.949999988079071,
+            0.860000014305115
+          ],
+          "direction": [
+            0.402692854404449,
+            -0.798635542392731,
+            -0.447235703468323
+          ],
+          "energy": 0.998458921909332,
+          "light_cull_mask": 4294967295,
+          "name": "SunBase",
+          "shadow_caster_mask": 4294443007,
+          "shadow_enabled": true,
+          "shadow_max_distance": 80.0,
+          "shadow_mode": 2,
+          "shadow_opacity": 1.0,
+          "sky_mode": 1,
+          "visible": true,
+          "volumetric_fog_energy": 3.20000004768372
+        },
+        "base_ratio": 0.7,
+        "cloud30": {
+          "angular_distance": 0.649999976158142,
+          "available": true,
+          "color": [
+            1.0,
+            0.949999988079071,
+            0.860000014305115
+          ],
+          "direction": [
+            0.402692854404449,
+            -0.798635542392731,
+            -0.447235703468323
+          ],
+          "energy": 0.427910983562469,
+          "light_cull_mask": 4294967295,
+          "name": "SunCloud",
+          "shadow_caster_mask": 4294967295,
+          "shadow_enabled": true,
+          "shadow_max_distance": 80.0,
+          "shadow_mode": 2,
+          "shadow_opacity": 1.0,
+          "sky_mode": 1,
+          "visible": true,
+          "volumetric_fog_energy": 3.20000004768372
+        },
+        "cloud_layer_mask": 524288,
+        "cloud_ratio": 0.3,
+        "energy_sum_error": 0.0,
+        "legacy_snapshot_aliases": "base70 and cloud30 identify the same branches at every tuning; read actual ratios and energies",
+        "ordinary_caster_mask": 4294443007,
+        "real_scene_light_count": 2,
+        "source": {
+          "angular_distance": 0.649999976158142,
+          "available": true,
+          "color": [
+            1.0,
+            0.949999988079071,
+            0.860000014305115
+          ],
+          "direction": [
+            0.402692854404449,
+            -0.798635542392731,
+            -0.447235703468323
+          ],
+          "energy": 1.4263699054718,
+          "light_cull_mask": 4294967295,
+          "name": "Sun",
+          "shadow_caster_mask": 4294967295,
+          "shadow_enabled": true,
+          "shadow_max_distance": 80.0,
+          "shadow_mode": 2,
+          "shadow_opacity": 1.0,
+          "sky_mode": 2,
+          "visible": true,
+          "volumetric_fog_energy": 3.20000004768372
+        },
+        "source_is_sky_only": true,
+        "source_total_energy": 1.4263699054718,
+        "total_direct_energy": 1.4263699054718
+      },
+      "mask_body_width": 0.18,
+      "mask_cutoff": 0.515,
+      "mask_edge_width": 0.12,
+      "mask_sha256": "59988042da0ddaecc67df55d02c24bf48ab23caa1cafd8bdc9d7a7c1c5c3c1f8",
+      "mask_size": [
+        256,
+        256
+      ],
+      "motion_enabled": true,
+      "native_shadow_pass": true,
+      "pattern_phase": [
+        0.649999976158142,
+        0.0
+      ],
+      "pattern_span_m": 96.0,
+      "preset": "day",
+      "ray_samples": [
+        {
+          "available": true,
+          "blocked": true,
+          "branch_blocked_coverage": 0.0326732753704206,
+          "cloud_hit": [
+            -24.0510025024414,
+            24.0,
+            15.383994102478
+          ],
+          "effective_attenuation": 0.00980198261112618,
+          "expected_direct_transmittance": 0.990198017388874,
+          "inside_caster": true,
+          "mask_value": 0.418243472914583,
+          "requested_attenuation": 0.00980198261112618,
+          "tuned_density": 0.418243472914583,
+          "uniform_mode": false,
+          "world_point": [
+            -12.0,
+            0.100000001490116,
+            2.0
+          ]
+        },
+        {
+          "available": true,
+          "blocked": true,
+          "branch_blocked_coverage": 0.242333650450328,
+          "cloud_hit": [
+            -12.0510025024414,
+            24.0,
+            15.383994102478
+          ],
+          "effective_attenuation": 0.0727000951350983,
+          "expected_direct_transmittance": 0.927299904864902,
+          "inside_caster": true,
+          "mask_value": 0.473772641417554,
+          "requested_attenuation": 0.0727000951350983,
+          "tuned_density": 0.473772641417554,
+          "uniform_mode": false,
+          "world_point": [
+            0.0,
+            0.100000001490116,
+            2.0
+          ]
+        },
+        {
+          "available": true,
+          "blocked": true,
+          "branch_blocked_coverage": 0.429438561207825,
+          "cloud_hit": [
+            -0.0510025024414062,
+            24.0,
+            15.383994102478
+          ],
+          "effective_attenuation": 0.128831568362347,
+          "expected_direct_transmittance": 0.871168431637653,
+          "inside_caster": true,
+          "mask_value": 0.55803627461304,
+          "requested_attenuation": 0.128831568362347,
+          "tuned_density": 0.55803627461304,
+          "uniform_mode": false,
+          "world_point": [
+            12.0,
+            0.100000001490116,
+            2.0
+          ]
+        },
+        {
+          "available": true,
+          "blocked": true,
+          "branch_blocked_coverage": 0.238976630732516,
+          "cloud_hit": [
+            -14.5802955627441,
+            24.0,
+            7.63999557495117
+          ],
+          "effective_attenuation": 0.0716929892197548,
+          "expected_direct_transmittance": 0.928307010780245,
+          "inside_caster": true,
+          "mask_value": 0.47288402031625,
+          "requested_attenuation": 0.0716929892197548,
+          "tuned_density": 0.47288402031625,
+          "uniform_mode": false,
+          "world_point": [
+            -5.0,
+            5.0,
+            -3.0
+          ]
+        },
+        {
+          "available": true,
+          "blocked": true,
+          "branch_blocked_coverage": 0.251711360694279,
+          "cloud_hit": [
+            -3.08452129364014,
+            24.0,
+            5.19999504089355
+          ],
+          "effective_attenuation": 0.0755134082082837,
+          "expected_direct_transmittance": 0.924486591791716,
+          "inside_caster": true,
+          "mask_value": 0.476306298007762,
+          "requested_attenuation": 0.0755134082082837,
+          "tuned_density": 0.476306298007762,
+          "uniform_mode": false,
+          "world_point": [
+            7.0,
+            4.0,
+            -6.0
+          ]
+        }
+      ],
+      "seed": 20261022,
+      "shadow_method": "alpha_hash_on_variable_cloud_native_directional_branch",
+      "shadow_only": true,
+      "sun_energy": 1.4263699054718,
+      "uniform_attenuation": -1.0,
+      "wind_velocity": [
+        0.319999992847443,
+        0.129999995231628
+      ]
+    },
+    "dof": {
+      "amount": 0.0350000001490116,
+      "far_transition": 16.0,
+      "near_transition": 3.0
+    },
+    "features": {
+      "atmosphere": true,
+      "backdrop_normals": true,
+      "bloom": true,
+      "clouds": true,
+      "dof": true,
+      "global_light": true,
+      "normals": true,
+      "parallax": true,
+      "wind": true
+    },
+    "framing": {
+      "camera_offset_length": 12.7500009536743,
+      "dof_far": 22.4097442626953,
+      "dof_near": 7.40974426269531,
+      "foot": [
+        0.5,
+        0.626913547515869
+      ],
+      "fov": 39.0,
+      "in_frame": true,
+      "pitch_degrees": 13.9999971389771,
+      "pixel_size": 0.00899999961256981,
+      "profile": "close_reference",
+      "silhouette_rect": [
+        0.464287916819255,
+        0.395489049840856,
+        0.0708481788635254,
+        0.232448549623843
+      ],
+      "view_depth": 12.4097442626953
+    },
+    "global_light": {
+      "ambient_amplitude": 0.1,
+      "ambient_base_energy": 0.55,
+      "ambient_component_seconds": [
+        15.7,
+        24.1,
+        4.7,
+        6.9
+      ],
+      "ambient_energy": 0.550488650798798,
+      "ambient_multiplier": 1.00088841873911,
+      "ambient_multiplier_bounds": [
+        0.9,
+        1.1
+      ],
+      "ambient_seed_offset": 7919,
+      "clock_seconds": 0.750000000000001,
+      "component_seed_stride": 104729,
+      "component_weights": [
+        0.47,
+        0.31,
+        0.14,
+        0.08
+      ],
+      "enabled": true,
+      "motion_enabled": true,
+      "native_energy_only": true,
+      "noise_kind": "FastNoiseLite.TYPE_SIMPLEX_SMOOTH",
+      "origin_subtracted": true,
+      "preset": "day",
+      "seed": 20261022,
+      "signal_gain": 1.65,
+      "signal_kind": "seeded_multiscale_time_noise",
+      "sun_amplitude": 0.18,
+      "sun_base_energy": 1.45,
+      "sun_component_seconds": [
+        11.3,
+        22.7,
+        3.9,
+        6.3
+      ],
+      "sun_energy": 1.4263699054718,
+      "sun_multiplier": 0.983703407345719,
+      "sun_multiplier_bounds": [
+        0.82,
+        1.18
+      ],
+      "sun_seed_offset": 101
+    },
+    "glow": {
+      "bloom": 0.025000000372529,
+      "enabled": true,
+      "hdr_scale": 1.60000002384186,
+      "intensity": 0.419999986886978,
+      "strength": 0.850000023841858,
+      "threshold": 0.949999988079071
+    },
+    "normal_directions": 4,
+    "occlusion": {
+      "details": [],
+      "faded_names": [],
+      "faded_trees": 0,
+      "geometry_count": 67,
+      "mesh_count": 0,
+      "mode": "billboard_alpha_aware",
+      "occluding_trees": 0,
+      "registered_trees": 67,
+      "sprite_count": 67
+    },
+    "original_color_directions": 4,
+    "player": [
+      0.0,
+      0.000234376639127731,
+      2.5
+    ],
+    "preset": "day",
+    "route_index": 0,
+    "route_running": false,
+    "scene_settings": {
+      "features": {
+        "atmosphere": true,
+        "backdrop_normals": true,
+        "bloom": true,
+        "clouds": true,
+        "dof": true,
+        "global_light": true,
+        "normals": true,
+        "parallax": true,
+        "wind": true
+      },
+      "parameters": {
+        "ambient_variation": 0.1,
+        "cloud_contrast": 0.3,
+        "cloud_density": 0.5,
+        "contrast": 1.06,
+        "dof_amount": 0.035,
+        "dof_far_margin": 10.0,
+        "dof_far_transition": 16.0,
+        "dof_near_margin": 5.0,
+        "dof_near_transition": 3.0,
+        "exposure": 1.0,
+        "fog_density_scale": 1.0,
+        "glow_bloom": 0.025,
+        "glow_hdr_scale": 1.6,
+        "glow_hdr_threshold": 0.95,
+        "glow_intensity": 0.42,
+        "glow_strength": 0.85,
+        "parallax_strength": 0.35,
+        "saturation": 0.98,
+        "sun_variation": 0.18,
+        "wind_strength": 0.06
+      },
+      "schema_version": 2,
+      "time_preset": "day"
+    },
+    "settings_dirty": false,
+    "tree_visibility": {
+      "details": [],
+      "faded_names": [],
+      "faded_trees": 0,
+      "geometry_count": 67,
+      "mesh_count": 0,
+      "mode": "billboard_alpha_aware",
+      "occluding_trees": 0,
+      "registered_trees": 67,
+      "sprite_count": 67
+    }
+  },
+  "minimum_route_height": 0.000234376639127731,
+  "passed": true,
+  "restored": {
+    "controls": {
+      "ambient_variation": {
+        "label": "±16%",
+        "value": 0.16
+      },
+      "cloud_contrast": {
+        "label": "43%",
+        "value": 43.0
+      },
+      "cloud_density": {
+        "label": "68%",
+        "value": 68.0
+      },
+      "contrast": {
+        "label": "1.14",
+        "value": 1.14
+      },
+      "dof_amount": {
+        "label": "12.0%",
+        "value": 0.12
+      },
+      "dof_far_margin": {
+        "label": "6.0 m",
+        "value": 6.0
+      },
+      "dof_far_transition": {
+        "label": "8.0 m",
+        "value": 8.0
+      },
+      "dof_near_margin": {
+        "label": "2.5 m",
+        "value": 2.5
+      },
+      "dof_near_transition": {
+        "label": "2.0 m",
+        "value": 2.0
+      },
+      "exposure": {
+        "label": "1.15 ×",
+        "value": 1.15
+      },
+      "fog_density_scale": {
+        "label": "0.70 ×",
+        "value": 0.7
+      },
+      "glow_bloom": {
+        "label": "0.080",
+        "value": 0.08
+      },
+      "glow_hdr_scale": {
+        "label": "2.10",
+        "value": 2.1
+      },
+      "glow_hdr_threshold": {
+        "label": "1.20",
+        "value": 1.2
+      },
+      "glow_intensity": {
+        "label": "0.78",
+        "value": 0.78
+      },
+      "glow_strength": {
+        "label": "1.25",
+        "value": 1.25
+      },
+      "parallax_strength": {
+        "label": "52%",
+        "value": 0.52
+      },
+      "saturation": {
+        "label": "1.08",
+        "value": 1.08
+      },
+      "sun_variation": {
+        "label": "±27%",
+        "value": 0.27
+      },
+      "wind_strength": {
+        "label": "9.0 cm",
+        "value": 0.09
+      }
+    },
+    "native": {
+      "ambient_energy": 0.377177208662033,
+      "cloud_contrast": 0.43,
+      "cloud_density": 0.68,
+      "contrast": 1.13999998569489,
+      "dof_amount": 0.119999997317791,
+      "dof_far": 18.4097442626953,
+      "dof_far_enabled": true,
+      "dof_far_transition": 8.0,
+      "dof_near": 9.90974426269531,
+      "dof_near_enabled": true,
+      "dof_near_transition": 2.0,
+      "exposure": 1.14999997615814,
+      "fog_density": 0.00161000003572553,
+      "glow_bloom": 0.0799999982118607,
+      "glow_enabled": false,
+      "glow_hdr_scale": 2.09999990463257,
+      "glow_hdr_threshold": 1.20000004768372,
+      "glow_intensity": 0.779999971389771,
+      "glow_strength": 1.25,
+      "parallax_strength": 0.52,
+      "saturation": 1.08000004291534,
+      "sun_energy": 1.00523626804352,
+      "volumetric_fog_density": 0.00265999999828637,
+      "wind_strength": 0.0
+    },
+    "settings": {
+      "features": {
+        "atmosphere": false,
+        "backdrop_normals": true,
+        "bloom": false,
+        "clouds": true,
+        "dof": true,
+        "global_light": true,
+        "normals": true,
+        "parallax": false,
+        "wind": false
+      },
+      "parameters": {
+        "ambient_variation": 0.16,
+        "cloud_contrast": 0.43,
+        "cloud_density": 0.68,
+        "contrast": 1.14,
+        "dof_amount": 0.12,
+        "dof_far_margin": 6.0,
+        "dof_far_transition": 8.0,
+        "dof_near_margin": 2.5,
+        "dof_near_transition": 2.0,
+        "exposure": 1.15,
+        "fog_density_scale": 0.7,
+        "glow_bloom": 0.08,
+        "glow_hdr_scale": 2.1,
+        "glow_hdr_threshold": 1.2,
+        "glow_intensity": 0.78,
+        "glow_strength": 1.25,
+        "parallax_strength": 0.52,
+        "saturation": 1.08,
+        "sun_variation": 0.27,
+        "wind_strength": 0.09
+      },
+      "schema_version": 2,
+      "time_preset": "dusk"
+    }
+  },
+  "route": {
+    "completed": true,
+    "elapsed_seconds": 22.45,
+    "position": [
+      0.0000821128196548671,
+      0.000926767534110695,
+      1.5889151096344
+    ],
+    "samples": [
+      [
+        0.217,
+        -0.639074802398682,
+        0.000234376639127731,
+        2.4655876159668,
+        0
+      ],
+      [
+        0.433,
+        -1.3314106464386,
+        0.000234376639127731,
+        2.42830753326416,
+        0
+      ],
+      [
+        0.65,
+        -2.02373743057251,
+        0.000234376639127731,
+        2.3910276889801,
+        0
+      ],
+      [
+        0.867,
+        -2.7160758972168,
+        0.000234376639127731,
+        2.35374736785889,
+        0
+      ],
+      [
+        1.083,
+        -3.40840768814087,
+        0.000234376639127731,
+        2.31646752357483,
+        0
+      ],
+      [
+        1.3,
+        -4.10073041915894,
+        0.000234376639127731,
+        2.27918791770935,
+        0
+      ],
+      [
+        1.517,
+        -4.79305601119995,
+        0.000234376639127731,
+        2.24190831184387,
+        0
+      ],
+      [
+        1.733,
+        -5.48538637161255,
+        0.000234376639127731,
+        2.20462822914124,
+        0
+      ],
+      [
+        1.95,
+        -6.17770576477051,
+        0.000234376639127731,
+        2.16734886169434,
+        0
+      ],
+      [
+        2.167,
+        -6.87003421783447,
+        0.000234376639127731,
+        2.1300687789917,
+        0
+      ],
+      [
+        2.383,
+        -7.56236696243286,
+        0.000234376639127731,
+        2.0927894115448,
+        0
+      ],
+      [
+        2.6,
+        -8.25468921661377,
+        0.000234376639127731,
+        2.0555112361908,
+        0
+      ],
+      [
+        2.817,
+        -8.94702053070068,
+        0.000234376639127731,
+        2.01823258399963,
+        0
+      ],
+      [
+        3.033,
+        -9.63935470581055,
+        0.000234376639127731,
+        1.98095405101776,
+        0
+      ],
+      [
+        3.25,
+        -10.3316850662231,
+        0.000234376639127731,
+        1.9436753988266,
+        0
+      ],
+      [
+        3.467,
+        -11.0240001678467,
+        0.000234376639127731,
+        1.90639758110046,
+        0
+      ],
+      [
+        3.683,
+        -11.7163200378418,
+        0.000234376639127731,
+        1.86911940574646,
+        0
+      ],
+      [
+        3.9,
+        -12.4086380004883,
+        0.000234376639127731,
+        1.83184146881104,
+        0
+      ],
+      [
+        4.117,
+        -12.4614191055298,
+        0.000234376639127731,
+        1.81147420406342,
+        1
+      ],
+      [
+        4.333,
+        -11.768084526062,
+        0.000234376639127731,
+        1.81083571910858,
+        1
+      ],
+      [
+        4.55,
+        -11.0747489929199,
+        0.000234376639127731,
+        1.81019723415375,
+        1
+      ],
+      [
+        4.767,
+        -10.3814105987549,
+        0.000234376639127731,
+        1.80955874919891,
+        1
+      ],
+      [
+        4.983,
+        -9.68807888031006,
+        0.000234376639127731,
+        1.80892026424408,
+        1
+      ],
+      [
+        5.2,
+        -8.99474811553955,
+        0.000234376639127731,
+        1.80828177928925,
+        1
+      ],
+      [
+        5.417,
+        -8.30140113830566,
+        0.000234376639127731,
+        1.80764329433441,
+        1
+      ],
+      [
+        5.633,
+        -7.60806703567505,
+        0.000234376639127731,
+        1.80700480937958,
+        1
+      ],
+      [
+        5.85,
+        -6.9147310256958,
+        0.000234376639127731,
+        1.80636632442474,
+        1
+      ],
+      [
+        6.067,
+        -6.2213921546936,
+        0.000234376639127731,
+        1.80572783946991,
+        1
+      ],
+      [
+        6.283,
+        -5.52806329727173,
+        0.000234376639127731,
+        1.80508935451508,
+        1
+      ],
+      [
+        6.5,
+        -4.83473014831543,
+        0.000234376639127731,
+        1.80445086956024,
+        1
+      ],
+      [
+        6.717,
+        -4.14139318466187,
+        0.000234376639127731,
+        1.80381238460541,
+        1
+      ],
+      [
+        6.933,
+        -3.4480607509613,
+        0.000234376639127731,
+        1.80317389965057,
+        1
+      ],
+      [
+        7.15,
+        -2.75472569465637,
+        0.000234376639127731,
+        1.80253541469574,
+        1
+      ],
+      [
+        7.367,
+        -2.06138730049133,
+        0.000234376639127731,
+        1.80189692974091,
+        1
+      ],
+      [
+        7.583,
+        -1.36805260181427,
+        0.000234376639127731,
+        1.80125844478607,
+        1
+      ],
+      [
+        7.8,
+        -0.674718379974365,
+        0.000234376639127731,
+        1.80062055587769,
+        1
+      ],
+      [
+        8.017,
+        0.0186170563101768,
+        0.000234376639127731,
+        1.8002233505249,
+        2
+      ],
+      [
+        8.233,
+        0.711947977542877,
+        0.000234376639127731,
+        1.80021095275879,
+        2
+      ],
+      [
+        8.45,
+        1.40528666973114,
+        0.000234376639127731,
+        1.80019855499268,
+        2
+      ],
+      [
+        8.667,
+        2.09861946105957,
+        0.000234376639127731,
+        1.80018615722656,
+        2
+      ],
+      [
+        8.883,
+        2.79195880889893,
+        0.000234376639127731,
+        1.80017375946045,
+        2
+      ],
+      [
+        9.1,
+        3.48529553413391,
+        0.000234376639127731,
+        1.80016136169434,
+        2
+      ],
+      [
+        9.317,
+        4.17862939834595,
+        0.000234376639127731,
+        1.80014860630035,
+        2
+      ],
+      [
+        9.533,
+        4.87196111679077,
+        0.000234376639127731,
+        1.80013537406921,
+        2
+      ],
+      [
+        9.75,
+        5.56530284881592,
+        0.000234376639127731,
+        1.80012214183807,
+        2
+      ],
+      [
+        9.967,
+        6.25862646102905,
+        0.000234376639127731,
+        1.80010902881622,
+        2
+      ],
+      [
+        10.183,
+        6.95195960998535,
+        0.000234376639127731,
+        1.80009591579437,
+        2
+      ],
+      [
+        10.4,
+        7.64530181884766,
+        0.000234376639127731,
+        1.80008268356323,
+        2
+      ],
+      [
+        10.617,
+        8.33862972259521,
+        0.000234376639127731,
+        1.80006957054138,
+        2
+      ],
+      [
+        10.833,
+        9.03196334838867,
+        0.000234376639127731,
+        1.80005633831024,
+        2
+      ],
+      [
+        11.05,
+        9.72530460357666,
+        0.000234376639127731,
+        1.80004322528839,
+        2
+      ],
+      [
+        11.267,
+        10.4186353683472,
+        0.000234376639127731,
+        1.80002999305725,
+        2
+      ],
+      [
+        11.483,
+        11.1119709014893,
+        0.000234376639127731,
+        1.8000168800354,
+        2
+      ],
+      [
+        11.7,
+        11.6986389160156,
+        0.000234376639127731,
+        1.80000472068787,
+        3
+      ],
+      [
+        11.917,
+        11.0053081512451,
+        0.000234376639127731,
+        1.80000472068787,
+        3
+      ],
+      [
+        12.133,
+        10.3119783401489,
+        0.000234376639127731,
+        1.80000472068787,
+        3
+      ],
+      [
+        12.35,
+        9.61864376068115,
+        0.000234376639127731,
+        1.80000472068787,
+        3
+      ],
+      [
+        12.567,
+        8.92531967163086,
+        0.000234376639127731,
+        1.80000472068787,
+        3
+      ],
+      [
+        12.783,
+        8.23198127746582,
+        0.000234376639127731,
+        1.80000472068787,
+        3
+      ],
+      [
+        13.0,
+        7.538649559021,
+        0.000234376639127731,
+        1.80000472068787,
+        3
+      ],
+      [
+        13.217,
+        6.84532642364502,
+        0.000234376639127731,
+        1.80000472068787,
+        3
+      ],
+      [
+        13.433,
+        6.15199422836304,
+        0.000234376639127731,
+        1.80000472068787,
+        3
+      ],
+      [
+        13.65,
+        5.45866107940674,
+        0.000234376639127731,
+        1.80000472068787,
+        3
+      ],
+      [
+        13.867,
+        4.76532983779907,
+        0.000234376639127731,
+        1.80000472068787,
+        3
+      ],
+      [
+        14.083,
+        4.07199478149414,
+        0.000234376639127731,
+        1.80000448226929,
+        3
+      ],
+      [
+        14.3,
+        3.37866306304932,
+        0.000234376639127731,
+        1.80000376701355,
+        3
+      ],
+      [
+        14.517,
+        2.68533444404602,
+        0.000234376639127731,
+        1.80000293254852,
+        3
+      ],
+      [
+        14.733,
+        1.99200844764709,
+        0.000234376639127731,
+        1.80000221729279,
+        3
+      ],
+      [
+        14.95,
+        1.29867565631866,
+        0.000234376639127731,
+        1.80000138282776,
+        3
+      ],
+      [
+        15.167,
+        0.605347990989685,
+        0.000234376639127731,
+        1.80000066757202,
+        3
+      ],
+      [
+        15.383,
+        0.225721448659897,
+        0.000234376639127731,
+        1.48006439208984,
+        4
+      ],
+      [
+        15.6,
+        0.212091654539108,
+        0.000234376639127731,
+        0.786864995956421,
+        4
+      ],
+      [
+        15.817,
+        0.198461949825287,
+        0.000234376639127731,
+        0.0936695411801338,
+        4
+      ],
+      [
+        16.033,
+        0.184832319617271,
+        0.000234376639127731,
+        -0.59952300786972,
+        4
+      ],
+      [
+        16.25,
+        0.17120261490345,
+        0.000234376639127731,
+        -1.2927223443985,
+        4
+      ],
+      [
+        16.467,
+        0.157572761178017,
+        0.000234376639127731,
+        -1.98592960834503,
+        4
+      ],
+      [
+        16.683,
+        0.143943086266518,
+        0.000234376639127731,
+        -2.67912793159485,
+        4
+      ],
+      [
+        16.9,
+        0.130313485860825,
+        0.000234376639127731,
+        -3.37232232093811,
+        4
+      ],
+      [
+        17.117,
+        0.1166837438941,
+        0.000234376639127731,
+        -4.06552457809448,
+        4
+      ],
+      [
+        17.333,
+        0.103054225444794,
+        0.000234376639127731,
+        -4.75871706008911,
+        4
+      ],
+      [
+        17.55,
+        0.0894246250391006,
+        0.000234376639127731,
+        -5.45191240310669,
+        4
+      ],
+      [
+        17.767,
+        0.0757948607206345,
+        0.000234376639127731,
+        -6.1451153755188,
+        4
+      ],
+      [
+        17.983,
+        0.0621652454137802,
+        0.000234376639127731,
+        -6.83831214904785,
+        4
+      ],
+      [
+        18.2,
+        0.0485355854034424,
+        0.000234376639127731,
+        -7.53151035308838,
+        4
+      ],
+      [
+        18.417,
+        0.0349056571722031,
+        0.000234376639127731,
+        -8.22471904754639,
+        4
+      ],
+      [
+        18.633,
+        0.0212761424481869,
+        0.000234376639127731,
+        -8.91790580749512,
+        4
+      ],
+      [
+        18.85,
+        0.00764649780467153,
+        0.000234376639127731,
+        -9.61110210418701,
+        4
+      ],
+      [
+        19.067,
+        0.0042937328107655,
+        0.000234376639127731,
+        -9.23774337768555,
+        5
+      ],
+      [
+        19.283,
+        0.00402402086183429,
+        0.000234376639127731,
+        -8.54441070556641,
+        5
+      ],
+      [
+        19.5,
+        0.00375431077554822,
+        0.000926767534110695,
+        -7.85107803344727,
+        5
+      ],
+      [
+        19.717,
+        0.00348460185341537,
+        0.000926767534110695,
+        -7.15774536132812,
+        5
+      ],
+      [
+        19.933,
+        0.00321489293128252,
+        0.000926767534110695,
+        -6.46441268920898,
+        5
+      ],
+      [
+        20.15,
+        0.00294518400914967,
+        0.000926767534110695,
+        -5.77108001708984,
+        5
+      ],
+      [
+        20.367,
+        0.00267547508701682,
+        0.000926767534110695,
+        -5.0777473449707,
+        5
+      ],
+      [
+        20.583,
+        0.00240576616488397,
+        0.000926767534110695,
+        -4.38441467285156,
+        5
+      ],
+      [
+        20.8,
+        0.00213605724275112,
+        0.000926767534110695,
+        -3.69108200073242,
+        5
+      ],
+      [
+        21.017,
+        0.00186634773854166,
+        0.000926767534110695,
+        -2.99774932861328,
+        5
+      ],
+      [
+        21.233,
+        0.00159663730300963,
+        0.000926767534110695,
+        -2.30441665649414,
+        5
+      ],
+      [
+        21.45,
+        0.0013269268674776,
+        0.000926767534110695,
+        -1.611083984375,
+        5
+      ],
+      [
+        21.667,
+        0.00105721701402217,
+        0.000926767534110695,
+        -0.91775119304657,
+        5
+      ],
+      [
+        21.883,
+        0.000787507276982069,
+        0.000926767534110695,
+        -0.224417760968208,
+        5
+      ],
+      [
+        22.1,
+        0.000517797598149627,
+        0.000926767534110695,
+        0.468915641307831,
+        5
+      ],
+      [
+        22.317,
+        0.000248087919317186,
+        0.000926767534110695,
+        1.16224884986877,
+        5
+      ]
+    ],
+    "status": "completed",
+    "total_waypoints": 6,
+    "waypoints": 6
+  },
+  "runtime_fingerprint": "8f55d71b78aeef50b3b3d1b3a7a47f8939f7c06f81da5827acd82c67bb5235af",
+  "schema": 1,
+  "scope": "actual scene control signals, native effect outputs, complete persistence, failure behavior, fresh main-scene startup, unchanged source character and six-waypoint physics route; GPU differences checked separately",
+  "selected": {
+    "features": {
+      "atmosphere": false,
+      "backdrop_normals": true,
+      "bloom": false,
+      "clouds": true,
+      "dof": true,
+      "global_light": true,
+      "normals": true,
+      "parallax": false,
+      "wind": false
+    },
+    "parameters": {
+      "ambient_variation": 0.16,
+      "cloud_contrast": 0.43,
+      "cloud_density": 0.68,
+      "contrast": 1.14,
+      "dof_amount": 0.12,
+      "dof_far_margin": 6.0,
+      "dof_far_transition": 8.0,
+      "dof_near_margin": 2.5,
+      "dof_near_transition": 2.0,
+      "exposure": 1.15,
+      "fog_density_scale": 0.7,
+      "glow_bloom": 0.08,
+      "glow_hdr_scale": 2.1,
+      "glow_hdr_threshold": 1.2,
+      "glow_intensity": 0.78,
+      "glow_strength": 1.25,
+      "parallax_strength": 0.52,
+      "saturation": 1.08,
+      "sun_variation": 0.27,
+      "wind_strength": 0.09
+    },
+    "schema_version": 2,
+    "time_preset": "dusk"
+  },
+  "settings_scope": "isolated fixtures under requested build output; normal user preferences are neither read nor overwritten",
+  "settings_sha256": "86392104dd8fb23b3670d48a82298fda81e9bd929f3f7ad634781fd1768edef6",
+  "source_files": {
+    "scripts/forest_hamlet/actor.gd": "7af6ee916e4f22a0e2bc7ad4022642a3c477f5c4fe820175e1cfc59a0c1ef2cf",
+    "scripts/forest_hamlet/close_scene.gd": "e5f78a2ebced10a5d470155187db8c7b8d8e8793b4c07cc8372284d631fccce8",
+    "scripts/forest_hamlet/cloud_lighting.gd": "c13b224096bcdd1674ef4bbb6f919a1e91d57801d6b1e1b9cb353f1ba38395a2",
+    "scripts/forest_hamlet/global_lighting.gd": "438e1595906bbdc193cc05602a38210c203bdfe5b896a4dbb204703752497e6a",
+    "scripts/forest_hamlet/scene.gd": "7df0d90eafdc0d8fc24513cbac2f130802d11ff901687de5d558adb1468927f2",
+    "scripts/forest_hamlet/scene_settings.gd": "d306edbac1420c5151fd5f5e380adcb1226ed5485fdfbdefed04cb8d5c99a2df",
+    "scripts/forest_hamlet/settings_panel.gd": "898fd8ee6043fa16a90ba5c5bdfa45f58732d0cff70ead7aa35c1f23c27d1b7e",
+    "shaders/forest_hamlet/cloud_occluder.gdshader": "e70591cabd53eee8dd4a89c47d93397825c5d36394319acf0902666c689c4b65",
+    "tests/forest_hamlet/scene_settings_runtime.gd": "1f6de0ac4571f7b3f420ec2487f79f9f99d4764ceb60e28dfbec640abdc27b3f",
+    "tools/forest_hamlet/capture_scene_settings.gd": "fbfc6f930e1f80abd43f737a6927cb46b3167ea50a205d497a149fc12c8502c9",
+    "tools/forest_hamlet/run_scene_settings.py": "4493f75eda65e4ce3b8228bbc585635231f631ee6b6fba8031a53508d1b944f3",
+    "tools/forest_hamlet/scene_settings_checks.py": "c86242b8fa5c223bbfee1ba70c348248a2525cdf5aed84a880ea8dd8e843581a"
+  },
+  "source_fingerprint": "3ef81bca867684bbfda8f1de98418bb6d17f4a319bd5d427e190e7bee7823612",
+  "startup": {
+    "controls": {
+      "ambient_variation": {
+        "label": "±16%",
+        "value": 0.16
+      },
+      "cloud_contrast": {
+        "label": "43%",
+        "value": 43.0
+      },
+      "cloud_density": {
+        "label": "68%",
+        "value": 68.0
+      },
+      "contrast": {
+        "label": "1.14",
+        "value": 1.14
+      },
+      "dof_amount": {
+        "label": "12.0%",
+        "value": 0.12
+      },
+      "dof_far_margin": {
+        "label": "6.0 m",
+        "value": 6.0
+      },
+      "dof_far_transition": {
+        "label": "8.0 m",
+        "value": 8.0
+      },
+      "dof_near_margin": {
+        "label": "2.5 m",
+        "value": 2.5
+      },
+      "dof_near_transition": {
+        "label": "2.0 m",
+        "value": 2.0
+      },
+      "exposure": {
+        "label": "1.15 ×",
+        "value": 1.15
+      },
+      "fog_density_scale": {
+        "label": "0.70 ×",
+        "value": 0.7
+      },
+      "glow_bloom": {
+        "label": "0.080",
+        "value": 0.08
+      },
+      "glow_hdr_scale": {
+        "label": "2.10",
+        "value": 2.1
+      },
+      "glow_hdr_threshold": {
+        "label": "1.20",
+        "value": 1.2
+      },
+      "glow_intensity": {
+        "label": "0.78",
+        "value": 0.78
+      },
+      "glow_strength": {
+        "label": "1.25",
+        "value": 1.25
+      },
+      "parallax_strength": {
+        "label": "52%",
+        "value": 0.52
+      },
+      "saturation": {
+        "label": "1.08",
+        "value": 1.08
+      },
+      "sun_variation": {
+        "label": "±27%",
+        "value": 0.27
+      },
+      "wind_strength": {
+        "label": "9.0 cm",
+        "value": 0.09
+      }
+    },
+    "native": {
+      "ambient_energy": 0.400568574666977,
+      "cloud_contrast": 0.43,
+      "cloud_density": 0.68,
+      "contrast": 1.13999998569489,
+      "dof_amount": 0.119999997317791,
+      "dof_far": 18.4097442626953,
+      "dof_far_enabled": true,
+      "dof_far_transition": 8.0,
+      "dof_near": 9.90974426269531,
+      "dof_near_enabled": true,
+      "dof_near_transition": 2.0,
+      "exposure": 1.14999997615814,
+      "fog_density": 0.00161000003572553,
+      "glow_bloom": 0.0799999982118607,
+      "glow_enabled": false,
+      "glow_hdr_scale": 2.09999990463257,
+      "glow_hdr_threshold": 1.20000004768372,
+      "glow_intensity": 0.779999971389771,
+      "glow_strength": 1.25,
+      "parallax_strength": 0.52,
+      "saturation": 1.08000004291534,
+      "sun_energy": 1.12188839912415,
+      "volumetric_fog_density": 0.00265999999828637,
+      "wind_strength": 0.0
+    },
+    "settings": {
+      "features": {
+        "atmosphere": false,
+        "backdrop_normals": true,
+        "bloom": false,
+        "clouds": true,
+        "dof": true,
+        "global_light": true,
+        "normals": true,
+        "parallax": false,
+        "wind": false
+      },
+      "parameters": {
+        "ambient_variation": 0.16,
+        "cloud_contrast": 0.43,
+        "cloud_density": 0.68,
+        "contrast": 1.14,
+        "dof_amount": 0.12,
+        "dof_far_margin": 6.0,
+        "dof_far_transition": 8.0,
+        "dof_near_margin": 2.5,
+        "dof_near_transition": 2.0,
+        "exposure": 1.15,
+        "fog_density_scale": 0.7,
+        "glow_bloom": 0.08,
+        "glow_hdr_scale": 2.1,
+        "glow_hdr_threshold": 1.2,
+        "glow_intensity": 0.78,
+        "glow_strength": 1.25,
+        "parallax_strength": 0.52,
+        "saturation": 1.08,
+        "sun_variation": 0.27,
+        "wind_strength": 0.09
+      },
+      "schema_version": 2,
+      "time_preset": "dusk"
+    }
+  }
+}

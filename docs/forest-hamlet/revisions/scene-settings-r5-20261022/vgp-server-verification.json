@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "revision_id": "810e06ff-8649-489c-9e61-db0bbae36e3c",
+  "passed": true,
+  "files": [
+    {
+      "name": "closure-017-snow-master.png",
+      "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+      "size_bytes": 1697185,
+      "role": "source"
+    },
+    {
+      "name": "closure-025-scene-settings-dof-off.png",
+      "sha256": "f86834839896cb5277612a9d52053433f76a45662c9e259c8f12bade3633ef10",
+      "size_bytes": 2603034,
+      "role": "source"
+    },
+    {
+      "name": "closure-026-scene-settings-dof-strong.png",
+      "sha256": "9d96be3871a50a029b59ae764579605862cdc71d91f3533a75d5d1e425d8f009",
+      "size_bytes": 1456496,
+      "role": "source"
+    },
+    {
+      "name": "closure-027-scene-settings-dusk-restored.png",
+      "sha256": "0d428acd310dbe06d9bb7a24ad353c817e8b230e43fab6511ba119897e5d722c",
+      "size_bytes": 2159805,
+      "role": "source"
+    },
+    {
+      "name": "closure-028-scene-settings-dusk-saved.png",
+      "sha256": "0ec2217820bbd5573c9c503d01cfe8562a8ba4d7d92fc895a205b7a985ff445b",
+      "size_bytes": 2157253,
+      "role": "source"
+    },
+    {
+      "name": "closure-029-scene-settings-glow-off.png",
+      "sha256": "603815165df76ad1b855e426b8aaf5c706926f1a6b498633745551682c462fa8",
+      "size_bytes": 2010959,
+      "role": "source"
+    },
+    {
+      "name": "closure-030-scene-settings-glow-strong.png",
+      "sha256": "cbe1218f41fd7235afbfb9b6c76bb1c34408ce09e5420dfa16f6394d4a6172c2",
+      "size_bytes": 1695464,
+      "role": "source"
+    },
+    {
+      "name": "closure-032-scene-settings-input-dof-720.png",
+      "sha256": "dc045b78a7db2b103e231fc83b9c66ba627d2191d046b9601b78fcf584f74df1",
+      "size_bytes": 862461,
+      "role": "source"
+    },
+    {
+      "name": "closure-033-scene-settings-input-glow-720.png",
+      "sha256": "ec77491f02c45b19d7fd87fb5c2418818c4194c77b03afddbacb2821cf3bdb72",
+      "size_bytes": 848789,
+      "role": "source"
+    },
+    {
+      "name": "closure-034-scene-settings-panel-clouds-1080.png",
+      "sha256": "9a10adaa1bb327acbac4831e391475d4a3681e771171f3a18a1bf10a2808f5e3",
+      "size_bytes": 1910931,
+      "role": "source"
+    },
+    {
+      "name": "closure-035-scene-settings-panel-dof-1080.png",
+      "sha256": "4fe1fde0c7b90a3e72e16747bf7fdfd1a03dc03408da3dc6d7c018e17b7cbc21",
+      "size_bytes": 1900292,
+      "role": "source"
+    },
+    {
+      "name": "closure-036-scene-settings-panel-dof-720.png",
+      "sha256": "7456c6c37aa8d14131447c88ba69ccb547d9e227cfab9ee980b15fc9fcaacba4",
+      "size_bytes": 894902,
+      "role": "source"
+    },
+    {
+      "name": "closure-037-scene-settings-panel-environment-1080.png",
+      "sha256": "c38ca7d4740ea0c497919f5e9039287385496854f90ef4cdbc238974d3cece5b",
+      "size_bytes": 1890832,
+      "role": "source"
+    },
+    {
+      "name": "closure-038-scene-settings-panel-glow-1080.png",
+      "sha256": "f4d723251db0b7cd7b1d550fac234ae348dfb940b9af8cd9a65e2bf9723cd41f",
+      "size_bytes": 1892928,
+      "role": "source"
+    },
+    {
+      "name": "closure-039-scene-settings-panel-glow-720.png",
+      "sha256": "26f89e6810e907b0b77dbc905db636d7cdc64992b614f0d729638a99e07d65cb",
+      "size_bytes": 861113,
+      "role": "source"
+    },
+    {
+      "name": "closure-040-scene-settings-panel-other-1080.png",
+      "sha256": "eecc09366f4834f2d8a70699ae650a7315d5b4e8ae0d6e73a207a09eca741fda",
+      "size_bytes": 1904593,
+      "role": "source"
+    },
+    {
+      "name": "evidence.zip",
+      "sha256": "f85fb840c333fe46a0589cb323550f7d7ea5f891b6e2813c4d1f28e7a5e6c241",
+      "size_bytes": 8710723,
+      "role": "source"
+    },
+    {
+      "name": "snow-color.png",
+      "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+      "size_bytes": 1697185,
+      "role": "source"
+    },
+    {
+      "name": "snow-normal.png",
+      "sha256": "9c840176d4002826091098449e7126c45b5b410a67c56eb43a0d3d29893987a6",
+      "size_bytes": 97589,
+      "role": "source"
+    },
+    {
+      "name": "snow-regions.png",
+      "sha256": "ade0cbaba208f37219644571127ced57ab142cb56593aa126b21b3e3c4d1c153",
+      "size_bytes": 126254,
+      "role": "source"
+    }
+  ]
+}

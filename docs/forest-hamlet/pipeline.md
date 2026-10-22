@@ -1,6 +1,37 @@
 # 森林村落：AW / VGP 资源工作流
 
-## 当前云层实时调节 · r4
+## 场景参数与完整保存 · r5
+
+本轮使用独立的 `scene-settings` profile：新增景深、Glow、环境与其他效果数值调节，把日光／黄昏、20 项数值和 9 个效果开关保存为完整配置；正常启动自动恢复。旧云参数文件继续可读，70% 对比／48% 密度按原值迁移，读取不会改写个人存档。操作、参数范围与版本合同见 [场景参数 r5](scene-settings-r5.md)。
+
+| 标识 | 本轮值 |
+|---|---|
+| Run | `forest-hamlet-20261022-scene-settings-r5-final` |
+| Native snapshot | `scene-settings-native-r5-final` |
+| 配置 | `art/inputs/forest-hamlet/scene-settings-r5/workbench-project.yaml` |
+| 技术证据 | `build/forest-hamlet/scene-settings-r5-final` |
+| 前一运行 | `forest-hamlet-20261022-cloud-tuning-r4` |
+| 归档目录 | `docs/forest-hamlet/revisions/scene-settings-r5-20261022` |
+
+首次 `scene-settings-r5` 原生尝试的 89 项 Godot 检查通过，但测试未识别 AW 的 `--output=`，导致指定报告制品缺失，AW 运行未完成。旧运行和 `scene-settings-native-r5` 快照保留；兼容输出参数后的验证使用上表新 `-final` 身份。具体恢复边界见 [r5 操作与验证合同](scene-settings-r5.md#独立验证与-aw--vgp-来源链)。
+
+本轮验证合同要求专用运行、实际 Forward+ GPU 和像素三份报告，以及 15 张原始截图；分别覆盖景深／辉光效果对照、黄昏保存和新实例恢复、五个 1080p 分页面板、720p 景深／辉光面板与真实鼠标操作。所有报告必须绑定相同运行指纹和新增 `source-fingerprint.json`，后者同时冻结验证与 AW/VGP/归档驱动源码。未产生真实报告之前，不记为技术通过。
+
+原始资源保护由独立检查完成：当前 `assets/**` 完整集合、摘要和字节数须与 r4 原生快照一致，原雪山母图仍由固定摘要保护。新增候选必须明确以 r4 为前一运行，保持同一 Asset、父 Revision 与前一 Review Round；技术 ready 与 `concept_design / pending_review` 分别记录，不调用人工批准或阶段准入。
+
+```sh
+make forest-scene-settings-test
+make forest-scene-settings-capture
+make test
+# 保存本次真实 make test 状态为证据目录的 make-test-report.json。
+make forest-scene-settings-aw
+make forest-scene-settings-vgp
+make forest-scene-settings-archive
+```
+
+`process_atmosphere_aw.py --profile scene-settings` 自动冻结本轮操作文档、完整来源指纹、原始资源比较依据与新报告。归档复用 `archive_cloud_tuning_evidence.py --profile scene-settings` 的核验逻辑；未传 profile 时仍使用 r4 的原有默认身份和目录。新 profile 不改写 r4 的记录。专用无窗口运行合同记录自己的物理路线回归结果；旧 GPU 路线截图组和透光标定仍属于历史证据。
+
+## 已归档云层实时调节 · r4
 
 新增 `cloud-tuning` profile，验证透光对比 **0–80%**（默认 30%）、独立密度 **0–100%**（默认 50%）、中文面板、保存/读取/恢复默认，以及鼠标与方向键的实际操作。该 profile 使用专门的 20 项运行、33 项 GPU 与 58 项像素检查，产生 9 张原始截图；r3 的路线与标定探针继续保留为对应版本的历史证据。
 

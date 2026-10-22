@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "delivery_id": "delivery-b829d388364d42cc3bee8230bdb38b736044997faee7e424a6fa30e0a0c71f46",
+  "aw_manifest": "art/derived/workbench/delivery/forest-hamlet-20261022-scene-settings-r5-final/delivery.json",
+  "aw_manifest_sha256": "5691c1f6094f6102c5c7aeca11bfa1142e9f4ff0622c64101fda923320e708cb",
+  "aw_archive": "art/derived/workbench/delivery/forest-hamlet-20261022-scene-settings-r5-final/delivery.zip",
+  "aw_archive_sha256": "aea5c946553948ff35b22b97cb1075e390b0418cee582cbbf6f202658d19d30b",
+  "aw_technical": "art/derived/workbench/delivery/forest-hamlet-20261022-scene-settings-r5-final/technical.json",
+  "aw_technical_sha256": "f3b09cf2333d629c5826de04d7870af7aed69f7a93bc68d09fd9068738608183",
+  "producer_version": "0.6.1",
+  "delivery_file_count": 41,
+  "source_summary": "art/derived/forest-hamlet/forest-hamlet-20261022-scene-settings-r5-final/atmosphere-summary.json",
+  "source_summary_sha256": "51316310909a70bbe69d16d6c8ebef529fe2cfa3c9469d8392eadd1aff2dbe59",
+  "scope": "Independent archive-time verification of the native AW manifest, ZIP bytes, selected run files, verification receipt and current frozen source closure."
+}

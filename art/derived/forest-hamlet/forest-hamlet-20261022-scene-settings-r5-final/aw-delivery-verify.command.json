@@ -1,0 +1,12 @@
+[
+  "aw",
+  "--project",
+  ".",
+  "--project-config",
+  "art/inputs/forest-hamlet/scene-settings-r5/workbench-project.yaml",
+  "delivery",
+  "verify",
+  "--package",
+  "art/derived/workbench/delivery/forest-hamlet-20261022-scene-settings-r5-final",
+  "--json"
+]

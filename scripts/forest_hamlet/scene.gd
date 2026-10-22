@@ -1,6 +1,7 @@
 extends Node3D
 ## Original forest hamlet effect study; the archived project remains independent.
 const Actor = preload("res://scripts/forest_hamlet/actor.gd")
+const SceneSettings = preload("res://scripts/forest_hamlet/scene_settings.gd")
 const FONT_PATH := "res://assets/ancient-canal/fonts/NotoSansSC.ttf"
 ## Match the supplied village image: pond in the lower left, houses above.
 ## Keep the original actor scale; its full silhouette occupies about 13.6% height.
@@ -26,8 +27,20 @@ var status_label: Label
 var exit_confirmation: ConfirmationDialog
 var feature_buttons: Dictionary = {}
 var time_buttons: Dictionary = {}
+# Retain the old property and path: existing cloud preferences migrate on read.
 @export var cloud_settings_enabled := true
 @export var settings_path := "user://forest-hamlet-clouds.cfg"
+var effect_parameters: Dictionary = SceneSettings.default_parameters()
+var effect_sliders: Dictionary = {}
+var effect_value_labels: Dictionary = {}
+var settings_tabs: TabContainer
+var setting_scrolls: Dictionary = {}
+var _tab_ids: Array[String] = ["environment", "dof", "glow", "clouds", "other"]
+var _saved_profile: Dictionary = {}
+var _settings_dirty := false
+var _settings_ready := false
+var _applying_profile := false
+# Cloud-only dictionaries remain available to existing tools and captures.
 var tuning_sliders: Dictionary = {}
 var tuning_value_labels: Dictionary = {}
 var tuning_reset_button: Button
@@ -36,7 +49,7 @@ var tuning_load_button: Button
 var tuning_status_label: Label
 var tuning_effect_label: Label
 var tuning_scroll: ScrollContainer
-var _cloud_tuning_note := "拖动即时预览；保存后下次启动沿用。"
+var _cloud_tuning_note := "修改即时预览；保存后下次启动自动沿用。"
 var _controls_before_tuning := true
 var values := {"normals":true, "bloom":true, "dof":true, "wind":true, "backdrop_normals":true, "parallax":true, "clouds":true, "atmosphere":true, "global_light":true}
 var time_preset := "day"
@@ -90,6 +103,8 @@ func _ready() -> void:
         set_feature(key, values[key])
     update_camera(true)
     backdrop.update_frame()
+    _settings_ready = true
+    _saved_profile = get_scene_settings()
     # Only a normal main-scene launch reads personal preferences. Script-based
     # tests/captures instantiate children and remain deterministic by default.
     call_deferred("_load_initial_cloud_tuning")
@@ -97,64 +112,131 @@ func _ready() -> void:
 
 func _load_initial_cloud_tuning() -> void:
     if cloud_settings_enabled and get_tree().current_scene == self and FileAccess.file_exists(settings_path):
-        load_cloud_tuning()
+        load_scene_settings()
 
 func set_cloud_contrast(value: float) -> void:
-    if not is_finite(value):
-        return
-    cloud_lighting.set_cloud_contrast(value)
-    _cloud_tuning_note = "已实时预览，点击「保存参数」后下次沿用。"
-    _refresh_cloud_tuning()
+    set_effect_parameter("cloud_contrast", value)
 
 func set_cloud_density(value: float) -> void:
-    if not is_finite(value):
-        return
-    cloud_lighting.set_cloud_density(value)
-    _cloud_tuning_note = "已实时预览，点击「保存参数」后下次沿用。"
-    _refresh_cloud_tuning()
+    set_effect_parameter("cloud_density", value)
 
 func reset_cloud_tuning() -> void:
-    cloud_lighting.reset_cloud_tuning()
-    _cloud_tuning_note = "已恢复默认：最大遮光 30%，密度 50%。"
+    set_cloud_contrast(0.30)
+    set_cloud_density(0.50)
+    _cloud_tuning_note = "云层已恢复默认；其他场景参数保持当前设置。"
     _refresh_cloud_tuning()
 
+# Compatibility entry points now persist the complete scene profile.
 func save_cloud_tuning() -> bool:
-    var config := ConfigFile.new()
-    config.set_value("clouds", "schema_version", 1)
-    config.set_value("clouds", "max_attenuation", cloud_lighting.contrast_strength)
-    config.set_value("clouds", "density", cloud_lighting.cloud_density)
-    var absolute := ProjectSettings.globalize_path(settings_path)
-    var error := DirAccess.make_dir_recursive_absolute(absolute.get_base_dir())
-    if error == OK:
-        error = config.save(absolute + ".tmp")
-    if error == OK:
-        error = DirAccess.rename_absolute(absolute + ".tmp", absolute)
-    _cloud_tuning_note = "参数已保存，下次启动会自动沿用。" if error == OK else "保存失败（%d）；当前预览仍然有效。" % error
-    _refresh_cloud_tuning()
-    return error == OK
+    return save_scene_settings()
 
 func load_cloud_tuning() -> bool:
-    var config := ConfigFile.new()
-    var error := config.load(settings_path)
-    if error != OK:
-        _cloud_tuning_note = "还没有保存的参数。" if error == ERR_FILE_NOT_FOUND else "读取失败（%d），保留当前参数。" % error
-        _refresh_cloud_tuning()
+    return load_scene_settings()
+
+func get_scene_settings() -> Dictionary:
+    var parameters := effect_parameters.duplicate(true)
+    parameters.cloud_contrast = cloud_lighting.contrast_strength
+    parameters.cloud_density = cloud_lighting.cloud_density
+    return {"schema_version": SceneSettings.SCHEMA_VERSION, "time_preset": time_preset,
+        "features": values.duplicate(true), "parameters": parameters}
+
+func set_effect_parameter(id: String, value: float) -> bool:
+    if not SceneSettings.PARAMETER_SPECS.has(id) or not is_finite(value):
         return false
-    var contrast: Variant = config.get_value("clouds", "max_attenuation", null)
-    var density: Variant = config.get_value("clouds", "density", null)
-    if config.get_value("clouds", "schema_version", 0) != 1 or typeof(contrast) not in [TYPE_FLOAT, TYPE_INT] or typeof(density) not in [TYPE_FLOAT, TYPE_INT]:
-        _cloud_tuning_note = "保存的参数格式无效，保留当前参数。"
-        _refresh_cloud_tuning()
-        return false
-    if not is_finite(float(contrast)) or not is_finite(float(density)):
-        _cloud_tuning_note = "保存的数值无效，保留当前参数。"
-        _refresh_cloud_tuning()
-        return false
-    cloud_lighting.set_cloud_contrast(float(contrast))
-    cloud_lighting.set_cloud_density(float(density))
-    _cloud_tuning_note = "已读取上次保存的云层参数。"
-    _refresh_cloud_tuning()
+    var spec: Dictionary = SceneSettings.PARAMETER_SPECS[id]
+    effect_parameters[id] = clampf(value, float(spec.min), float(spec.max))
+    _apply_effect_parameters(id)
+    _mark_settings_changed()
     return true
+
+func _apply_effect_parameters(changed_id: String = "") -> void:
+    if environment == null or not is_instance_valid(player):
+        return
+    if changed_id in ["", "cloud_contrast"]:
+        cloud_lighting.set_cloud_contrast(effect_parameters.cloud_contrast)
+    if changed_id in ["", "cloud_density"]:
+        cloud_lighting.set_cloud_density(effect_parameters.cloud_density)
+    if changed_id.is_empty() or changed_id.begins_with("glow_"):
+        environment.glow_intensity = effect_parameters.glow_intensity
+        environment.glow_strength = effect_parameters.glow_strength
+        environment.glow_bloom = effect_parameters.glow_bloom
+        environment.glow_hdr_threshold = effect_parameters.glow_hdr_threshold
+        environment.glow_hdr_scale = effect_parameters.glow_hdr_scale
+    if changed_id in ["", "exposure"]:
+        environment.tonemap_exposure = effect_parameters.exposure
+    if changed_id in ["", "contrast"]:
+        environment.adjustment_contrast = effect_parameters.contrast
+    if changed_id in ["", "saturation"]:
+        environment.adjustment_saturation = effect_parameters.saturation
+    if changed_id in ["", "fog_density_scale"]:
+        environment.fog_density = (0.0015 if time_preset == "day" else 0.0023) * effect_parameters.fog_density_scale
+        environment.volumetric_fog_density = (0.0030 if time_preset == "day" else 0.0038) * effect_parameters.fog_density_scale
+    if changed_id in ["", "wind_strength"]:
+        world.set_vegetation_wind(effect_parameters.wind_strength if values.wind else 0.0)
+    if changed_id in ["", "parallax_strength"]:
+        backdrop.parallax_strength = effect_parameters.parallax_strength
+        backdrop.update_frame()
+    if changed_id in ["", "sun_variation", "ambient_variation"]:
+        global_lighting.set_amplitudes(effect_parameters.sun_variation, effect_parameters.ambient_variation)
+        cloud_lighting.sync_sun_lights()
+    if changed_id.is_empty() or changed_id.begins_with("dof_"):
+        update_focus()
+
+func _mark_settings_changed() -> void:
+    if not _settings_ready or _applying_profile:
+        return
+    _settings_dirty = get_scene_settings() != _saved_profile
+    _cloud_tuning_note = "已实时预览；点击「保存参数」记录全部效果。" if _settings_dirty else "当前参数与已保存设置一致。"
+    refresh_hud()
+
+func apply_scene_settings(profile: Dictionary) -> bool:
+    # Validate the complete document before touching any live scene property.
+    var checked: Dictionary = SceneSettings.normalize_profile(profile)
+    if not checked.ok:
+        _cloud_tuning_note = "参数格式无效，保留当前效果。"
+        refresh_hud()
+        return false
+    var normalized: Dictionary = checked.profile
+    _applying_profile = true
+    effect_parameters = normalized.parameters.duplicate(true)
+    for id in normalized.features:
+        set_feature(id, normalized.features[id])
+    set_time_preset(normalized.time_preset)
+    _applying_profile = false
+    _mark_settings_changed()
+    refresh_hud()
+    return true
+
+func save_scene_settings() -> bool:
+    var profile := get_scene_settings()
+    var result: Dictionary = SceneSettings.write_profile(settings_path, profile)
+    if result.ok:
+        _saved_profile = profile.duplicate(true)
+        _settings_dirty = false
+        _cloud_tuning_note = "全部参数已保存，下次启动自动恢复。"
+    else:
+        _cloud_tuning_note = "保存失败（%d）；当前预览和原存档保留。" % result.error_code
+    refresh_hud()
+    return bool(result.ok)
+
+func load_scene_settings() -> bool:
+    var result: Dictionary = SceneSettings.read_profile(settings_path)
+    if not result.ok:
+        _cloud_tuning_note = "还没有保存的参数。" if result.error_code == ERR_FILE_NOT_FOUND else "参数读取失败，保留当前效果。"
+        refresh_hud()
+        return false
+    if not apply_scene_settings(result.profile):
+        return false
+    _saved_profile = get_scene_settings()
+    _settings_dirty = false
+    _cloud_tuning_note = "已沿用旧云层存档；再次保存将包含全部效果。" if result.legacy else "已读取保存的全部场景参数。"
+    refresh_hud()
+    return true
+
+func reset_scene_settings() -> void:
+    apply_scene_settings(SceneSettings.default_profile())
+    _cloud_tuning_note = "已恢复全部默认效果；保存后替换之前的设置。"
+    _refresh_cloud_tuning()
 
 func create_lighting() -> void:
     # Large cloud penumbras need enough native PCSS samples to stay smooth.
@@ -247,6 +329,9 @@ func set_time_preset(id: String) -> bool:
         lamp.visible = id == "dusk"
     for material in world.lamp_glass_materials:
         material.emission_energy_multiplier = 4.0 if id == "dusk" else .3
+    # Presets provide color and base lighting; personal strengths survive them.
+    _apply_effect_parameters()
+    _mark_settings_changed()
     refresh_hud()
     return true
 
@@ -260,13 +345,14 @@ func set_feature(id: String, enabled: bool) -> bool:
         "dof":
             attributes.dof_blur_far_enabled = enabled
             attributes.dof_blur_near_enabled = enabled
-        "wind": world.set_vegetation_wind(.06 if enabled else 0.0)
+        "wind": world.set_vegetation_wind(effect_parameters.wind_strength if enabled else 0.0)
         "backdrop_normals": backdrop.set_normals(enabled)
         "parallax": backdrop.set_parallax(enabled)
         "clouds": cloud_lighting.set_enabled(enabled)
         "atmosphere": cloud_lighting.set_atmosphere_enabled(enabled)
         "global_light": global_lighting.set_enabled(enabled)
     cloud_lighting.sync_sun_lights()
+    _mark_settings_changed()
     refresh_hud()
     return true
 
@@ -288,13 +374,13 @@ func update_focus() -> void:
     # DoF distances are view-space depth, not radial distance. A full billboard
     # occupies one depth plane, so this protects the entire original silhouette.
     var focus_distance := -camera.to_local(player.global_position).z
-    attributes.dof_blur_near_distance = maxf(1.0,focus_distance - 5.0)
-    attributes.dof_blur_near_transition = 3.0
+    attributes.dof_blur_near_distance = maxf(1.0,focus_distance - float(effect_parameters.dof_near_margin))
+    attributes.dof_blur_near_transition = effect_parameters.dof_near_transition
     # Fine vegetation clusters remain readable through the middle forest rows;
     # a longer, gentler falloff separates distant planes without erasing pixels.
-    attributes.dof_blur_far_distance = focus_distance + 10.0
-    attributes.dof_blur_far_transition = 16.0
-    attributes.dof_blur_amount = .035
+    attributes.dof_blur_far_distance = focus_distance + float(effect_parameters.dof_far_margin)
+    attributes.dof_blur_far_transition = effect_parameters.dof_far_transition
+    attributes.dof_blur_amount = effect_parameters.dof_amount
 
 func _process(delta: float) -> void:
     if not frozen:
@@ -336,7 +422,7 @@ func _input(event: InputEvent) -> void:
 
 func _release_tuning_focus() -> void:
     var focus := get_viewport().gui_get_focus_owner()
-    if focus != null and tuning_sliders.values().has(focus):
+    if focus != null and effect_sliders.values().has(focus):
         focus.release_focus()
 
 func _on_tuning_focus_entered() -> void:
@@ -437,103 +523,7 @@ func create_hud() -> void:
     hints.add_theme_constant_override("shadow_offset_x",2)
     hints.add_theme_constant_override("shadow_offset_y",2)
     root_control.add_child(hints)
-    panel = PanelContainer.new()
-    panel.name = "CloudEffectsPanel"
-    var style := StyleBoxFlat.new()
-    style.bg_color = Color(.035,.065,.05,.91)
-    style.content_margin_left = 18
-    style.content_margin_right = 18
-    style.content_margin_top = 12
-    style.content_margin_bottom = 12
-    style.set_corner_radius_all(8)
-    panel.add_theme_stylebox_override("panel",style)
-    root_control.add_child(panel)
-    tuning_scroll = ScrollContainer.new()
-    tuning_scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
-    tuning_scroll.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-    tuning_scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
-    panel.add_child(tuning_scroll)
-    var stack := VBoxContainer.new()
-    stack.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-    stack.add_theme_constant_override("separation",8)
-    tuning_scroll.add_child(stack)
-    var heading := HBoxContainer.new()
-    stack.add_child(heading)
-    var heading_label := Label.new()
-    heading_label.text = "云层调节"
-    heading_label.add_theme_font_size_override("font_size",24)
-    heading_label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-    heading.add_child(heading_label)
-    var hide_button := Button.new()
-    hide_button.text = "收起 M"
-    hide_button.focus_mode = Control.FOCUS_NONE
-    hide_button.pressed.connect(set_control_panel_visible.bind(false))
-    heading.add_child(hide_button)
-    var instruction := Label.new()
-    instruction.text = "拖动即时生效 · 点击场景或按 WASD 继续行走"
-    instruction.add_theme_font_size_override("font_size",14)
-    instruction.add_theme_color_override("font_color",Color(.72,.81,.76))
-    instruction.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-    stack.add_child(instruction)
-    _add_cloud_slider(stack,"contrast","透光对比 · 最大遮光",80.0)
-    tuning_effect_label = Label.new()
-    tuning_effect_label.add_theme_font_size_override("font_size",15)
-    tuning_effect_label.add_theme_color_override("font_color",Color(.88,.83,.63))
-    tuning_effect_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-    stack.add_child(tuning_effect_label)
-    _add_cloud_slider(stack,"density","云层密度",100.0)
-    var density_hint := Label.new()
-    density_hint.text = "0% 无云 · 50% 默认分布 · 100% 满布"
-    density_hint.add_theme_font_size_override("font_size",14)
-    density_hint.add_theme_color_override("font_color",Color(.72,.81,.76))
-    stack.add_child(density_hint)
-    var tuning_buttons := HBoxContainer.new()
-    tuning_buttons.add_theme_constant_override("separation",8)
-    stack.add_child(tuning_buttons)
-    tuning_save_button = _tuning_action(tuning_buttons,"保存参数",save_cloud_tuning)
-    tuning_load_button = _tuning_action(tuning_buttons,"读取已保存",load_cloud_tuning)
-    tuning_reset_button = _tuning_action(tuning_buttons,"恢复默认",reset_cloud_tuning)
-    tuning_status_label = Label.new()
-    tuning_status_label.add_theme_font_size_override("font_size",14)
-    tuning_status_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-    stack.add_child(tuning_status_label)
-    stack.add_child(HSeparator.new())
-    var row := HBoxContainer.new()
-    row.add_theme_constant_override("separation",10)
-    stack.add_child(row)
-    for pair in [["day","日光"],["dusk","黄昏"]]:
-        var button := Button.new()
-        button.text = pair[1]
-        button.toggle_mode = true
-        button.focus_mode = Control.FOCUS_NONE
-        button.pressed.connect(set_time_preset.bind(pair[0]))
-        row.add_child(button)
-        time_buttons[pair[0]] = button
-    var route_button := Button.new()
-    route_button.text = "自动游览 (G)"
-    route_button.focus_mode = Control.FOCUS_NONE
-    route_button.pressed.connect(func():
-        if route_running: stop_route()
-        else: start_route())
-    row.add_child(route_button)
-    var features := GridContainer.new()
-    features.columns = 2
-    features.add_theme_constant_override("h_separation",8)
-    features.add_theme_constant_override("v_separation",2)
-    stack.add_child(features)
-    for pair in [["clouds","流动云影 H"],["global_light","全局光变 J"],["atmosphere","体积光 L"],["bloom","辉光 B"],["backdrop_normals","雪山法线 R"],["parallax","远景视差 P"],["normals","地面法线 N"],["dof","景深 O"],["wind","草木微风 V"]]:
-        var toggle := CheckButton.new()
-        toggle.text = pair[1]
-        toggle.focus_mode = Control.FOCUS_NONE
-        toggle.add_theme_font_size_override("font_size",16)
-        toggle.button_pressed = values[pair[0]]
-        toggle.toggled.connect(func(enabled: bool): set_feature(pair[0],enabled))
-        features.add_child(toggle)
-        feature_buttons[pair[0]] = toggle
-    status_label = Label.new()
-    status_label.add_theme_font_size_override("font_size",14)
-    status_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-    stack.add_child(status_label)
+    preload("res://scripts/forest_hamlet/settings_panel.gd").build(self, root_control)
     exit_confirmation = ConfirmationDialog.new()
     exit_confirmation.title = "退出场景"
     exit_confirmation.dialog_text = "要退出林间小村吗？"
@@ -543,69 +533,40 @@ func create_hud() -> void:
     _layout_control_panel()
     _refresh_cloud_tuning()
 
-func _tuning_action(parent: HBoxContainer, title: String, action: Callable) -> Button:
-    var button := Button.new()
-    button.text = title
-    button.focus_mode = Control.FOCUS_NONE
-    button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-    button.add_theme_font_size_override("font_size",16)
-    button.pressed.connect(action)
-    parent.add_child(button)
-    return button
-
-func _add_cloud_slider(parent: VBoxContainer, id: String, title: String, maximum: float) -> void:
-    var row := HBoxContainer.new()
-    parent.add_child(row)
-    var label := Label.new()
-    label.text = title
-    label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-    row.add_child(label)
-    var value_label := Label.new()
-    value_label.custom_minimum_size.x = 60.0
-    value_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
-    value_label.add_theme_color_override("font_color",Color(.93,.85,.55))
-    row.add_child(value_label)
-    tuning_value_labels[id] = value_label
-    var slider := HSlider.new()
-    slider.name = "CloudContrast" if id == "contrast" else "CloudDensity"
-    slider.min_value = 0.0
-    slider.max_value = maximum
-    slider.step = 1.0
-    slider.custom_minimum_size = Vector2(160,28)
-    slider.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-    slider.tick_count = 5
-    slider.ticks_on_borders = true
-    slider.focus_entered.connect(_on_tuning_focus_entered)
-    slider.focus_exited.connect(_on_tuning_focus_exited)
-    slider.value_changed.connect(func(value: float):
-        if id == "contrast":
-            set_cloud_contrast(value / 100.0)
-        else:
-            set_cloud_density(value / 100.0))
-    parent.add_child(slider)
-    tuning_sliders[id] = slider
+func select_settings_tab(id: String) -> bool:
+    var index := _tab_ids.find(id)
+    if index < 0 or not is_instance_valid(settings_tabs):
+        return false
+    _release_tuning_focus()
+    settings_tabs.current_tab = index
+    return true
 
 func _layout_control_panel() -> void:
     if not is_instance_valid(panel):
         return
     var viewport_size := get_viewport().get_visible_rect().size
-    var width := minf(450.0, maxf(280.0, viewport_size.x - 48.0))
+    var width := minf(470.0, maxf(280.0, viewport_size.x - 48.0))
     panel.position = Vector2(maxf(12.0,viewport_size.x - width - 24.0),80.0)
-    panel.size = Vector2(width,maxf(240.0,minf(670.0,viewport_size.y - 148.0)))
+    panel.size = Vector2(width,maxf(240.0,minf(760.0,viewport_size.y - 148.0)))
 
 func _refresh_cloud_tuning() -> void:
-    if tuning_sliders.is_empty():
+    if effect_sliders.is_empty():
         return
+    for id in effect_sliders:
+        var value: float = effect_parameters[id]
+        if id == "cloud_contrast":
+            value = cloud_lighting.contrast_strength
+        elif id == "cloud_density":
+            value = cloud_lighting.cloud_density
+        var scale := 100.0 if id in ["cloud_contrast", "cloud_density"] else 1.0
+        effect_sliders[id].set_value_no_signal(value * scale)
+        effect_value_labels[id].text = preload("res://scripts/forest_hamlet/settings_panel.gd").value_text(id, value)
     var contrast := float(cloud_lighting.contrast_strength)
-    var density := float(cloud_lighting.cloud_density)
-    tuning_sliders.contrast.set_value_no_signal(contrast * 100.0)
-    tuning_sliders.density.set_value_no_signal(density * 100.0)
-    tuning_value_labels.contrast.text = "%d%%" % roundi(contrast * 100.0)
-    tuning_value_labels.density.text = "%d%%" % roundi(density * 100.0)
     if is_instance_valid(tuning_effect_label):
-        tuning_effect_label.text = "薄云遮光 %.1f%% · 厚云遮光 %d%%\n厚云保留 %d%% 直射光" % [contrast * 100.0 / 3.0,roundi(contrast * 100.0),roundi((1.0 - contrast) * 100.0)]
+        tuning_effect_label.text = ("薄云遮光 %.1f%% · 厚云遮光 %d%%\n厚云保留 %d%% 直射光" % [contrast * 100.0 / 3.0,roundi(contrast * 100.0),roundi((1.0 - contrast) * 100.0)]) if values.clouds else "云影已关闭；开启后沿用当前参数。"
     if is_instance_valid(tuning_status_label):
-        tuning_status_label.text = _cloud_tuning_note if values.clouds else "云影已关闭（H），参数会在开启后生效。"
+        tuning_status_label.text = ("● 未保存 · " if _settings_dirty else "") + _cloud_tuning_note
+        tuning_status_label.add_theme_color_override("font_color", Color(.93,.85,.55) if _settings_dirty else Color(.72,.81,.76))
 
 func refresh_hud() -> void:
     if not is_instance_valid(status_label):
@@ -655,4 +616,4 @@ func framing_state() -> Dictionary:
     return {"silhouette_rect":[rect.position.x / viewport_size.x, rect.position.y / viewport_size.y, rect.size.x / viewport_size.x, rect.size.y / viewport_size.y], "foot":[foot.x,foot.y], "view_depth":depth, "dof_near":attributes.dof_blur_near_distance, "dof_far":attributes.dof_blur_far_distance, "in_frame":Rect2(Vector2(12,12),viewport_size - Vector2(24,24)).encloses(rect), "camera_offset_length":CAMERA_OFFSET.length(), "fov":camera.fov, "pitch_degrees":-camera.rotation_degrees.x, "pixel_size":player.sprite.pixel_size}
 
 func snapshot_state() -> Dictionary:
-    return {"preset":time_preset,"features":values.duplicate(true),"player":[player.position.x,player.position.y,player.position.z],"camera":[camera.position.x,camera.position.y,camera.position.z],"normal_directions":player.normal_atlases.size(),"original_color_directions":player.color_atlases.size(),"route_running":route_running,"route_index":route_index,"framing":framing_state(),"tree_visibility":visibility_guard.snapshot(),"backdrop":backdrop.snapshot(),"clouds":cloud_lighting.snapshot(),"global_light":global_lighting.snapshot(),"glow":{"enabled":environment.glow_enabled,"intensity":environment.glow_intensity,"strength":environment.glow_strength,"threshold":environment.glow_hdr_threshold,"bloom":environment.glow_bloom}}
+    return {"preset":time_preset,"features":values.duplicate(true),"player":[player.position.x,player.position.y,player.position.z],"camera":[camera.position.x,camera.position.y,camera.position.z],"normal_directions":player.normal_atlases.size(),"original_color_directions":player.color_atlases.size(),"route_running":route_running,"route_index":route_index,"framing":framing_state(),"tree_visibility":visibility_guard.snapshot(),"backdrop":backdrop.snapshot(),"clouds":cloud_lighting.snapshot(),"global_light":global_lighting.snapshot(),"glow":{"enabled":environment.glow_enabled,"intensity":environment.glow_intensity,"strength":environment.glow_strength,"threshold":environment.glow_hdr_threshold,"bloom":environment.glow_bloom,"hdr_scale":environment.glow_hdr_scale},"scene_settings":get_scene_settings(),"settings_dirty":_settings_dirty,"dof":{"amount":attributes.dof_blur_amount,"near_transition":attributes.dof_blur_near_transition,"far_transition":attributes.dof_blur_far_transition}}

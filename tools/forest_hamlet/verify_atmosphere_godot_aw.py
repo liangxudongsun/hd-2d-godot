@@ -16,7 +16,7 @@ import subprocess
 
 from register_vgp import decode, digest, freeze_json, installed_cli
 from process_atmosphere_aw import DEFAULT_RUN, NATIVE_TOOL_SOURCES, ensure_config, freeze_text, safe_id
-from atmosphere_workflow_profiles import native_test_spec, profile_spec
+from atmosphere_workflow_profiles import PROFILE_NAMES, native_test_spec, profile_spec
 
 
 COPY_ROOTS = ("assets", "scripts", "scenes", "shaders", "tests")
@@ -65,7 +65,7 @@ def verify_rows(root: Path, project: Path, rows: list[dict]) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--project", type=Path, default=Path.cwd())
-    parser.add_argument("--profile", choices=["atmosphere", "cloud-tuning"], default="atmosphere")
+    parser.add_argument("--profile", choices=PROFILE_NAMES, default="atmosphere")
     parser.add_argument("--run-id")
     parser.add_argument("--snapshot-id")
     parser.add_argument("--config")

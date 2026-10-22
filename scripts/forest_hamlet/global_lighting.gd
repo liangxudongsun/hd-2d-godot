@@ -22,6 +22,8 @@ var sun_base_energy := 1.45
 var ambient_base_energy := 0.55
 var sun_multiplier := 1.0
 var ambient_multiplier := 1.0
+var sun_amplitude := SUN_AMPLITUDE
+var ambient_amplitude := AMBIENT_AMPLITUDE
 
 var _sun_noise: Array[FastNoiseLite] = []
 var _ambient_noise: Array[FastNoiseLite] = []
@@ -71,8 +73,8 @@ func _apply() -> void:
     sun_multiplier = 1.0
     ambient_multiplier = 1.0
     if enabled and clock_seconds > 0.0:
-        sun_multiplier += SUN_AMPLITUDE * _channel_signal(_sun_noise, _sun_origins, SUN_SCALES_SECONDS, clock_seconds)
-        ambient_multiplier += AMBIENT_AMPLITUDE * _channel_signal(_ambient_noise, _ambient_origins, AMBIENT_SCALES_SECONDS, clock_seconds)
+        sun_multiplier += sun_amplitude * _channel_signal(_sun_noise, _sun_origins, SUN_SCALES_SECONDS, clock_seconds)
+        ambient_multiplier += ambient_amplitude * _channel_signal(_ambient_noise, _ambient_origins, AMBIENT_SCALES_SECONDS, clock_seconds)
     if is_instance_valid(sun):
         sun.light_energy = sun_base_energy * sun_multiplier
     if environment != null:
@@ -80,6 +82,15 @@ func _apply() -> void:
 
 func set_enabled(value: bool) -> void:
     enabled = value
+    _apply()
+
+func set_amplitudes(sun_value: float, ambient_value: float) -> void:
+    # Validate both inputs before changing either channel. Tuning never changes
+    # the noise seed, phase, independent clock, or current preset baseline.
+    if not is_finite(sun_value) or not is_finite(ambient_value):
+        return
+    sun_amplitude = clampf(sun_value, 0.0, 0.5)
+    ambient_amplitude = clampf(ambient_value, 0.0, 0.3)
     _apply()
 
 func set_motion_enabled(value: bool) -> void:
@@ -115,8 +126,10 @@ func snapshot() -> Dictionary:
         "ambient_multiplier": ambient_multiplier,
         "sun_energy": sun.light_energy if is_instance_valid(sun) else 0.0,
         "ambient_energy": environment.ambient_light_energy if environment != null else 0.0,
-        "sun_multiplier_bounds": [1.0 - SUN_AMPLITUDE, 1.0 + SUN_AMPLITUDE],
-        "ambient_multiplier_bounds": [1.0 - AMBIENT_AMPLITUDE, 1.0 + AMBIENT_AMPLITUDE],
+        "sun_amplitude": sun_amplitude,
+        "ambient_amplitude": ambient_amplitude,
+        "sun_multiplier_bounds": [1.0 - sun_amplitude, 1.0 + sun_amplitude],
+        "ambient_multiplier_bounds": [1.0 - ambient_amplitude, 1.0 + ambient_amplitude],
         "sun_component_seconds": SUN_SCALES_SECONDS.duplicate(),
         "ambient_component_seconds": AMBIENT_SCALES_SECONDS.duplicate(),
         "component_weights": COMPONENT_WEIGHTS.duplicate(),

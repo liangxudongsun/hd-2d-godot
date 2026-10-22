@@ -147,3 +147,16 @@ forest-close-run:
 
 forest-close-test:
 	$(PYTHON) tools/forest_hamlet/run.py test-close --output build/forest-hamlet/close-runtime
+
+# Full scene settings r5; older cloud-tuning commands and evidence stay separate.
+FOREST_SCENE_SETTINGS_OUTPUT ?= build/forest-hamlet/scene-settings-r5-final
+.PHONY: forest-scene-settings-test forest-scene-settings-capture forest-scene-settings-check forest-scene-settings-aw forest-scene-settings-vgp forest-scene-settings-archive
+forest-scene-settings-test forest-scene-settings-capture forest-scene-settings-check:
+	$(PYTHON) tools/forest_hamlet/run_scene_settings.py $(patsubst forest-scene-settings-%,%,$@) --output $(FOREST_SCENE_SETTINGS_OUTPUT)
+forest-scene-settings-aw:
+	$(PYTHON) tools/forest_hamlet/verify_atmosphere_godot_aw.py --profile scene-settings
+	$(PYTHON) tools/forest_hamlet/process_atmosphere_aw.py --profile scene-settings --evidence-dir $(FOREST_SCENE_SETTINGS_OUTPUT)
+forest-scene-settings-vgp:
+	$(PYTHON) tools/forest_hamlet/register_atmosphere_vgp.py --profile scene-settings --previous-run-id forest-hamlet-20261022-cloud-tuning-r4
+forest-scene-settings-archive:
+	$(PYTHON) tools/forest_hamlet/archive_cloud_tuning_evidence.py --profile scene-settings --evidence-dir $(FOREST_SCENE_SETTINGS_OUTPUT)

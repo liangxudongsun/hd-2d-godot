@@ -18,7 +18,7 @@ import zipfile
 from PIL import Image
 
 from register_vgp import decode, digest, freeze_json, installed_cli
-from atmosphere_workflow_profiles import cloud_tuning_evidence, native_test_spec, profile_spec
+from atmosphere_workflow_profiles import PROFILE_NAMES, cloud_tuning_evidence, scene_settings_evidence, native_test_spec, profile_spec
 
 
 DEFAULT_RUN = "forest-hamlet-20261022-atmosphere-r3"
@@ -110,6 +110,16 @@ def ensure_config(root: Path, relative: str = "art/inputs/forest-hamlet/atmosphe
     text = CONFIG_TEXT
     if profile == "cloud-tuning":
         text += "cloud_tuning_scope:\n  contrast: Live attenuation from 0 to 80 percent as subsequently requested by the user; default 30 percent retains the earlier thin 10 / thick 30 behavior.\n  density: Independent continuous coverage and thickness distribution with the original noise seed and default midpoint preserved.\n  lighting: Dynamic native sun branches retain at least 20 percent direct sunlight at the requested maximum.\n  controls: Chinese runtime sliders, values, reset, and local settings persistence.\n  verification: Focused actual GPU UI/input evidence; earlier r3 radiometry and route captures remain historical.\n"
+    if profile == "scene-settings":
+        text += """scene_settings_scope:
+  controls: Chinese five-section live scene settings for native DOF, Glow, environment, clouds and other existing effects; 20 numeric controls, nine effect switches and day/dusk.
+  persistence: Explicit atomic full-profile save/load/reset; normal scene start restores saved values, while live previews never write user preferences automatically.
+  compatibility: Preserve existing runtime APIs and defaults; read-only migration of schema-1 cloud settings, including saved contrast 0.7 and density 0.48, with explicit save upgrading to scene schema 2.
+  assets: Preserve the exact r4 runtime asset file set and bytes, the original snow master, original character and unchanged scene composition.
+  verification: Source-bound headless runtime and actual Forward+ GPU effect/input/layout evidence; independent complete verification-source fingerprint and r4 asset comparison.
+  lineage: Append a concept_design pending_review successor to the existing r4 snow-atmosphere Asset and review round; create no aesthetic decisions or stage admissions.
+  historical_evidence: Earlier r3 radiometry and route captures and all r4 records remain unchanged and are not claimed as rerun by this focused profile.
+"""
     freeze_text(config, text)
     return config
 
@@ -125,6 +135,8 @@ def relative_file(root: Path, path: Path) -> str:
 def evidence_files(root: Path, destination: Path, profile: str = "atmosphere") -> tuple[list[Path], dict]:
     if profile == "cloud-tuning":
         return cloud_tuning_evidence(root, destination)
+    if profile == "scene-settings":
+        return scene_settings_evidence(root, destination)
     paths = []
     reports = {}
     for name in REPORT_NAMES:
@@ -371,7 +383,7 @@ def verify_delivery_archive(root: Path, directory: Path, selected: list[dict], n
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--project", type=Path, default=Path.cwd())
-    parser.add_argument("--profile", choices=["atmosphere", "cloud-tuning"], default="atmosphere")
+    parser.add_argument("--profile", choices=PROFILE_NAMES, default="atmosphere")
     parser.add_argument("--run-id")
     parser.add_argument("--evidence-dir")
     parser.add_argument("--config")
@@ -383,7 +395,8 @@ def main() -> None:
     args.run_id = args.run_id or spec["run_id"]
     args.evidence_dir = args.evidence_dir or spec["evidence_dir"]
     args.config = args.config or spec["config"]
-    runtime_sources = (*RUNTIME_DELIVERY_SOURCES, *spec["extra_sources"])
+    args.extra_evidence = list(dict.fromkeys([*spec.get("extra_evidence", ()), *args.extra_evidence]))
+    runtime_sources = tuple(dict.fromkeys((*RUNTIME_DELIVERY_SOURCES, *spec["extra_sources"])))
     safe_id(args.run_id)
     root = args.project.resolve()
     config = ensure_config(root, args.config, args.profile)
@@ -424,7 +437,8 @@ def main() -> None:
         "basis": "User selected the simplified snow mountain illustration by asking to add this distant view to the existing game scene with normal-based lighting, overhead occlusion and Glow.",
         "quoted_instruction": "刚才的游戏场景加入远景，并使用法线模拟光照；同时，在天空增加遮挡，使得环境光照强度不均匀的洒落到场景物品中，营造一种场景光线有胴体啊的感觉，通过给世界环境增加 glow 效果，有光晕的效果。",
         "interpretation": "Implement moving cloud illumination with bounded partial attenuation plus independently controllable irregular global light variation; preserve the selected distant-only soft snow image.",
-        "additional_scope": ("Live cloud transmission contrast from 0 to 80 percent attenuation and independent density controls, Chinese sliders and values, reset and local settings persistence; default thin 10 percent / thick 30 percent attenuation remains, while the user subsequently authorized an adjustable maximum of 80 percent. Dynamic native sun branches retain a 20 percent direct-light floor at that maximum. Earlier r3 evidence is preserved."
+        "additional_scope": ("Live full-scene controls for DOF, Glow, day/dusk, environment, clouds and other existing effects; explicit full-profile atomic save/load/reset and automatic restore at normal startup; read-only legacy cloud-settings migration. Original runtime APIs, defaults, art, camera and actor remain compatible. Earlier r4 and r3 evidence is preserved."
+                             if args.profile == "scene-settings" else "Live cloud transmission contrast from 0 to 80 percent attenuation and independent density controls, Chinese sliders and values, reset and local settings persistence; default thin 10 percent / thick 30 percent attenuation remains, while the user subsequently authorized an adjustable maximum of 80 percent. Dynamic native sun branches retain a 20 percent direct-light floor at that maximum. Earlier r3 evidence is preserved."
                              if args.profile == "cloud-tuning" else "The latest cloud-lighting revision requires partial rather than opaque cloud attenuation. Earlier evidence is preserved; this r3 run verifies the revised illumination while retaining independent global light variation."),
         **({"tuning_instruction": "云的透光对比改为可调，云的密度改为可调，我需要亲自调整效果", "subsequent_parameter_requirement": "User subsequently requested a maximum cloud attenuation of 80 percent."} if args.profile == "cloud-tuning" else {}),
         "selection": "selected", "human_aesthetic_approval": "pending",
@@ -582,7 +596,8 @@ def main() -> None:
             "art": {"status": "pending", "evidence": ["User aesthetic review remains separate from technical checks."]},
             "integration": {"status": "integrated", "evidence": [report_paths[2], (evidence / "runtime-fingerprint.json").relative_to(root).as_posix()]}},
         "aw_delivery_scope": "Only selected frozen-run files, including validation-tool source copies; AW executes the declared headless runtime test, not the external GPU capture or Python pixel-analysis tools. See aw_delivery_files for ZIP mappings.",
-        "independent_closure_scope": ("Project SHA256 freeze of original art, authored normals, focused live-control/UI GPU evidence and provenance; nine original PNGs and three focused reports, including the user-requested 80 percent attenuation setting. This does not repeat or replace r3 physical-route or calibrated radiometry evidence. External GPU results are not native AW-rendered or AW-verified GPU output."
+        "independent_closure_scope": ("Project SHA256 freeze of complete runtime and validation/workflow sources, unchanged original r4 assets, full-scene live controls, persistence/legacy migration and actual GPU/UI evidence; fifteen original PNGs and three focused reports. The dedicated runtime suite records its own physical-route regression; earlier GPU route captures and calibrated radiometry remain historical. External GPU results are not native AW-rendered or AW-verified GPU output."
+                                     if args.profile == "scene-settings" else "Project SHA256 freeze of original art, authored normals, focused live-control/UI GPU evidence and provenance; nine original PNGs and three focused reports, including the user-requested 80 percent attenuation setting. This does not repeat or replace r3 physical-route or calibrated radiometry evidence. External GPU results are not native AW-rendered or AW-verified GPU output."
                                      if args.profile == "cloud-tuning" else "Project SHA256 freeze of original art, authored normal rig, all 26 original GPU PNGs, six reports and provenance. Cloud transmission uses calibrated inverse-sRGB estimates after LINEAR tonemapping, not raw HDR. External GPU results are not native AW-rendered or AW-verified GPU output."),
         "note": "Native AW godot.verify ran the headless runtime test. Native delivery export/verify packaged and verified selected frozen-run inputs. External GPU evidence was separately captured and checked. No image generation, normal generation or aesthetic approval is attributed to AW."
     }

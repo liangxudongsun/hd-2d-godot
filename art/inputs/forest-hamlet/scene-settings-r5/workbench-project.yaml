@@ -1,0 +1,35 @@
+schema_version: 1
+confirmed: true
+references: []
+art:
+  style: Soft HD2D distant snow panorama; reduced high-frequency detail
+  projection: perspective
+  texture_filter: linear-background / nearest-near
+  alpha_policy: opaque
+  palette:
+    mode: per-asset
+resolution:
+  logical_canvas: [1983, 793]
+  engine_viewport: [1920, 1080]
+  display_scale: 1
+domains:
+  godot:
+    enabled: true
+    engine_version: 4.7.2
+forest_hamlet_scope:
+  specification_basis: User selected the revised distant snow illustration and requested normal relighting, moving clouds with bounded partial light attenuation, independent irregular global light variation and WorldEnvironment Glow.
+  source_size: [1983, 793]
+  source_color_policy: Preserve original PNG bytes; no palette mapping or resampling.
+  near_texture_filter: nearest
+  background_texture_filter: linear
+  normal_policy: Authored low-frequency geometric normals; no color-brightness height conversion.
+  aesthetic_approval: pending
+  confirmation_scope: Existing task and style authorization only; no user aesthetic acceptance or VGP decision is created.
+scene_settings_scope:
+  controls: Chinese five-section live scene settings for native DOF, Glow, environment, clouds and other existing effects; 20 numeric controls, nine effect switches and day/dusk.
+  persistence: Explicit atomic full-profile save/load/reset; normal scene start restores saved values, while live previews never write user preferences automatically.
+  compatibility: Preserve existing runtime APIs and defaults; read-only migration of schema-1 cloud settings, including saved contrast 0.7 and density 0.48, with explicit save upgrading to scene schema 2.
+  assets: Preserve the exact r4 runtime asset file set and bytes, the original snow master, original character and unchanged scene composition.
+  verification: Source-bound headless runtime and actual Forward+ GPU effect/input/layout evidence; independent complete verification-source fingerprint and r4 asset comparison.
+  lineage: Append a concept_design pending_review successor to the existing r4 snow-atmosphere Asset and review round; create no aesthetic decisions or stage admissions.
+  historical_evidence: Earlier r3 radiometry and route captures and all r4 records remain unchanged and are not claimed as rerun by this focused profile.

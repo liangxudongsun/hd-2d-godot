@@ -1,0 +1,604 @@
+{
+  "schema": 1,
+  "passed": true,
+  "checks": [
+    {
+      "label": "runtime controls persistence startup and full original physics route passed",
+      "passed": true
+    },
+    {
+      "label": "every capture contract ran on actual Forward Plus hardware",
+      "passed": true
+    },
+    {
+      "label": "exact fifteen original effect persistence section and input frames exist",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-dof-off.png: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-dof-off.png: read-back contains a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-dof-off.png: captured profile is complete",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-dof-off.png: camera actor and independent clocks stay fixed",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-dof-off.png: unchanged actor depth stays strictly inside the edited focus interval",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-dof-strong.png: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-dof-strong.png: read-back contains a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-dof-strong.png: captured profile is complete",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-dof-strong.png: camera actor and independent clocks stay fixed",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-dof-strong.png: unchanged actor depth stays strictly inside the edited focus interval",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-glow-off.png: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-glow-off.png: read-back contains a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-glow-off.png: captured profile is complete",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-glow-off.png: camera actor and independent clocks stay fixed",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-glow-off.png: unchanged actor depth stays strictly inside the edited focus interval",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-glow-strong.png: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-glow-strong.png: read-back contains a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-glow-strong.png: captured profile is complete",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-glow-strong.png: camera actor and independent clocks stay fixed",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-glow-strong.png: unchanged actor depth stays strictly inside the edited focus interval",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-dusk-saved.png: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-dusk-saved.png: read-back contains a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-dusk-saved.png: captured profile is complete",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-dusk-saved.png: camera actor and independent clocks stay fixed",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-dusk-saved.png: unchanged actor depth stays strictly inside the edited focus interval",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-dusk-restored.png: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-dusk-restored.png: read-back contains a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-dusk-restored.png: captured profile is complete",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-dusk-restored.png: camera actor and independent clocks stay fixed",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-dusk-restored.png: unchanged actor depth stays strictly inside the edited focus interval",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-environment-1080.png: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-environment-1080.png: read-back contains a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-environment-1080.png: captured profile is complete",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-environment-1080.png: camera actor and independent clocks stay fixed",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-environment-1080.png: unchanged actor depth stays strictly inside the edited focus interval",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-dof-1080.png: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-dof-1080.png: read-back contains a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-dof-1080.png: captured profile is complete",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-dof-1080.png: camera actor and independent clocks stay fixed",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-dof-1080.png: unchanged actor depth stays strictly inside the edited focus interval",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-glow-1080.png: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-glow-1080.png: read-back contains a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-glow-1080.png: captured profile is complete",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-glow-1080.png: camera actor and independent clocks stay fixed",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-glow-1080.png: unchanged actor depth stays strictly inside the edited focus interval",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-clouds-1080.png: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-clouds-1080.png: read-back contains a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-clouds-1080.png: captured profile is complete",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-clouds-1080.png: camera actor and independent clocks stay fixed",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-clouds-1080.png: unchanged actor depth stays strictly inside the edited focus interval",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-other-1080.png: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-other-1080.png: read-back contains a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-other-1080.png: captured profile is complete",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-other-1080.png: camera actor and independent clocks stay fixed",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-other-1080.png: unchanged actor depth stays strictly inside the edited focus interval",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-dof-720.png: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-dof-720.png: read-back contains a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-dof-720.png: captured profile is complete",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-dof-720.png: camera actor and independent clocks stay fixed",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-dof-720.png: unchanged actor depth stays strictly inside the edited focus interval",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-input-dof-720.png: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-input-dof-720.png: read-back contains a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-input-dof-720.png: captured profile is complete",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-input-dof-720.png: camera actor and independent clocks stay fixed",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-input-dof-720.png: unchanged actor depth stays strictly inside the edited focus interval",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-glow-720.png: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-glow-720.png: read-back contains a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-glow-720.png: captured profile is complete",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-glow-720.png: camera actor and independent clocks stay fixed",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-panel-glow-720.png: unchanged actor depth stays strictly inside the edited focus interval",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-input-glow-720.png: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-input-glow-720.png: read-back contains a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-input-glow-720.png: captured profile is complete",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-input-glow-720.png: camera actor and independent clocks stay fixed",
+      "passed": true
+    },
+    {
+      "label": "scene-settings-input-glow-720.png: unchanged actor depth stays strictly inside the edited focus interval",
+      "passed": true
+    },
+    {
+      "label": "DOF endpoints isolate the actual amount slider with the same camera lights and scene settings",
+      "passed": true
+    },
+    {
+      "label": "increasing the live DOF amount changes thousands of actual scene pixels",
+      "passed": true
+    },
+    {
+      "label": "strong DOF reduces rendered edge detail outside the protected actor depth plane",
+      "passed": true
+    },
+    {
+      "label": "Glow endpoints isolate the actual intensity slider at the same dusk lighting",
+      "passed": true
+    },
+    {
+      "label": "increasing live Glow intensity produces a brighter visibly different hardware frame",
+      "passed": true
+    },
+    {
+      "label": "fresh restoration keeps the complete saved dusk profile and native DOF Glow outputs",
+      "passed": true
+    },
+    {
+      "label": "saved and freshly restored dusk produce matching actual scene appearance",
+      "passed": true
+    },
+    {
+      "label": "environment: correct complete control group is captured in its own section",
+      "passed": true
+    },
+    {
+      "label": "environment: save load reset and both presets remain visible outside scrolling",
+      "passed": true
+    },
+    {
+      "label": "dof: correct complete control group is captured in its own section",
+      "passed": true
+    },
+    {
+      "label": "dof: save load reset and both presets remain visible outside scrolling",
+      "passed": true
+    },
+    {
+      "label": "glow: correct complete control group is captured in its own section",
+      "passed": true
+    },
+    {
+      "label": "glow: save load reset and both presets remain visible outside scrolling",
+      "passed": true
+    },
+    {
+      "label": "clouds: correct complete control group is captured in its own section",
+      "passed": true
+    },
+    {
+      "label": "clouds: save load reset and both presets remain visible outside scrolling",
+      "passed": true
+    },
+    {
+      "label": "other: correct complete control group is captured in its own section",
+      "passed": true
+    },
+    {
+      "label": "other: save load reset and both presets remain visible outside scrolling",
+      "passed": true
+    },
+    {
+      "label": "actual viewport mouse tests cover both DOF and Glow",
+      "passed": true
+    },
+    {
+      "label": "dof: the edited control and value label are actually inside the 720p scroll clip",
+      "passed": true
+    },
+    {
+      "label": "dof: mouse movement reaches the corresponding native camera or environment value",
+      "passed": true
+    },
+    {
+      "label": "dof: actual mouse editing changes the captured rendered frame",
+      "passed": true
+    },
+    {
+      "label": "glow: the edited control and value label are actually inside the 720p scroll clip",
+      "passed": true
+    },
+    {
+      "label": "glow: mouse movement reaches the corresponding native camera or environment value",
+      "passed": true
+    },
+    {
+      "label": "glow: actual mouse editing changes the captured rendered frame",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "runtime_fingerprint": "8f55d71b78aeef50b3b3d1b3a7a47f8939f7c06f81da5827acd82c67bb5235af",
+  "source_fingerprint": "3ef81bca867684bbfda8f1de98418bb6d17f4a319bd5d427e190e7bee7823612",
+  "source_files": {
+    "scripts/forest_hamlet/scene.gd": "7df0d90eafdc0d8fc24513cbac2f130802d11ff901687de5d558adb1468927f2",
+    "scripts/forest_hamlet/close_scene.gd": "e5f78a2ebced10a5d470155187db8c7b8d8e8793b4c07cc8372284d631fccce8",
+    "scripts/forest_hamlet/scene_settings.gd": "d306edbac1420c5151fd5f5e380adcb1226ed5485fdfbdefed04cb8d5c99a2df",
+    "scripts/forest_hamlet/settings_panel.gd": "898fd8ee6043fa16a90ba5c5bdfa45f58732d0cff70ead7aa35c1f23c27d1b7e",
+    "scripts/forest_hamlet/cloud_lighting.gd": "c13b224096bcdd1674ef4bbb6f919a1e91d57801d6b1e1b9cb353f1ba38395a2",
+    "scripts/forest_hamlet/global_lighting.gd": "438e1595906bbdc193cc05602a38210c203bdfe5b896a4dbb204703752497e6a",
+    "scripts/forest_hamlet/actor.gd": "7af6ee916e4f22a0e2bc7ad4022642a3c477f5c4fe820175e1cfc59a0c1ef2cf",
+    "shaders/forest_hamlet/cloud_occluder.gdshader": "e70591cabd53eee8dd4a89c47d93397825c5d36394319acf0902666c689c4b65",
+    "tests/forest_hamlet/scene_settings_runtime.gd": "1f6de0ac4571f7b3f420ec2487f79f9f99d4764ceb60e28dfbec640abdc27b3f",
+    "tools/forest_hamlet/capture_scene_settings.gd": "fbfc6f930e1f80abd43f737a6927cb46b3167ea50a205d497a149fc12c8502c9",
+    "tools/forest_hamlet/scene_settings_checks.py": "c86242b8fa5c223bbfee1ba70c348248a2525cdf5aed84a880ea8dd8e843581a",
+    "tools/forest_hamlet/run_scene_settings.py": "4493f75eda65e4ce3b8228bbc585635231f631ee6b6fba8031a53508d1b944f3"
+  },
+  "capture_sha256": "320eb470501bdadbbae34b43f90b25b5c1dc2a4f47cb292427805913a7e89d16",
+  "runtime_report_sha256": "9ffc2fdefbc344815de88e464d5f83e87c39648d775246adeb805f4df4fc6799",
+  "original_pngs": [
+    {
+      "file": "scene-settings-dof-off.png",
+      "sha256": "f86834839896cb5277612a9d52053433f76a45662c9e259c8f12bade3633ef10",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "scene-settings-dof-strong.png",
+      "sha256": "9d96be3871a50a029b59ae764579605862cdc71d91f3533a75d5d1e425d8f009",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "scene-settings-glow-off.png",
+      "sha256": "603815165df76ad1b855e426b8aaf5c706926f1a6b498633745551682c462fa8",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "scene-settings-glow-strong.png",
+      "sha256": "cbe1218f41fd7235afbfb9b6c76bb1c34408ce09e5420dfa16f6394d4a6172c2",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "scene-settings-dusk-saved.png",
+      "sha256": "0ec2217820bbd5573c9c503d01cfe8562a8ba4d7d92fc895a205b7a985ff445b",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "scene-settings-dusk-restored.png",
+      "sha256": "0d428acd310dbe06d9bb7a24ad353c817e8b230e43fab6511ba119897e5d722c",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "scene-settings-panel-environment-1080.png",
+      "sha256": "c38ca7d4740ea0c497919f5e9039287385496854f90ef4cdbc238974d3cece5b",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "scene-settings-panel-dof-1080.png",
+      "sha256": "4fe1fde0c7b90a3e72e16747bf7fdfd1a03dc03408da3dc6d7c018e17b7cbc21",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "scene-settings-panel-glow-1080.png",
+      "sha256": "f4d723251db0b7cd7b1d550fac234ae348dfb940b9af8cd9a65e2bf9723cd41f",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "scene-settings-panel-clouds-1080.png",
+      "sha256": "9a10adaa1bb327acbac4831e391475d4a3681e771171f3a18a1bf10a2808f5e3",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "scene-settings-panel-other-1080.png",
+      "sha256": "eecc09366f4834f2d8a70699ae650a7315d5b4e8ae0d6e73a207a09eca741fda",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "scene-settings-panel-dof-720.png",
+      "sha256": "7456c6c37aa8d14131447c88ba69ccb547d9e227cfab9ee980b15fc9fcaacba4",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "scene-settings-input-dof-720.png",
+      "sha256": "dc045b78a7db2b103e231fc83b9c66ba627d2191d046b9601b78fcf584f74df1",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "scene-settings-panel-glow-720.png",
+      "sha256": "26f89e6810e907b0b77dbc905db636d7cdc64992b614f0d729638a99e07d65cb",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "scene-settings-input-glow-720.png",
+      "sha256": "ec77491f02c45b19d7fd87fb5c2418818c4194c77b03afddbacb2821cf3bdb72",
+      "size": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "mean_encoded_rgb": {
+    "scene-settings-dof-off.png": 112.10722543724279,
+    "scene-settings-dof-strong.png": 115.90491769547326,
+    "scene-settings-glow-off.png": 76.97103057484567,
+    "scene-settings-glow-strong.png": 138.89000755529835,
+    "scene-settings-dusk-saved.png": 76.309174061214,
+    "scene-settings-dusk-restored.png": 76.13745466820988,
+    "scene-settings-panel-environment-1080.png": 68.07768293467079,
+    "scene-settings-panel-dof-1080.png": 68.14921167695474,
+    "scene-settings-panel-glow-1080.png": 68.11500128600824,
+    "scene-settings-panel-clouds-1080.png": 68.39632732124485,
+    "scene-settings-panel-other-1080.png": 68.14962818287036,
+    "scene-settings-panel-dof-720.png": 65.63451642071759,
+    "scene-settings-input-dof-720.png": 66.67363208912037,
+    "scene-settings-panel-glow-720.png": 66.30730685763889,
+    "scene-settings-input-glow-720.png": 69.67910083912038
+  },
+  "dof_comparison": {
+    "mean_abs_rgb": 15.437533436213991,
+    "pixels_luma_difference_above_2": 1734496,
+    "pixel_count": 2073600
+  },
+  "dof_edge_energy": {
+    "off": 23.177609700351567,
+    "strong": 2.51031375387075
+  },
+  "glow_comparison": {
+    "mean_abs_rgb": 61.918976980452676,
+    "pixels_luma_difference_above_2": 2068788,
+    "pixel_count": 2073600
+  },
+  "saved_restored_comparison": {
+    "mean_abs_rgb": 0.17429044495884774,
+    "pixels_luma_difference_above_2": 0,
+    "pixel_count": 2073600
+  },
+  "pointer_comparisons": {
+    "dof": {
+      "mean_abs_rgb": 2.6207389322916668,
+      "pixels_luma_difference_above_2": 160144,
+      "pixel_count": 921600
+    },
+    "glow": {
+      "mean_abs_rgb": 3.413444010416667,
+      "pixels_luma_difference_above_2": 623110,
+      "pixel_count": 921600
+    }
+  },
+  "scope": "Original tone-mapped Forward+ PNG read-back, complete persisted settings, real GUI routing and complete runtime/validation/workflow source hashes; display RGB differences are not physical radiometry or real-time FPS measurements."
+}

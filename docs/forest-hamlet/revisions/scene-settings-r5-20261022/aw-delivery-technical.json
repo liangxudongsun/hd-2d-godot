@@ -1,0 +1,1 @@
+{"checks":[{"evidence_paths":["evidence/scene-settings-runtime/scene-settings-runtime-report.json"],"name":"scene-settings-runtime","status":"completed"},{"evidence_paths":["evidence/godot-run/run.json"],"name":"receipt:evidence/godot-run/run.json","status":"completed"}],"schema_version":1,"status":"completed","workflow":"godot.verify"}

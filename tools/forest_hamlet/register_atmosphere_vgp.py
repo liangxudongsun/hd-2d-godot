@@ -19,7 +19,7 @@ import zipfile
 
 from register_vgp import decode, digest, dump, freeze_json, installed_cli, locate
 from process_atmosphere_aw import DEFAULT_RUN, RUNTIME_DELIVERY_SOURCES, evidence_files, native_godot_evidence, verify_delivery_archive
-from atmosphere_workflow_profiles import profile_spec
+from atmosphere_workflow_profiles import PROFILE_NAMES, profile_spec
 
 
 ASSET_KEY = "forest-hamlet-snow-atmosphere"
@@ -173,7 +173,7 @@ def prepare_transport(root: Path, state: Path, closure: list[dict], outputs: lis
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--project", type=Path, default=Path.cwd())
-    parser.add_argument("--profile", choices=["atmosphere", "cloud-tuning"], default="atmosphere")
+    parser.add_argument("--profile", choices=PROFILE_NAMES, default="atmosphere")
     parser.add_argument("--run-id")
     parser.add_argument("--aw-run-id")
     parser.add_argument("--context-run-id", default="forest-hamlet-20261022-vegetation-r2-review")
@@ -183,9 +183,11 @@ def main() -> None:
     spec = profile_spec(args.profile)
     args.run_id = args.run_id or spec["run_id"]
     args.aw_run_id = args.aw_run_id or spec["run_id"]
-    runtime_sources = (*RUNTIME_DELIVERY_SOURCES, *spec["extra_sources"])
+    runtime_sources = tuple(dict.fromkeys((*RUNTIME_DELIVERY_SOURCES, *spec["extra_sources"])))
     if args.profile == "cloud-tuning" and not args.previous_run_id:
         raise ValueError("The cloud-tuning revision requires an explicit --previous-run-id to preserve the existing Asset lineage")
+    if args.profile == "scene-settings" and args.previous_run_id != spec["previous_run_id"]:
+        raise ValueError("The scene-settings revision requires --previous-run-id " + spec["previous_run_id"] + " to preserve the existing r4 Asset and review-round lineage")
     for value in (args.run_id, args.aw_run_id, args.context_run_id, *([args.previous_run_id] if args.previous_run_id else [])):
         safe_id(value)
     if args.previous_run_id == args.run_id or (args.previous_run_id and args.existing_asset_id):
@@ -380,6 +382,12 @@ def main() -> None:
         payload["specification"]["purpose"] = "Live independent cloud attenuation from 0 to 80 percent (default 30) and cloud density controls, Chinese runtime sliders with values, reset and local settings persistence; unchanged HD2D scene art, close camera and original actor. Default thin 10/thick 30 behavior remains; dynamic native sunlight retains a 20 percent floor at the user-requested maximum."
         payload["external_report"]["validation_scope"] = production["technical_evidence"]["scope"]
         payload["metadata"]["validation_profile"] = args.profile
+    if args.profile == "scene-settings":
+        payload["specification"]["purpose"] = "Live full-scene DOF, Glow, environment, day/dusk, clouds and other existing effect controls, Chinese numeric feedback and effect switches, explicit atomic full-profile save/load/reset and normal-startup restore. Read-only legacy cloud-setting migration preserves saved 70 percent contrast / 48 percent density; original defaults, runtime APIs and all original scene artwork remain compatible."
+        payload["external_report"]["validation_scope"] = production["technical_evidence"]["scope"]
+        payload["external_report"]["source_fingerprint"] = production["technical_evidence"]["source_fingerprint"]
+        payload["external_report"]["original_assets"] = production["technical_evidence"]["original_assets"]
+        payload["metadata"]["validation_profile"] = args.profile
     if parent_id:
         payload["parent_revision_ids"] = [parent_id]
         payload["source"]["previous_revision_id"] = parent_id
@@ -434,6 +442,9 @@ def main() -> None:
     if args.profile == "cloud-tuning":
         submit_payload["items"][0]["title"] = "云层透光对比与密度 · 实时调节"
         submit_payload["items"][0]["requirements"] = "Review live contrast from 0 to 80 percent attenuation and independent cloud density sliders, their visible effect, numerical feedback, reset and local settings persistence, keyboard/mouse input and panel fit at 1920x1080 and 1280x720. Default attenuation remains thin 10 percent / thick 30 percent; verify the user-requested 80 percent maximum and dynamic native sunlight retaining a 20 percent floor. Earlier r3 radiometry and physical-route evidence is historical, not represented as rerun by this focused revision. Original artwork, camera and character proportions remain unchanged. Technical checks do not grant aesthetic approval."
+    if args.profile == "scene-settings":
+        submit_payload["items"][0]["title"] = "场景参数 · 景深、辉光与完整保存恢复"
+        submit_payload["items"][0]["requirements"] = "Review live native DOF and Glow numerical controls, environment/day-dusk/cloud/other effect controls, five Chinese panel sections, keyboard/mouse operation at 1920x1080 and 1280x720, full-profile atomic save/load/reset, fresh-start restore and read-only migration of legacy cloud settings including 70 percent contrast / 48 percent density. Validate the complete runtime and verification-source fingerprints, unchanged original r4 assets and explicit r4 parent Revision and review round. Fifteen original GPU frames cover focused effects, persistence and UI; the runtime suite records its physical-route regression, while previous GPU route captures and calibrated radiometry remain historical. Technical checks do not grant aesthetic approval or stage admission."
     saved_submit = state / "review-submit.request.json"
     if saved_submit.exists():
         saved = json.loads(saved_submit.read_text(encoding="utf-8"))
