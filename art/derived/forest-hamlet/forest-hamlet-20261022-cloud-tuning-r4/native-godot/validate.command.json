@@ -1,0 +1,13 @@
+[
+  "aw",
+  "--project",
+  ".",
+  "--project-config",
+  "art/inputs/forest-hamlet/cloud-tuning-r4/workbench-project.yaml",
+  "workflow",
+  "validate",
+  "godot.verify",
+  "--input",
+  "art/inputs/forest-hamlet/cloud-tuning-native-r4/godot-verify.recipe.json",
+  "--json"
+]

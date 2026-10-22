@@ -1,0 +1,2018 @@
+{
+  "adapter": "NVIDIA GeForce RTX 4070 SUPER",
+  "billboard_pixel_validation": "The five billboard-*.png frames use the existing run.py.validate_billboard_capture conditions; read billboard-gpu-report.json for independent pixel measurements.",
+  "checks": [
+    {
+      "label": "gameplay-day: original animation silhouette occupies 22-24 percent of screen height",
+      "passed": true
+    },
+    {
+      "label": "gameplay-day: feet centred at 61-64 percent of screen height",
+      "passed": true
+    },
+    {
+      "label": "gameplay-day: entire original animation silhouette in frame",
+      "passed": true
+    },
+    {
+      "label": "gameplay-day: original billboard remains inside sharp DoF interval",
+      "passed": true
+    },
+    {
+      "label": "gameplay-day: original character world scale retained without stretching",
+      "passed": true
+    },
+    {
+      "label": "gameplay-day: full camera-facing shader enabled",
+      "passed": true
+    },
+    {
+      "label": "gameplay-dusk: original animation silhouette occupies 22-24 percent of screen height",
+      "passed": true
+    },
+    {
+      "label": "gameplay-dusk: feet centred at 61-64 percent of screen height",
+      "passed": true
+    },
+    {
+      "label": "gameplay-dusk: entire original animation silhouette in frame",
+      "passed": true
+    },
+    {
+      "label": "gameplay-dusk: original billboard remains inside sharp DoF interval",
+      "passed": true
+    },
+    {
+      "label": "gameplay-dusk: original character world scale retained without stretching",
+      "passed": true
+    },
+    {
+      "label": "gameplay-dusk: full camera-facing shader enabled",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-front: original animation silhouette occupies 22-24 percent of screen height",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-front: feet centred at 61-64 percent of screen height",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-front: entire original animation silhouette in frame",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-front: original billboard remains inside sharp DoF interval",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-front: original character world scale retained without stretching",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-front: full camera-facing shader enabled",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-back: original animation silhouette occupies 22-24 percent of screen height",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-back: feet centred at 61-64 percent of screen height",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-back: entire original animation silhouette in frame",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-back: original billboard remains inside sharp DoF interval",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-back: original character world scale retained without stretching",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-back: full camera-facing shader enabled",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-left: original animation silhouette occupies 22-24 percent of screen height",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-left: feet centred at 61-64 percent of screen height",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-left: entire original animation silhouette in frame",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-left: original billboard remains inside sharp DoF interval",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-left: original character world scale retained without stretching",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-left: full camera-facing shader enabled",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-right: original animation silhouette occupies 22-24 percent of screen height",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-right: feet centred at 61-64 percent of screen height",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-right: entire original animation silhouette in frame",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-right: original billboard remains inside sharp DoF interval",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-right: original character world scale retained without stretching",
+      "passed": true
+    },
+    {
+      "label": "gameplay-walk-right: full camera-facing shader enabled",
+      "passed": true
+    },
+    {
+      "label": "gameplay-route-left: original animation silhouette occupies 22-24 percent of screen height",
+      "passed": true
+    },
+    {
+      "label": "gameplay-route-left: feet centred at 61-64 percent of screen height",
+      "passed": true
+    },
+    {
+      "label": "gameplay-route-left: entire original animation silhouette in frame",
+      "passed": true
+    },
+    {
+      "label": "gameplay-route-left: original billboard remains inside sharp DoF interval",
+      "passed": true
+    },
+    {
+      "label": "gameplay-route-left: original character world scale retained without stretching",
+      "passed": true
+    },
+    {
+      "label": "gameplay-route-left: full camera-facing shader enabled",
+      "passed": true
+    },
+    {
+      "label": "gameplay-route-right: original animation silhouette occupies 22-24 percent of screen height",
+      "passed": true
+    },
+    {
+      "label": "gameplay-route-right: feet centred at 61-64 percent of screen height",
+      "passed": true
+    },
+    {
+      "label": "gameplay-route-right: entire original animation silhouette in frame",
+      "passed": true
+    },
+    {
+      "label": "gameplay-route-right: original billboard remains inside sharp DoF interval",
+      "passed": true
+    },
+    {
+      "label": "gameplay-route-right: original character world scale retained without stretching",
+      "passed": true
+    },
+    {
+      "label": "gameplay-route-right: full camera-facing shader enabled",
+      "passed": true
+    },
+    {
+      "label": "six-waypoint physical exploration route completes",
+      "passed": true
+    },
+    {
+      "label": "both left and right gameplay views captured on actual physical route",
+      "passed": true
+    },
+    {
+      "label": "entire original silhouette stays in frame throughout actual route",
+      "passed": true
+    },
+    {
+      "label": "entire actual route stays inside protected DoF interval",
+      "passed": true
+    },
+    {
+      "label": "actual GPU uses project Forward+ renderer",
+      "passed": true
+    },
+    {
+      "label": "actual GPU adapter reported",
+      "passed": true
+    },
+    {
+      "label": "all four original color and normal directions retained",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "framing_targets": {
+    "animation_union_height_fraction": [
+      0.22,
+      0.24
+    ],
+    "character_pixel_size": 0.009,
+    "feet_height_fraction": [
+      0.61,
+      0.64
+    ]
+  },
+  "gpu": true,
+  "main_window_minimized": true,
+  "no_focus": true,
+  "passed": true,
+  "renderer": "forward_plus",
+  "route": {
+    "completed": true,
+    "elapsed_seconds": 22.45,
+    "position": [
+      0.0000821128196548671,
+      0.000926767534110695,
+      1.5889151096344
+    ],
+    "samples": [
+      [
+        0.217,
+        -0.639074802398682,
+        0.000234376639127731,
+        2.4655876159668,
+        0
+      ],
+      [
+        0.433,
+        -1.3314106464386,
+        0.000234376639127731,
+        2.42830753326416,
+        0
+      ],
+      [
+        0.65,
+        -2.02373743057251,
+        0.000234376639127731,
+        2.3910276889801,
+        0
+      ],
+      [
+        0.867,
+        -2.7160758972168,
+        0.000234376639127731,
+        2.35374736785889,
+        0
+      ],
+      [
+        1.083,
+        -3.40840768814087,
+        0.000234376639127731,
+        2.31646752357483,
+        0
+      ],
+      [
+        1.3,
+        -4.10073041915894,
+        0.000234376639127731,
+        2.27918791770935,
+        0
+      ],
+      [
+        1.517,
+        -4.79305601119995,
+        0.000234376639127731,
+        2.24190831184387,
+        0
+      ],
+      [
+        1.733,
+        -5.48538637161255,
+        0.000234376639127731,
+        2.20462822914124,
+        0
+      ],
+      [
+        1.95,
+        -6.17770576477051,
+        0.000234376639127731,
+        2.16734886169434,
+        0
+      ],
+      [
+        2.167,
+        -6.87003421783447,
+        0.000234376639127731,
+        2.1300687789917,
+        0
+      ],
+      [
+        2.383,
+        -7.56236696243286,
+        0.000234376639127731,
+        2.0927894115448,
+        0
+      ],
+      [
+        2.6,
+        -8.25468921661377,
+        0.000234376639127731,
+        2.0555112361908,
+        0
+      ],
+      [
+        2.817,
+        -8.94702053070068,
+        0.000234376639127731,
+        2.01823258399963,
+        0
+      ],
+      [
+        3.033,
+        -9.63935470581055,
+        0.000234376639127731,
+        1.98095405101776,
+        0
+      ],
+      [
+        3.25,
+        -10.3316850662231,
+        0.000234376639127731,
+        1.9436753988266,
+        0
+      ],
+      [
+        3.467,
+        -11.0240001678467,
+        0.000234376639127731,
+        1.90639758110046,
+        0
+      ],
+      [
+        3.683,
+        -11.7163200378418,
+        0.000234376639127731,
+        1.86911940574646,
+        0
+      ],
+      [
+        3.9,
+        -12.4086380004883,
+        0.000234376639127731,
+        1.83184146881104,
+        0
+      ],
+      [
+        4.117,
+        -12.4614191055298,
+        0.000234376639127731,
+        1.81147420406342,
+        1
+      ],
+      [
+        4.333,
+        -11.768084526062,
+        0.000234376639127731,
+        1.81083571910858,
+        1
+      ],
+      [
+        4.55,
+        -11.0747489929199,
+        0.000234376639127731,
+        1.81019723415375,
+        1
+      ],
+      [
+        4.767,
+        -10.3814105987549,
+        0.000234376639127731,
+        1.80955874919891,
+        1
+      ],
+      [
+        4.983,
+        -9.68807888031006,
+        0.000234376639127731,
+        1.80892026424408,
+        1
+      ],
+      [
+        5.2,
+        -8.99474811553955,
+        0.000234376639127731,
+        1.80828177928925,
+        1
+      ],
+      [
+        5.417,
+        -8.30140113830566,
+        0.000234376639127731,
+        1.80764329433441,
+        1
+      ],
+      [
+        5.633,
+        -7.60806703567505,
+        0.000234376639127731,
+        1.80700480937958,
+        1
+      ],
+      [
+        5.85,
+        -6.9147310256958,
+        0.000234376639127731,
+        1.80636632442474,
+        1
+      ],
+      [
+        6.067,
+        -6.2213921546936,
+        0.000234376639127731,
+        1.80572783946991,
+        1
+      ],
+      [
+        6.283,
+        -5.52806329727173,
+        0.000234376639127731,
+        1.80508935451508,
+        1
+      ],
+      [
+        6.5,
+        -4.83473014831543,
+        0.000234376639127731,
+        1.80445086956024,
+        1
+      ],
+      [
+        6.717,
+        -4.14139318466187,
+        0.000234376639127731,
+        1.80381238460541,
+        1
+      ],
+      [
+        6.933,
+        -3.4480607509613,
+        0.000234376639127731,
+        1.80317389965057,
+        1
+      ],
+      [
+        7.15,
+        -2.75472569465637,
+        0.000234376639127731,
+        1.80253541469574,
+        1
+      ],
+      [
+        7.367,
+        -2.06138730049133,
+        0.000234376639127731,
+        1.80189692974091,
+        1
+      ],
+      [
+        7.583,
+        -1.36805260181427,
+        0.000234376639127731,
+        1.80125844478607,
+        1
+      ],
+      [
+        7.8,
+        -0.674718379974365,
+        0.000234376639127731,
+        1.80062055587769,
+        1
+      ],
+      [
+        8.017,
+        0.0186170563101768,
+        0.000234376639127731,
+        1.8002233505249,
+        2
+      ],
+      [
+        8.233,
+        0.711947977542877,
+        0.000234376639127731,
+        1.80021095275879,
+        2
+      ],
+      [
+        8.45,
+        1.40528666973114,
+        0.000234376639127731,
+        1.80019855499268,
+        2
+      ],
+      [
+        8.667,
+        2.09861946105957,
+        0.000234376639127731,
+        1.80018615722656,
+        2
+      ],
+      [
+        8.883,
+        2.79195880889893,
+        0.000234376639127731,
+        1.80017375946045,
+        2
+      ],
+      [
+        9.1,
+        3.48529553413391,
+        0.000234376639127731,
+        1.80016136169434,
+        2
+      ],
+      [
+        9.317,
+        4.17862939834595,
+        0.000234376639127731,
+        1.80014860630035,
+        2
+      ],
+      [
+        9.533,
+        4.87196111679077,
+        0.000234376639127731,
+        1.80013537406921,
+        2
+      ],
+      [
+        9.75,
+        5.56530284881592,
+        0.000234376639127731,
+        1.80012214183807,
+        2
+      ],
+      [
+        9.967,
+        6.25862646102905,
+        0.000234376639127731,
+        1.80010902881622,
+        2
+      ],
+      [
+        10.183,
+        6.95195960998535,
+        0.000234376639127731,
+        1.80009591579437,
+        2
+      ],
+      [
+        10.4,
+        7.64530181884766,
+        0.000234376639127731,
+        1.80008268356323,
+        2
+      ],
+      [
+        10.617,
+        8.33862972259521,
+        0.000234376639127731,
+        1.80006957054138,
+        2
+      ],
+      [
+        10.833,
+        9.03196334838867,
+        0.000234376639127731,
+        1.80005633831024,
+        2
+      ],
+      [
+        11.05,
+        9.72530460357666,
+        0.000234376639127731,
+        1.80004322528839,
+        2
+      ],
+      [
+        11.267,
+        10.4186353683472,
+        0.000234376639127731,
+        1.80002999305725,
+        2
+      ],
+      [
+        11.483,
+        11.1119709014893,
+        0.000234376639127731,
+        1.8000168800354,
+        2
+      ],
+      [
+        11.7,
+        11.6986389160156,
+        0.000234376639127731,
+        1.80000472068787,
+        3
+      ],
+      [
+        11.917,
+        11.0053081512451,
+        0.000234376639127731,
+        1.80000472068787,
+        3
+      ],
+      [
+        12.133,
+        10.3119783401489,
+        0.000234376639127731,
+        1.80000472068787,
+        3
+      ],
+      [
+        12.35,
+        9.61864376068115,
+        0.000234376639127731,
+        1.80000472068787,
+        3
+      ],
+      [
+        12.567,
+        8.92531967163086,
+        0.000234376639127731,
+        1.80000472068787,
+        3
+      ],
+      [
+        12.783,
+        8.23198127746582,
+        0.000234376639127731,
+        1.80000472068787,
+        3
+      ],
+      [
+        13.0,
+        7.538649559021,
+        0.000234376639127731,
+        1.80000472068787,
+        3
+      ],
+      [
+        13.217,
+        6.84532642364502,
+        0.000234376639127731,
+        1.80000472068787,
+        3
+      ],
+      [
+        13.433,
+        6.15199422836304,
+        0.000234376639127731,
+        1.80000472068787,
+        3
+      ],
+      [
+        13.65,
+        5.45866107940674,
+        0.000234376639127731,
+        1.80000472068787,
+        3
+      ],
+      [
+        13.867,
+        4.76532983779907,
+        0.000234376639127731,
+        1.80000472068787,
+        3
+      ],
+      [
+        14.083,
+        4.07199478149414,
+        0.000234376639127731,
+        1.80000448226929,
+        3
+      ],
+      [
+        14.3,
+        3.37866306304932,
+        0.000234376639127731,
+        1.80000376701355,
+        3
+      ],
+      [
+        14.517,
+        2.68533444404602,
+        0.000234376639127731,
+        1.80000293254852,
+        3
+      ],
+      [
+        14.733,
+        1.99200844764709,
+        0.000234376639127731,
+        1.80000221729279,
+        3
+      ],
+      [
+        14.95,
+        1.29867565631866,
+        0.000234376639127731,
+        1.80000138282776,
+        3
+      ],
+      [
+        15.167,
+        0.605347990989685,
+        0.000234376639127731,
+        1.80000066757202,
+        3
+      ],
+      [
+        15.383,
+        0.225721448659897,
+        0.000234376639127731,
+        1.48006439208984,
+        4
+      ],
+      [
+        15.6,
+        0.212091654539108,
+        0.000234376639127731,
+        0.786864995956421,
+        4
+      ],
+      [
+        15.817,
+        0.198461949825287,
+        0.000234376639127731,
+        0.0936695411801338,
+        4
+      ],
+      [
+        16.033,
+        0.184832319617271,
+        0.000234376639127731,
+        -0.59952300786972,
+        4
+      ],
+      [
+        16.25,
+        0.17120261490345,
+        0.000234376639127731,
+        -1.2927223443985,
+        4
+      ],
+      [
+        16.467,
+        0.157572761178017,
+        0.000234376639127731,
+        -1.98592960834503,
+        4
+      ],
+      [
+        16.683,
+        0.143943086266518,
+        0.000234376639127731,
+        -2.67912793159485,
+        4
+      ],
+      [
+        16.9,
+        0.130313485860825,
+        0.000234376639127731,
+        -3.37232232093811,
+        4
+      ],
+      [
+        17.117,
+        0.1166837438941,
+        0.000234376639127731,
+        -4.06552457809448,
+        4
+      ],
+      [
+        17.333,
+        0.103054225444794,
+        0.000234376639127731,
+        -4.75871706008911,
+        4
+      ],
+      [
+        17.55,
+        0.0894246250391006,
+        0.000234376639127731,
+        -5.45191240310669,
+        4
+      ],
+      [
+        17.767,
+        0.0757948607206345,
+        0.000234376639127731,
+        -6.1451153755188,
+        4
+      ],
+      [
+        17.983,
+        0.0621652454137802,
+        0.000234376639127731,
+        -6.83831214904785,
+        4
+      ],
+      [
+        18.2,
+        0.0485355854034424,
+        0.000234376639127731,
+        -7.53151035308838,
+        4
+      ],
+      [
+        18.417,
+        0.0349056571722031,
+        0.000234376639127731,
+        -8.22471904754639,
+        4
+      ],
+      [
+        18.633,
+        0.0212761424481869,
+        0.000234376639127731,
+        -8.91790580749512,
+        4
+      ],
+      [
+        18.85,
+        0.00764649780467153,
+        0.000234376639127731,
+        -9.61110210418701,
+        4
+      ],
+      [
+        19.067,
+        0.0042937328107655,
+        0.000234376639127731,
+        -9.23774337768555,
+        5
+      ],
+      [
+        19.283,
+        0.00402402086183429,
+        0.000234376639127731,
+        -8.54441070556641,
+        5
+      ],
+      [
+        19.5,
+        0.00375431077554822,
+        0.000926767534110695,
+        -7.85107803344727,
+        5
+      ],
+      [
+        19.717,
+        0.00348460185341537,
+        0.000926767534110695,
+        -7.15774536132812,
+        5
+      ],
+      [
+        19.933,
+        0.00321489293128252,
+        0.000926767534110695,
+        -6.46441268920898,
+        5
+      ],
+      [
+        20.15,
+        0.00294518400914967,
+        0.000926767534110695,
+        -5.77108001708984,
+        5
+      ],
+      [
+        20.367,
+        0.00267547508701682,
+        0.000926767534110695,
+        -5.0777473449707,
+        5
+      ],
+      [
+        20.583,
+        0.00240576616488397,
+        0.000926767534110695,
+        -4.38441467285156,
+        5
+      ],
+      [
+        20.8,
+        0.00213605724275112,
+        0.000926767534110695,
+        -3.69108200073242,
+        5
+      ],
+      [
+        21.017,
+        0.00186634773854166,
+        0.000926767534110695,
+        -2.99774932861328,
+        5
+      ],
+      [
+        21.233,
+        0.00159663730300963,
+        0.000926767534110695,
+        -2.30441665649414,
+        5
+      ],
+      [
+        21.45,
+        0.0013269268674776,
+        0.000926767534110695,
+        -1.611083984375,
+        5
+      ],
+      [
+        21.667,
+        0.00105721701402217,
+        0.000926767534110695,
+        -0.91775119304657,
+        5
+      ],
+      [
+        21.883,
+        0.000787507276982069,
+        0.000926767534110695,
+        -0.224417760968208,
+        5
+      ],
+      [
+        22.1,
+        0.000517797598149627,
+        0.000926767534110695,
+        0.468915641307831,
+        5
+      ],
+      [
+        22.317,
+        0.000248087919317186,
+        0.000926767534110695,
+        1.16224884986877,
+        5
+      ]
+    ],
+    "status": "completed",
+    "total_waypoints": 6,
+    "waypoints": 6
+  },
+  "runtime_fingerprint": "16b370706d96dde87fdcb4426e4f3a367d492eea57ace5a03956d2a9cfde37e8",
+  "scope": "normal gameplay framing, actual physical movement and real GPU captures; reference-angle similarity remains a visual judgement",
+  "screenshots": [
+    {
+      "camera_scope": "normal gameplay camera; unchanged offset and FOV; follow settled",
+      "file": "gameplay-day.png",
+      "motion": {
+        "actor_physics_paused": true,
+        "comparison_frozen": false,
+        "scene_clock_paused": true,
+        "sky": "static ProceduralSkyMaterial; no time-driven sky update",
+        "water_flow_speed": null,
+        "wind_strength": 0.06
+      },
+      "original_animation_frame": {
+        "direction": 0,
+        "frame": 0,
+        "texture": "res://assets/characters/crescent-traveler/v1/down/frames/00000.png"
+      },
+      "render_counts": {
+        "shadow_draw_calls": 262,
+        "visible_draw_calls": 77,
+        "visible_objects": 492,
+        "visible_primitives": 339586
+      },
+      "scope": "actual hardware GPU frame; artistic approval remains external",
+      "sha256": "f102db80e4479687401441e2dca99e9d62e5413a51f2377b9ee8214b2d6d7be6",
+      "size": [
+        1920,
+        1080
+      ],
+      "state": {
+        "camera": [
+          0.0,
+          4.08473825454712,
+          14.2712707519531
+        ],
+        "features": {
+          "bloom": true,
+          "dof": true,
+          "normals": true,
+          "wind": true
+        },
+        "framing": {
+          "camera_offset_length": 12.7500009536743,
+          "dof_far": 18.4097442626953,
+          "dof_near": 7.40974426269531,
+          "foot": [
+            0.5,
+            0.626913547515869
+          ],
+          "fov": 39.0,
+          "in_frame": true,
+          "pitch_degrees": 13.9999971389771,
+          "pixel_size": 0.00899999961256981,
+          "profile": "close_reference",
+          "silhouette_rect": [
+            0.464287916819255,
+            0.395489049840856,
+            0.0708481788635254,
+            0.232448549623843
+          ],
+          "view_depth": 12.4097442626953
+        },
+        "normal_directions": 4,
+        "occlusion": {
+          "details": [],
+          "faded_names": [],
+          "faded_trees": 0,
+          "mesh_count": 402,
+          "occluding_trees": 0,
+          "registered_trees": 67
+        },
+        "original_color_directions": 4,
+        "player": [
+          0.0,
+          0.000234376639127731,
+          2.5
+        ],
+        "preset": "day",
+        "route_index": 0,
+        "route_running": false
+      }
+    },
+    {
+      "camera_scope": "normal gameplay camera; unchanged offset and FOV; follow settled",
+      "file": "gameplay-dusk.png",
+      "motion": {
+        "actor_physics_paused": true,
+        "comparison_frozen": false,
+        "scene_clock_paused": true,
+        "sky": "static ProceduralSkyMaterial; no time-driven sky update",
+        "water_flow_speed": null,
+        "wind_strength": 0.06
+      },
+      "original_animation_frame": {
+        "direction": 0,
+        "frame": 0,
+        "texture": "res://assets/characters/crescent-traveler/v1/down/frames/00000.png"
+      },
+      "render_counts": {
+        "shadow_draw_calls": 524,
+        "visible_draw_calls": 77,
+        "visible_objects": 492,
+        "visible_primitives": 339586
+      },
+      "scope": "actual hardware GPU frame; artistic approval remains external",
+      "sha256": "c914626428127e4eada207d718796bfb11d842576618ef51842e452747d13063",
+      "size": [
+        1920,
+        1080
+      ],
+      "state": {
+        "camera": [
+          0.0,
+          4.08473825454712,
+          14.2712707519531
+        ],
+        "features": {
+          "bloom": true,
+          "dof": true,
+          "normals": true,
+          "wind": true
+        },
+        "framing": {
+          "camera_offset_length": 12.7500009536743,
+          "dof_far": 18.4097442626953,
+          "dof_near": 7.40974426269531,
+          "foot": [
+            0.5,
+            0.626913547515869
+          ],
+          "fov": 39.0,
+          "in_frame": true,
+          "pitch_degrees": 13.9999971389771,
+          "pixel_size": 0.00899999961256981,
+          "profile": "close_reference",
+          "silhouette_rect": [
+            0.464287916819255,
+            0.395489049840856,
+            0.0708481788635254,
+            0.232448549623843
+          ],
+          "view_depth": 12.4097442626953
+        },
+        "normal_directions": 4,
+        "occlusion": {
+          "details": [],
+          "faded_names": [],
+          "faded_trees": 0,
+          "mesh_count": 402,
+          "occluding_trees": 0,
+          "registered_trees": 67
+        },
+        "original_color_directions": 4,
+        "player": [
+          0.0,
+          0.000234376639127731,
+          2.5
+        ],
+        "preset": "dusk",
+        "route_index": 0,
+        "route_running": false
+      }
+    },
+    {
+      "camera_scope": "normal gameplay camera; unchanged offset and FOV; follow settled",
+      "file": "gameplay-walk-front.png",
+      "motion": {
+        "actor_physics_paused": true,
+        "comparison_frozen": false,
+        "scene_clock_paused": true,
+        "sky": "static ProceduralSkyMaterial; no time-driven sky update",
+        "water_flow_speed": null,
+        "wind_strength": 0.06
+      },
+      "original_animation_frame": {
+        "direction": 0,
+        "frame": 9,
+        "texture": "res://assets/characters/crescent-traveler/v1/down/frames/00009.png"
+      },
+      "render_counts": {
+        "shadow_draw_calls": 262,
+        "visible_draw_calls": 77,
+        "visible_objects": 492,
+        "visible_primitives": 339586
+      },
+      "scope": "actual hardware GPU frame; artistic approval remains external",
+      "sha256": "f446361fa3dabba71d0ea955a54fcecabea8770d06788e3acc578eb95aaee452",
+      "size": [
+        1920,
+        1080
+      ],
+      "state": {
+        "camera": [
+          0.0,
+          4.08473825454712,
+          14.2712707519531
+        ],
+        "features": {
+          "bloom": true,
+          "dof": true,
+          "normals": true,
+          "wind": true
+        },
+        "framing": {
+          "camera_offset_length": 12.7500009536743,
+          "dof_far": 18.4097442626953,
+          "dof_near": 7.40974426269531,
+          "foot": [
+            0.5,
+            0.626913547515869
+          ],
+          "fov": 39.0,
+          "in_frame": true,
+          "pitch_degrees": 13.9999971389771,
+          "pixel_size": 0.00899999961256981,
+          "profile": "close_reference",
+          "silhouette_rect": [
+            0.464287916819255,
+            0.395489049840856,
+            0.0708481788635254,
+            0.232448549623843
+          ],
+          "view_depth": 12.4097442626953
+        },
+        "normal_directions": 4,
+        "occlusion": {
+          "details": [],
+          "faded_names": [],
+          "faded_trees": 0,
+          "mesh_count": 402,
+          "occluding_trees": 0,
+          "registered_trees": 67
+        },
+        "original_color_directions": 4,
+        "player": [
+          0.0,
+          0.000234376639127731,
+          2.5
+        ],
+        "preset": "day",
+        "route_index": 0,
+        "route_running": false
+      }
+    },
+    {
+      "camera_scope": "normal gameplay camera; unchanged offset and FOV; follow settled",
+      "file": "gameplay-walk-back.png",
+      "motion": {
+        "actor_physics_paused": true,
+        "comparison_frozen": false,
+        "scene_clock_paused": true,
+        "sky": "static ProceduralSkyMaterial; no time-driven sky update",
+        "water_flow_speed": null,
+        "wind_strength": 0.06
+      },
+      "original_animation_frame": {
+        "direction": 1,
+        "frame": 9,
+        "texture": "res://assets/characters/crescent-traveler/v1/up/frames/00009.png"
+      },
+      "render_counts": {
+        "shadow_draw_calls": 262,
+        "visible_draw_calls": 77,
+        "visible_objects": 492,
+        "visible_primitives": 339586
+      },
+      "scope": "actual hardware GPU frame; artistic approval remains external",
+      "sha256": "36db8bf0dc9a2657fcaa9a4c61eeec62cfda3cc0c733aa9f56ed0d789623884a",
+      "size": [
+        1920,
+        1080
+      ],
+      "state": {
+        "camera": [
+          0.0,
+          4.08473825454712,
+          14.2712707519531
+        ],
+        "features": {
+          "bloom": true,
+          "dof": true,
+          "normals": true,
+          "wind": true
+        },
+        "framing": {
+          "camera_offset_length": 12.7500009536743,
+          "dof_far": 18.4097442626953,
+          "dof_near": 7.40974426269531,
+          "foot": [
+            0.5,
+            0.626913547515869
+          ],
+          "fov": 39.0,
+          "in_frame": true,
+          "pitch_degrees": 13.9999971389771,
+          "pixel_size": 0.00899999961256981,
+          "profile": "close_reference",
+          "silhouette_rect": [
+            0.464287916819255,
+            0.395489049840856,
+            0.0708481788635254,
+            0.232448549623843
+          ],
+          "view_depth": 12.4097442626953
+        },
+        "normal_directions": 4,
+        "occlusion": {
+          "details": [],
+          "faded_names": [],
+          "faded_trees": 0,
+          "mesh_count": 402,
+          "occluding_trees": 0,
+          "registered_trees": 67
+        },
+        "original_color_directions": 4,
+        "player": [
+          0.0,
+          0.000234376639127731,
+          2.5
+        ],
+        "preset": "day",
+        "route_index": 0,
+        "route_running": false
+      }
+    },
+    {
+      "camera_scope": "normal gameplay camera; unchanged offset and FOV; follow settled",
+      "file": "gameplay-walk-left.png",
+      "motion": {
+        "actor_physics_paused": true,
+        "comparison_frozen": false,
+        "scene_clock_paused": true,
+        "sky": "static ProceduralSkyMaterial; no time-driven sky update",
+        "water_flow_speed": null,
+        "wind_strength": 0.06
+      },
+      "original_animation_frame": {
+        "direction": 2,
+        "frame": 9,
+        "texture": "res://assets/characters/crescent-traveler/v1/left/frames/00009.png"
+      },
+      "render_counts": {
+        "shadow_draw_calls": 262,
+        "visible_draw_calls": 77,
+        "visible_objects": 492,
+        "visible_primitives": 339586
+      },
+      "scope": "actual hardware GPU frame; artistic approval remains external",
+      "sha256": "17885a4be265106ffd1cd98c158555af4729bbbc46e30a34f42d34c648a203fe",
+      "size": [
+        1920,
+        1080
+      ],
+      "state": {
+        "camera": [
+          0.0,
+          4.08473825454712,
+          14.2712707519531
+        ],
+        "features": {
+          "bloom": true,
+          "dof": true,
+          "normals": true,
+          "wind": true
+        },
+        "framing": {
+          "camera_offset_length": 12.7500009536743,
+          "dof_far": 18.4097442626953,
+          "dof_near": 7.40974426269531,
+          "foot": [
+            0.5,
+            0.626913547515869
+          ],
+          "fov": 39.0,
+          "in_frame": true,
+          "pitch_degrees": 13.9999971389771,
+          "pixel_size": 0.00899999961256981,
+          "profile": "close_reference",
+          "silhouette_rect": [
+            0.464287916819255,
+            0.395489049840856,
+            0.0708481788635254,
+            0.232448549623843
+          ],
+          "view_depth": 12.4097442626953
+        },
+        "normal_directions": 4,
+        "occlusion": {
+          "details": [],
+          "faded_names": [],
+          "faded_trees": 0,
+          "mesh_count": 402,
+          "occluding_trees": 0,
+          "registered_trees": 67
+        },
+        "original_color_directions": 4,
+        "player": [
+          0.0,
+          0.000234376639127731,
+          2.5
+        ],
+        "preset": "day",
+        "route_index": 0,
+        "route_running": false
+      }
+    },
+    {
+      "camera_scope": "normal gameplay camera; unchanged offset and FOV; follow settled",
+      "file": "gameplay-walk-right.png",
+      "motion": {
+        "actor_physics_paused": true,
+        "comparison_frozen": false,
+        "scene_clock_paused": true,
+        "sky": "static ProceduralSkyMaterial; no time-driven sky update",
+        "water_flow_speed": null,
+        "wind_strength": 0.06
+      },
+      "original_animation_frame": {
+        "direction": 3,
+        "frame": 9,
+        "texture": "res://assets/characters/crescent-traveler/v1/right/frames/00009.png"
+      },
+      "render_counts": {
+        "shadow_draw_calls": 262,
+        "visible_draw_calls": 77,
+        "visible_objects": 492,
+        "visible_primitives": 339586
+      },
+      "scope": "actual hardware GPU frame; artistic approval remains external",
+      "sha256": "df41b81e523bd51026178dca325a6594b96066780a981fc6393d511c42868c08",
+      "size": [
+        1920,
+        1080
+      ],
+      "state": {
+        "camera": [
+          0.0,
+          4.08473825454712,
+          14.2712707519531
+        ],
+        "features": {
+          "bloom": true,
+          "dof": true,
+          "normals": true,
+          "wind": true
+        },
+        "framing": {
+          "camera_offset_length": 12.7500009536743,
+          "dof_far": 18.4097442626953,
+          "dof_near": 7.40974426269531,
+          "foot": [
+            0.5,
+            0.626913547515869
+          ],
+          "fov": 39.0,
+          "in_frame": true,
+          "pitch_degrees": 13.9999971389771,
+          "pixel_size": 0.00899999961256981,
+          "profile": "close_reference",
+          "silhouette_rect": [
+            0.464287916819255,
+            0.395489049840856,
+            0.0708481788635254,
+            0.232448549623843
+          ],
+          "view_depth": 12.4097442626953
+        },
+        "normal_directions": 4,
+        "occlusion": {
+          "details": [],
+          "faded_names": [],
+          "faded_trees": 0,
+          "mesh_count": 402,
+          "occluding_trees": 0,
+          "registered_trees": 67
+        },
+        "original_color_directions": 4,
+        "player": [
+          0.0,
+          0.000234376639127731,
+          2.5
+        ],
+        "preset": "day",
+        "route_index": 0,
+        "route_running": false
+      }
+    },
+    {
+      "file": "billboard-pitch15.png",
+      "motion": {
+        "actor_physics_paused": true,
+        "comparison_frozen": false,
+        "scene_clock_paused": true,
+        "sky": "static ProceduralSkyMaterial; no time-driven sky update",
+        "water_flow_speed": null,
+        "wind_strength": 0.06
+      },
+      "render_counts": {
+        "shadow_draw_calls": 4,
+        "visible_draw_calls": 1,
+        "visible_objects": 1,
+        "visible_primitives": 2
+      },
+      "scope": "actual hardware GPU frame; artistic approval remains external",
+      "sha256": "a2e6d4072009d529c7baa67dcd3d564bf09a0dbe4e5220baf93d31bf7c5fff39",
+      "size": [
+        1920,
+        1080
+      ],
+      "state": {
+        "camera": [
+          0.0,
+          3.05603122711182,
+          9.96341133117676
+        ],
+        "features": {
+          "bloom": false,
+          "dof": false,
+          "normals": true,
+          "wind": true
+        },
+        "framing": {
+          "camera_offset_length": 12.7500009536743,
+          "dof_far": 18.4097442626953,
+          "dof_near": 7.40974426269531,
+          "foot": [
+            0.5,
+            0.680024445056915
+          ],
+          "fov": 39.0,
+          "in_frame": true,
+          "pitch_degrees": 15.0,
+          "pixel_size": 0.00899999961256981,
+          "profile": "close_reference",
+          "silhouette_rect": [
+            0.44460277557373,
+            0.321034495035807,
+            0.109900919596354,
+            0.360578438087746
+          ],
+          "view_depth": 8.00000095367432
+        },
+        "normal_directions": 4,
+        "occlusion": {
+          "details": [],
+          "faded_names": [],
+          "faded_trees": 0,
+          "mesh_count": 402,
+          "occluding_trees": 0,
+          "registered_trees": 67
+        },
+        "original_color_directions": 4,
+        "player": [
+          0.0,
+          0.000234376639127731,
+          2.5
+        ],
+        "preset": "day",
+        "route_index": 0,
+        "route_running": false
+      }
+    },
+    {
+      "file": "billboard-pitch35.png",
+      "motion": {
+        "actor_physics_paused": true,
+        "comparison_frozen": false,
+        "scene_clock_paused": true,
+        "sky": "static ProceduralSkyMaterial; no time-driven sky update",
+        "water_flow_speed": null,
+        "wind_strength": 0.06
+      },
+      "render_counts": {
+        "shadow_draw_calls": 4,
+        "visible_draw_calls": 1,
+        "visible_objects": 1,
+        "visible_primitives": 2
+      },
+      "scope": "actual hardware GPU frame; artistic approval remains external",
+      "sha256": "a2e6d4072009d529c7baa67dcd3d564bf09a0dbe4e5220baf93d31bf7c5fff39",
+      "size": [
+        1920,
+        1080
+      ],
+      "state": {
+        "camera": [
+          0.0,
+          5.42438125610352,
+          8.46816921234131
+        ],
+        "features": {
+          "bloom": false,
+          "dof": false,
+          "normals": true,
+          "wind": true
+        },
+        "framing": {
+          "camera_offset_length": 12.7500009536743,
+          "dof_far": 18.4097442626953,
+          "dof_near": 7.40974426269531,
+          "foot": [
+            0.5,
+            0.680024385452271
+          ],
+          "fov": 39.0,
+          "in_frame": true,
+          "pitch_degrees": 34.9999961853027,
+          "pixel_size": 0.00899999961256981,
+          "profile": "close_reference",
+          "silhouette_rect": [
+            0.44460277557373,
+            0.321034579806858,
+            0.109900919596354,
+            0.360578296802662
+          ],
+          "view_depth": 8.00000095367432
+        },
+        "normal_directions": 4,
+        "occlusion": {
+          "details": [],
+          "faded_names": [],
+          "faded_trees": 0,
+          "mesh_count": 402,
+          "occluding_trees": 0,
+          "registered_trees": 67
+        },
+        "original_color_directions": 4,
+        "player": [
+          0.0,
+          0.000234376639127731,
+          2.5
+        ],
+        "preset": "day",
+        "route_index": 0,
+        "route_running": false
+      }
+    },
+    {
+      "file": "billboard-pitch60.png",
+      "motion": {
+        "actor_physics_paused": true,
+        "comparison_frozen": false,
+        "scene_clock_paused": true,
+        "sky": "static ProceduralSkyMaterial; no time-driven sky update",
+        "water_flow_speed": null,
+        "wind_strength": 0.06
+      },
+      "render_counts": {
+        "shadow_draw_calls": 4,
+        "visible_draw_calls": 1,
+        "visible_objects": 1,
+        "visible_primitives": 2
+      },
+      "scope": "actual hardware GPU frame; artistic approval remains external",
+      "sha256": "a2e6d4072009d529c7baa67dcd3d564bf09a0dbe4e5220baf93d31bf7c5fff39",
+      "size": [
+        1920,
+        1080
+      ],
+      "state": {
+        "camera": [
+          0.0,
+          7.43843746185303,
+          5.61665391921997
+        ],
+        "features": {
+          "bloom": false,
+          "dof": false,
+          "normals": true,
+          "wind": true
+        },
+        "framing": {
+          "camera_offset_length": 12.7500009536743,
+          "dof_far": 18.4097442626953,
+          "dof_near": 7.40974426269531,
+          "foot": [
+            0.5,
+            0.680024385452271
+          ],
+          "fov": 39.0,
+          "in_frame": true,
+          "pitch_degrees": 60.0,
+          "pixel_size": 0.00899999961256981,
+          "profile": "close_reference",
+          "silhouette_rect": [
+            0.44460277557373,
+            0.321034438521774,
+            0.109900919596354,
+            0.360578438087746
+          ],
+          "view_depth": 7.99999904632568
+        },
+        "normal_directions": 4,
+        "occlusion": {
+          "details": [],
+          "faded_names": [],
+          "faded_trees": 0,
+          "mesh_count": 402,
+          "occluding_trees": 0,
+          "registered_trees": 67
+        },
+        "original_color_directions": 4,
+        "player": [
+          0.0,
+          0.000234376639127731,
+          2.5
+        ],
+        "preset": "day",
+        "route_index": 0,
+        "route_running": false
+      }
+    },
+    {
+      "file": "billboard-yaw55.png",
+      "motion": {
+        "actor_physics_paused": true,
+        "comparison_frozen": false,
+        "scene_clock_paused": true,
+        "sky": "static ProceduralSkyMaterial; no time-driven sky update",
+        "water_flow_speed": null,
+        "wind_strength": 0.06
+      },
+      "render_counts": {
+        "shadow_draw_calls": 3,
+        "visible_draw_calls": 1,
+        "visible_objects": 1,
+        "visible_primitives": 2
+      },
+      "scope": "actual hardware GPU frame; artistic approval remains external",
+      "sha256": "a2e6d4072009d529c7baa67dcd3d564bf09a0dbe4e5220baf93d31bf7c5fff39",
+      "size": [
+        1920,
+        1080
+      ],
+      "state": {
+        "camera": [
+          4.8888373374939,
+          5.42438125610352,
+          5.9232006072998
+        ],
+        "features": {
+          "bloom": false,
+          "dof": false,
+          "normals": true,
+          "wind": true
+        },
+        "framing": {
+          "camera_offset_length": 12.7500009536743,
+          "dof_far": 18.4097442626953,
+          "dof_near": 7.40974426269531,
+          "foot": [
+            0.499999970197678,
+            0.680024445056915
+          ],
+          "fov": 39.0,
+          "in_frame": true,
+          "pitch_degrees": 34.9999961853027,
+          "pixel_size": 0.00899999961256981,
+          "profile": "close_reference",
+          "silhouette_rect": [
+            0.44460277557373,
+            0.321034551549841,
+            0.109900919596354,
+            0.360578381573712
+          ],
+          "view_depth": 7.99999904632568
+        },
+        "normal_directions": 4,
+        "occlusion": {
+          "details": [],
+          "faded_names": [],
+          "faded_trees": 0,
+          "mesh_count": 402,
+          "occluding_trees": 0,
+          "registered_trees": 67
+        },
+        "original_color_directions": 4,
+        "player": [
+          0.0,
+          0.000234376639127731,
+          2.5
+        ],
+        "preset": "day",
+        "route_index": 0,
+        "route_running": false
+      }
+    },
+    {
+      "file": "billboard-scale125.png",
+      "motion": {
+        "actor_physics_paused": true,
+        "comparison_frozen": false,
+        "scene_clock_paused": true,
+        "sky": "static ProceduralSkyMaterial; no time-driven sky update",
+        "water_flow_speed": null,
+        "wind_strength": 0.06
+      },
+      "render_counts": {
+        "shadow_draw_calls": 4,
+        "visible_draw_calls": 1,
+        "visible_objects": 1,
+        "visible_primitives": 2
+      },
+      "scope": "actual hardware GPU frame; artistic approval remains external",
+      "sha256": "d9c305b23b563559e68cebe45b48a4434b476e4e294f77b8cc64798be694f418",
+      "size": [
+        1920,
+        1080
+      ],
+      "state": {
+        "camera": [
+          0.0,
+          5.42438125610352,
+          8.46816921234131
+        ],
+        "features": {
+          "bloom": false,
+          "dof": false,
+          "normals": true,
+          "wind": true
+        },
+        "framing": {
+          "camera_offset_length": 12.7500009536743,
+          "dof_far": 18.4097442626953,
+          "dof_near": 7.40974426269531,
+          "foot": [
+            0.5,
+            0.680024385452271
+          ],
+          "fov": 39.0,
+          "in_frame": true,
+          "pitch_degrees": 34.9999961853027,
+          "pixel_size": 0.00899999961256981,
+          "profile": "close_reference",
+          "silhouette_rect": [
+            0.430753453572591,
+            0.231287030820493,
+            0.13737621307373,
+            0.450722871003328
+          ],
+          "view_depth": 8.00000095367432
+        },
+        "normal_directions": 4,
+        "occlusion": {
+          "details": [],
+          "faded_names": [],
+          "faded_trees": 0,
+          "mesh_count": 402,
+          "occluding_trees": 0,
+          "registered_trees": 67
+        },
+        "original_color_directions": 4,
+        "player": [
+          0.0,
+          0.000234376639127731,
+          2.5
+        ],
+        "preset": "day",
+        "route_index": 0,
+        "route_running": false
+      }
+    },
+    {
+      "camera_scope": "normal gameplay camera; unchanged offset and FOV; follow settled",
+      "file": "gameplay-route-left.png",
+      "motion": {
+        "actor_physics_paused": true,
+        "comparison_frozen": false,
+        "scene_clock_paused": true,
+        "sky": "static ProceduralSkyMaterial; no time-driven sky update",
+        "water_flow_speed": null,
+        "wind_strength": 0.06
+      },
+      "original_animation_frame": {
+        "direction": 3,
+        "frame": 15,
+        "texture": "res://assets/characters/crescent-traveler/v1/right/frames/00015.png"
+      },
+      "render_counts": {
+        "shadow_draw_calls": 269,
+        "visible_draw_calls": 89,
+        "visible_objects": 407,
+        "visible_primitives": 307464
+      },
+      "scope": "actual hardware GPU frame; artistic approval remains external",
+      "sha256": "cc67e9611c218f751fb2d590cc220779f921e4d2509c313e82b959036d5107b8",
+      "size": [
+        1920,
+        1080
+      ],
+      "state": {
+        "camera": [
+          -12.7280921936035,
+          4.08473825454712,
+          13.5829906463623
+        ],
+        "features": {
+          "bloom": true,
+          "dof": true,
+          "normals": true,
+          "wind": true
+        },
+        "framing": {
+          "camera_offset_length": 12.7500009536743,
+          "dof_far": 18.4097442626953,
+          "dof_near": 7.40974426269531,
+          "foot": [
+            0.5,
+            0.626913547515869
+          ],
+          "fov": 39.0,
+          "in_frame": true,
+          "pitch_degrees": 13.9999971389771,
+          "pixel_size": 0.00899999961256981,
+          "profile": "close_reference",
+          "silhouette_rect": [
+            0.464287948608398,
+            0.395489049840856,
+            0.0708481470743815,
+            0.232448549623843
+          ],
+          "view_depth": 12.4097442626953
+        },
+        "normal_directions": 4,
+        "occlusion": {
+          "details": [],
+          "faded_names": [],
+          "faded_trees": 0,
+          "mesh_count": 402,
+          "occluding_trees": 0,
+          "registered_trees": 67
+        },
+        "original_color_directions": 4,
+        "player": [
+          -12.7280921936035,
+          0.000234376639127731,
+          1.81171977519989
+        ],
+        "preset": "day",
+        "route_index": 1,
+        "route_running": true
+      }
+    },
+    {
+      "camera_scope": "normal gameplay camera; unchanged offset and FOV; follow settled",
+      "file": "gameplay-route-right.png",
+      "motion": {
+        "actor_physics_paused": true,
+        "comparison_frozen": false,
+        "scene_clock_paused": true,
+        "sky": "static ProceduralSkyMaterial; no time-driven sky update",
+        "water_flow_speed": null,
+        "wind_strength": 0.06
+      },
+      "original_animation_frame": {
+        "direction": 2,
+        "frame": 10,
+        "texture": "res://assets/characters/crescent-traveler/v1/left/frames/00010.png"
+      },
+      "render_counts": {
+        "shadow_draw_calls": 235,
+        "visible_draw_calls": 84,
+        "visible_objects": 352,
+        "visible_primitives": 294365
+      },
+      "scope": "actual hardware GPU frame; artistic approval remains external",
+      "sha256": "b1582bda81e1fdefa9f6d28580d52ecda6c51265dec2f9bd5da1c633a409eadc",
+      "size": [
+        1920,
+        1080
+      ],
+      "state": {
+        "camera": [
+          11.6986389160156,
+          4.08473825454712,
+          13.5712757110596
+        ],
+        "features": {
+          "bloom": true,
+          "dof": true,
+          "normals": true,
+          "wind": true
+        },
+        "framing": {
+          "camera_offset_length": 12.7500009536743,
+          "dof_far": 18.4097442626953,
+          "dof_near": 7.40974426269531,
+          "foot": [
+            0.5,
+            0.626913547515869
+          ],
+          "fov": 39.0,
+          "in_frame": true,
+          "pitch_degrees": 13.9999971389771,
+          "pixel_size": 0.00899999961256981,
+          "profile": "close_reference",
+          "silhouette_rect": [
+            0.464287948608398,
+            0.395489049840856,
+            0.0708481470743815,
+            0.232448549623843
+          ],
+          "view_depth": 12.4097442626953
+        },
+        "normal_directions": 4,
+        "occlusion": {
+          "details": [
+            {
+              "mesh_count": 6,
+              "name": "Broadleaf77",
+              "occluding": true,
+              "transparency": 1.0
+            }
+          ],
+          "faded_names": [
+            "Broadleaf77"
+          ],
+          "faded_trees": 1,
+          "mesh_count": 402,
+          "occluding_trees": 1,
+          "registered_trees": 67
+        },
+        "original_color_directions": 4,
+        "player": [
+          11.6986389160156,
+          0.000234376639127731,
+          1.80000472068787
+        ],
+        "preset": "day",
+        "route_index": 3,
+        "route_running": true
+      }
+    }
+  ],
+  "viewport": [
+    1920,
+    1080
+  ]
+}

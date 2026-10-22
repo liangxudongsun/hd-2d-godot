@@ -1,0 +1,526 @@
+{
+  "schema": 1,
+  "passed": true,
+  "checks": [
+    {
+      "label": "GPU capture itself passed",
+      "passed": true
+    },
+    {
+      "label": "capture uses actual Forward+ GPU",
+      "passed": true
+    },
+    {
+      "label": "all four lighting probes have the same resolution",
+      "passed": true
+    },
+    {
+      "label": "lighting probes cover all ten species",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_a: visible GPU specimen",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_a: normal toggle changes left-lit surface",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_a: normal toggle changes right-lit surface",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_a: normal detail responds to light direction beyond flat-plane baseline",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_b: visible GPU specimen",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_b: normal toggle changes left-lit surface",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_b: normal toggle changes right-lit surface",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_b: normal detail responds to light direction beyond flat-plane baseline",
+      "passed": true
+    },
+    {
+      "label": "fir: visible GPU specimen",
+      "passed": true
+    },
+    {
+      "label": "fir: normal toggle changes left-lit surface",
+      "passed": true
+    },
+    {
+      "label": "fir: normal toggle changes right-lit surface",
+      "passed": true
+    },
+    {
+      "label": "fir: normal detail responds to light direction beyond flat-plane baseline",
+      "passed": true
+    },
+    {
+      "label": "grass: visible GPU specimen",
+      "passed": true
+    },
+    {
+      "label": "grass: normal toggle changes left-lit surface",
+      "passed": true
+    },
+    {
+      "label": "grass: normal toggle changes right-lit surface",
+      "passed": true
+    },
+    {
+      "label": "grass: normal detail responds to light direction beyond flat-plane baseline",
+      "passed": true
+    },
+    {
+      "label": "fern: visible GPU specimen",
+      "passed": true
+    },
+    {
+      "label": "fern: normal toggle changes left-lit surface",
+      "passed": true
+    },
+    {
+      "label": "fern: normal toggle changes right-lit surface",
+      "passed": true
+    },
+    {
+      "label": "fern: normal detail responds to light direction beyond flat-plane baseline",
+      "passed": true
+    },
+    {
+      "label": "reeds: visible GPU specimen",
+      "passed": true
+    },
+    {
+      "label": "reeds: normal toggle changes left-lit surface",
+      "passed": true
+    },
+    {
+      "label": "reeds: normal toggle changes right-lit surface",
+      "passed": true
+    },
+    {
+      "label": "reeds: normal detail responds to light direction beyond flat-plane baseline",
+      "passed": true
+    },
+    {
+      "label": "flowers_white: visible GPU specimen",
+      "passed": true
+    },
+    {
+      "label": "flowers_white: normal toggle changes left-lit surface",
+      "passed": true
+    },
+    {
+      "label": "flowers_white: normal toggle changes right-lit surface",
+      "passed": true
+    },
+    {
+      "label": "flowers_white: normal detail responds to light direction beyond flat-plane baseline",
+      "passed": true
+    },
+    {
+      "label": "flowers_pink: visible GPU specimen",
+      "passed": true
+    },
+    {
+      "label": "flowers_pink: normal toggle changes left-lit surface",
+      "passed": true
+    },
+    {
+      "label": "flowers_pink: normal toggle changes right-lit surface",
+      "passed": true
+    },
+    {
+      "label": "flowers_pink: normal detail responds to light direction beyond flat-plane baseline",
+      "passed": true
+    },
+    {
+      "label": "window_flowers: visible GPU specimen",
+      "passed": true
+    },
+    {
+      "label": "window_flowers: normal toggle changes left-lit surface",
+      "passed": true
+    },
+    {
+      "label": "window_flowers: normal toggle changes right-lit surface",
+      "passed": true
+    },
+    {
+      "label": "window_flowers: normal detail responds to light direction beyond flat-plane baseline",
+      "passed": true
+    },
+    {
+      "label": "lily_pad: visible GPU specimen",
+      "passed": true
+    },
+    {
+      "label": "lily_pad: normal toggle changes left-lit surface",
+      "passed": true
+    },
+    {
+      "label": "lily_pad: normal toggle changes right-lit surface",
+      "passed": true
+    },
+    {
+      "label": "lily_pad: normal detail responds to light direction beyond flat-plane baseline",
+      "passed": true
+    },
+    {
+      "label": "vegetation normal switch changes frozen actual gameplay image",
+      "passed": true
+    }
+  ],
+  "scope": "Independent real GPU RGB pixel read-back; identical albedo and frozen geometry; normal toggle and symmetric light-direction comparisons",
+  "gameplay_normal_toggle": {
+    "pixels": 2073600,
+    "changed_pixels_over_2": 121900,
+    "changed_fraction": 0.0587866512345679,
+    "mean_absolute_rgb_difference": 0.2681137474279835
+  },
+  "species": [
+    {
+      "id": "broadleaf_a",
+      "crop_px": [
+        45,
+        173,
+        363,
+        505
+      ],
+      "left_normal_toggle": {
+        "pixels": 50670,
+        "changed_pixels_over_2": 19933,
+        "changed_fraction": 0.3933885928557332,
+        "mean_absolute_rgb_difference": 1.9615551608446813
+      },
+      "right_normal_toggle": {
+        "pixels": 50670,
+        "changed_pixels_over_2": 19873,
+        "changed_fraction": 0.3922044602328794,
+        "mean_absolute_rgb_difference": 1.8890401947240314
+      },
+      "light_direction_normals_on": {
+        "pixels": 50670,
+        "changed_pixels_over_2": 27689,
+        "changed_fraction": 0.5464574699032958,
+        "mean_absolute_rgb_difference": 3.0588645483849746
+      },
+      "light_direction_normals_off": {
+        "pixels": 50670,
+        "changed_pixels_over_2": 0,
+        "changed_fraction": 0.0,
+        "mean_absolute_rgb_difference": 0.3024340503914216
+      }
+    },
+    {
+      "id": "broadleaf_b",
+      "crop_px": [
+        473,
+        171,
+        691,
+        507
+      ],
+      "left_normal_toggle": {
+        "pixels": 32884,
+        "changed_pixels_over_2": 14774,
+        "changed_fraction": 0.4492762437659652,
+        "mean_absolute_rgb_difference": 1.9877650731865548
+      },
+      "right_normal_toggle": {
+        "pixels": 32884,
+        "changed_pixels_over_2": 16282,
+        "changed_fraction": 0.49513441187203505,
+        "mean_absolute_rgb_difference": 2.0730345051291406
+      },
+      "light_direction_normals_on": {
+        "pixels": 32884,
+        "changed_pixels_over_2": 20522,
+        "changed_fraction": 0.6240724972631067,
+        "mean_absolute_rgb_difference": 3.176032923812999
+      },
+      "light_direction_normals_off": {
+        "pixels": 32884,
+        "changed_pixels_over_2": 0,
+        "changed_fraction": 0.0,
+        "mean_absolute_rgb_difference": 0.12944491748773465
+      }
+    },
+    {
+      "id": "fir",
+      "crop_px": [
+        869,
+        171,
+        1051,
+        507
+      ],
+      "left_normal_toggle": {
+        "pixels": 31036,
+        "changed_pixels_over_2": 10082,
+        "changed_fraction": 0.3248485629591442,
+        "mean_absolute_rgb_difference": 1.7481956437685267
+      },
+      "right_normal_toggle": {
+        "pixels": 31036,
+        "changed_pixels_over_2": 9796,
+        "changed_fraction": 0.31563345791983505,
+        "mean_absolute_rgb_difference": 1.7181015594793143
+      },
+      "light_direction_normals_on": {
+        "pixels": 31036,
+        "changed_pixels_over_2": 15163,
+        "changed_fraction": 0.48856167031833997,
+        "mean_absolute_rgb_difference": 2.6195923014134124
+      },
+      "light_direction_normals_off": {
+        "pixels": 31036,
+        "changed_pixels_over_2": 0,
+        "changed_fraction": 0.0,
+        "mean_absolute_rgb_difference": 0.01620698543626756
+      }
+    },
+    {
+      "id": "grass",
+      "crop_px": [
+        1179,
+        201,
+        1497,
+        477
+      ],
+      "left_normal_toggle": {
+        "pixels": 31158,
+        "changed_pixels_over_2": 17144,
+        "changed_fraction": 0.5502278708517877,
+        "mean_absolute_rgb_difference": 3.4225560048783614
+      },
+      "right_normal_toggle": {
+        "pixels": 31158,
+        "changed_pixels_over_2": 18539,
+        "changed_fraction": 0.5949996790551383,
+        "mean_absolute_rgb_difference": 3.915334745490725
+      },
+      "light_direction_normals_on": {
+        "pixels": 31158,
+        "changed_pixels_over_2": 22130,
+        "changed_fraction": 0.7102509788818281,
+        "mean_absolute_rgb_difference": 6.2813937565526246
+      },
+      "light_direction_normals_off": {
+        "pixels": 31158,
+        "changed_pixels_over_2": 0,
+        "changed_fraction": 0.0,
+        "mean_absolute_rgb_difference": 0.12490104200098423
+      }
+    },
+    {
+      "id": "fern",
+      "crop_px": [
+        1557,
+        221,
+        1875,
+        457
+      ],
+      "left_normal_toggle": {
+        "pixels": 33745,
+        "changed_pixels_over_2": 15586,
+        "changed_fraction": 0.46187583345680844,
+        "mean_absolute_rgb_difference": 2.519020101743468
+      },
+      "right_normal_toggle": {
+        "pixels": 33745,
+        "changed_pixels_over_2": 16344,
+        "changed_fraction": 0.48433842050674175,
+        "mean_absolute_rgb_difference": 2.8990270163481013
+      },
+      "light_direction_normals_on": {
+        "pixels": 33745,
+        "changed_pixels_over_2": 23463,
+        "changed_fraction": 0.6953030078530152,
+        "mean_absolute_rgb_difference": 4.706376253272089
+      },
+      "light_direction_normals_off": {
+        "pixels": 33745,
+        "changed_pixels_over_2": 0,
+        "changed_fraction": 0.0,
+        "mean_absolute_rgb_difference": 0.26864226799031954
+      }
+    },
+    {
+      "id": "reeds",
+      "crop_px": [
+        45,
+        584,
+        363,
+        899
+      ],
+      "left_normal_toggle": {
+        "pixels": 44140,
+        "changed_pixels_over_2": 24891,
+        "changed_fraction": 0.5639102854553693,
+        "mean_absolute_rgb_difference": 3.682774505361728
+      },
+      "right_normal_toggle": {
+        "pixels": 44140,
+        "changed_pixels_over_2": 23334,
+        "changed_fraction": 0.5286361576801087,
+        "mean_absolute_rgb_difference": 3.355603383174747
+      },
+      "light_direction_normals_on": {
+        "pixels": 44140,
+        "changed_pixels_over_2": 33367,
+        "changed_fraction": 0.755935659265972,
+        "mean_absolute_rgb_difference": 6.5992297236067055
+      },
+      "light_direction_normals_off": {
+        "pixels": 44140,
+        "changed_pixels_over_2": 0,
+        "changed_fraction": 0.0,
+        "mean_absolute_rgb_difference": 0.20726476363087146
+      }
+    },
+    {
+      "id": "flowers_white",
+      "crop_px": [
+        423,
+        582,
+        741,
+        900
+      ],
+      "left_normal_toggle": {
+        "pixels": 47101,
+        "changed_pixels_over_2": 19889,
+        "changed_fraction": 0.4222627969682172,
+        "mean_absolute_rgb_difference": 2.0779459742539084
+      },
+      "right_normal_toggle": {
+        "pixels": 47101,
+        "changed_pixels_over_2": 20280,
+        "changed_fraction": 0.4305641069191737,
+        "mean_absolute_rgb_difference": 2.037607127944913
+      },
+      "light_direction_normals_on": {
+        "pixels": 47101,
+        "changed_pixels_over_2": 29512,
+        "changed_fraction": 0.626568438037409,
+        "mean_absolute_rgb_difference": 3.6001288012285655
+      },
+      "light_direction_normals_off": {
+        "pixels": 47101,
+        "changed_pixels_over_2": 0,
+        "changed_fraction": 0.0,
+        "mean_absolute_rgb_difference": 0.10095327063119679
+      }
+    },
+    {
+      "id": "flowers_pink",
+      "crop_px": [
+        801,
+        608,
+        1119,
+        874
+      ],
+      "left_normal_toggle": {
+        "pixels": 39015,
+        "changed_pixels_over_2": 16882,
+        "changed_fraction": 0.43270536972959117,
+        "mean_absolute_rgb_difference": 2.015575206117305
+      },
+      "right_normal_toggle": {
+        "pixels": 39015,
+        "changed_pixels_over_2": 16071,
+        "changed_fraction": 0.411918492887351,
+        "mean_absolute_rgb_difference": 1.9858003332051775
+      },
+      "light_direction_normals_on": {
+        "pixels": 39015,
+        "changed_pixels_over_2": 23365,
+        "changed_fraction": 0.5988722286300141,
+        "mean_absolute_rgb_difference": 3.492947157076338
+      },
+      "light_direction_normals_off": {
+        "pixels": 39015,
+        "changed_pixels_over_2": 0,
+        "changed_fraction": 0.0,
+        "mean_absolute_rgb_difference": 0.02693835704216327
+      }
+    },
+    {
+      "id": "window_flowers",
+      "crop_px": [
+        1179,
+        678,
+        1497,
+        805
+      ],
+      "left_normal_toggle": {
+        "pixels": 16147,
+        "changed_pixels_over_2": 6215,
+        "changed_fraction": 0.38490122004087446,
+        "mean_absolute_rgb_difference": 1.8566916455069054
+      },
+      "right_normal_toggle": {
+        "pixels": 16147,
+        "changed_pixels_over_2": 6135,
+        "changed_fraction": 0.3799467393323837,
+        "mean_absolute_rgb_difference": 1.8266757498812989
+      },
+      "light_direction_normals_on": {
+        "pixels": 16147,
+        "changed_pixels_over_2": 9810,
+        "changed_fraction": 0.6075431968786772,
+        "mean_absolute_rgb_difference": 3.1522264197683785
+      },
+      "light_direction_normals_off": {
+        "pixels": 16147,
+        "changed_pixels_over_2": 0,
+        "changed_fraction": 0.0,
+        "mean_absolute_rgb_difference": 0.1046427612972482
+      }
+    },
+    {
+      "id": "lily_pad",
+      "crop_px": [
+        1557,
+        686,
+        1875,
+        797
+      ],
+      "left_normal_toggle": {
+        "pixels": 19784,
+        "changed_pixels_over_2": 14199,
+        "changed_fraction": 0.7177011726647796,
+        "mean_absolute_rgb_difference": 3.6378892033966843
+      },
+      "right_normal_toggle": {
+        "pixels": 19784,
+        "changed_pixels_over_2": 13900,
+        "changed_fraction": 0.7025879498584715,
+        "mean_absolute_rgb_difference": 3.6132565035719098
+      },
+      "light_direction_normals_on": {
+        "pixels": 19784,
+        "changed_pixels_over_2": 12150,
+        "changed_fraction": 0.6141326324302466,
+        "mean_absolute_rgb_difference": 2.9503639304488476
+      },
+      "light_direction_normals_off": {
+        "pixels": 19784,
+        "changed_pixels_over_2": 0,
+        "changed_fraction": 0.0,
+        "mean_absolute_rgb_difference": 0.17798894729747947
+      }
+    }
+  ],
+  "input_capture_sha256": "991e4702235b6e2c1982bedff8d46befe3ebcfc34c50c2dd1fdcbbea4488f9d6"
+}

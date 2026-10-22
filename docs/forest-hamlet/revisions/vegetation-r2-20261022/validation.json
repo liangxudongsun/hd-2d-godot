@@ -1,0 +1,265 @@
+{
+  "schema": 1,
+  "passed": true,
+  "scope": "Verified existing final test reports, current runtime identity, GPU frames and native workflow evidence; no aesthetic decision is created",
+  "runtime_fingerprint": "0134f75cb8452176e2fde2c160713fe76dc9f30c0e2df088abf8085ce52b249d",
+  "runtime_file_count": 414,
+  "capture": "build/forest-hamlet/vegetation-r2-final",
+  "screenshots": 11,
+  "reports": {
+    "vegetation-assets-report.json": {
+      "passed": true,
+      "checks": 126
+    },
+    "vegetation-runtime-report.json": {
+      "passed": true,
+      "checks": 28
+    },
+    "close-runtime-report.json": {
+      "passed": true,
+      "checks": 27
+    },
+    "vegetation-gpu-pixel-report.json": {
+      "passed": true,
+      "checks": 45
+    },
+    "vegetation-gpu-report.json": {
+      "passed": true,
+      "checks": 18
+    },
+    "make-test-report.json": {
+      "passed": true,
+      "checks": 0
+    },
+    "assets-report.json": {
+      "passed": true,
+      "checks": 48
+    },
+    "runtime-report.json": {
+      "passed": true,
+      "checks": 61
+    }
+  },
+  "renderer": "forward_plus",
+  "adapter": "NVIDIA GeForce RTX 4070 SUPER",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "near_framing": {
+    "camera_offset_length": 12.7500009536743,
+    "dof_far": 22.4097442626953,
+    "dof_near": 7.40974426269531,
+    "foot": [
+      0.5,
+      0.626913547515869
+    ],
+    "fov": 39.0,
+    "in_frame": true,
+    "pitch_degrees": 13.9999971389771,
+    "pixel_size": 0.00899999961256981,
+    "profile": "close_reference",
+    "silhouette_rect": [
+      0.464287916819255,
+      0.395489049840856,
+      0.0708481788635254,
+      0.232448549623843
+    ],
+    "view_depth": 12.4097442626953
+  },
+  "physical_routes_completed": [
+    "overview",
+    "close",
+    "GPU close"
+  ],
+  "vegetation_families": [
+    "broadleaf_a",
+    "broadleaf_b",
+    "fern",
+    "fir",
+    "flowers_pink",
+    "flowers_white",
+    "grass",
+    "lily_pad",
+    "reeds",
+    "window_flowers"
+  ],
+  "vegetation_sprite_count": 218,
+  "original_character": {
+    "files": 345,
+    "changed_originals": []
+  },
+  "aw": {
+    "run_id": "forest-hamlet-20261022-vegetation-r2-paired",
+    "workflow": "world.compile",
+    "execution_status": "completed",
+    "runtime_manifest_sha256": "d602fe7c8b95f1f3f76e29486a74f2050a320f6fae131054afac88daf55b58d0",
+    "pairs": 10,
+    "frozen_inputs": 37
+  },
+  "vgp": {
+    "run_id": "forest-hamlet-20261022-vegetation-r2-review",
+    "asset_id": "a64415f5-d8fe-413c-ac8d-7a20f74ccbdd",
+    "revision_id": "6dcd4a7a-3384-497f-8687-a1cb59b50500",
+    "round_id": "cca9b78c-9745-4792-872a-302754b1ded1",
+    "stage": "concept_design",
+    "ready": true,
+    "issues": [],
+    "review_status": "pending",
+    "main_outputs": 20,
+    "frozen_files": 64
+  },
+  "artistic_approval": "pending",
+  "evidence": [
+    {
+      "file": "assets-report.json",
+      "sha256": "e5725a2a7a3bed13c194e3c1b50ce286eaa15b2e613a11585e895647e9cb9e64",
+      "source": "build/forest-hamlet/assets-report.json",
+      "source_sha256": "e5725a2a7a3bed13c194e3c1b50ce286eaa15b2e613a11585e895647e9cb9e64"
+    },
+    {
+      "file": "aw-frozen-inputs.json",
+      "sha256": "cf93e1788cc73b33452e6ffbcf024e82015c7fe411630848332668b0427c120e",
+      "source": "art/derived/forest-hamlet/forest-hamlet-20261022-vegetation-r2-paired/vegetation-frozen-inputs.json",
+      "source_sha256": "cf93e1788cc73b33452e6ffbcf024e82015c7fe411630848332668b0427c120e"
+    },
+    {
+      "file": "aw-summary.json",
+      "sha256": "92fab728a0dc46a1b1f4037a0778298a6fafb2102eff58a6f20dd582fbf470a3",
+      "source": "art/derived/forest-hamlet/forest-hamlet-20261022-vegetation-r2-paired/vegetation-summary.json",
+      "source_sha256": "92fab728a0dc46a1b1f4037a0778298a6fafb2102eff58a6f20dd582fbf470a3"
+    },
+    {
+      "file": "close-dusk.png",
+      "source": "build/forest-hamlet/vegetation-r2-final/close-dusk.png",
+      "sha256": "b88caf43cdbd07120904b3f7f469fc2967869bbe27dfc803c49d17f72d222e4a"
+    },
+    {
+      "file": "close-normals-off.png",
+      "source": "build/forest-hamlet/vegetation-r2-final/close-normals-off.png",
+      "sha256": "56f606c63dfb8fb6836ab52098fba0cc32a29c6699cc01883307fa9ef751b4c9"
+    },
+    {
+      "file": "close-normals-on.png",
+      "source": "build/forest-hamlet/vegetation-r2-final/close-normals-on.png",
+      "sha256": "9916ca7bbc8ce7026431ef53f58b51fc7f166c2ae665ba0cf4939728edb24b08"
+    },
+    {
+      "file": "close-route-left.png",
+      "source": "build/forest-hamlet/vegetation-r2-final/close-route-left.png",
+      "sha256": "4b9cdb6558c3a2268a0b50cb1b4b9110db7d13a094b7749cf9749257c291007d"
+    },
+    {
+      "file": "close-route-right.png",
+      "source": "build/forest-hamlet/vegetation-r2-final/close-route-right.png",
+      "sha256": "dfc96c1efb2c81414361fffd9585309afb28e97ae258f76ae2aa728e4406f319"
+    },
+    {
+      "file": "close-runtime-report.json",
+      "sha256": "afac99321cdb3c997411cef50ebe9b49c88aaaaba9fcd14fde0bd237bb0292a2",
+      "source": "build/forest-hamlet/vegetation-r2-final/close-runtime-report.json",
+      "source_sha256": "afac99321cdb3c997411cef50ebe9b49c88aaaaba9fcd14fde0bd237bb0292a2"
+    },
+    {
+      "file": "make-test-report.json",
+      "sha256": "97e411985cc70e7556325aabffdaf73d14b868392921556c4b2c37b8c175e98f",
+      "source": "build/forest-hamlet/vegetation-r2-final/make-test-report.json",
+      "source_sha256": "97e411985cc70e7556325aabffdaf73d14b868392921556c4b2c37b8c175e98f"
+    },
+    {
+      "file": "overview-day.png",
+      "source": "build/forest-hamlet/vegetation-r2-final/overview-day.png",
+      "sha256": "d1d9bb175df3f066eb6365e978f44d0bb7d4ba17a49708de1604240d668dbb16"
+    },
+    {
+      "file": "overview-dusk.png",
+      "source": "build/forest-hamlet/vegetation-r2-final/overview-dusk.png",
+      "sha256": "0d1c0d0fe9c2e23086348dd13529ba91725ee018fa7aa51d4462f2ee9e2e6d93"
+    },
+    {
+      "file": "plants-light-left-normals-off.png",
+      "source": "build/forest-hamlet/vegetation-r2-final/plants-light-left-normals-off.png",
+      "sha256": "cc5f2db7d4c41e72f03dc4d84913952067990b3507dc564bb542e317685af41f"
+    },
+    {
+      "file": "plants-light-left-normals-on.png",
+      "source": "build/forest-hamlet/vegetation-r2-final/plants-light-left-normals-on.png",
+      "sha256": "f1a7e980e0369888c1ed281d179d62b764082045234d29f1b7a0c9ef5039d2dd"
+    },
+    {
+      "file": "plants-light-right-normals-off.png",
+      "source": "build/forest-hamlet/vegetation-r2-final/plants-light-right-normals-off.png",
+      "sha256": "651d4677c083eb17b5feec411635bb2cd82bbd741f05a82313c3fe1170da564b"
+    },
+    {
+      "file": "plants-light-right-normals-on.png",
+      "source": "build/forest-hamlet/vegetation-r2-final/plants-light-right-normals-on.png",
+      "sha256": "9d3f9719f331e82d80da45be13814a5610c6c9681f5f8b762bbde5e4b3e217e3"
+    },
+    {
+      "file": "runtime-fingerprint.json",
+      "sha256": "8573bb4dda575dc092ee5faf14179562eac035c2f58fa40a895e213a8411106e",
+      "source": "build/forest-hamlet/vegetation-r2-final/runtime-fingerprint.json",
+      "source_sha256": "8573bb4dda575dc092ee5faf14179562eac035c2f58fa40a895e213a8411106e"
+    },
+    {
+      "file": "runtime-report.json",
+      "sha256": "53a9597f69e4d6070b033b20c0b9b74a51cff7b3846d9de27d364a0af8e57fb4",
+      "source": "build/forest-hamlet/runtime/runtime-report.json",
+      "source_sha256": "53a9597f69e4d6070b033b20c0b9b74a51cff7b3846d9de27d364a0af8e57fb4"
+    },
+    {
+      "file": "source-normal-provenance.json",
+      "sha256": "d5655397cfa7a6115f93e75d8ca97690fd6741784eb3c52ea6edeb6ec429fd1e"
+    },
+    {
+      "file": "vegetation-assets-report.json",
+      "sha256": "de96ec64aa19ed69ca802d617c13fc3ee5afdbf4098f765a1a34c2b161893947",
+      "source": "build/forest-hamlet/vegetation-r2-final/vegetation-assets-report.json",
+      "source_sha256": "de96ec64aa19ed69ca802d617c13fc3ee5afdbf4098f765a1a34c2b161893947"
+    },
+    {
+      "file": "vegetation-gpu-pixel-report.json",
+      "sha256": "4f935fa04d044bb183cafd9697cc4ce21768dd6dd0ac074961b660414124b099",
+      "source": "build/forest-hamlet/vegetation-r2-final/vegetation-gpu-pixel-report.json",
+      "source_sha256": "4f935fa04d044bb183cafd9697cc4ce21768dd6dd0ac074961b660414124b099"
+    },
+    {
+      "file": "vegetation-gpu-report.json",
+      "sha256": "991e4702235b6e2c1982bedff8d46befe3ebcfc34c50c2dd1fdcbbea4488f9d6",
+      "source": "build/forest-hamlet/vegetation-r2-final/vegetation-gpu-report.json",
+      "source_sha256": "991e4702235b6e2c1982bedff8d46befe3ebcfc34c50c2dd1fdcbbea4488f9d6"
+    },
+    {
+      "file": "vegetation-manifest.json",
+      "sha256": "d602fe7c8b95f1f3f76e29486a74f2050a320f6fae131054afac88daf55b58d0",
+      "source": "assets/forest-hamlet/vegetation/manifest.json",
+      "source_sha256": "d602fe7c8b95f1f3f76e29486a74f2050a320f6fae131054afac88daf55b58d0"
+    },
+    {
+      "file": "vegetation-runtime-report.json",
+      "sha256": "48072b299ce33b24d65a48ae73a4cdf6a0003cb1a5d50e211973427146070e36",
+      "source": "build/forest-hamlet/vegetation-r2-final/vegetation-runtime-report.json",
+      "source_sha256": "48072b299ce33b24d65a48ae73a4cdf6a0003cb1a5d50e211973427146070e36"
+    },
+    {
+      "file": "vgp-check.json",
+      "sha256": "012266e09bcfddd976d3c1c2c9ba3f6241b047407f7ae328eca57fd3bc8355a0",
+      "source": "art/derived/forest-hamlet/forest-hamlet-20261022-vegetation-r2-review/vgp/vegetation-check.response.json",
+      "source_sha256": "012266e09bcfddd976d3c1c2c9ba3f6241b047407f7ae328eca57fd3bc8355a0"
+    },
+    {
+      "file": "vgp-frozen-files.json",
+      "sha256": "4d69e87658ee3273988599503c9aad248d4b541e15dfeb62a1747b1b89e640c1",
+      "source": "art/derived/forest-hamlet/forest-hamlet-20261022-vegetation-r2-review/vgp/vegetation.frozen-files.json",
+      "source_sha256": "4d69e87658ee3273988599503c9aad248d4b541e15dfeb62a1747b1b89e640c1"
+    },
+    {
+      "file": "vgp-summary.json",
+      "sha256": "f6050481cc301d4dc5c7ab7077c930873eec9bf37bb826f972144651b6d7f53e",
+      "source": "art/derived/forest-hamlet/forest-hamlet-20261022-vegetation-r2-review/vgp/summary.json",
+      "source_sha256": "f6050481cc301d4dc5c7ab7077c930873eec9bf37bb826f972144651b6d7f53e"
+    }
+  ],
+  "portability": "Paths are repository-relative or res://; raw logs and native host command receipts are omitted. Source and archived hashes are both listed when applicable."
+}

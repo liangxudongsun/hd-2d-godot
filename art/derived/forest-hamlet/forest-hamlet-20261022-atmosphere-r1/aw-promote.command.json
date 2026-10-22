@@ -1,0 +1,16 @@
+[
+  "aw",
+  "--project",
+  ".",
+  "--project-config",
+  "art/inputs/forest-hamlet/atmosphere-r1/workbench-project.yaml",
+  "asset",
+  "promote",
+  "--input",
+  "art/derived/forest-hamlet/forest-hamlet-20261022-atmosphere-r1/aw-promotion.request.json",
+  "--source-root",
+  ".",
+  "--output",
+  "art/derived/workbench/promotion/forest-hamlet-20261022-atmosphere-r1",
+  "--json"
+]

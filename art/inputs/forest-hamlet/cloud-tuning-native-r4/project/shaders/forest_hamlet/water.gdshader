@@ -1,0 +1,38 @@
+shader_type spatial;
+render_mode diffuse_burley, specular_schlick_ggx;
+uniform float flow_speed : hint_range(0.0,2.0) = 0.35;
+uniform vec3 deep_color : source_color = vec3(0.075,0.25,0.36);
+uniform vec3 shallow_color : source_color = vec3(0.17,0.40,0.40);
+varying vec3 world_point;
+float hash21(vec2 p) { return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453); }
+float noise2(vec2 p) {
+    vec2 i=floor(p),f=fract(p);f=f*f*(3.0-2.0*f);
+    return mix(mix(hash21(i),hash21(i+vec2(1,0)),f.x),mix(hash21(i+vec2(0,1)),hash21(i+vec2(1,1)),f.x),f.y);
+}
+void vertex() { world_point=(MODEL_MATRIX*vec4(VERTEX,1.0)).xyz; }
+void fragment() {
+    // Match the ground's material pixel size; keep reflected light spatial.
+    vec2 p=(floor(world_point.xz*16.0)+vec2(.5))/16.0;
+    float t=TIME*flow_speed;
+    float warp=noise2(p*1.8+vec2(t*.15,-t*.1));
+    float a=sin(p.x*4.2+p.y*2.3+t*2.1+warp*3.1);
+    float b=sin(p.x*-3.1+p.y*5.3-t*1.6+warp*2.3);
+    float edge=length((p-vec2(-8.0,6.3))/vec2(5.0,3.0));
+    float shallow=floor(smoothstep(.54,1.0,edge)*4.0+.5)/4.0;
+    vec3 surface=mix(deep_color,shallow_color,shallow);
+    // Short, broken ripples and sparse art-directed sun glints avoid a field
+    // of parallel painted stripes. Environment reflections remain physical.
+    float ripple=step(.76,noise2(p*4.0+vec2(t*.24,-t*.18)))*.035;
+    vec2 cell=floor(p*8.0);
+    vec2 inside=fract(p*8.0)-.5;
+    float chosen=step(.91,hash21(cell));
+    float flash=smoothstep(.55,.98,sin(t*2.5+hash21(cell+7.0)*6.283));
+    float band=exp(-pow((p.x+8.5+(p.y-6.3)*.32)/2.4,2.0));
+    float sparkle=chosen*flash*band*(1.0-smoothstep(.12,.44,abs(inside.x)))*(1.0-smoothstep(.08,.23,abs(inside.y)));
+    ALBEDO=surface+ripple+sparkle*.30;
+    NORMAL_MAP=normalize(vec3((a+b)*.21,(a-b)*.19,1.0))*.5+.5;
+    ROUGHNESS=.28;
+    SPECULAR=.72;
+    METALLIC=.20;
+    EMISSION=vec3(.70,.86,1.0)*sparkle*3.4;
+}

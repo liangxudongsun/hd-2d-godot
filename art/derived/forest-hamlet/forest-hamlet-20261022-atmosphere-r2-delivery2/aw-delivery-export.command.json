@@ -1,0 +1,18 @@
+[
+  "aw",
+  "--project",
+  ".",
+  "--project-config",
+  "art/inputs/forest-hamlet/atmosphere-r2/workbench-project.yaml",
+  "delivery",
+  "export",
+  "--run",
+  "art/derived/workbench/godot/forest-hamlet-20261022-atmosphere-r2",
+  "--output",
+  "art/derived/workbench/delivery/forest-hamlet-20261022-atmosphere-r2-delivery2",
+  "--selection",
+  "art/derived/forest-hamlet/forest-hamlet-20261022-atmosphere-r2-delivery2/aw-delivery.selection.json",
+  "--request-id",
+  "forest-hamlet-20261022-atmosphere-r2-delivery2:delivery:v1",
+  "--json"
+]

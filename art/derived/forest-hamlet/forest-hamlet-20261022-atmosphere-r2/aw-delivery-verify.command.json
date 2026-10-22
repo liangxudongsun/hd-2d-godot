@@ -1,0 +1,12 @@
+[
+  "aw",
+  "--project",
+  ".",
+  "--project-config",
+  "art/inputs/forest-hamlet/atmosphere-r2/workbench-project.yaml",
+  "delivery",
+  "verify",
+  "--package",
+  "art/derived/workbench/delivery/forest-hamlet-20261022-atmosphere-r2",
+  "--json"
+]

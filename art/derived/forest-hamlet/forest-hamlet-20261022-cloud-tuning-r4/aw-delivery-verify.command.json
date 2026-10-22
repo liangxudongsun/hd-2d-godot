@@ -1,0 +1,12 @@
+[
+  "aw",
+  "--project",
+  ".",
+  "--project-config",
+  "art/inputs/forest-hamlet/cloud-tuning-r4/workbench-project.yaml",
+  "delivery",
+  "verify",
+  "--package",
+  "art/derived/workbench/delivery/forest-hamlet-20261022-cloud-tuning-r4",
+  "--json"
+]

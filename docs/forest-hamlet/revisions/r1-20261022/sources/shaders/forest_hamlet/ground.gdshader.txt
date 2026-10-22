@@ -1,0 +1,51 @@
+shader_type spatial;
+render_mode diffuse_burley, specular_schlick_ggx;
+
+uniform sampler2D grass_tex : source_color, filter_nearest_mipmap, repeat_enable;
+uniform sampler2D earth_tex : source_color, filter_nearest_mipmap, repeat_enable;
+uniform sampler2D stone_tex : source_color, filter_nearest_mipmap, repeat_enable;
+uniform bool use_normals = true;
+uniform float normal_strength : hint_range(0.0, 2.0) = 0.65;
+uniform float texel_density = 32.0;
+varying vec3 world_point;
+
+float hash21(vec2 p) { return fract(sin(dot(p, vec2(127.1,311.7)))*43758.5453); }
+float noise2(vec2 p) {
+    vec2 i=floor(p), f=fract(p); f=f*f*(3.0-2.0*f);
+    return mix(mix(hash21(i),hash21(i+vec2(1,0)),f.x),mix(hash21(i+vec2(0,1)),hash21(i+vec2(1,1)),f.x),f.y);
+}
+float box_distance(vec2 p, vec2 center, vec2 half_size) {
+    vec2 q=abs(p-center)-half_size;
+    return length(max(q,vec2(0)))+min(max(q.x,q.y),0.0);
+}
+float path_distance(vec2 p) {
+    float horizontal=box_distance(p,vec2(0,1.8),vec2(18,1.05));
+    float vertical=box_distance(p,vec2(0,-5.4),vec2(1.18,8.5));
+    float left_door=box_distance(p,vec2(-5.6,.0),vec2(.84,2.0));
+    float right_door=box_distance(p,vec2(6.6,-.5),vec2(.82,3.3));
+    return min(min(horizontal,vertical),min(left_door,right_door));
+}
+void vertex() { world_point=(MODEL_MATRIX*vec4(VERTEX,1.0)).xyz; }
+void fragment() {
+    vec2 p=floor(world_point.xz*texel_density)/texel_density;
+    float edge_noise=(noise2(p*2.3)-.5)*.38+(noise2(p*9.0)-.5)*.12;
+    float path=1.0-smoothstep(-.07,.10,path_distance(p)+edge_noise);
+    vec2 uv=p/6.0;
+    vec3 grass=texture(grass_tex,uv).rgb;
+    vec3 earth=texture(earth_tex,uv*.85).rgb;
+    // Keep broad meadow masses readable before the nearest-filtered flecks.
+    grass=mix(vec3(.048,.102,.028),grass*vec3(.68,.83,.66),.16);
+    earth=mix(vec3(.28,.19,.095),earth*vec3(.90,.92,.91),.72);
+    float large_variation=.83+.25*noise2(p*.38);
+    vec3 color=mix(grass,earth,path)*large_variation;
+    float shore=abs(length((p-vec2(-8.0,6.3))/vec2(5.0,3.0))-1.0);
+    color=mix(color,color*vec3(.67,.73,.57),1.0-smoothstep(.04,.16,shore));
+    ALBEDO=color;
+    ROUGHNESS=mix(.96,.88,path);
+    SPECULAR=.18;
+    // Analytic micro relief is an authored surface signal, not inferred normals
+    // from painted albedo brightness. UV tangent data are built into the mesh.
+    vec2 relief=vec2(sin(p.x*29.0+sin(p.y*13.0)),cos(p.y*31.0+sin(p.x*11.0)));
+    float amplitude=mix(.13,.075,path)*normal_strength;
+    NORMAL_MAP=use_normals ? normalize(vec3(relief*amplitude,1.0))*.5+.5 : vec3(.5,.5,1.0);
+}

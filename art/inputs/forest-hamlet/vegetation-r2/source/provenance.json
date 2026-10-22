@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "generator": "image_gen.imagegen",
+  "date": "2026-10-22",
+  "seed": null,
+  "model_version": null,
+  "art_revision": "r2 following the supplied autumn HD2D screenshot; prior green preview rejected by user",
+  "generation_calls": 2,
+  "transparent_background": true,
+  "images": [
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/source/tree-atlas.png",
+      "sha256": "a5189eb46d8e75a41af9d72399a89246c4c8e53f9667969cbed7503da2cb133d",
+      "size": [
+        1684,
+        934
+      ]
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/source/understory-atlas.png",
+      "sha256": "e6b2309dce4caad3fd33b2aaf36cf02c78a95c5df10b533895c530e0fdd84069",
+      "size": [
+        1774,
+        887
+      ]
+    }
+  ],
+  "use": "Original game vegetation colour sprites; no runtime geometry baked from the old models",
+  "normal_source": "Independent editable form annotations, analytic surface vectors, not diffuse brightness"
+}

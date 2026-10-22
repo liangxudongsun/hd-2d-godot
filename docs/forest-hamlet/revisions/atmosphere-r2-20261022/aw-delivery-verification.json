@@ -1,0 +1,414 @@
+{
+  "status": "verified",
+  "delivery_id": "delivery-09686e77c750744fb67593e943a7e2c5baa5d99df7fc00c10037221d7211ad32",
+  "sha256": "6897faaeb542cbe761c65c30e7728e0289d3aeb3fcd06a61d62db3248f5f043e",
+  "manifest": {
+    "asset_key": "forest-hamlet-snow-atmosphere",
+    "delivery_id": "delivery-09686e77c750744fb67593e943a7e2c5baa5d99df7fc00c10037221d7211ad32",
+    "entrypoints": [],
+    "files": [
+      {
+        "bytes": 1085,
+        "mode": 420,
+        "path": "editable/runtime-source-00/project.godot",
+        "role": "editable",
+        "sha256": "16845c304c897c5e0cc74589480e27f32701df5ed613bbd824321bd61a3255d5"
+      },
+      {
+        "bytes": 21158,
+        "mode": 420,
+        "path": "editable/runtime-source-01/scene.gd",
+        "role": "editable",
+        "sha256": "4b6fd59e482a538e2a847f6685fd4f0226c2fe564ab8adff624642bc9120cf35"
+      },
+      {
+        "bytes": 1797,
+        "mode": 420,
+        "path": "editable/runtime-source-02/close_scene.gd",
+        "role": "editable",
+        "sha256": "e5f78a2ebced10a5d470155187db8c7b8d8e8793b4c07cc8372284d631fccce8"
+      },
+      {
+        "bytes": 8814,
+        "mode": 420,
+        "path": "editable/runtime-source-03/snow_backdrop.gd",
+        "role": "editable",
+        "sha256": "50c6dc8ce119ccd64442633433784ec89896d8a3c4cad993d6dbd82b0ff1f801"
+      },
+      {
+        "bytes": 9475,
+        "mode": 420,
+        "path": "editable/runtime-source-04/cloud_lighting.gd",
+        "role": "editable",
+        "sha256": "af35450097630459f3a123ec9c4dc5940573aae068264abc1ca340ef2afce62a"
+      },
+      {
+        "bytes": 5419,
+        "mode": 420,
+        "path": "editable/runtime-source-05/global_lighting.gd",
+        "role": "editable",
+        "sha256": "f05be4f1cf6439abd27bd9a5cb24360f6a0c0cf48021dd8a3a716d2ea53f61ae"
+      },
+      {
+        "bytes": 2105,
+        "mode": 420,
+        "path": "editable/runtime-source-06/snow_backdrop.gdshader",
+        "role": "editable",
+        "sha256": "4a751744aee0196df96b7ac113c7073cd8aab41a6c2ad1bb43d001cda135964f"
+      },
+      {
+        "bytes": 1098,
+        "mode": 420,
+        "path": "editable/runtime-source-07/cloud_occluder.gdshader",
+        "role": "editable",
+        "sha256": "bb76cfe723527d377623a0aaa1f5a30657ddd1a673b75d9961ad1c765be271ce"
+      },
+      {
+        "bytes": 14719,
+        "mode": 420,
+        "path": "editable/runtime-source-08/atmosphere_runtime.gd",
+        "role": "editable",
+        "sha256": "73b8efe3032c1be1afaf8d67c0ac1e5b07c29f8a14fd0f9817723fc6f526affd"
+      },
+      {
+        "bytes": 15493,
+        "mode": 420,
+        "path": "editable/runtime-source-09/capture_atmosphere.gd",
+        "role": "editable",
+        "sha256": "3602f521c6b6bbf61febfd4d87cdbd55ffe31fe148a82b1555e84b90171e025c"
+      },
+      {
+        "bytes": 91851,
+        "mode": 420,
+        "path": "evidence/atmosphere-runtime/atmosphere-runtime-report.json",
+        "role": "evidence",
+        "sha256": "1a24eb39b1367bf9b0bee804af7af3585d50d3334dd626ea1656e13847246564"
+      },
+      {
+        "bytes": 2337,
+        "mode": 420,
+        "path": "evidence/backdrop-manifest/manifest.json",
+        "role": "evidence",
+        "sha256": "d951c0be245d782a49e1edec327bbbc81cd07965cadd344de99886ad0a037cb6"
+      },
+      {
+        "bytes": 1029579,
+        "mode": 420,
+        "path": "evidence/godot-run/run.json",
+        "role": "evidence",
+        "sha256": "b84b556996369ff0cad238bda8514bbee40aef9f61b9520bb232959154f99536"
+      },
+      {
+        "bytes": 105718,
+        "mode": 420,
+        "path": "recipe/godot-verify/input.json",
+        "role": "recipe",
+        "sha256": "b567597c507623e6b21ad457be677bc90835ce42781982d631cc1e6409f52277"
+      },
+      {
+        "bytes": 1697185,
+        "mode": 420,
+        "path": "review/review-01.png",
+        "role": "review",
+        "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c"
+      },
+      {
+        "bytes": 1697185,
+        "mode": 420,
+        "path": "runtime/snow-color/color.png",
+        "role": "runtime",
+        "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c"
+      },
+      {
+        "bytes": 97589,
+        "mode": 420,
+        "path": "runtime/snow-normal/normal.png",
+        "role": "runtime",
+        "sha256": "9c840176d4002826091098449e7126c45b5b410a67c56eb43a0d3d29893987a6"
+      },
+      {
+        "bytes": 126254,
+        "mode": 420,
+        "path": "runtime/snow-regions/regions.png",
+        "role": "runtime",
+        "sha256": "ade0cbaba208f37219644571127ced57ab142cb56593aa126b21b3e3c4d1c153"
+      },
+      {
+        "bytes": 327,
+        "mode": 420,
+        "path": "technical.json",
+        "role": "evidence",
+        "sha256": "1a0e910468105a1fe894295bab54f6617ea83168680c6d31640090cc71e7f761"
+      }
+    ],
+    "producer": {
+      "implementation_sha256": "8954985306301603a78b3cad4299a1f00b3e8232a61676d19044377f9a985cdc",
+      "job_id": "unknown",
+      "request_id": "forest-hamlet-20261022-atmosphere-r2-delivery2:delivery:v1",
+      "run_id": "forest-hamlet-20261022-atmosphere-r2",
+      "tool": "asset-workbench",
+      "version": "0.6.1",
+      "workflow": "godot.verify"
+    },
+    "purpose": "Deliver unchanged snow color/normal/region PNGs and runtime sources for cloud shadows and independent irregular global illumination from the completed native Godot verification. External GPU evidence is separately frozen by the project and is not AW-generated or AW-rendered.",
+    "review_media": [
+      {
+        "media_type": "image/png",
+        "path": "review/review-01.png",
+        "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+        "source_paths": [
+          "runtime/snow-color/color.png"
+        ]
+      }
+    ],
+    "roots": [
+      {
+        "name": "snow-color",
+        "path": "runtime/snow-color",
+        "role": "runtime"
+      },
+      {
+        "name": "snow-normal",
+        "path": "runtime/snow-normal",
+        "role": "runtime"
+      },
+      {
+        "name": "snow-regions",
+        "path": "runtime/snow-regions",
+        "role": "runtime"
+      },
+      {
+        "name": "godot-verify",
+        "path": "recipe/godot-verify",
+        "role": "recipe"
+      },
+      {
+        "name": "godot-run",
+        "path": "evidence/godot-run",
+        "role": "evidence"
+      },
+      {
+        "name": "atmosphere-runtime",
+        "path": "evidence/atmosphere-runtime",
+        "role": "evidence"
+      },
+      {
+        "name": "backdrop-manifest",
+        "path": "evidence/backdrop-manifest",
+        "role": "evidence"
+      },
+      {
+        "name": "runtime-source-00",
+        "path": "editable/runtime-source-00",
+        "role": "editable"
+      },
+      {
+        "name": "runtime-source-01",
+        "path": "editable/runtime-source-01",
+        "role": "editable"
+      },
+      {
+        "name": "runtime-source-02",
+        "path": "editable/runtime-source-02",
+        "role": "editable"
+      },
+      {
+        "name": "runtime-source-03",
+        "path": "editable/runtime-source-03",
+        "role": "editable"
+      },
+      {
+        "name": "runtime-source-04",
+        "path": "editable/runtime-source-04",
+        "role": "editable"
+      },
+      {
+        "name": "runtime-source-05",
+        "path": "editable/runtime-source-05",
+        "role": "editable"
+      },
+      {
+        "name": "runtime-source-06",
+        "path": "editable/runtime-source-06",
+        "role": "editable"
+      },
+      {
+        "name": "runtime-source-07",
+        "path": "editable/runtime-source-07",
+        "role": "editable"
+      },
+      {
+        "name": "runtime-source-08",
+        "path": "editable/runtime-source-08",
+        "role": "editable"
+      },
+      {
+        "name": "runtime-source-09",
+        "path": "editable/runtime-source-09",
+        "role": "editable"
+      }
+    ],
+    "schema_version": 1,
+    "sources": {
+      "project_snapshot_sha256": "033cfca8566ea7c907d657da692a09edaa39a7069062ff7ef481125ea227b79e",
+      "recipe_sha256": "b567597c507623e6b21ad457be677bc90835ce42781982d631cc1e6409f52277",
+      "run_receipt_sha256": "b84b556996369ff0cad238bda8514bbee40aef9f61b9520bb232959154f99536"
+    },
+    "variant_key": "forest-hamlet-20261022-atmosphere-r2-delivery2"
+  },
+  "files": [
+    {
+      "bytes": 1085,
+      "mode": 420,
+      "path": "editable/runtime-source-00/project.godot",
+      "role": "editable",
+      "sha256": "16845c304c897c5e0cc74589480e27f32701df5ed613bbd824321bd61a3255d5",
+      "status": "verified"
+    },
+    {
+      "bytes": 21158,
+      "mode": 420,
+      "path": "editable/runtime-source-01/scene.gd",
+      "role": "editable",
+      "sha256": "4b6fd59e482a538e2a847f6685fd4f0226c2fe564ab8adff624642bc9120cf35",
+      "status": "verified"
+    },
+    {
+      "bytes": 1797,
+      "mode": 420,
+      "path": "editable/runtime-source-02/close_scene.gd",
+      "role": "editable",
+      "sha256": "e5f78a2ebced10a5d470155187db8c7b8d8e8793b4c07cc8372284d631fccce8",
+      "status": "verified"
+    },
+    {
+      "bytes": 8814,
+      "mode": 420,
+      "path": "editable/runtime-source-03/snow_backdrop.gd",
+      "role": "editable",
+      "sha256": "50c6dc8ce119ccd64442633433784ec89896d8a3c4cad993d6dbd82b0ff1f801",
+      "status": "verified"
+    },
+    {
+      "bytes": 9475,
+      "mode": 420,
+      "path": "editable/runtime-source-04/cloud_lighting.gd",
+      "role": "editable",
+      "sha256": "af35450097630459f3a123ec9c4dc5940573aae068264abc1ca340ef2afce62a",
+      "status": "verified"
+    },
+    {
+      "bytes": 5419,
+      "mode": 420,
+      "path": "editable/runtime-source-05/global_lighting.gd",
+      "role": "editable",
+      "sha256": "f05be4f1cf6439abd27bd9a5cb24360f6a0c0cf48021dd8a3a716d2ea53f61ae",
+      "status": "verified"
+    },
+    {
+      "bytes": 2105,
+      "mode": 420,
+      "path": "editable/runtime-source-06/snow_backdrop.gdshader",
+      "role": "editable",
+      "sha256": "4a751744aee0196df96b7ac113c7073cd8aab41a6c2ad1bb43d001cda135964f",
+      "status": "verified"
+    },
+    {
+      "bytes": 1098,
+      "mode": 420,
+      "path": "editable/runtime-source-07/cloud_occluder.gdshader",
+      "role": "editable",
+      "sha256": "bb76cfe723527d377623a0aaa1f5a30657ddd1a673b75d9961ad1c765be271ce",
+      "status": "verified"
+    },
+    {
+      "bytes": 14719,
+      "mode": 420,
+      "path": "editable/runtime-source-08/atmosphere_runtime.gd",
+      "role": "editable",
+      "sha256": "73b8efe3032c1be1afaf8d67c0ac1e5b07c29f8a14fd0f9817723fc6f526affd",
+      "status": "verified"
+    },
+    {
+      "bytes": 15493,
+      "mode": 420,
+      "path": "editable/runtime-source-09/capture_atmosphere.gd",
+      "role": "editable",
+      "sha256": "3602f521c6b6bbf61febfd4d87cdbd55ffe31fe148a82b1555e84b90171e025c",
+      "status": "verified"
+    },
+    {
+      "bytes": 91851,
+      "mode": 420,
+      "path": "evidence/atmosphere-runtime/atmosphere-runtime-report.json",
+      "role": "evidence",
+      "sha256": "1a24eb39b1367bf9b0bee804af7af3585d50d3334dd626ea1656e13847246564",
+      "status": "verified"
+    },
+    {
+      "bytes": 2337,
+      "mode": 420,
+      "path": "evidence/backdrop-manifest/manifest.json",
+      "role": "evidence",
+      "sha256": "d951c0be245d782a49e1edec327bbbc81cd07965cadd344de99886ad0a037cb6",
+      "status": "verified"
+    },
+    {
+      "bytes": 1029579,
+      "mode": 420,
+      "path": "evidence/godot-run/run.json",
+      "role": "evidence",
+      "sha256": "b84b556996369ff0cad238bda8514bbee40aef9f61b9520bb232959154f99536",
+      "status": "verified"
+    },
+    {
+      "bytes": 105718,
+      "mode": 420,
+      "path": "recipe/godot-verify/input.json",
+      "role": "recipe",
+      "sha256": "b567597c507623e6b21ad457be677bc90835ce42781982d631cc1e6409f52277",
+      "status": "verified"
+    },
+    {
+      "bytes": 1697185,
+      "mode": 420,
+      "path": "review/review-01.png",
+      "role": "review",
+      "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+      "status": "verified"
+    },
+    {
+      "bytes": 1697185,
+      "mode": 420,
+      "path": "runtime/snow-color/color.png",
+      "role": "runtime",
+      "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+      "status": "verified"
+    },
+    {
+      "bytes": 97589,
+      "mode": 420,
+      "path": "runtime/snow-normal/normal.png",
+      "role": "runtime",
+      "sha256": "9c840176d4002826091098449e7126c45b5b410a67c56eb43a0d3d29893987a6",
+      "status": "verified"
+    },
+    {
+      "bytes": 126254,
+      "mode": 420,
+      "path": "runtime/snow-regions/regions.png",
+      "role": "runtime",
+      "sha256": "ade0cbaba208f37219644571127ced57ab142cb56593aa126b21b3e3c4d1c153",
+      "status": "verified"
+    },
+    {
+      "bytes": 327,
+      "mode": 420,
+      "path": "technical.json",
+      "role": "evidence",
+      "sha256": "1a0e910468105a1fe894295bab54f6617ea83168680c6d31640090cc71e7f761",
+      "status": "verified"
+    }
+  ],
+  "archive": "art/derived/workbench/delivery/forest-hamlet-20261022-atmosphere-r2-delivery2/delivery.zip"
+}

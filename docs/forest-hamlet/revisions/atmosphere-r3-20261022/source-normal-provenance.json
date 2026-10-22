@@ -1,0 +1,57 @@
+{
+  "source": "art/inputs/forest-hamlet/snow-r1/source/snow-master.png",
+  "source_sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+  "source_dimensions": [
+    1983,
+    793
+  ],
+  "color_bytes_preserved": true,
+  "rig": "art/inputs/forest-hamlet/snow-r1/normal-rig.json",
+  "rig_sha256": "69fe9e7fb842ef046013241c8b88283f24198ca54a2229bbdcd5dad9cd07dad6",
+  "generator": "tools/forest_hamlet/prepare_snow_backdrop.py",
+  "generator_sha256": "d7dc2b2e6bede49406e29c32a308fbeb42fa00aa5778dbc4a0e70ae67abf4ac1",
+  "normal_workflow": "Manually annotated low-frequency geometric facets, emitted as OpenGL tangent-space vectors by prepare_snow_backdrop.py; independent of AW delivery",
+  "normal_method": "manually_annotated_low_frequency_snow_facets",
+  "normal_convention": "tangent space OpenGL; X right, Y up, positive Z",
+  "color_is_height": false,
+  "geometry_count": 1,
+  "independent_color_layers": 1,
+  "parallax_kind": "single_distant_board",
+  "outputs": [
+    {
+      "name": "color",
+      "runtime": "assets/forest-hamlet/backdrop/color.png",
+      "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+      "size": [
+        1983,
+        793
+      ],
+      "opaque": true
+    },
+    {
+      "name": "normal",
+      "runtime": "assets/forest-hamlet/backdrop/normal.png",
+      "sha256": "9c840176d4002826091098449e7126c45b5b410a67c56eb43a0d3d29893987a6",
+      "size": [
+        1983,
+        793
+      ],
+      "opaque": true
+    },
+    {
+      "name": "regions",
+      "runtime": "assets/forest-hamlet/backdrop/regions.png",
+      "sha256": "ade0cbaba208f37219644571127ced57ab142cb56593aa126b21b3e3c4d1c153",
+      "size": [
+        1983,
+        793
+      ],
+      "opaque": true
+    }
+  ],
+  "limitations": [
+    "Original illustration contains painted illumination; this is restrained dynamic normal relighting, not photometric reconstruction.",
+    "A single complete board has real relative parallax but no independent range-to-range motion."
+  ],
+  "human_aesthetic_approval": "pending"
+}

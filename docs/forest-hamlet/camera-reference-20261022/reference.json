@@ -1,0 +1,12 @@
+{
+  "source": "user attachment image(20261022-061628).png",
+  "source_sha256": "df3d151cdbd125cab5b450dedb6d6add6d2f100154c400ea5ff75fb8f13dfc65",
+  "size": [
+    1085,
+    616
+  ],
+  "estimated_visible_character_height_fraction": 0.214,
+  "estimated_feet_height_fraction": 0.61,
+  "measurements_are_approximate": true,
+  "camera_basis_source": "scripts/frontal_canal/camera.gd: F pitch 14 degrees, W pitch 12 degrees; inherited by ancient canal"
+}

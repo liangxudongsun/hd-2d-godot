@@ -1,0 +1,18 @@
+[
+  "aw",
+  "--project",
+  ".",
+  "--project-config",
+  "art/inputs/forest-hamlet/cloud-tuning-r4/workbench-project.yaml",
+  "delivery",
+  "export",
+  "--run",
+  "art/derived/workbench/godot/forest-hamlet-20261022-cloud-tuning-r4",
+  "--output",
+  "art/derived/workbench/delivery/forest-hamlet-20261022-cloud-tuning-r4",
+  "--selection",
+  "art/derived/forest-hamlet/forest-hamlet-20261022-cloud-tuning-r4/aw-delivery.selection.json",
+  "--request-id",
+  "forest-hamlet-20261022-cloud-tuning-r4:delivery:v1",
+  "--json"
+]

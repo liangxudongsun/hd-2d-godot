@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "passed": true,
+  "make_test": {
+    "label": "make-test-reviewed",
+    "command": [
+      "make",
+      "test"
+    ],
+    "returncode": 0,
+    "passed": true,
+    "elapsed_seconds": 12.474784373072907
+  },
+  "canal_test": {
+    "label": "canal-regression-reviewed",
+    "command": [
+      "make",
+      "canal-test",
+      "PYTHON=build/forest-hamlet/validation-env/bin/python"
+    ],
+    "returncode": 0,
+    "passed": true,
+    "elapsed_seconds": 252.45033965504263,
+    "dependency_environment": "project-local disposable virtualenv"
+  },
+  "canal_source_scopes": 9,
+  "canal_source_files": 1767,
+  "canal_runtime_groups": 12,
+  "canal_camera_groups": 2,
+  "runtime_unchanged_during_suites": true,
+  "artifacts": [
+    "canal-runtime-suite.json",
+    "canal-camera-suite.json"
+  ],
+  "scope": "Actual final process results. Earlier authoring-time fingerprint failures remain in build logs and are not reused as passes."
+}

@@ -1,0 +1,200 @@
+{
+  "schema": 1,
+  "checks": [
+    {
+      "name": "source atlas identity",
+      "passed": true
+    },
+    {
+      "name": "imagegen seed/version explicitly unknown",
+      "passed": true
+    },
+    {
+      "name": "grass texture dimensions",
+      "passed": true
+    },
+    {
+      "name": "grass restrained source palette",
+      "passed": true
+    },
+    {
+      "name": "grass opaque albedo",
+      "passed": true
+    },
+    {
+      "name": "earth texture dimensions",
+      "passed": true
+    },
+    {
+      "name": "earth restrained source palette",
+      "passed": true
+    },
+    {
+      "name": "earth opaque albedo",
+      "passed": true
+    },
+    {
+      "name": "wood texture dimensions",
+      "passed": true
+    },
+    {
+      "name": "wood restrained source palette",
+      "passed": true
+    },
+    {
+      "name": "wood opaque albedo",
+      "passed": true
+    },
+    {
+      "name": "stone texture dimensions",
+      "passed": true
+    },
+    {
+      "name": "stone restrained source palette",
+      "passed": true
+    },
+    {
+      "name": "stone opaque albedo",
+      "passed": true
+    },
+    {
+      "name": "official AW world.compile completed",
+      "passed": true
+    },
+    {
+      "name": "grass exact AW output bytes",
+      "passed": true
+    },
+    {
+      "name": "earth exact AW output bytes",
+      "passed": true
+    },
+    {
+      "name": "wood exact AW output bytes",
+      "passed": true
+    },
+    {
+      "name": "stone exact AW output bytes",
+      "passed": true
+    },
+    {
+      "name": "345 original character files immutable",
+      "passed": true
+    },
+    {
+      "name": "nine editable original model sources",
+      "passed": true
+    },
+    {
+      "name": "cottage source exists",
+      "passed": true
+    },
+    {
+      "name": "cottage glTF binary valid",
+      "passed": true
+    },
+    {
+      "name": "cottage output identity",
+      "passed": true
+    },
+    {
+      "name": "broadleaf source exists",
+      "passed": true
+    },
+    {
+      "name": "broadleaf glTF binary valid",
+      "passed": true
+    },
+    {
+      "name": "broadleaf output identity",
+      "passed": true
+    },
+    {
+      "name": "fir source exists",
+      "passed": true
+    },
+    {
+      "name": "fir glTF binary valid",
+      "passed": true
+    },
+    {
+      "name": "fir output identity",
+      "passed": true
+    },
+    {
+      "name": "fence source exists",
+      "passed": true
+    },
+    {
+      "name": "fence glTF binary valid",
+      "passed": true
+    },
+    {
+      "name": "fence output identity",
+      "passed": true
+    },
+    {
+      "name": "rock source exists",
+      "passed": true
+    },
+    {
+      "name": "rock glTF binary valid",
+      "passed": true
+    },
+    {
+      "name": "rock output identity",
+      "passed": true
+    },
+    {
+      "name": "lamp source exists",
+      "passed": true
+    },
+    {
+      "name": "lamp glTF binary valid",
+      "passed": true
+    },
+    {
+      "name": "lamp output identity",
+      "passed": true
+    },
+    {
+      "name": "bench source exists",
+      "passed": true
+    },
+    {
+      "name": "bench glTF binary valid",
+      "passed": true
+    },
+    {
+      "name": "bench output identity",
+      "passed": true
+    },
+    {
+      "name": "sign source exists",
+      "passed": true
+    },
+    {
+      "name": "sign glTF binary valid",
+      "passed": true
+    },
+    {
+      "name": "sign output identity",
+      "passed": true
+    },
+    {
+      "name": "grass source exists",
+      "passed": true
+    },
+    {
+      "name": "grass glTF binary valid",
+      "passed": true
+    },
+    {
+      "name": "grass output identity",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "character_files": 345,
+  "changed_originals": []
+}

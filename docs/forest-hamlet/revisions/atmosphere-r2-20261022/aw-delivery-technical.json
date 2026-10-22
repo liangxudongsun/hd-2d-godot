@@ -1,0 +1,1 @@
+{"checks":[{"evidence_paths":["evidence/atmosphere-runtime/atmosphere-runtime-report.json"],"name":"atmosphere-runtime","status":"completed"},{"evidence_paths":["evidence/godot-run/run.json"],"name":"receipt:evidence/godot-run/run.json","status":"completed"}],"schema_version":1,"status":"completed","workflow":"godot.verify"}

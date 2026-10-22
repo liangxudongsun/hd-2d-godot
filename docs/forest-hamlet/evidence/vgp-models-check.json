@@ -1,0 +1,179 @@
+{
+  "issues": [],
+  "legacy": false,
+  "outputs": [
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "glb"
+      },
+      "caller_reported": {
+        "unit": "m",
+        "up_axis": "+Y"
+      },
+      "member_id": "cottage",
+      "path": "cottage.glb",
+      "target": {
+        "format": "glb",
+        "parameters": {
+          "unit": "m",
+          "up_axis": "+Y"
+        }
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "glb"
+      },
+      "caller_reported": {
+        "unit": "m",
+        "up_axis": "+Y"
+      },
+      "member_id": "broadleaf",
+      "path": "broadleaf.glb",
+      "target": {
+        "format": "glb",
+        "parameters": {
+          "unit": "m",
+          "up_axis": "+Y"
+        }
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "glb"
+      },
+      "caller_reported": {
+        "unit": "m",
+        "up_axis": "+Y"
+      },
+      "member_id": "fir",
+      "path": "fir.glb",
+      "target": {
+        "format": "glb",
+        "parameters": {
+          "unit": "m",
+          "up_axis": "+Y"
+        }
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "glb"
+      },
+      "caller_reported": {
+        "unit": "m",
+        "up_axis": "+Y"
+      },
+      "member_id": "fence",
+      "path": "fence.glb",
+      "target": {
+        "format": "glb",
+        "parameters": {
+          "unit": "m",
+          "up_axis": "+Y"
+        }
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "glb"
+      },
+      "caller_reported": {
+        "unit": "m",
+        "up_axis": "+Y"
+      },
+      "member_id": "rock",
+      "path": "rock.glb",
+      "target": {
+        "format": "glb",
+        "parameters": {
+          "unit": "m",
+          "up_axis": "+Y"
+        }
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "glb"
+      },
+      "caller_reported": {
+        "unit": "m",
+        "up_axis": "+Y"
+      },
+      "member_id": "lamp",
+      "path": "lamp.glb",
+      "target": {
+        "format": "glb",
+        "parameters": {
+          "unit": "m",
+          "up_axis": "+Y"
+        }
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "glb"
+      },
+      "caller_reported": {
+        "unit": "m",
+        "up_axis": "+Y"
+      },
+      "member_id": "bench",
+      "path": "bench.glb",
+      "target": {
+        "format": "glb",
+        "parameters": {
+          "unit": "m",
+          "up_axis": "+Y"
+        }
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "glb"
+      },
+      "caller_reported": {
+        "unit": "m",
+        "up_axis": "+Y"
+      },
+      "member_id": "sign",
+      "path": "sign.glb",
+      "target": {
+        "format": "glb",
+        "parameters": {
+          "unit": "m",
+          "up_axis": "+Y"
+        }
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "glb"
+      },
+      "caller_reported": {
+        "unit": "m",
+        "up_axis": "+Y"
+      },
+      "member_id": "grass",
+      "path": "grass.glb",
+      "target": {
+        "format": "glb",
+        "parameters": {
+          "unit": "m",
+          "up_axis": "+Y"
+        }
+      }
+    }
+  ],
+  "ready": true,
+  "rules_version": 1
+}

@@ -1,0 +1,21 @@
+{
+  "scope": "Original source snapshots retained before this revision; previous hash ledger is preserved separately.",
+  "files": {
+    "ADR__23-forest-hamlet-reference-study.md.txt": "4d0b86b3eb7dfbe081173e4fb73e46834f3aef22706c4ab2311daab451a92f29",
+    "tools__forest_hamlet__archive_evidence.py.txt": "88ce2707e8d5ca3a85840d8d2b9d4a296ada1fc810efc7ec8b7f7a4d2f0f13d0",
+    "docs__forest-hamlet__pipeline.md.txt": "13d26cd69a6807477b4911f3c920eef9102627dcbb7bb9763e27f227d371c110",
+    "docs__forest-hamlet__README.md.txt": "e9c9b8b275c3d5d36c5cc589b82cf7b94dfe78ccd50adece9def644a71e26629",
+    "Plan__features__forest-hamlet.md.txt": "52126adfe0a65a299816a25ba57ba2ca0498905f6c12f64de4379957f8b0e3bd",
+    "scripts/forest_hamlet/world.gd.txt": "9bae0cdee1f651daec95c05f622c48e71bf4b15b7f7aaf39fcd3cb84f36e4d2c",
+    "scripts/forest_hamlet/scene.gd.txt": "7d5f98e9ed3a57a8e0843aa88ba411a1cbc1a7227c5a218c28faf31e491f0950",
+    "tools/forest_hamlet/capture.gd.txt": "68a3c1285a4380b22bf1b167e234ffd03a28844371ada2504f1d0de49d17cdbc",
+    "tools/forest_hamlet/run.py.txt": "29ec037223465bdfe6e8c0902c69682d338adc2a0251024644694f6d32e84807",
+    "tools/forest_hamlet/prepare_materials.py.txt": "2436368ca1928b350df8500d850543efaf60d1c871c927bafd00fcdd9272ef35",
+    "tools/forest_hamlet/register_vgp.py.txt": "55b0f7740adf585723753c913ecf375883bd5aad61d7a1974b56e7f7aef584c3",
+    "tools/forest_hamlet/process_materials_aw.py.txt": "7f579c9db8e14ba81fba65892ae3d89457e597fdfcc2bc8ba672cf64fc6a2912",
+    "shaders/forest_hamlet/ground.gdshader.txt": "4115f60d10a06d5827e314f858d28f9bfff02d8343e167e683ce100281aca35d",
+    "shaders/forest_hamlet/foliage.gdshader.txt": "345b2c36ecf224c7506d9ae7e0b6d6ded57b5911c7962d3ff181fbb14cb576b9",
+    "shaders/forest_hamlet/water.gdshader.txt": "c94869093d8e731a51fd6e4c1277f7b1a5900de45fb8c65cbfb7db90b9258ddf",
+    "tests/forest_hamlet/runtime.gd.txt": "9e280fd7f8e6581bec56b7bdcc6773a03ac9986194d2e29fc1ed420628f25db1"
+  }
+}

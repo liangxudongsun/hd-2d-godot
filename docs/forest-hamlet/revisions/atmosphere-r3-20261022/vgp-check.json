@@ -1,0 +1,68 @@
+{
+  "issues": [],
+  "legacy": false,
+  "outputs": [
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 793,
+        "width": 1983
+      },
+      "caller_reported": {
+        "height": 793,
+        "role": "color",
+        "width": 1983
+      },
+      "member_id": "snow-color",
+      "path": "snow-color.png",
+      "target": {
+        "format": "png",
+        "height": 793,
+        "width": 1983
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 793,
+        "width": 1983
+      },
+      "caller_reported": {
+        "height": 793,
+        "role": "normal",
+        "width": 1983
+      },
+      "member_id": "snow-normal",
+      "path": "snow-normal.png",
+      "target": {
+        "format": "png",
+        "height": 793,
+        "width": 1983
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 793,
+        "width": 1983
+      },
+      "caller_reported": {
+        "height": 793,
+        "role": "regions",
+        "width": 1983
+      },
+      "member_id": "snow-regions",
+      "path": "snow-regions.png",
+      "target": {
+        "format": "png",
+        "height": 793,
+        "width": 1983
+      }
+    }
+  ],
+  "ready": true,
+  "rules_version": 1
+}

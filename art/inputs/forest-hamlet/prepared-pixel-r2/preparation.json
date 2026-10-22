@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "kind": "project_source_preparation",
+  "seed": null,
+  "algorithm": "fixed_crop_nearest_mirror2x2_v2",
+  "source": {
+    "path": "art/inputs/forest-hamlet/material-atlas.png",
+    "sha256": "fea6c0c48d91eed01d0f77a181994700d2f813124b6c37a0542c1e178a450f26",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  "sheet": {
+    "path": "art/inputs/forest-hamlet/prepared-pixel-r2/material-sheet.png",
+    "sha256": "9eebafd9cf18f827ad8da8bf186cc5a2bdc4d4331d56ac3bea4087516d3f6bff",
+    "grid": [
+      2,
+      2
+    ]
+  },
+  "palette": {
+    "path": "art/inputs/forest-hamlet/prepared-pixel-r2/palette.json",
+    "sha256": "a9a43ac31d0aa4b9eb017eeb3bbc5c3cc275ae9b9bae63ae4a2fa39993a87045",
+    "count": 64,
+    "source_colors_only": true,
+    "selection": "16 median-cut representatives per material, snapped to nearest exact source RGB; stable first-index tie break"
+  },
+  "outputs": [
+    {
+      "material": "grass",
+      "path": "art/inputs/forest-hamlet/prepared-pixel-r2/grass.png",
+      "sha256": "baec81d4fcce93261b99bddf2c512c34a3b3d835d0508eb39d0dace00e530896",
+      "crop_xyxy": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "source_sample_size": [
+        32,
+        32
+      ],
+      "filter": "nearest",
+      "seam_method": "mirrored_2x2_exact_edges",
+      "opposite_edges_equal": true,
+      "review_status": "pending"
+    },
+    {
+      "material": "earth",
+      "path": "art/inputs/forest-hamlet/prepared-pixel-r2/earth.png",
+      "sha256": "1ea81d5c18bb186ae0914dfcbddec1d992c1b4b6f2247347927c03a681533483",
+      "crop_xyxy": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "source_sample_size": [
+        32,
+        32
+      ],
+      "filter": "nearest",
+      "seam_method": "mirrored_2x2_exact_edges",
+      "opposite_edges_equal": true,
+      "review_status": "pending"
+    },
+    {
+      "material": "wood",
+      "path": "art/inputs/forest-hamlet/prepared-pixel-r2/wood.png",
+      "sha256": "dcb8bfcbda11eaaca993c81bd964719c5fd59f84fe9d965f52d2530257beefda",
+      "crop_xyxy": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "source_sample_size": [
+        32,
+        32
+      ],
+      "filter": "nearest",
+      "seam_method": "mirrored_2x2_exact_edges",
+      "opposite_edges_equal": true,
+      "review_status": "pending"
+    },
+    {
+      "material": "stone",
+      "path": "art/inputs/forest-hamlet/prepared-pixel-r2/stone.png",
+      "sha256": "18a5788a54b706b85d93e134a2f30c62104de2e493a15cd2ced5d946f8f505ac",
+      "crop_xyxy": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "source_sample_size": [
+        32,
+        32
+      ],
+      "filter": "nearest",
+      "seam_method": "mirrored_2x2_exact_edges",
+      "opposite_edges_equal": true,
+      "review_status": "pending"
+    }
+  ],
+  "limitations": [
+    "Mirrored repetition may be visible; inspect in the assembled scene.",
+    "This record is project preparation; official AW receipts are separate.",
+    "No human aesthetic approval is implied."
+  ]
+}

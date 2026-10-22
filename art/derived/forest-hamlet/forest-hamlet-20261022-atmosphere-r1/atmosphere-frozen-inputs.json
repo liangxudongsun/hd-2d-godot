@@ -1,0 +1,315 @@
+{
+  "schema_version": 1,
+  "run_id": "forest-hamlet-20261022-atmosphere-r1",
+  "files": [
+    {
+      "source": "art/derived/forest-hamlet/forest-hamlet-20261022-atmosphere-r1/native-godot/summary.json",
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-atmosphere-r1/native-godot/summary.json",
+      "sha256": "301aa7b3ccd564289063bcb84c2e9ec52ad5b00001b6f9d0dee72cf9283a49fc",
+      "role": "evidence"
+    },
+    {
+      "source": "art/derived/workbench/godot/forest-hamlet-20261022-atmosphere-r1/inputs/input.json",
+      "path": "art/derived/workbench/godot/forest-hamlet-20261022-atmosphere-r1/inputs/input.json",
+      "sha256": "f70620830b5739c6b2914bf1c33c93fa1f52b6ee6aa274a2a187a7ec33239daf",
+      "role": "evidence"
+    },
+    {
+      "source": "art/derived/workbench/godot/forest-hamlet-20261022-atmosphere-r1/run.json",
+      "path": "art/derived/workbench/godot/forest-hamlet-20261022-atmosphere-r1/run.json",
+      "sha256": "b9e772fa043d791b6a3cda69818169b1b6f893e4a905322ea63bf39a5f03d40a",
+      "role": "evidence"
+    },
+    {
+      "source": "art/derived/workbench/godot/forest-hamlet-20261022-atmosphere-r1/steps/atmosphere-runtime/attempt-001/atmosphere-runtime-report.json",
+      "path": "art/derived/workbench/godot/forest-hamlet-20261022-atmosphere-r1/steps/atmosphere-runtime/attempt-001/atmosphere-runtime-report.json",
+      "sha256": "1c78440ee8b999b0f674ab4d7d3e9ad0b331ae09decb8f6238dc32eb00fe6d5e",
+      "role": "evidence"
+    },
+    {
+      "source": "art/inputs/forest-hamlet/atmosphere-native-r1/godot-verify.recipe.json",
+      "path": "art/inputs/forest-hamlet/atmosphere-native-r1/godot-verify.recipe.json",
+      "sha256": "f70620830b5739c6b2914bf1c33c93fa1f52b6ee6aa274a2a187a7ec33239daf",
+      "role": "evidence"
+    },
+    {
+      "source": "art/inputs/forest-hamlet/atmosphere-native-r1/snapshot.json",
+      "path": "art/inputs/forest-hamlet/atmosphere-native-r1/snapshot.json",
+      "sha256": "40976df1b55e146afbd0318602810b6d0560948f12bc2201a1965686a8bc1e37",
+      "role": "evidence"
+    },
+    {
+      "source": "art/inputs/forest-hamlet/atmosphere-r1/selection.json",
+      "path": "art/inputs/forest-hamlet/atmosphere-r1/selection.json",
+      "sha256": "3653e4f7570ce978d50b5c0d46317000207e9d11c506d553d5e2812738660b60",
+      "role": "evidence"
+    },
+    {
+      "source": "art/inputs/forest-hamlet/atmosphere-r1/workbench-project.yaml",
+      "path": "art/inputs/forest-hamlet/atmosphere-r1/workbench-project.yaml",
+      "sha256": "7da337cdedb64786b96202f3d5e12813ea2535a2b8fff8c1f43e51fca37af788",
+      "role": "evidence"
+    },
+    {
+      "source": "art/inputs/forest-hamlet/snow-r1/normal-rig.json",
+      "path": "art/inputs/forest-hamlet/snow-r1/normal-rig.json",
+      "sha256": "69fe9e7fb842ef046013241c8b88283f24198ca54a2229bbdcd5dad9cd07dad6",
+      "role": "recipe"
+    },
+    {
+      "source": "art/inputs/forest-hamlet/snow-r1/source/snow-master.png",
+      "path": "art/inputs/forest-hamlet/snow-r1/source/snow-master.png",
+      "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+      "role": "input"
+    },
+    {
+      "source": "art/inputs/forest-hamlet/snow-r1/technical-notes.md",
+      "path": "art/inputs/forest-hamlet/snow-r1/technical-notes.md",
+      "sha256": "ce100f1aa9db57a99c6c6fa4992d1c8e97ca0fb1fa98bb5b9939a9d5a29a8de8",
+      "role": "evidence"
+    },
+    {
+      "source": "assets/forest-hamlet/backdrop/color.png",
+      "path": "assets/forest-hamlet/backdrop/color.png",
+      "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+      "role": "output"
+    },
+    {
+      "source": "assets/forest-hamlet/backdrop/manifest.json",
+      "path": "assets/forest-hamlet/backdrop/manifest.json",
+      "sha256": "d951c0be245d782a49e1edec327bbbc81cd07965cadd344de99886ad0a037cb6",
+      "role": "evidence"
+    },
+    {
+      "source": "assets/forest-hamlet/backdrop/normal.png",
+      "path": "assets/forest-hamlet/backdrop/normal.png",
+      "sha256": "9c840176d4002826091098449e7126c45b5b410a67c56eb43a0d3d29893987a6",
+      "role": "output"
+    },
+    {
+      "source": "assets/forest-hamlet/backdrop/regions.png",
+      "path": "assets/forest-hamlet/backdrop/regions.png",
+      "sha256": "ade0cbaba208f37219644571127ced57ab142cb56593aa126b21b3e3c4d1c153",
+      "role": "output"
+    },
+    {
+      "source": "build/forest-hamlet/atmosphere-r1-final/atmosphere-assets-report.json",
+      "path": "build/forest-hamlet/atmosphere-r1-final/atmosphere-assets-report.json",
+      "sha256": "1b1481c7ea2304a151e4af3a23860ee52fa4fc7faa4a2bb9a7ab6c9730ec5010",
+      "role": "evidence"
+    },
+    {
+      "source": "build/forest-hamlet/atmosphere-r1-final/atmosphere-gpu-pixel-report.json",
+      "path": "build/forest-hamlet/atmosphere-r1-final/atmosphere-gpu-pixel-report.json",
+      "sha256": "adbf1f2e61f91c22ee27ee84076d8441770953900a4521e510d59f4503f8f024",
+      "role": "evidence"
+    },
+    {
+      "source": "build/forest-hamlet/atmosphere-r1-final/atmosphere-gpu-report.json",
+      "path": "build/forest-hamlet/atmosphere-r1-final/atmosphere-gpu-report.json",
+      "sha256": "e12192f279b3345bba16a4aaa6c3db3f7d1c1c477da65735bc330492e4c6f34c",
+      "role": "evidence"
+    },
+    {
+      "source": "build/forest-hamlet/atmosphere-r1-final/atmosphere-runtime-report.json",
+      "path": "build/forest-hamlet/atmosphere-r1-final/atmosphere-runtime-report.json",
+      "sha256": "f9d74a9dadc4c6c033ce51fcaab5868ae8e6f0cd340953e78af165fe43470bc0",
+      "role": "evidence"
+    },
+    {
+      "source": "build/forest-hamlet/atmosphere-r1-final/close-day-atmosphere-off.png",
+      "path": "build/forest-hamlet/atmosphere-r1-final/close-day-atmosphere-off.png",
+      "sha256": "e80bc198d7a96d90ce29578e5ef4db415249c1d1f10df54e33aa374c081070f6",
+      "role": "evidence"
+    },
+    {
+      "source": "build/forest-hamlet/atmosphere-r1-final/close-day-clouds-a.png",
+      "path": "build/forest-hamlet/atmosphere-r1-final/close-day-clouds-a.png",
+      "sha256": "e2b45aec82af68e2f157a53cc370112ffa4c68532b4297d37092959d97715446",
+      "role": "evidence"
+    },
+    {
+      "source": "build/forest-hamlet/atmosphere-r1-final/close-day-clouds-b.png",
+      "path": "build/forest-hamlet/atmosphere-r1-final/close-day-clouds-b.png",
+      "sha256": "e770b3df7e9d27a6fa89533189d20fe6cb716aa26c31f1e55c0dd87886fdfb46",
+      "role": "evidence"
+    },
+    {
+      "source": "build/forest-hamlet/atmosphere-r1-final/close-day-clouds-off.png",
+      "path": "build/forest-hamlet/atmosphere-r1-final/close-day-clouds-off.png",
+      "sha256": "a6b01efbde0dd0ddf4bd7e18d3dcbfb5e750c26a2ac5a17b6f09f03e6cf87c02",
+      "role": "evidence"
+    },
+    {
+      "source": "build/forest-hamlet/atmosphere-r1-final/close-day-glow-off.png",
+      "path": "build/forest-hamlet/atmosphere-r1-final/close-day-glow-off.png",
+      "sha256": "c4ba6f8eee653da43e1d8665470010a2c30e054109fdaf5f4d616e761f240f14",
+      "role": "evidence"
+    },
+    {
+      "source": "build/forest-hamlet/atmosphere-r1-final/close-dusk-atmosphere.png",
+      "path": "build/forest-hamlet/atmosphere-r1-final/close-dusk-atmosphere.png",
+      "sha256": "a97277aace163e0abd2aaa19110839f86b4d6fc8e713ae52391cbe2833325365",
+      "role": "evidence"
+    },
+    {
+      "source": "build/forest-hamlet/atmosphere-r1-final/close-route-left.png",
+      "path": "build/forest-hamlet/atmosphere-r1-final/close-route-left.png",
+      "sha256": "1337fa7a5b650d177822dafb6eb5c82cbc301f95eef9210fca7c28d2c3eea8e6",
+      "role": "evidence"
+    },
+    {
+      "source": "build/forest-hamlet/atmosphere-r1-final/close-route-right.png",
+      "path": "build/forest-hamlet/atmosphere-r1-final/close-route-right.png",
+      "sha256": "9dbcdb3e20a3e4679687cacf6e10a702b5baa9724c59b5da44cb27f47d596ae2",
+      "role": "evidence"
+    },
+    {
+      "source": "build/forest-hamlet/atmosphere-r1-final/make-test-report.json",
+      "path": "build/forest-hamlet/atmosphere-r1-final/make-test-report.json",
+      "sha256": "eb550079e66dfdf9efb4820b64eb5b45e89156a20316888cf97b99eddb32c70c",
+      "role": "evidence"
+    },
+    {
+      "source": "build/forest-hamlet/atmosphere-r1-final/runtime-fingerprint.json",
+      "path": "build/forest-hamlet/atmosphere-r1-final/runtime-fingerprint.json",
+      "sha256": "b20e4f7a31bd14af4b77dcdd16f0d6736b5429cc1f295d9bb80b48f61aef3f7e",
+      "role": "evidence"
+    },
+    {
+      "source": "build/forest-hamlet/atmosphere-r1-final/snow-left-normals-off.png",
+      "path": "build/forest-hamlet/atmosphere-r1-final/snow-left-normals-off.png",
+      "sha256": "1dc425b11fea10c2a12843f56156f8c5e2ebbf93fec7c4c3b41a90c13787f2f2",
+      "role": "evidence"
+    },
+    {
+      "source": "build/forest-hamlet/atmosphere-r1-final/snow-left-normals-on.png",
+      "path": "build/forest-hamlet/atmosphere-r1-final/snow-left-normals-on.png",
+      "sha256": "2d1dc0332605267d6083c3b446d7fd08384b63d3f37306d4ce03110f3ec6a3a2",
+      "role": "evidence"
+    },
+    {
+      "source": "build/forest-hamlet/atmosphere-r1-final/snow-right-normals-off.png",
+      "path": "build/forest-hamlet/atmosphere-r1-final/snow-right-normals-off.png",
+      "sha256": "1dc425b11fea10c2a12843f56156f8c5e2ebbf93fec7c4c3b41a90c13787f2f2",
+      "role": "evidence"
+    },
+    {
+      "source": "build/forest-hamlet/atmosphere-r1-final/snow-right-normals-on.png",
+      "path": "build/forest-hamlet/atmosphere-r1-final/snow-right-normals-on.png",
+      "sha256": "f160e02037640f0b3565549e94cee992cb011a6ca187b604f75883f51b4248bd",
+      "role": "evidence"
+    },
+    {
+      "source": "docs/forest-hamlet/cloud-lighting.md",
+      "path": "docs/forest-hamlet/cloud-lighting.md",
+      "sha256": "d74dec1a72ef638d931daea4f9d51199c6ff1e9308b46cfd102954698f06517b",
+      "role": "evidence"
+    },
+    {
+      "source": "project.godot",
+      "path": "project.godot",
+      "sha256": "16845c304c897c5e0cc74589480e27f32701df5ed613bbd824321bd61a3255d5",
+      "role": "evidence"
+    },
+    {
+      "source": "scripts/forest_hamlet/close_scene.gd",
+      "path": "scripts/forest_hamlet/close_scene.gd",
+      "sha256": "e5f78a2ebced10a5d470155187db8c7b8d8e8793b4c07cc8372284d631fccce8",
+      "role": "evidence"
+    },
+    {
+      "source": "scripts/forest_hamlet/cloud_lighting.gd",
+      "path": "scripts/forest_hamlet/cloud_lighting.gd",
+      "sha256": "af35450097630459f3a123ec9c4dc5940573aae068264abc1ca340ef2afce62a",
+      "role": "evidence"
+    },
+    {
+      "source": "scripts/forest_hamlet/scene.gd",
+      "path": "scripts/forest_hamlet/scene.gd",
+      "sha256": "009828ea99dddcde335254249104eedb7d7efc74895abf63da894aa6493dd6f1",
+      "role": "evidence"
+    },
+    {
+      "source": "scripts/forest_hamlet/snow_backdrop.gd",
+      "path": "scripts/forest_hamlet/snow_backdrop.gd",
+      "sha256": "50c6dc8ce119ccd64442633433784ec89896d8a3c4cad993d6dbd82b0ff1f801",
+      "role": "evidence"
+    },
+    {
+      "source": "shaders/forest_hamlet/cloud_occluder.gdshader",
+      "path": "shaders/forest_hamlet/cloud_occluder.gdshader",
+      "sha256": "bb76cfe723527d377623a0aaa1f5a30657ddd1a673b75d9961ad1c765be271ce",
+      "role": "evidence"
+    },
+    {
+      "source": "shaders/forest_hamlet/snow_backdrop.gdshader",
+      "path": "shaders/forest_hamlet/snow_backdrop.gdshader",
+      "sha256": "4a751744aee0196df96b7ac113c7073cd8aab41a6c2ad1bb43d001cda135964f",
+      "role": "evidence"
+    },
+    {
+      "source": "tests/forest_hamlet/atmosphere_runtime.gd",
+      "path": "tests/forest_hamlet/atmosphere_runtime.gd",
+      "sha256": "a001ff1860f276ad21691f4b508d9627145a8d54fcc6573968b4a6d85e823e21",
+      "role": "evidence"
+    },
+    {
+      "source": "tools/forest_hamlet/atmosphere_checks.py",
+      "path": "tools/forest_hamlet/atmosphere_checks.py",
+      "sha256": "66efb559e76444e4e0eaad4f163b8462f18ba7d1cde2c0f13f98bb1bd2396b72",
+      "role": "evidence"
+    },
+    {
+      "source": "tools/forest_hamlet/capture_atmosphere.gd",
+      "path": "tools/forest_hamlet/capture_atmosphere.gd",
+      "sha256": "d092b77d84997aaa8a560cd9c9835c26954ac81f481f75214973965dd0461b0f",
+      "role": "evidence"
+    },
+    {
+      "source": "tools/forest_hamlet/prepare_snow_backdrop.py",
+      "path": "tools/forest_hamlet/prepare_snow_backdrop.py",
+      "sha256": "d7dc2b2e6bede49406e29c32a308fbeb42fa00aa5778dbc4a0e70ae67abf4ac1",
+      "role": "evidence"
+    },
+    {
+      "source": "tools/forest_hamlet/process_atmosphere_aw.py",
+      "path": "tools/forest_hamlet/process_atmosphere_aw.py",
+      "sha256": "58b4ee16fab8c58a50290872f45b65a30826534424438e0c4a5ba6a9b954519d",
+      "role": "evidence"
+    },
+    {
+      "source": "tools/forest_hamlet/register_atmosphere_vgp.py",
+      "path": "tools/forest_hamlet/register_atmosphere_vgp.py",
+      "sha256": "0d5983ebba8867fc8e24abac8e0c24f7c3d96786b2b5676ff8ba8e3770ff2727",
+      "role": "evidence"
+    },
+    {
+      "source": "tools/forest_hamlet/register_vgp.py",
+      "path": "tools/forest_hamlet/register_vgp.py",
+      "sha256": "b5c607ff2fc53a113f8584297e5fdd5a75499048b64ad3ae2187e127da2b3d5f",
+      "role": "evidence"
+    },
+    {
+      "source": "tools/forest_hamlet/run_atmosphere.py",
+      "path": "tools/forest_hamlet/run_atmosphere.py",
+      "sha256": "5213217116047b8bd83cf61e416e914eb2afaa31b714719d8ff666a5353c3e27",
+      "role": "evidence"
+    },
+    {
+      "source": "tools/forest_hamlet/verify_atmosphere_godot_aw.py",
+      "path": "tools/forest_hamlet/verify_atmosphere_godot_aw.py",
+      "sha256": "468580e0872ba96d5cca5341d83f2fb646aa85ce99d318aec0c2b47de0616b16",
+      "role": "evidence"
+    }
+  ],
+  "evidence": {
+    "runtime_fingerprint": "dddfa0e75fd426491a5d3e6b55b1725dd250e60aaf369e12407b597194c5f232",
+    "report_count": 4,
+    "screenshot_count": 12,
+    "physical_route_completed": true,
+    "complete_final_evidence": true,
+    "gpu_checks": 20,
+    "completeness_basis": "derived_schema1_complete_capture"
+  }
+}

@@ -60,6 +60,10 @@ private_paths = []
 for path in ROOT.rglob('*.md'):
     if any(part in ('.git', '.godot', 'build', '.venv') for part in path.relative_to(ROOT).parts):
         continue
+    # Generated AW/VGP freezes and bundles are checked by their hash manifests.
+    # Their relative links use source paths, outside this authored-document gate.
+    if path.relative_to(ROOT).parts[:2] == ('art', 'derived'):
+        continue
     text = path.read_text()
     if re.search(r'/(?:home|Users)/[^/\s]+', text):
         private_paths.append(str(path.relative_to(ROOT)))

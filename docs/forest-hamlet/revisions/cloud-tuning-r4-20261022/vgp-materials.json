@@ -1,0 +1,281 @@
+{
+  "id": "22f17788-3910-4bb3-92ea-c0ba7e376a28",
+  "asset_id": "52975eea-0437-4f23-96a3-13326f54e762",
+  "kind": "candidate",
+  "stage": "concept_design",
+  "parent_revision_ids": [
+    "03bcb906-33ae-4917-a7fa-8120ac8ae6df"
+  ],
+  "materials": {
+    "dependencies": [
+      {
+        "height": 1080,
+        "media_type": "image/png",
+        "path": "closure-021-cloud-tuning-contrast-low.png",
+        "role": "source",
+        "sha256": "68c0b815d592b538a9fdf85c2e5774e5a47fc564106dbacccc0ad34a835c75e8",
+        "size_bytes": 2192408,
+        "width": 1920
+      },
+      {
+        "height": 1080,
+        "media_type": "image/png",
+        "path": "closure-022-cloud-tuning-contrast-maximum.png",
+        "role": "source",
+        "sha256": "d514e9950e537b4f5d4005988ef2a03e78ea7d7dceaa867a395942b4b1f8712f",
+        "size_bytes": 1707307,
+        "width": 1920
+      },
+      {
+        "height": 1080,
+        "media_type": "image/png",
+        "path": "closure-023-cloud-tuning-contrast-zero.png",
+        "role": "source",
+        "sha256": "fcb1b0dfaa7259677d8ec93313799bfad3235ec2a2fa84e38e1a5ef7bfe57861",
+        "size_bytes": 1871836,
+        "width": 1920
+      },
+      {
+        "height": 1080,
+        "media_type": "image/png",
+        "path": "closure-024-cloud-tuning-default.png",
+        "role": "source",
+        "sha256": "44e65e84c77f5903e29e76fc08034e897877f6668938796d5937654730686db4",
+        "size_bytes": 2530068,
+        "width": 1920
+      },
+      {
+        "height": 1080,
+        "media_type": "image/png",
+        "path": "closure-025-cloud-tuning-density-full.png",
+        "role": "source",
+        "sha256": "2db32c79cc675dd4394bbed13c4202522dca6b38566a0348e8700cd2fd06673d",
+        "size_bytes": 1838157,
+        "width": 1920
+      },
+      {
+        "height": 1080,
+        "media_type": "image/png",
+        "path": "closure-026-cloud-tuning-density-zero.png",
+        "role": "source",
+        "sha256": "447f5e20afe3d428086cb12f194351ac99334db515d8889cdb6476c3859aa685",
+        "size_bytes": 1870618,
+        "width": 1920
+      },
+      {
+        "height": 720,
+        "media_type": "image/png",
+        "path": "closure-028-cloud-tuning-input-720.png",
+        "role": "source",
+        "sha256": "d77c84ae022ef3affb2c1791b830c2c0112813da1cf7c4db1d20b1992ccb8066",
+        "size_bytes": 939335,
+        "width": 1280
+      },
+      {
+        "height": 1080,
+        "media_type": "image/png",
+        "path": "closure-029-cloud-tuning-panel-1080.png",
+        "role": "source",
+        "sha256": "f91658ccde251bb59f9547913154186264242888df7a8d76fdd07089d344456b",
+        "size_bytes": 2406637,
+        "width": 1920
+      },
+      {
+        "height": 720,
+        "media_type": "image/png",
+        "path": "closure-030-cloud-tuning-panel-720.png",
+        "role": "source",
+        "sha256": "d07517d4a778fb9e70bab024065d6f8168ae051b3050495193fe932677d90e77",
+        "size_bytes": 1143947,
+        "width": 1280
+      },
+      {
+        "media_type": "application/zip",
+        "path": "evidence.zip",
+        "role": "source",
+        "sha256": "e1ad5910c4d2577359f6c6709f5aa434bea3dd9fd860e91018ea89750794528c",
+        "size_bytes": 7637544
+      }
+    ],
+    "members": [
+      {
+        "file": {
+          "height": 793,
+          "media_type": "image/png",
+          "path": "snow-color.png",
+          "role": "source",
+          "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+          "size_bytes": 1697185,
+          "width": 1983
+        },
+        "id": "snow-color",
+        "name": "Snow backdrop color",
+        "originals": [
+          {
+            "height": 793,
+            "media_type": "image/png",
+            "path": "closure-015-snow-master.png",
+            "revision_id": "bb5be0ab-eed7-4d77-b94d-e058bf001593",
+            "role": "source",
+            "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+            "size_bytes": 1697185,
+            "width": 1983
+          },
+          {
+            "height": 793,
+            "media_type": "image/png",
+            "path": "closure-015-snow-master.png",
+            "revision_id": "03bcb906-33ae-4917-a7fa-8120ac8ae6df",
+            "role": "source",
+            "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+            "size_bytes": 1697185,
+            "width": 1983
+          },
+          {
+            "height": 793,
+            "media_type": "image/png",
+            "path": "closure-015-snow-master.png",
+            "role": "source",
+            "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+            "size_bytes": 1697185,
+            "width": 1983
+          }
+        ],
+        "processing_target": {
+          "format": "png",
+          "height": 793,
+          "width": 1983
+        }
+      },
+      {
+        "file": {
+          "height": 793,
+          "media_type": "image/png",
+          "path": "snow-normal.png",
+          "role": "source",
+          "sha256": "9c840176d4002826091098449e7126c45b5b410a67c56eb43a0d3d29893987a6",
+          "size_bytes": 97589,
+          "width": 1983
+        },
+        "id": "snow-normal",
+        "name": "Snow backdrop normal",
+        "originals": [
+          {
+            "height": 793,
+            "media_type": "image/png",
+            "path": "closure-015-snow-master.png",
+            "revision_id": "bb5be0ab-eed7-4d77-b94d-e058bf001593",
+            "role": "source",
+            "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+            "size_bytes": 1697185,
+            "width": 1983
+          },
+          {
+            "height": 793,
+            "media_type": "image/png",
+            "path": "closure-015-snow-master.png",
+            "revision_id": "03bcb906-33ae-4917-a7fa-8120ac8ae6df",
+            "role": "source",
+            "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+            "size_bytes": 1697185,
+            "width": 1983
+          },
+          {
+            "height": 793,
+            "media_type": "image/png",
+            "path": "closure-015-snow-master.png",
+            "role": "source",
+            "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+            "size_bytes": 1697185,
+            "width": 1983
+          }
+        ],
+        "processing_target": {
+          "format": "png",
+          "height": 793,
+          "width": 1983
+        }
+      },
+      {
+        "file": {
+          "height": 793,
+          "media_type": "image/png",
+          "path": "snow-regions.png",
+          "role": "source",
+          "sha256": "ade0cbaba208f37219644571127ced57ab142cb56593aa126b21b3e3c4d1c153",
+          "size_bytes": 126254,
+          "width": 1983
+        },
+        "id": "snow-regions",
+        "name": "Snow backdrop regions",
+        "originals": [
+          {
+            "height": 793,
+            "media_type": "image/png",
+            "path": "closure-015-snow-master.png",
+            "revision_id": "bb5be0ab-eed7-4d77-b94d-e058bf001593",
+            "role": "source",
+            "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+            "size_bytes": 1697185,
+            "width": 1983
+          },
+          {
+            "height": 793,
+            "media_type": "image/png",
+            "path": "closure-015-snow-master.png",
+            "revision_id": "03bcb906-33ae-4917-a7fa-8120ac8ae6df",
+            "role": "source",
+            "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+            "size_bytes": 1697185,
+            "width": 1983
+          },
+          {
+            "height": 793,
+            "media_type": "image/png",
+            "path": "closure-015-snow-master.png",
+            "role": "source",
+            "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+            "size_bytes": 1697185,
+            "width": 1983
+          }
+        ],
+        "processing_target": {
+          "format": "png",
+          "height": 793,
+          "width": 1983
+        }
+      }
+    ],
+    "originals": [
+      {
+        "height": 793,
+        "media_type": "image/png",
+        "path": "closure-015-snow-master.png",
+        "revision_id": "bb5be0ab-eed7-4d77-b94d-e058bf001593",
+        "role": "source",
+        "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+        "size_bytes": 1697185,
+        "width": 1983
+      },
+      {
+        "height": 793,
+        "media_type": "image/png",
+        "path": "closure-015-snow-master.png",
+        "revision_id": "03bcb906-33ae-4917-a7fa-8120ac8ae6df",
+        "role": "source",
+        "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+        "size_bytes": 1697185,
+        "width": 1983
+      },
+      {
+        "height": 793,
+        "media_type": "image/png",
+        "path": "closure-015-snow-master.png",
+        "role": "source",
+        "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+        "size_bytes": 1697185,
+        "width": 1983
+      }
+    ]
+  }
+}

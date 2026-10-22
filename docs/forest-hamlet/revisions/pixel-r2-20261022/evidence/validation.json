@@ -1,0 +1,320 @@
+{
+  "schema": 1,
+  "scene": "res://scenes/forest_hamlet.tscn",
+  "scope": "Actual implementation and GPU evidence; user aesthetic approval remains pending.",
+  "capture_run": "build/forest-hamlet/pixel-r2-visibility-final",
+  "runtime_fingerprint": "1ec11e2b2f0d70cb74478d98735b12df2badc6c4d1b2636adb5de0554168a6e8",
+  "fingerprint_file_count": 387,
+  "fingerprint_matches_current_files": true,
+  "asset_checks": 48,
+  "asset_checks_passed": true,
+  "runtime_checks": 61,
+  "runtime_passed": true,
+  "gpu_passed": true,
+  "gpu_adapter": "NVIDIA GeForce RTX 4070 SUPER",
+  "renderer": "forward_plus",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "screenshots": 22,
+  "route_completed": true,
+  "route_waypoints": 6,
+  "route_simulation_seconds": 22.45,
+  "asset_instances": 305,
+  "terrain_triangles": 20468,
+  "model_triangles": {
+    "bench": 336,
+    "broadleaf": 5492,
+    "cottage": 9352,
+    "fence": 238,
+    "fir": 6088,
+    "grass": 9,
+    "lamp": 188,
+    "rock": 80,
+    "sign": 236
+  },
+  "frame_counts": {
+    "shadow_draw_calls": 261,
+    "visible_draw_calls": 83,
+    "visible_objects": 597,
+    "visible_primitives": 372700
+  },
+  "effect_comparisons": [
+    {
+      "baseline": "comparison-baseline.png",
+      "variant": "ground-normals-off.png",
+      "changed_pixels_above_2_rgb_levels": 53434,
+      "mean_absolute_rgb_difference_0_255": 0.3603173225308642,
+      "scope": "Descriptive frozen-scene image difference, not an artistic score."
+    },
+    {
+      "baseline": "comparison-baseline.png",
+      "variant": "dof-off.png",
+      "changed_pixels_above_2_rgb_levels": 314540,
+      "mean_absolute_rgb_difference_0_255": 1.6366210133744854,
+      "scope": "Descriptive frozen-scene image difference, not an artistic score."
+    },
+    {
+      "baseline": "comparison-baseline.png",
+      "variant": "bloom-off.png",
+      "changed_pixels_above_2_rgb_levels": 0,
+      "mean_absolute_rgb_difference_0_255": 3.215020576131687e-05,
+      "scope": "Descriptive frozen-scene image difference, not an artistic score."
+    },
+    {
+      "baseline": "dusk-glow-on.png",
+      "variant": "dusk-glow-off.png",
+      "changed_pixels_above_2_rgb_levels": 639,
+      "mean_absolute_rgb_difference_0_255": 0.0022894161522633745,
+      "scope": "Descriptive frozen-scene image difference, not an artistic score."
+    },
+    {
+      "baseline": "ground-detail-normals-on.png",
+      "variant": "ground-detail-normals-off.png",
+      "changed_pixels_above_2_rgb_levels": 77385,
+      "mean_absolute_rgb_difference_0_255": 0.6137327996399177,
+      "scope": "Descriptive frozen-scene image difference, not an artistic score."
+    }
+  ],
+  "original_character_files_unchanged": 345,
+  "aw": {
+    "workflow": "world.compile",
+    "run_id": "forest-hamlet-20261022-pixel-r2",
+    "status": "completed"
+  },
+  "vgp": {
+    "run_id": "forest-hamlet-20261022-pixel-r2",
+    "case_id": "65750774-e5a4-4a18-822d-e9a203599ab2",
+    "round_id": "73c96be4-8dd8-4205-8f25-a7851bf4040e",
+    "stable_assets": 2,
+    "stage": "concept_design",
+    "review_status": "pending",
+    "technical_checks_ready": true,
+    "decisions_created": 0,
+    "stage_admissions_created": 0
+  },
+  "shared_make_test": {
+    "label": "make-test-reviewed",
+    "command": [
+      "make",
+      "test"
+    ],
+    "returncode": 0,
+    "passed": true,
+    "elapsed_seconds": 12.474784373072907
+  },
+  "reference_framing": {
+    "camera_offset_length": 21.2190952301025,
+    "dof_far": 27.2048244476318,
+    "dof_near": 16.2048244476318,
+    "foot": [
+      0.5,
+      0.569259643554688
+    ],
+    "fov": 39.0,
+    "in_frame": true,
+    "pitch_degrees": 34.4389877319336,
+    "pixel_size": 0.00899999961256981,
+    "silhouette_rect": [
+      0.479100131988525,
+      0.433822575321904,
+      0.0414626439412435,
+      0.136036399558738
+    ],
+    "view_depth": 21.2048244476318
+  },
+  "billboard_gpu": {
+    "schema": 1,
+    "passed": true,
+    "scope": "Actual GPU pixel read-back; same unchanged front frame, constant distance and FOV, black background, normal debug emission",
+    "source": "assets/characters/crescent-traveler/v1/down/frames/00000.png",
+    "source_sha256": "db659beb52d684656dac145451c234c9547dbb12d10c3a1d32fe11135ba00e53",
+    "source_bounds": [
+      71,
+      24,
+      184,
+      240
+    ],
+    "distance": 8.0,
+    "fov": 39.0,
+    "checks": [
+      {
+        "file": "billboard-pitch15.png",
+        "scale": 1.0,
+        "bounds": [
+          862,
+          364,
+          1056,
+          734
+        ],
+        "size": [
+          194,
+          370
+        ],
+        "expected_size": [
+          193.854559814281,
+          370.55384884853714
+        ],
+        "source_aspect_preserved": true,
+        "camera_angle_invariant": true
+      },
+      {
+        "file": "billboard-pitch35.png",
+        "scale": 1.0,
+        "bounds": [
+          862,
+          364,
+          1056,
+          734
+        ],
+        "size": [
+          194,
+          370
+        ],
+        "expected_size": [
+          193.854559814281,
+          370.55384884853714
+        ],
+        "source_aspect_preserved": true,
+        "camera_angle_invariant": true
+      },
+      {
+        "file": "billboard-pitch60.png",
+        "scale": 1.0,
+        "bounds": [
+          862,
+          364,
+          1056,
+          734
+        ],
+        "size": [
+          194,
+          370
+        ],
+        "expected_size": [
+          193.854559814281,
+          370.55384884853714
+        ],
+        "source_aspect_preserved": true,
+        "camera_angle_invariant": true
+      },
+      {
+        "file": "billboard-yaw55.png",
+        "scale": 1.0,
+        "bounds": [
+          862,
+          364,
+          1056,
+          734
+        ],
+        "size": [
+          194,
+          370
+        ],
+        "expected_size": [
+          193.854559814281,
+          370.55384884853714
+        ],
+        "source_aspect_preserved": true,
+        "camera_angle_invariant": true
+      },
+      {
+        "file": "billboard-scale125.png",
+        "scale": 1.25,
+        "bounds": [
+          838,
+          271,
+          1080,
+          734
+        ],
+        "size": [
+          242,
+          463
+        ],
+        "expected_size": [
+          242.31819976785124,
+          463.19231106067144
+        ],
+        "source_aspect_preserved": true,
+        "camera_angle_invariant": true
+      }
+    ],
+    "failures": []
+  },
+  "material_tile_sizes": {
+    "grass": [
+      64,
+      64
+    ],
+    "earth": [
+      64,
+      64
+    ],
+    "wood": [
+      64,
+      64
+    ],
+    "stone": [
+      64,
+      64
+    ]
+  },
+  "shared_regression": {
+    "schema": 1,
+    "passed": true,
+    "make_test": {
+      "label": "make-test-reviewed",
+      "command": [
+        "make",
+        "test"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "elapsed_seconds": 12.474784373072907
+    },
+    "canal_test": {
+      "label": "canal-regression-reviewed",
+      "command": [
+        "make",
+        "canal-test",
+        "PYTHON=build/forest-hamlet/validation-env/bin/python"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "elapsed_seconds": 252.45033965504263,
+      "dependency_environment": "project-local disposable virtualenv"
+    },
+    "canal_source_scopes": 9,
+    "canal_source_files": 1767,
+    "canal_runtime_groups": 12,
+    "canal_camera_groups": 2,
+    "runtime_unchanged_during_suites": true,
+    "artifacts": [
+      "canal-runtime-suite.json",
+      "canal-camera-suite.json"
+    ],
+    "scope": "Actual final process results. Earlier authoring-time fingerprint failures remain in build logs and are not reused as passes."
+  },
+  "reference_image": {
+    "path": "art/inputs/forest-hamlet/camera-reference-20261022.png",
+    "sha256": "9046d2e2a350566e9c42b8f8bcf5d6e5fb9619046218a215b5ade12e075b7405"
+  },
+  "right_route_visibility": {
+    "details": [
+      {
+        "mesh_count": 6,
+        "name": "Broadleaf77",
+        "occluding": true,
+        "transparency": 1.0
+      }
+    ],
+    "faded_names": [
+      "Broadleaf77"
+    ],
+    "faded_trees": 1,
+    "mesh_count": 402,
+    "occluding_trees": 1,
+    "registered_trees": 67
+  }
+}

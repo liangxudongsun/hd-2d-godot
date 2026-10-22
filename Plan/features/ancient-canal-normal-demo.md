@@ -18,7 +18,7 @@
 
 用户追加完整演示视频及角色特写。当前 GPU 录制已通过，共 23 章、1201 张原生 1080p PNG，采集墙钟 85.063209 秒。覆盖冷暖光四方向实际行走、三个时段、独立近／远景景深、合法 W 透视的酒肆侧墙、完整自动路线，以及固定角色、机位、灯光、环境的角色法线 ON／OFF／ON。596 张真实特写的可见角色高 564.49–619.30 像素，2390 个特写物理时点无采样遮挡；特写相机不改变生产镜头配置或源图片。末章前斜测试灯的实际照明记为自定义，只覆盖角色 shader 的法线开关。
 
-录制来源为[完整演示录制器](../../tools/ancient_canal/capture_lighting_demo.gd)，编码与独立解码来源为[视频编码与审计工具](../../tools/ancient_canal/encode_lighting_demo.py)。新记录位于 `demo-render-final/lighting-demo-report.json`，新视频位于 `demo-video/jiangnan-lighting-closeup.mp4`。2552 个目标槽中因写图背压缺采 1351 个，按真实墙钟 VFR 保留间隙，不宣称完整 30 FPS 或新的性能结果。编码后视频为 85.050 秒、1201 帧。编码、全部帧独立数值解码及 23 章原生关键图／三张联系图的实际视审均通过，见[本地独立复审记录](../../build/ancient-canal/tavern-lighting-20261007/demo-video/independent-visual-review.json)。最大 RGB 平均误差为 3.26974／255，最低 PSNR 为 33.07656 dB，法线 ON 恢复图在字幕外与首张 ON 原图完全一致。视觉验收覆盖关键图，未按连续播放或全部帧逐张视审验收。首轮失败图、记录和启动报告原样保留在 `demo-render` 及本次目录中；灰材质录制工具补充关闭大范围灯，也不重新标记旧录像为本修订。
+录制来源为[完整演示录制器](../../tools/ancient_canal/capture_lighting_demo.gd)，编码与独立解码来源为[视频编码与审计工具](../../tools/ancient_canal/encode_lighting_demo.py)。新记录位于 `demo-render-final/lighting-demo-report.json`，新视频位于 `demo-video/jiangnan-lighting-closeup.mp4`。2552 个目标槽中因写图背压缺采 1351 个，按真实墙钟 VFR 保留间隙，不宣称完整 30 FPS 或新的性能结果。编码后视频为 85.050 秒、1201 帧。编码、全部帧独立数值解码及 23 章原生关键图／三张联系图的实际视审均通过，当时的本地独立复审记录路径为 `build/ancient-canal/tavern-lighting-20261007/demo-video/independent-visual-review.json`（该临时构建记录未随当前检出保留，当前无法据此复核历史视觉验收）。最大 RGB 平均误差为 3.26974／255，最低 PSNR 为 33.07656 dB，法线 ON 恢复图在字幕外与首张 ON 原图完全一致。视觉验收覆盖关键图，未按连续播放或全部帧逐张视审验收。首轮失败图、记录和启动报告原样保留在 `demo-render` 及本次目录中；灰材质录制工具补充关闭大范围灯，也不重新标记旧录像为本修订。
 
 ## 已确定的目标
 

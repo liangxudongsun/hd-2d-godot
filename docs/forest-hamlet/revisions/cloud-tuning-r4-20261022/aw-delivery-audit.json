@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "delivery_id": "delivery-bd1040f7d4d74416b5063bec5318d7c1a16b9542913eb526221b0b256f566592",
+  "aw_manifest": "art/derived/workbench/delivery/forest-hamlet-20261022-cloud-tuning-r4/delivery.json",
+  "aw_manifest_sha256": "336303bc0c4d424bb4412bca5c3d826c9801a22bcd64a4176db07784b4659455",
+  "aw_archive": "art/derived/workbench/delivery/forest-hamlet-20261022-cloud-tuning-r4/delivery.zip",
+  "aw_archive_sha256": "8b8999706465c1e7cddc5fb0e521f692c25d267b2aca5de0c994f329a44eb841",
+  "aw_technical": "art/derived/workbench/delivery/forest-hamlet-20261022-cloud-tuning-r4/technical.json",
+  "aw_technical_sha256": "2063e8a05a7faa00d3c048e28b83618dd89b09e974e08228b43054de3b25e520",
+  "producer_version": "0.6.1",
+  "delivery_file_count": 34,
+  "source_summary": "art/derived/forest-hamlet/forest-hamlet-20261022-cloud-tuning-r4/atmosphere-summary.json",
+  "source_summary_sha256": "69af0bba9eef998dcda7d544875ca0490e7f28ce67005ed92ef6e06cbc7d5b01",
+  "scope": "Independent archive-time verification of the native AW manifest, ZIP bytes, selected run files, verification receipt and current frozen source closure."
+}

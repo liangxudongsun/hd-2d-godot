@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "project_id": "5af64d90-66bc-471c-ab66-dcabe72ed9d3",
+  "scene_classification_id": "fa2c56c8-722e-4f41-b9d2-04d839544457",
+  "case_id": "65750774-e5a4-4a18-822d-e9a203599ab2",
+  "round_id": "69395dbc-d658-486d-8571-0986c59fd7d8",
+  "previous_round_id": "cca9b78c-9745-4792-872a-302754b1ded1",
+  "context_run_id": "forest-hamlet-20261022-vegetation-r2-review",
+  "assets": [
+    {
+      "key": "snow-atmosphere",
+      "asset_key": "forest-hamlet-snow-atmosphere",
+      "asset_id": "52975eea-0437-4f23-96a3-13326f54e762",
+      "revision_id": "bb5be0ab-eed7-4d77-b94d-e058bf001593",
+      "stage": "concept_design",
+      "main_output_count": 3,
+      "status": "pending_review",
+      "check_receipt": "art/derived/forest-hamlet/forest-hamlet-20261022-atmosphere-r2-review2/vgp/atmosphere-check.response.json"
+    }
+  ],
+  "review_status": "pending",
+  "decisions_created": 0,
+  "stage_admissions_created": 0,
+  "bundle_file_count": 63,
+  "native_godot": {
+    "workflow": "godot.verify",
+    "execution_status": "completed",
+    "aw_run": "art/derived/workbench/godot/forest-hamlet-20261022-atmosphere-r2/run.json",
+    "aw_run_sha256": "b84b556996369ff0cad238bda8514bbee40aef9f61b9520bb232959154f99536",
+    "recipe": "art/inputs/forest-hamlet/atmosphere-native-r2/godot-verify.recipe.json",
+    "recipe_sha256": "b567597c507623e6b21ad457be677bc90835ce42781982d631cc1e6409f52277",
+    "snapshot": "art/inputs/forest-hamlet/atmosphere-native-r2/snapshot.json",
+    "snapshot_sha256": "ac1bdb7c898fc049a76d5b457f01759b563509744ca0a469126a4af077b126ca",
+    "native_frozen_recipe": "art/derived/workbench/godot/forest-hamlet-20261022-atmosphere-r2/inputs/input.json",
+    "native_frozen_recipe_sha256": "b567597c507623e6b21ad457be677bc90835ce42781982d631cc1e6409f52277",
+    "test_report": "art/derived/workbench/godot/forest-hamlet-20261022-atmosphere-r2/steps/atmosphere-runtime/attempt-001/atmosphere-runtime-report.json",
+    "test_report_sha256": "1a24eb39b1367bf9b0bee804af7af3585d50d3334dd626ea1656e13847246564",
+    "source_closure_sha256": "a57840dc9087bb6a8fedb090463caa74497f008c4d123c7d7887041be454a056",
+    "file_count": 1549,
+    "total_bytes": 110349949,
+    "test_checks": 47,
+    "engine_version": "4.7.2.stable.official.ed1daf0bf",
+    "engine_sha256": "8d106cbe6144c2dc7e881d61d2429c1a8a76e6b22ef48bd5e48dcf934953f71e",
+    "rendered": false,
+    "summary": "art/derived/forest-hamlet/forest-hamlet-20261022-atmosphere-r2/native-godot/summary.json",
+    "summary_sha256": "3cd25b97ce462c30275a4a84de87c61294eebbdf65883e3e29a1a59ed200df89"
+  },
+  "aw_delivery": {
+    "delivery_id": "delivery-09686e77c750744fb67593e943a7e2c5baa5d99df7fc00c10037221d7211ad32",
+    "aw_manifest": "art/derived/workbench/delivery/forest-hamlet-20261022-atmosphere-r2-delivery2/delivery.json",
+    "aw_manifest_sha256": "a62fd49573064d6bcede49d2caac8de279cbfaa6df6a237d532e506288d162f6",
+    "aw_archive": "art/derived/workbench/delivery/forest-hamlet-20261022-atmosphere-r2-delivery2/delivery.zip",
+    "aw_archive_sha256": "6897faaeb542cbe761c65c30e7728e0289d3aeb3fcd06a61d62db3248f5f043e",
+    "verify_receipt": "art/derived/forest-hamlet/forest-hamlet-20261022-atmosphere-r2-delivery2/aw-delivery-verify.response.json",
+    "verify_receipt_sha256": "3b2e4335866d4a12bdaee5b764e723fac93ed5ae27ed9960a463482f875eb829"
+  },
+  "note": "Native VGP candidate/round completed. AW godot.verify ran the runtime test; AW delivery export/verify packaged selected frozen-run files. External GPU evidence and authored sources have a separate project SHA256 freeze and are included in the candidate dependencies. AW did not draw art/normals or render/verify the external GPU captures. No aesthetic approval synthesized.",
+  "existing_asset_id_reused": "52975eea-0437-4f23-96a3-13326f54e762"
+}

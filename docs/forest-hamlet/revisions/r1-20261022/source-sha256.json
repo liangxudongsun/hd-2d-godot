@@ -1,0 +1,10 @@
+{
+  "scripts/forest_hamlet/scene.gd": "7d5f98e9ed3a57a8e0843aa88ba411a1cbc1a7227c5a218c28faf31e491f0950",
+  "scripts/forest_hamlet/world.gd": "9bae0cdee1f651daec95c05f622c48e71bf4b15b7f7aaf39fcd3cb84f36e4d2c",
+  "shaders/forest_hamlet/ground.gdshader": "4115f60d10a06d5827e314f858d28f9bfff02d8343e167e683ce100281aca35d",
+  "shaders/forest_hamlet/foliage.gdshader": "345b2c36ecf224c7506d9ae7e0b6d6ded57b5911c7962d3ff181fbb14cb576b9",
+  "shaders/forest_hamlet/water.gdshader": "c94869093d8e731a51fd6e4c1277f7b1a5900de45fb8c65cbfb7db90b9258ddf",
+  "tools/forest_hamlet/run.py": "29ec037223465bdfe6e8c0902c69682d338adc2a0251024644694f6d32e84807",
+  "tools/forest_hamlet/capture.gd": "68a3c1285a4380b22bf1b167e234ffd03a28844371ada2504f1d0de49d17cdbc",
+  "tests/forest_hamlet/runtime.gd": "9e280fd7f8e6581bec56b7bdcc6773a03ac9986194d2e29fc1ed420628f25db1"
+}

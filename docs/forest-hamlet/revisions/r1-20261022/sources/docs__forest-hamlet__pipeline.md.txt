@@ -1,0 +1,58 @@
+# 森林村落：AW / VGP 资源工作流
+
+这条制作链复用现有月饰少女，新增四种材质与九件原创环境模型。原始母图、确定性加工脚本、AW 原生执行回执、Blender 来源和 VGP 候选身份分别保留。运行时资源位于 `assets/forest-hamlet/`。
+
+## 1. 原稿与确定性输入准备
+
+原始材质母图：`art/inputs/forest-hamlet/material-atlas.png`，1254×1254，SHA-256 为 `fea6c0c48d91eed01d0f77a181994700d2f813124b6c37a0542c1e178a450f26`。图中四个 627×627 象限依次为草地、暖土、木板和苔石。
+
+```sh
+python3 tools/forest_hamlet/prepare_materials.py
+```
+
+输入准备将每个象限最近邻缩为 128×128，再用水平／垂直镜像组成 256×256 周期图，确保两组相对边逐像素相同。不会对角落作模糊混合。镜像重复仍可能在大面积铺设时可见，最终应以场景画面判断。
+
+脚本同时输出有透明槽边的 2×2 输入图集和固定色板。色板每种材质最多选 64 个代表色，每个代表色均吸附到原稿实际存在的 RGB 值；最终颜色映射由 AW 执行。原图不覆盖。`prepared/preparation.json` 固定裁切、算法、尺寸、色板和摘要。
+
+## 2. 官方 AW 编译
+
+```sh
+python3 tools/forest_hamlet/process_materials_aw.py
+```
+
+驱动使用当前安装的 `aw`，不从相邻源码仓库导入实现，不安装依赖或启动服务。输入规格为 `art/inputs/forest-hamlet/workbench-project.yaml`，执行配方为 `materials.recipe.yaml`，正式调用为 `workflow validate world.compile`、`workflow run world.compile --bypass-rectify`。
+
+AW 冻结输入与实现指纹，执行固定色板映射、尺寸和可见尺度检查，并输出图集目录及原生 `run.json`。现有 AW scene-sheet v1 的 ground 分支固定为 64×32 菱形，因此四个方形表面材质使用受支持的 prop 画布分支；配方中另有一个满足 catalog 契约的预览地块，该预览地块不接入三维场景。
+
+默认运行目录为 `art/derived/workbench/world/forest-hamlet-20261022-r1/`。独立摘要与驱动回执位于 `art/derived/forest-hamlet/forest-hamlet-20261022-r1/`。只有官方运行状态为 completed，且输出满足 256×256、不透明、相对边相等、像素属于固定原稿色板，驱动才把官方 PNG 的原字节复制到：
+
+- `assets/forest-hamlet/textures/grass.png`
+- `assets/forest-hamlet/textures/earth.png`
+- `assets/forest-hamlet/textures/wood.png`
+- `assets/forest-hamlet/textures/stone.png`
+
+原生回执与摘要各自保留，摘要不能替代 AW 原生证据。该步骤为 CPU 材质编译；Godot 的实际 GPU 画面、操控和场景验证由本场景的验收工具单独记录。
+
+## 3. Blender 模型与角色复用
+
+在最终 AW 材质生成后运行项目的 `tools/forest_hamlet/build_assets.py`，保留 `art/inputs/forest-hamlet/blender/*.blend` 与导出的 `assets/forest-hamlet/models/*.glb`。`blender/manifest.json` 记录固定 seed、坐标转换和每个 GLB 摘要。材质字节变化后需要重新导出使用内嵌材质的 GLB。
+
+模型包含 cottage、broadleaf、fir、fence、rock、lamp、bench、sign 和 grass 九件组件。几何由项目脚本制作，AW 负责其材质的加工。角色仍由既有 crescent-traveler 资源提供；月饰少女颜色帧、法线和银饰蒙版的复用摘要由场景来源记录保存。
+
+## 4. VGP 候选、场景分类与审阅
+
+完成最终材质和模型后执行：
+
+```sh
+python3 tools/forest_hamlet/register_vgp.py
+```
+
+驱动使用真实 VGP CLI 的 `project files register`，将本工程登记为资源 Project；项目候选和工作状态位于项目 `.vgp`。它创建两个稳定逻辑资源：`forest-hamlet-surfaces` 的四图主输出组，以及 `forest-hamlet-model-kit` 的九模型主输出组。每组明确保留原稿、完整类型目标和外部制作报告，读取 `asset.revision.check`，关联森林村落场景分类，再创建并提交候选审批批次。
+
+首次登记使用 `concept_design` 阶段。材料已经经过技术加工，不等于取得 VGP 的前阶段批准；`specification_processed` 和 `engine_ready` 必须引用真实的前阶段决定及父稿，不能用标签、游戏中已有文件或 Agent 自行补写的批准代替。此驱动不调用 `review.decide`，不生成阶段入库，也不自动改变用户的美术决定。
+
+本轮最终 Project、Asset、Revision、Case 和场景分类身份保存在 `art/derived/forest-hamlet/forest-hamlet-20261022-r2/vgp/summary.json`。r1 初稿完整保留；r2 复用同一 Project、场景分类和两个稳定 Asset，以已验证的 r1 Revision 为父稿追加候选，并在同一 Case 中追加审批轮次。两个候选技术检查均为 ready、issues=[]，仍处于 concept_design 待审状态。提交中的状态应以 VGP 当前记录为准。具体审阅操作可继续通过现有 VGP 工作台或具有审阅权限的 CLI 会话完成。
+
+## 5. 重试与后续修改
+
+AW 运行目录已存在时使用原始冻结输入恢复；源图、配方、实现或参数改变时改用新的 `--run-id`，保留旧证据。VGP 驱动为每个变更保存确切请求与幂等键，并固定文件摘要；素材变化时同样使用新 `--run-id`，配合 `--previous-run-id` 读取并核验原 Project / Asset / Revision / Case 后追加后继候选，不覆盖旧稿件。例如本轮最后的模型改稿使用 `--run-id forest-hamlet-20261022-r2 --previous-run-id forest-hamlet-20261022-r1 --aw-run-id forest-hamlet-20261022-r1`。它不会提升权限、伪造身份、删除历史或对外发布资源。

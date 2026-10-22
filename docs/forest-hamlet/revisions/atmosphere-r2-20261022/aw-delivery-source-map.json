@@ -1,0 +1,145 @@
+{
+  "authority": "native AW delivery ZIP contents independently matched to the completed Godot run",
+  "delivery_id": "delivery-09686e77c750744fb67593e943a7e2c5baa5d99df7fc00c10037221d7211ad32",
+  "archive": "art/derived/workbench/delivery/forest-hamlet-20261022-atmosphere-r2-delivery2/delivery.zip",
+  "archive_sha256": "6897faaeb542cbe761c65c30e7728e0289d3aeb3fcd06a61d62db3248f5f043e",
+  "files": [
+    {
+      "source": "assets/forest-hamlet/backdrop/color.png",
+      "run_source": "inputs/project/assets/forest-hamlet/backdrop/color.png",
+      "path": "runtime/snow-color/color.png",
+      "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+      "bytes": 1697185,
+      "role": "runtime"
+    },
+    {
+      "source": "assets/forest-hamlet/backdrop/normal.png",
+      "run_source": "inputs/project/assets/forest-hamlet/backdrop/normal.png",
+      "path": "runtime/snow-normal/normal.png",
+      "sha256": "9c840176d4002826091098449e7126c45b5b410a67c56eb43a0d3d29893987a6",
+      "bytes": 97589,
+      "role": "runtime"
+    },
+    {
+      "source": "assets/forest-hamlet/backdrop/regions.png",
+      "run_source": "inputs/project/assets/forest-hamlet/backdrop/regions.png",
+      "path": "runtime/snow-regions/regions.png",
+      "sha256": "ade0cbaba208f37219644571127ced57ab142cb56593aa126b21b3e3c4d1c153",
+      "bytes": 126254,
+      "role": "runtime"
+    },
+    {
+      "source": "art/derived/workbench/godot/forest-hamlet-20261022-atmosphere-r2/inputs/input.json",
+      "run_source": "inputs/input.json",
+      "path": "recipe/godot-verify/input.json",
+      "sha256": "b567597c507623e6b21ad457be677bc90835ce42781982d631cc1e6409f52277",
+      "bytes": 105718,
+      "role": "recipe"
+    },
+    {
+      "source": "art/derived/workbench/godot/forest-hamlet-20261022-atmosphere-r2/run.json",
+      "run_source": "run.json",
+      "path": "evidence/godot-run/run.json",
+      "sha256": "b84b556996369ff0cad238bda8514bbee40aef9f61b9520bb232959154f99536",
+      "bytes": 1029579,
+      "role": "evidence"
+    },
+    {
+      "source": "art/derived/workbench/godot/forest-hamlet-20261022-atmosphere-r2/steps/atmosphere-runtime/attempt-001/atmosphere-runtime-report.json",
+      "run_source": "steps/atmosphere-runtime/attempt-001/atmosphere-runtime-report.json",
+      "path": "evidence/atmosphere-runtime/atmosphere-runtime-report.json",
+      "sha256": "1a24eb39b1367bf9b0bee804af7af3585d50d3334dd626ea1656e13847246564",
+      "bytes": 91851,
+      "role": "evidence"
+    },
+    {
+      "source": "assets/forest-hamlet/backdrop/manifest.json",
+      "run_source": "inputs/project/assets/forest-hamlet/backdrop/manifest.json",
+      "path": "evidence/backdrop-manifest/manifest.json",
+      "sha256": "d951c0be245d782a49e1edec327bbbc81cd07965cadd344de99886ad0a037cb6",
+      "bytes": 2337,
+      "role": "evidence"
+    },
+    {
+      "source": "project.godot",
+      "run_source": "inputs/project/project.godot",
+      "path": "editable/runtime-source-00/project.godot",
+      "sha256": "16845c304c897c5e0cc74589480e27f32701df5ed613bbd824321bd61a3255d5",
+      "bytes": 1085,
+      "role": "editable"
+    },
+    {
+      "source": "scripts/forest_hamlet/scene.gd",
+      "run_source": "inputs/project/scripts/forest_hamlet/scene.gd",
+      "path": "editable/runtime-source-01/scene.gd",
+      "sha256": "4b6fd59e482a538e2a847f6685fd4f0226c2fe564ab8adff624642bc9120cf35",
+      "bytes": 21158,
+      "role": "editable"
+    },
+    {
+      "source": "scripts/forest_hamlet/close_scene.gd",
+      "run_source": "inputs/project/scripts/forest_hamlet/close_scene.gd",
+      "path": "editable/runtime-source-02/close_scene.gd",
+      "sha256": "e5f78a2ebced10a5d470155187db8c7b8d8e8793b4c07cc8372284d631fccce8",
+      "bytes": 1797,
+      "role": "editable"
+    },
+    {
+      "source": "scripts/forest_hamlet/snow_backdrop.gd",
+      "run_source": "inputs/project/scripts/forest_hamlet/snow_backdrop.gd",
+      "path": "editable/runtime-source-03/snow_backdrop.gd",
+      "sha256": "50c6dc8ce119ccd64442633433784ec89896d8a3c4cad993d6dbd82b0ff1f801",
+      "bytes": 8814,
+      "role": "editable"
+    },
+    {
+      "source": "scripts/forest_hamlet/cloud_lighting.gd",
+      "run_source": "inputs/project/scripts/forest_hamlet/cloud_lighting.gd",
+      "path": "editable/runtime-source-04/cloud_lighting.gd",
+      "sha256": "af35450097630459f3a123ec9c4dc5940573aae068264abc1ca340ef2afce62a",
+      "bytes": 9475,
+      "role": "editable"
+    },
+    {
+      "source": "scripts/forest_hamlet/global_lighting.gd",
+      "run_source": "inputs/project/scripts/forest_hamlet/global_lighting.gd",
+      "path": "editable/runtime-source-05/global_lighting.gd",
+      "sha256": "f05be4f1cf6439abd27bd9a5cb24360f6a0c0cf48021dd8a3a716d2ea53f61ae",
+      "bytes": 5419,
+      "role": "editable"
+    },
+    {
+      "source": "shaders/forest_hamlet/snow_backdrop.gdshader",
+      "run_source": "inputs/project/shaders/forest_hamlet/snow_backdrop.gdshader",
+      "path": "editable/runtime-source-06/snow_backdrop.gdshader",
+      "sha256": "4a751744aee0196df96b7ac113c7073cd8aab41a6c2ad1bb43d001cda135964f",
+      "bytes": 2105,
+      "role": "editable"
+    },
+    {
+      "source": "shaders/forest_hamlet/cloud_occluder.gdshader",
+      "run_source": "inputs/project/shaders/forest_hamlet/cloud_occluder.gdshader",
+      "path": "editable/runtime-source-07/cloud_occluder.gdshader",
+      "sha256": "bb76cfe723527d377623a0aaa1f5a30657ddd1a673b75d9961ad1c765be271ce",
+      "bytes": 1098,
+      "role": "editable"
+    },
+    {
+      "source": "tests/forest_hamlet/atmosphere_runtime.gd",
+      "run_source": "inputs/project/tests/forest_hamlet/atmosphere_runtime.gd",
+      "path": "editable/runtime-source-08/atmosphere_runtime.gd",
+      "sha256": "73b8efe3032c1be1afaf8d67c0ac1e5b07c29f8a14fd0f9817723fc6f526affd",
+      "bytes": 14719,
+      "role": "editable"
+    },
+    {
+      "source": "tools/forest_hamlet/capture_atmosphere.gd",
+      "run_source": "inputs/project/tools/forest_hamlet/capture_atmosphere.gd",
+      "path": "editable/runtime-source-09/capture_atmosphere.gd",
+      "sha256": "3602f521c6b6bbf61febfd4d87cdbd55ffe31fe148a82b1555e84b90171e025c",
+      "bytes": 15493,
+      "role": "editable"
+    }
+  ],
+  "external_gpu_evidence": "The fifteen GPU PNGs and their final reports are independently frozen in independent-frozen-inputs.json and the VGP bundle; they are not outputs of the headless native Godot run or contents of its AW delivery."
+}

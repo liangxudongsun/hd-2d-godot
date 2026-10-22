@@ -1,0 +1,309 @@
+{
+  "schema": 1,
+  "passed": true,
+  "checks": [
+    {
+      "label": "actual Forward Plus capture and every runtime capture contract passed",
+      "passed": true
+    },
+    {
+      "label": "exact nine control comparison and panel captures exist",
+      "passed": true
+    },
+    {
+      "label": "GPU report binds the unchanged production runtime fingerprint",
+      "passed": true
+    },
+    {
+      "label": "capture tool and runtime source unchanged: scripts/forest_hamlet/cloud_lighting.gd",
+      "passed": true
+    },
+    {
+      "label": "capture tool and runtime source unchanged: scripts/forest_hamlet/scene.gd",
+      "passed": true
+    },
+    {
+      "label": "capture tool and runtime source unchanged: shaders/forest_hamlet/cloud_occluder.gdshader",
+      "passed": true
+    },
+    {
+      "label": "capture tool and runtime source unchanged: tools/forest_hamlet/capture_cloud_tuning.gd",
+      "passed": true
+    },
+    {
+      "label": "capture tool and runtime source unchanged: tools/forest_hamlet/cloud_tuning_checks.py",
+      "passed": true
+    },
+    {
+      "label": "capture tool and runtime source unchanged: tools/forest_hamlet/run_cloud_tuning.py",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-default: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-default: read-back is a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-contrast-low: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-contrast-low: read-back is a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-contrast-zero: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-contrast-zero: read-back is a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-density-zero: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-density-zero: read-back is a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-density-full: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-density-full: read-back is a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-contrast-maximum: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-contrast-maximum: read-back is a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-panel-1080: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-panel-1080: read-back is a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-panel-720: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-panel-720: read-back is a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-input-720: original PNG hash and dimensions match",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-input-720: read-back is a nonempty rendered scene",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-default: correct independent tuning values reached the captured scene",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-default: independent clocks and maximum sunlight floor are preserved",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-contrast-low: correct independent tuning values reached the captured scene",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-contrast-low: independent clocks and maximum sunlight floor are preserved",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-contrast-zero: correct independent tuning values reached the captured scene",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-contrast-zero: independent clocks and maximum sunlight floor are preserved",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-density-zero: correct independent tuning values reached the captured scene",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-density-zero: independent clocks and maximum sunlight floor are preserved",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-density-full: correct independent tuning values reached the captured scene",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-density-full: independent clocks and maximum sunlight floor are preserved",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-contrast-maximum: correct independent tuning values reached the captured scene",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-contrast-maximum: independent clocks and maximum sunlight floor are preserved",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-panel-1080: correct independent tuning values reached the captured scene",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-panel-1080: independent clocks and maximum sunlight floor are preserved",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-panel-720: correct independent tuning values reached the captured scene",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-panel-720: independent clocks and maximum sunlight floor are preserved",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-contrast-low: changing the slider changes actual scene pixels",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-contrast-zero: changing the slider changes actual scene pixels",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-density-zero: changing the slider changes actual scene pixels",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-density-full: changing the slider changes actual scene pixels",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-contrast-maximum: changing the slider changes actual scene pixels",
+      "passed": true
+    },
+    {
+      "label": "less contrast progressively brightens the same frozen cloud field",
+      "passed": true
+    },
+    {
+      "label": "full density darkens the same scene more than the default partial cloud field",
+      "passed": true
+    },
+    {
+      "label": "the user-selected 80 percent maximum visibly darkens full clouds more than the default 30 percent setting",
+      "passed": true
+    },
+    {
+      "label": "zero contrast and zero density produce matching clear-cloud scene endpoints",
+      "passed": true
+    },
+    {
+      "label": "visible controls are rendered over the same scene",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-panel-1080: both readable controls fit the viewport",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-panel-720: both readable controls fit the viewport",
+      "passed": true
+    },
+    {
+      "label": "cloud-tuning-input-720: both readable controls fit the viewport",
+      "passed": true
+    },
+    {
+      "label": "actual pointer interaction changes the live production density",
+      "passed": true
+    },
+    {
+      "label": "actual mouse interaction produces a visibly different rendered frame",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "runtime_fingerprint": "afa098af1ecf1412e0169ace59832bae7a53ee6578159ce5e56427829e5dc029",
+  "capture_sha256": "d4f9aa9290dead3290901de6a37f6eaba310fcef274f33b8e2498c04b5f17670",
+  "source_files": {
+    "scripts/forest_hamlet/scene.gd": "436dbb94e540b5979910f8fe4df022c53dd180d5f18b61741779dfbb10ddf495",
+    "scripts/forest_hamlet/cloud_lighting.gd": "c13b224096bcdd1674ef4bbb6f919a1e91d57801d6b1e1b9cb353f1ba38395a2",
+    "shaders/forest_hamlet/cloud_occluder.gdshader": "e70591cabd53eee8dd4a89c47d93397825c5d36394319acf0902666c689c4b65",
+    "tests/forest_hamlet/cloud_tuning_runtime.gd": "ecfe63738b9729892c09d4c8001485344a77c396a24f88b1e006d755b237fd96",
+    "tools/forest_hamlet/capture_cloud_tuning.gd": "6fd233e2bf434015011b071e9a9b5a5a0da54c3bf7fbb32abc56175459483743",
+    "tools/forest_hamlet/cloud_tuning_checks.py": "91cc65ad50a50f071ce32b9322d839fcbfc783fd2a81631ca6c26838ffcabc1f",
+    "tools/forest_hamlet/run_cloud_tuning.py": "f8aebb00a8bbdad48cea24b3b4bded03bb02c2f0b944200a7ac35e52db612ec4"
+  },
+  "mean_encoded_rgb": {
+    "cloud-tuning-default": 112.36449813528806,
+    "cloud-tuning-contrast-low": 117.16950713734569,
+    "cloud-tuning-contrast-zero": 119.41790670010289,
+    "cloud-tuning-density-zero": 119.48754324202675,
+    "cloud-tuning-density-full": 106.42498087062756,
+    "cloud-tuning-contrast-maximum": 75.08219200102882,
+    "cloud-tuning-panel-1080": 100.42326774691357,
+    "cloud-tuning-panel-720": 92.99941008391204,
+    "cloud-tuning-input-720": 98.65863679108797
+  },
+  "default_comparisons": {
+    "cloud-tuning-contrast-low": {
+      "mean_abs_rgb": 4.9399157664609055,
+      "pixels_luma_difference_above_2": 1273255,
+      "pixel_count": 2073600
+    },
+    "cloud-tuning-contrast-zero": {
+      "mean_abs_rgb": 7.2587889017489715,
+      "pixels_luma_difference_above_2": 1421939,
+      "pixel_count": 2073600
+    },
+    "cloud-tuning-density-zero": {
+      "mean_abs_rgb": 7.324055909207819,
+      "pixels_luma_difference_above_2": 1440597,
+      "pixel_count": 2073600
+    },
+    "cloud-tuning-density-full": {
+      "mean_abs_rgb": 5.9395561664094645,
+      "pixels_luma_difference_above_2": 1281613,
+      "pixel_count": 2073600
+    },
+    "cloud-tuning-contrast-maximum": {
+      "mean_abs_rgb": 37.28230613425926,
+      "pixels_luma_difference_above_2": 1908647,
+      "pixel_count": 2073600
+    }
+  },
+  "clear_endpoint_comparison": {
+    "mean_abs_rgb": 0.07018695344650207,
+    "pixels_luma_difference_above_2": 19,
+    "pixel_count": 2073600
+  },
+  "panel_comparison": {
+    "mean_abs_rgb": 13.63916087962963,
+    "pixels_luma_difference_above_2": 313633,
+    "pixel_count": 2073600
+  },
+  "maximum_contrast_comparison": {
+    "mean_abs_rgb": 31.342788869598763,
+    "pixels_luma_difference_above_2": 1907319,
+    "pixel_count": 2073600
+  },
+  "mouse_interaction_comparison": {
+    "mean_abs_rgb": 5.998136574074074,
+    "pixels_luma_difference_above_2": 499703,
+    "pixel_count": 921600
+  },
+  "scope": "Original tone-mapped scene PNG read-back and UI routing; encoded RGB differences are not physical transmission ratios."
+}

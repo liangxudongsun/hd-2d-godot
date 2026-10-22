@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "operation": "review.submit",
+  "payload": {
+    "previous_round_id": "0cb738ba-f8d4-486e-8daa-b11be1ddbce5",
+    "items": [
+      {
+        "subject_key": "forest-hamlet-snow-atmosphere",
+        "title": "云层透光对比与密度 · 实时调节",
+        "requirements": "Review live contrast from 0 to 80 percent attenuation and independent cloud density sliders, their visible effect, numerical feedback, reset and local settings persistence, keyboard/mouse input and panel fit at 1920x1080 and 1280x720. Default attenuation remains thin 10 percent / thick 30 percent; verify the user-requested 80 percent maximum and dynamic native sunlight retaining a 20 percent floor. Earlier r3 radiometry and physical-route evidence is historical, not represented as rerun by this focused revision. Original artwork, camera and character proportions remain unchanged. Technical checks do not grant aesthetic approval.",
+        "candidates": [
+          {
+            "revision_id": "22f17788-3910-4bb3-92ea-c0ba7e376a28",
+            "label": "forest-hamlet-20261022-cloud-tuning-r4"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "65750774-e5a4-4a18-822d-e9a203599ab2",
+  "expected_version": 7,
+  "idempotency_key": "forest-hamlet-20261022-cloud-tuning-r4:review-submit:v1"
+}

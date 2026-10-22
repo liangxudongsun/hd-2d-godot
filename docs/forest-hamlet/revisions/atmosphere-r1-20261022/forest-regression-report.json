@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "command": [
+    "python3",
+    "tools/forest_hamlet/run.py",
+    "test"
+  ],
+  "returncode": 0,
+  "passed": true,
+  "elapsed_s": 13.532,
+  "log": "build/forest-hamlet/logs/forest-regression-atmosphere.log"
+}

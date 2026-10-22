@@ -1,0 +1,1194 @@
+{
+  "schema": 1,
+  "coordinate_space": "Normalised visible alpha bounds; u right and v down",
+  "normal_basis": "OpenGL tangent X right, Y up, Z towards camera",
+  "method": "Hand-authored visible canopy ellipsoids, bark and leaf tubes, flower disks. Analytic vectors, then 8-bit unit-vector encoding. No diffuse-brightness height conversion.",
+  "source_reference": [
+    "source/tree-atlas.png",
+    "source/understory-atlas.png"
+  ],
+  "assets": [
+    {
+      "id": "broadleaf_a",
+      "tubes": [
+        {
+          "points": [
+            [
+              0.49,
+              1.0
+            ],
+            [
+              0.49,
+              0.75
+            ],
+            [
+              0.5,
+              0.52
+            ],
+            [
+              0.46,
+              0.3
+            ]
+          ],
+          "radius": 0.07,
+          "wood_only": true
+        },
+        {
+          "points": [
+            [
+              0.5,
+              0.78
+            ],
+            [
+              0.34,
+              0.62
+            ],
+            [
+              0.17,
+              0.52
+            ]
+          ],
+          "radius": 0.045,
+          "wood_only": true
+        },
+        {
+          "points": [
+            [
+              0.5,
+              0.7
+            ],
+            [
+              0.66,
+              0.56
+            ],
+            [
+              0.78,
+              0.39
+            ]
+          ],
+          "radius": 0.045,
+          "wood_only": true
+        },
+        {
+          "points": [
+            [
+              0.48,
+              0.6
+            ],
+            [
+              0.33,
+              0.4
+            ],
+            [
+              0.29,
+              0.28
+            ]
+          ],
+          "radius": 0.035,
+          "wood_only": true
+        }
+      ],
+      "lobes": [
+        {
+          "ellipse": [
+            0.48,
+            0.12,
+            0.17,
+            0.15
+          ],
+          "slope": 0.62,
+          "foliage_only": true
+        },
+        {
+          "ellipse": [
+            0.26,
+            0.25,
+            0.22,
+            0.15
+          ],
+          "slope": 0.62,
+          "foliage_only": true
+        },
+        {
+          "ellipse": [
+            0.66,
+            0.25,
+            0.22,
+            0.15
+          ],
+          "slope": 0.62,
+          "foliage_only": true
+        },
+        {
+          "ellipse": [
+            0.16,
+            0.44,
+            0.21,
+            0.18
+          ],
+          "slope": 0.62,
+          "foliage_only": true
+        },
+        {
+          "ellipse": [
+            0.43,
+            0.39,
+            0.2,
+            0.16
+          ],
+          "slope": 0.62,
+          "foliage_only": true
+        },
+        {
+          "ellipse": [
+            0.82,
+            0.42,
+            0.2,
+            0.16
+          ],
+          "slope": 0.62,
+          "foliage_only": true
+        },
+        {
+          "ellipse": [
+            0.19,
+            0.62,
+            0.2,
+            0.17
+          ],
+          "slope": 0.62,
+          "foliage_only": true
+        },
+        {
+          "ellipse": [
+            0.82,
+            0.7,
+            0.2,
+            0.19
+          ],
+          "slope": 0.62,
+          "foliage_only": true
+        },
+        {
+          "ellipse": [
+            0.09,
+            0.77,
+            0.13,
+            0.14
+          ],
+          "slope": 0.62,
+          "foliage_only": true
+        },
+        {
+          "ellipse": [
+            0.59,
+            0.62,
+            0.16,
+            0.12
+          ],
+          "slope": 0.62,
+          "foliage_only": true
+        }
+      ]
+    },
+    {
+      "id": "broadleaf_b",
+      "tubes": [
+        {
+          "points": [
+            [
+              0.48,
+              1
+            ],
+            [
+              0.49,
+              0.78
+            ],
+            [
+              0.39,
+              0.54
+            ],
+            [
+              0.28,
+              0.36
+            ]
+          ],
+          "radius": 0.065,
+          "wood_only": true
+        },
+        {
+          "points": [
+            [
+              0.5,
+              0.86
+            ],
+            [
+              0.65,
+              0.65
+            ],
+            [
+              0.7,
+              0.41
+            ]
+          ],
+          "radius": 0.05,
+          "wood_only": true
+        },
+        {
+          "points": [
+            [
+              0.47,
+              0.73
+            ],
+            [
+              0.25,
+              0.6
+            ],
+            [
+              0.19,
+              0.44
+            ]
+          ],
+          "radius": 0.035,
+          "wood_only": true
+        },
+        {
+          "points": [
+            [
+              0.52,
+              0.65
+            ],
+            [
+              0.5,
+              0.39
+            ],
+            [
+              0.45,
+              0.26
+            ]
+          ],
+          "radius": 0.035,
+          "wood_only": true
+        }
+      ],
+      "lobes": [
+        {
+          "ellipse": [
+            0.43,
+            0.12,
+            0.24,
+            0.16
+          ],
+          "slope": 0.62,
+          "foliage_only": true
+        },
+        {
+          "ellipse": [
+            0.22,
+            0.26,
+            0.23,
+            0.16
+          ],
+          "slope": 0.62,
+          "foliage_only": true
+        },
+        {
+          "ellipse": [
+            0.75,
+            0.25,
+            0.24,
+            0.17
+          ],
+          "slope": 0.62,
+          "foliage_only": true
+        },
+        {
+          "ellipse": [
+            0.15,
+            0.44,
+            0.18,
+            0.19
+          ],
+          "slope": 0.62,
+          "foliage_only": true
+        },
+        {
+          "ellipse": [
+            0.47,
+            0.38,
+            0.23,
+            0.17
+          ],
+          "slope": 0.62,
+          "foliage_only": true
+        },
+        {
+          "ellipse": [
+            0.85,
+            0.46,
+            0.18,
+            0.16
+          ],
+          "slope": 0.62,
+          "foliage_only": true
+        },
+        {
+          "ellipse": [
+            0.3,
+            0.59,
+            0.2,
+            0.18
+          ],
+          "slope": 0.62,
+          "foliage_only": true
+        },
+        {
+          "ellipse": [
+            0.72,
+            0.65,
+            0.23,
+            0.18
+          ],
+          "slope": 0.62,
+          "foliage_only": true
+        },
+        {
+          "ellipse": [
+            0.09,
+            0.61,
+            0.13,
+            0.13
+          ],
+          "slope": 0.62,
+          "foliage_only": true
+        }
+      ]
+    },
+    {
+      "id": "fir",
+      "tubes": [
+        {
+          "points": [
+            [
+              0.5,
+              1
+            ],
+            [
+              0.5,
+              0.08
+            ]
+          ],
+          "radius": 0.035,
+          "wood_only": true
+        }
+      ],
+      "lobes": [
+        {
+          "ellipse": [
+            0.5,
+            0.08,
+            0.1,
+            0.09
+          ],
+          "slope": 0.56,
+          "foliage_only": true
+        },
+        {
+          "ellipse": [
+            0.5,
+            0.21,
+            0.19,
+            0.11
+          ],
+          "slope": 0.62,
+          "foliage_only": true
+        },
+        {
+          "ellipse": [
+            0.5,
+            0.34,
+            0.29,
+            0.13
+          ],
+          "slope": 0.66,
+          "foliage_only": true
+        },
+        {
+          "ellipse": [
+            0.5,
+            0.49,
+            0.38,
+            0.14
+          ],
+          "slope": 0.64,
+          "foliage_only": true
+        },
+        {
+          "ellipse": [
+            0.5,
+            0.65,
+            0.45,
+            0.15
+          ],
+          "slope": 0.62,
+          "foliage_only": true
+        },
+        {
+          "ellipse": [
+            0.5,
+            0.8,
+            0.49,
+            0.15
+          ],
+          "slope": 0.6,
+          "foliage_only": true
+        }
+      ]
+    },
+    {
+      "id": "grass",
+      "tubes": [
+        {
+          "points": [
+            [
+              0.5,
+              1
+            ],
+            [
+              0.28,
+              0.65
+            ],
+            [
+              0.06,
+              0.42
+            ]
+          ],
+          "radius": 0.08,
+          "wood_only": false
+        },
+        {
+          "points": [
+            [
+              0.5,
+              1
+            ],
+            [
+              0.4,
+              0.48
+            ],
+            [
+              0.32,
+              0.05
+            ]
+          ],
+          "radius": 0.075,
+          "wood_only": false
+        },
+        {
+          "points": [
+            [
+              0.5,
+              1
+            ],
+            [
+              0.53,
+              0.52
+            ],
+            [
+              0.57,
+              0.03
+            ]
+          ],
+          "radius": 0.075,
+          "wood_only": false
+        },
+        {
+          "points": [
+            [
+              0.5,
+              1
+            ],
+            [
+              0.68,
+              0.44
+            ],
+            [
+              0.92,
+              0.23
+            ]
+          ],
+          "radius": 0.08,
+          "wood_only": false
+        },
+        {
+          "points": [
+            [
+              0.52,
+              1
+            ],
+            [
+              0.8,
+              0.74
+            ],
+            [
+              0.95,
+              0.73
+            ]
+          ],
+          "radius": 0.07,
+          "wood_only": false
+        },
+        {
+          "points": [
+            [
+              0.47,
+              1
+            ],
+            [
+              0.28,
+              0.79
+            ],
+            [
+              0.05,
+              0.87
+            ]
+          ],
+          "radius": 0.07,
+          "wood_only": false
+        }
+      ],
+      "lobes": []
+    },
+    {
+      "id": "fern",
+      "tubes": [
+        {
+          "points": [
+            [
+              0.5,
+              1
+            ],
+            [
+              0.28,
+              0.65
+            ],
+            [
+              0.02,
+              0.44
+            ]
+          ],
+          "radius": 0.1,
+          "wood_only": false
+        },
+        {
+          "points": [
+            [
+              0.5,
+              1
+            ],
+            [
+              0.4,
+              0.53
+            ],
+            [
+              0.33,
+              0.02
+            ]
+          ],
+          "radius": 0.12,
+          "wood_only": false
+        },
+        {
+          "points": [
+            [
+              0.5,
+              1
+            ],
+            [
+              0.64,
+              0.57
+            ],
+            [
+              0.81,
+              0.22
+            ]
+          ],
+          "radius": 0.12,
+          "wood_only": false
+        },
+        {
+          "points": [
+            [
+              0.52,
+              1
+            ],
+            [
+              0.74,
+              0.73
+            ],
+            [
+              0.98,
+              0.64
+            ]
+          ],
+          "radius": 0.11,
+          "wood_only": false
+        },
+        {
+          "points": [
+            [
+              0.48,
+              1
+            ],
+            [
+              0.26,
+              0.88
+            ],
+            [
+              0.08,
+              0.91
+            ]
+          ],
+          "radius": 0.1,
+          "wood_only": false
+        }
+      ],
+      "lobes": [
+        {
+          "ellipse": [
+            0.5,
+            0.72,
+            0.18,
+            0.22
+          ],
+          "slope": 0.58,
+          "foliage_only": false
+        }
+      ]
+    },
+    {
+      "id": "reeds",
+      "tubes": [
+        {
+          "points": [
+            [
+              0.52,
+              1
+            ],
+            [
+              0.44,
+              0.52
+            ],
+            [
+              0.38,
+              0.02
+            ]
+          ],
+          "radius": 0.035,
+          "wood_only": false
+        },
+        {
+          "points": [
+            [
+              0.53,
+              1
+            ],
+            [
+              0.61,
+              0.53
+            ],
+            [
+              0.68,
+              0.09
+            ]
+          ],
+          "radius": 0.035,
+          "wood_only": false
+        },
+        {
+          "points": [
+            [
+              0.5,
+              1
+            ],
+            [
+              0.32,
+              0.48
+            ],
+            [
+              0.14,
+              0.19
+            ]
+          ],
+          "radius": 0.055,
+          "wood_only": false
+        },
+        {
+          "points": [
+            [
+              0.51,
+              1
+            ],
+            [
+              0.65,
+              0.74
+            ],
+            [
+              0.92,
+              0.51
+            ]
+          ],
+          "radius": 0.055,
+          "wood_only": false
+        },
+        {
+          "points": [
+            [
+              0.49,
+              1
+            ],
+            [
+              0.32,
+              0.75
+            ],
+            [
+              0.06,
+              0.7
+            ]
+          ],
+          "radius": 0.055,
+          "wood_only": false
+        }
+      ],
+      "lobes": [
+        {
+          "ellipse": [
+            0.4,
+            0.16,
+            0.045,
+            0.15
+          ],
+          "slope": 0.68,
+          "foliage_only": false
+        },
+        {
+          "ellipse": [
+            0.68,
+            0.24,
+            0.045,
+            0.16
+          ],
+          "slope": 0.65,
+          "foliage_only": false
+        }
+      ]
+    },
+    {
+      "id": "flowers_white",
+      "tubes": [
+        {
+          "points": [
+            [
+              0.5,
+              1
+            ],
+            [
+              0.49,
+              0.55
+            ],
+            [
+              0.56,
+              0.12
+            ]
+          ],
+          "radius": 0.055,
+          "wood_only": false
+        },
+        {
+          "points": [
+            [
+              0.5,
+              1
+            ],
+            [
+              0.3,
+              0.61
+            ],
+            [
+              0.24,
+              0.38
+            ]
+          ],
+          "radius": 0.05,
+          "wood_only": false
+        },
+        {
+          "points": [
+            [
+              0.5,
+              1
+            ],
+            [
+              0.73,
+              0.64
+            ],
+            [
+              0.86,
+              0.4
+            ]
+          ],
+          "radius": 0.05,
+          "wood_only": false
+        }
+      ],
+      "lobes": [
+        {
+          "ellipse": [
+            0.3,
+            0.75,
+            0.3,
+            0.23
+          ],
+          "slope": 0.52,
+          "foliage_only": false
+        },
+        {
+          "ellipse": [
+            0.73,
+            0.72,
+            0.26,
+            0.24
+          ],
+          "slope": 0.55,
+          "foliage_only": false
+        },
+        {
+          "ellipse": [
+            0.56,
+            0.12,
+            0.15,
+            0.14
+          ],
+          "slope": 0.68,
+          "foliage_only": false
+        },
+        {
+          "ellipse": [
+            0.24,
+            0.38,
+            0.16,
+            0.14
+          ],
+          "slope": 0.68,
+          "foliage_only": false
+        },
+        {
+          "ellipse": [
+            0.47,
+            0.56,
+            0.14,
+            0.13
+          ],
+          "slope": 0.66,
+          "foliage_only": false
+        },
+        {
+          "ellipse": [
+            0.86,
+            0.41,
+            0.15,
+            0.14
+          ],
+          "slope": 0.68,
+          "foliage_only": false
+        }
+      ]
+    },
+    {
+      "id": "flowers_pink",
+      "tubes": [
+        {
+          "points": [
+            [
+              0.5,
+              1
+            ],
+            [
+              0.48,
+              0.54
+            ],
+            [
+              0.51,
+              0.12
+            ]
+          ],
+          "radius": 0.05,
+          "wood_only": false
+        },
+        {
+          "points": [
+            [
+              0.5,
+              1
+            ],
+            [
+              0.29,
+              0.64
+            ],
+            [
+              0.17,
+              0.43
+            ]
+          ],
+          "radius": 0.045,
+          "wood_only": false
+        },
+        {
+          "points": [
+            [
+              0.5,
+              1
+            ],
+            [
+              0.72,
+              0.65
+            ],
+            [
+              0.84,
+              0.47
+            ]
+          ],
+          "radius": 0.045,
+          "wood_only": false
+        }
+      ],
+      "lobes": [
+        {
+          "ellipse": [
+            0.29,
+            0.77,
+            0.29,
+            0.22
+          ],
+          "slope": 0.52,
+          "foliage_only": false
+        },
+        {
+          "ellipse": [
+            0.73,
+            0.77,
+            0.27,
+            0.22
+          ],
+          "slope": 0.54,
+          "foliage_only": false
+        },
+        {
+          "ellipse": [
+            0.51,
+            0.12,
+            0.16,
+            0.15
+          ],
+          "slope": 0.67,
+          "foliage_only": false
+        },
+        {
+          "ellipse": [
+            0.17,
+            0.43,
+            0.16,
+            0.15
+          ],
+          "slope": 0.67,
+          "foliage_only": false
+        },
+        {
+          "ellipse": [
+            0.8,
+            0.52,
+            0.15,
+            0.15
+          ],
+          "slope": 0.67,
+          "foliage_only": false
+        },
+        {
+          "ellipse": [
+            0.22,
+            0.16,
+            0.08,
+            0.12
+          ],
+          "slope": 0.6,
+          "foliage_only": false
+        },
+        {
+          "ellipse": [
+            0.88,
+            0.25,
+            0.07,
+            0.1
+          ],
+          "slope": 0.6,
+          "foliage_only": false
+        }
+      ]
+    },
+    {
+      "id": "window_flowers",
+      "tubes": [],
+      "lobes": [
+        {
+          "ellipse": [
+            0.15,
+            0.55,
+            0.17,
+            0.27
+          ],
+          "slope": 0.56,
+          "foliage_only": false
+        },
+        {
+          "ellipse": [
+            0.38,
+            0.56,
+            0.18,
+            0.3
+          ],
+          "slope": 0.55,
+          "foliage_only": false
+        },
+        {
+          "ellipse": [
+            0.63,
+            0.54,
+            0.19,
+            0.32
+          ],
+          "slope": 0.56,
+          "foliage_only": false
+        },
+        {
+          "ellipse": [
+            0.85,
+            0.54,
+            0.18,
+            0.28
+          ],
+          "slope": 0.54,
+          "foliage_only": false
+        },
+        {
+          "ellipse": [
+            0.18,
+            0.26,
+            0.04,
+            0.1
+          ],
+          "slope": 0.64,
+          "foliage_only": false
+        },
+        {
+          "ellipse": [
+            0.29,
+            0.3,
+            0.04,
+            0.11
+          ],
+          "slope": 0.64,
+          "foliage_only": false
+        },
+        {
+          "ellipse": [
+            0.42,
+            0.41,
+            0.045,
+            0.12
+          ],
+          "slope": 0.64,
+          "foliage_only": false
+        },
+        {
+          "ellipse": [
+            0.58,
+            0.27,
+            0.04,
+            0.1
+          ],
+          "slope": 0.64,
+          "foliage_only": false
+        },
+        {
+          "ellipse": [
+            0.7,
+            0.39,
+            0.04,
+            0.11
+          ],
+          "slope": 0.64,
+          "foliage_only": false
+        },
+        {
+          "ellipse": [
+            0.85,
+            0.32,
+            0.04,
+            0.11
+          ],
+          "slope": 0.64,
+          "foliage_only": false
+        }
+      ]
+    },
+    {
+      "id": "lily_pad",
+      "tubes": [],
+      "lobes": [
+        {
+          "ellipse": [
+            0.3,
+            0.6,
+            0.31,
+            0.24
+          ],
+          "slope": 0.62,
+          "foliage_only": false,
+          "tilt": 0.28
+        },
+        {
+          "ellipse": [
+            0.59,
+            0.25,
+            0.32,
+            0.2
+          ],
+          "slope": 0.58,
+          "foliage_only": false,
+          "tilt": 0.28
+        },
+        {
+          "ellipse": [
+            0.71,
+            0.73,
+            0.32,
+            0.25
+          ],
+          "slope": 0.61,
+          "foliage_only": false,
+          "tilt": 0.28
+        },
+        {
+          "ellipse": [
+            0.56,
+            0.33,
+            0.16,
+            0.29
+          ],
+          "slope": 0.66,
+          "foliage_only": false
+        }
+      ]
+    }
+  ]
+}

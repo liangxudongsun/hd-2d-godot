@@ -1,5 +1,7 @@
 # ADR · 架构决策索引
 
+[ADR-23：林间小村参考效果范例](23-forest-hamlet-reference-study.md)记录独立场景、AW／VGP 来源链、真实模型与解析材质效果。
+
 [ADR-22：横向河街与缓存夜空](22-horizontal-canal-night-sky.md)记录新布局、平面柳树、天空视差与景深保护。
 
 [ADR-21：江南河街与逐帧空间法线](21-ancient-canal-normals.md)记录选定 A、原动画复用、新入口与法线制作及验收边界。

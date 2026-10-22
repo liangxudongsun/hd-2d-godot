@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "scene": "res://scenes/forest_hamlet.tscn",
+  "scope": "Actual implementation and GPU evidence; user aesthetic approval remains pending.",
+  "capture_run": "build/forest-hamlet/final-r4",
+  "runtime_fingerprint": "1f8dd3b4be823a164c77f6a8aeb7992820a071aecd6205e092cdc9bb1b1995e0",
+  "fingerprint_file_count": 382,
+  "fingerprint_matches_current_files": true,
+  "asset_checks": 44,
+  "asset_checks_passed": true,
+  "runtime_checks": 45,
+  "runtime_passed": true,
+  "gpu_passed": true,
+  "gpu_adapter": "NVIDIA GeForce RTX 4070 SUPER",
+  "renderer": "forward_plus",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "screenshots": 16,
+  "route_completed": true,
+  "route_waypoints": 6,
+  "route_simulation_seconds": 22.45,
+  "asset_instances": 305,
+  "terrain_triangles": 20460,
+  "model_triangles": {
+    "bench": 336,
+    "broadleaf": 5492,
+    "cottage": 9352,
+    "fence": 238,
+    "fir": 6088,
+    "grass": 9,
+    "lamp": 188,
+    "rock": 80,
+    "sign": 236
+  },
+  "frame_counts": {
+    "shadow_draw_calls": 233,
+    "visible_draw_calls": 83,
+    "visible_objects": 655,
+    "visible_primitives": 417097
+  },
+  "effect_comparisons": [
+    {
+      "baseline": "comparison-baseline.png",
+      "variant": "ground-normals-off.png",
+      "changed_pixels_above_2_rgb_levels": 173829,
+      "mean_absolute_rgb_difference_0_255": 0.4494825424382716,
+      "scope": "Descriptive frozen-scene image difference, not an artistic score."
+    },
+    {
+      "baseline": "comparison-baseline.png",
+      "variant": "dof-off.png",
+      "changed_pixels_above_2_rgb_levels": 346537,
+      "mean_absolute_rgb_difference_0_255": 1.9542576517489711,
+      "scope": "Descriptive frozen-scene image difference, not an artistic score."
+    },
+    {
+      "baseline": "comparison-baseline.png",
+      "variant": "bloom-off.png",
+      "changed_pixels_above_2_rgb_levels": 0,
+      "mean_absolute_rgb_difference_0_255": 0.00020929783950617283,
+      "scope": "Descriptive frozen-scene image difference, not an artistic score."
+    },
+    {
+      "baseline": "dusk-glow-on.png",
+      "variant": "dusk-glow-off.png",
+      "changed_pixels_above_2_rgb_levels": 306,
+      "mean_absolute_rgb_difference_0_255": 0.0015221514917695474,
+      "scope": "Descriptive frozen-scene image difference, not an artistic score."
+    },
+    {
+      "baseline": "ground-detail-normals-on.png",
+      "variant": "ground-detail-normals-off.png",
+      "changed_pixels_above_2_rgb_levels": 345294,
+      "mean_absolute_rgb_difference_0_255": 0.9659029385288066,
+      "scope": "Descriptive frozen-scene image difference, not an artistic score."
+    }
+  ],
+  "original_character_files_unchanged": 345,
+  "aw": {
+    "workflow": "world.compile",
+    "run_id": "forest-hamlet-20261022-r1",
+    "status": "completed"
+  },
+  "vgp": {
+    "run_id": "forest-hamlet-20261022-r2",
+    "case_id": "65750774-e5a4-4a18-822d-e9a203599ab2",
+    "round_id": "839d100c-4db3-47ac-8a81-2378a9c56656",
+    "stable_assets": 2,
+    "stage": "concept_design",
+    "review_status": "pending",
+    "technical_checks_ready": true,
+    "decisions_created": 0,
+    "stage_admissions_created": 0
+  },
+  "shared_make_test": {
+    "command": "make test",
+    "returncode": 0,
+    "passed": true,
+    "elapsed_seconds": 10.655,
+    "log": "build/forest-hamlet/logs/make-test-final.log",
+    "log_sha256": "585b30c4dafa33deddfc76841333d5fb0844e50c8908790b0db3586dfb1c41a1"
+  }
+}

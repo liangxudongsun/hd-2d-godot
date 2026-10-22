@@ -1,0 +1,180 @@
+{
+  "character_files": 345,
+  "changed_originals": [],
+  "character_baseline": "art/inputs/forest-hamlet/character-reuse.json",
+  "character_baseline_sha256": "d9da481c3a6fb78d9c80df9b6c90abb353e78d31fae9395a69450ec59e73073c",
+  "original_glbs": [
+    {
+      "id": "cottage",
+      "path": "assets/forest-hamlet/models/cottage.glb",
+      "sha256": "96aa5ea838936e3f7bb510a406cf1b174277647323023a0fada1f83da9c6e1c0"
+    },
+    {
+      "id": "broadleaf",
+      "path": "assets/forest-hamlet/models/broadleaf.glb",
+      "sha256": "cebbf5d449d5e65ca280c871a59b9889b4e5ae6dd8f36a96a7d5351e354e7be9"
+    },
+    {
+      "id": "fir",
+      "path": "assets/forest-hamlet/models/fir.glb",
+      "sha256": "8001d8cd0cb0e9c48c5fae58e3cb15e5ad2b1d32c4e62723252ad8d6f79ebfd9"
+    },
+    {
+      "id": "fence",
+      "path": "assets/forest-hamlet/models/fence.glb",
+      "sha256": "41191aa344db3f1ef519a0b5b75be55218421c5bb1f61b6e7e2aa7d2a71b647b"
+    },
+    {
+      "id": "rock",
+      "path": "assets/forest-hamlet/models/rock.glb",
+      "sha256": "1523ad0ce3a0177c24249eac3097afbdbf8c25ce22d367fab117fd7ce184ef5b"
+    },
+    {
+      "id": "lamp",
+      "path": "assets/forest-hamlet/models/lamp.glb",
+      "sha256": "2a93816e98ceead68b1d692375ad266c0a959f75e272bdc950413d2bdb91aaeb"
+    },
+    {
+      "id": "bench",
+      "path": "assets/forest-hamlet/models/bench.glb",
+      "sha256": "6d1454318aba8f7d3e5361a1f95d72641017247ccc7bb382c40ead620e452776"
+    },
+    {
+      "id": "sign",
+      "path": "assets/forest-hamlet/models/sign.glb",
+      "sha256": "6e8776e4f1a240b453e721dcbd73c3dd3125dbf6cd8e1011a111e322667032c9"
+    },
+    {
+      "id": "grass",
+      "path": "assets/forest-hamlet/models/grass.glb",
+      "sha256": "2439a1865553c5ee46616617d424e9760f781c1c21bc64077ce9f9ad0cc2a4e4"
+    }
+  ],
+  "model_manifest": "art/inputs/forest-hamlet/blender/manifest.json",
+  "model_manifest_sha256": "362f3dfea85d1b29125f1a3db3f007fbd3ee310cce87335512992226a8feb45b",
+  "vegetation_manifest": "assets/forest-hamlet/vegetation/manifest.json",
+  "vegetation_manifest_sha256": "d602fe7c8b95f1f3f76e29486a74f2050a320f6fae131054afac88daf55b58d0",
+  "vegetation_pngs": [
+    {
+      "id": "broadleaf_a",
+      "kind": "color",
+      "path": "assets/forest-hamlet/vegetation/broadleaf_a.png",
+      "sha256": "ce3ae95992235bbec254f832c966a9d9583bb055b200a192d39a8b406df67500"
+    },
+    {
+      "id": "broadleaf_a",
+      "kind": "normal",
+      "path": "assets/forest-hamlet/vegetation/broadleaf_a_normal.png",
+      "sha256": "129bce14c6ef017ab12ab6c744d0cd90c07c7b9c89332097a1e77ad76963313e"
+    },
+    {
+      "id": "broadleaf_b",
+      "kind": "color",
+      "path": "assets/forest-hamlet/vegetation/broadleaf_b.png",
+      "sha256": "21853968e75567ebb7b441dd8419f2eb4d1466e66fca10ab4dd03c9910aa6b9d"
+    },
+    {
+      "id": "broadleaf_b",
+      "kind": "normal",
+      "path": "assets/forest-hamlet/vegetation/broadleaf_b_normal.png",
+      "sha256": "493fb378e06d44452752b91e75128096d1ee10ed989b238fcdd73ee8f436580f"
+    },
+    {
+      "id": "fir",
+      "kind": "color",
+      "path": "assets/forest-hamlet/vegetation/fir.png",
+      "sha256": "0dc21b44f2786f5ab76fa7255018729944bdd0d8506dc7e29d128b4ec3e0b1d9"
+    },
+    {
+      "id": "fir",
+      "kind": "normal",
+      "path": "assets/forest-hamlet/vegetation/fir_normal.png",
+      "sha256": "37e7909bb703452c001289379252c8c8234b20905cc21e0f2d4f6ec296322df5"
+    },
+    {
+      "id": "grass",
+      "kind": "color",
+      "path": "assets/forest-hamlet/vegetation/grass.png",
+      "sha256": "70b2ab8da64908afb528c5c6dab66631a337cdda7b1298d176dd754816655174"
+    },
+    {
+      "id": "grass",
+      "kind": "normal",
+      "path": "assets/forest-hamlet/vegetation/grass_normal.png",
+      "sha256": "4fb7e9d0133bae2fe5c0df6a9f49689c77e7be7092cf44599df9248c0ef3342a"
+    },
+    {
+      "id": "fern",
+      "kind": "color",
+      "path": "assets/forest-hamlet/vegetation/fern.png",
+      "sha256": "10225adfc151fdce83c4da321f5217a0cfeeff4c4a75ac84b0894b45b2524263"
+    },
+    {
+      "id": "fern",
+      "kind": "normal",
+      "path": "assets/forest-hamlet/vegetation/fern_normal.png",
+      "sha256": "6ba706eb3091e94d8d57607c78c9fe6e6cf1c3fc0f6e534472db73781c67c224"
+    },
+    {
+      "id": "reeds",
+      "kind": "color",
+      "path": "assets/forest-hamlet/vegetation/reeds.png",
+      "sha256": "cbcd6b66c280dbfc4da216d4021d47a0b06897b4aac724bb5297e5c4e140b90a"
+    },
+    {
+      "id": "reeds",
+      "kind": "normal",
+      "path": "assets/forest-hamlet/vegetation/reeds_normal.png",
+      "sha256": "cf66ba5b9e94ff0549370dc4bc0e58bf01455e19ef11e78d2896549f85ecce0f"
+    },
+    {
+      "id": "flowers_white",
+      "kind": "color",
+      "path": "assets/forest-hamlet/vegetation/flowers_white.png",
+      "sha256": "e1b08f47a658c02c07396868fa9f189159048125ec242ebed9448f7919998f6c"
+    },
+    {
+      "id": "flowers_white",
+      "kind": "normal",
+      "path": "assets/forest-hamlet/vegetation/flowers_white_normal.png",
+      "sha256": "dd4d7ca8a96d00665b910e42d07363bb3f6bc762cb8d29380da6f16e074abb27"
+    },
+    {
+      "id": "flowers_pink",
+      "kind": "color",
+      "path": "assets/forest-hamlet/vegetation/flowers_pink.png",
+      "sha256": "e0b8f9a4b14ca871254cef6fa7745fea8e5fb4341a39b374ed2c6b275c07e277"
+    },
+    {
+      "id": "flowers_pink",
+      "kind": "normal",
+      "path": "assets/forest-hamlet/vegetation/flowers_pink_normal.png",
+      "sha256": "454ba154d10ad8101287105aae7aab7e5c152db92cc9d829529a535a475dd561"
+    },
+    {
+      "id": "window_flowers",
+      "kind": "color",
+      "path": "assets/forest-hamlet/vegetation/window_flowers.png",
+      "sha256": "fda272edc36934e4de6160f5b8f14eee603dd05fd38c8f1251157aec35e1198f"
+    },
+    {
+      "id": "window_flowers",
+      "kind": "normal",
+      "path": "assets/forest-hamlet/vegetation/window_flowers_normal.png",
+      "sha256": "2baefaa2287570504d123f6102941cebac4ecd6cf50eb2bef1f5798757f1972b"
+    },
+    {
+      "id": "lily_pad",
+      "kind": "color",
+      "path": "assets/forest-hamlet/vegetation/lily_pad.png",
+      "sha256": "53bc13187963bfa7b1c4a539bd7ba3389494a83684aebbee7be43475b446b384"
+    },
+    {
+      "id": "lily_pad",
+      "kind": "normal",
+      "path": "assets/forest-hamlet/vegetation/lily_pad_normal.png",
+      "sha256": "20084036fdbaf87f1d3def5d37c816708d76211dcbbfbfa8e2703b0a0381d6ea"
+    }
+  ],
+  "vegetation_sprite_count": 218
+}

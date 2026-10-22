@@ -1,0 +1,10 @@
+{
+  "workflow": "godot.verify",
+  "status": "completed",
+  "producer_version": "0.6.1",
+  "engine": {
+    "version": "4.7.2.stable.official.ed1daf0bf",
+    "sha256": "8d106cbe6144c2dc7e881d61d2429c1a8a76e6b22ef48bd5e48dcf934953f71e"
+  },
+  "native_receipt_sha256": "b84b556996369ff0cad238bda8514bbee40aef9f61b9520bb232959154f99536"
+}

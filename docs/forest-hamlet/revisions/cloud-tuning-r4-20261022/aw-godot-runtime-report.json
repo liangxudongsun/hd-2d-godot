@@ -1,0 +1,1797 @@
+{
+  "checks": [
+    {
+      "label": "unsaved scene starts with accepted contrast 30 and density 50 defaults with the same 70/30 sun split",
+      "passed": true
+    },
+    {
+      "label": "default natural density transfer exactly retains the previous thin 10 percent and thick 30 percent behavior",
+      "passed": true
+    },
+    {
+      "label": "both public tuning controls are real HSlider instances",
+      "passed": true
+    },
+    {
+      "label": "contrast covers 0 to 80 percent and density covers 0 to 100 percent with one percent steps",
+      "passed": true
+    },
+    {
+      "label": "actual slider value_changed signals immediately reach both production shader parameters",
+      "passed": true
+    },
+    {
+      "label": "both visible value labels follow the live slider values",
+      "passed": true
+    },
+    {
+      "label": "day dusk and cloud visibility changes preserve the chosen tuning",
+      "passed": true
+    },
+    {
+      "label": "tuning and preset changes never reset independent cloud or global light clocks",
+      "passed": true
+    },
+    {
+      "label": "current contrast directly controls the native sun split while preserving total light energy",
+      "passed": true
+    },
+    {
+      "label": "ordinary object shadows stay enabled and opaque on both sun branches",
+      "passed": true
+    },
+    {
+      "label": "out of range settings clamp to 80 percent attenuation with a protected 20 percent sun branch",
+      "passed": true
+    },
+    {
+      "label": "nonfinite settings cannot poison the live lighting shader",
+      "passed": true
+    },
+    {
+      "label": "density zero clears clouds density 100 reaches the selected 80 percent maximum and zero contrast safely removes attenuation",
+      "passed": true
+    },
+    {
+      "label": "explicit legacy radiometry calibration bypasses controls and restores its original 70/30 split",
+      "passed": true
+    },
+    {
+      "label": "leaving calibration restores the user's current zero contrast split",
+      "passed": true
+    },
+    {
+      "label": "restore default button restores both sliders shader and accepted 10/30 percent density transfer",
+      "passed": true
+    },
+    {
+      "label": "save button writes a project-isolated test preference file",
+      "passed": true
+    },
+    {
+      "label": "load button restores saved values and both visible sliders",
+      "passed": true
+    },
+    {
+      "label": "close camera and original actor screen proportion remain unchanged",
+      "passed": true
+    },
+    {
+      "label": "all 218 image plants and original character scale remain unchanged",
+      "passed": true
+    }
+  ],
+  "edited": {
+    "backdrop": {
+      "board_size": [
+        255.0,
+        130.0
+      ],
+      "camera_x": 0.0,
+      "cast_shadow": 0,
+      "elapsed": 0.745940666666667,
+      "geometry_count": 1,
+      "independent_color_layers": 1,
+      "landmarks": [
+        {
+          "id": "main_peak",
+          "in_frame": false,
+          "projected_normalized": [
+            0.505000019073486,
+            -0.014999986577917
+          ],
+          "projected_pixels": [
+            969.600036621094,
+            -16.1999855041504
+          ],
+          "uv": [
+            0.620000004768372,
+            0.287999987602234
+          ],
+          "world": [
+            0.849885761737823,
+            19.203239440918,
+            -128.630935668945
+          ]
+        },
+        {
+          "id": "main_snow_ridge",
+          "in_frame": true,
+          "projected_normalized": [
+            0.518501853942871,
+            0.0297947812963415
+          ],
+          "projected_pixels": [
+            995.523559570312,
+            32.1783638000488
+          ],
+          "uv": [
+            0.629000008106232,
+            0.330000013113022
+          ],
+          "world": [
+            3.14488673210144,
+            15.0475387573242,
+            -127.594802856445
+          ]
+        },
+        {
+          "id": "left_shoulder",
+          "in_frame": true,
+          "projected_normalized": [
+            0.453993097941081,
+            0.0671238016199183
+          ],
+          "projected_pixels": [
+            871.666748046875,
+            72.4937057495117
+          ],
+          "uv": [
+            0.586000025272369,
+            0.365000009536743
+          ],
+          "world": [
+            -7.82010889053345,
+            11.5844573974609,
+            -126.73136138916
+          ]
+        },
+        {
+          "id": "left_peak",
+          "in_frame": false,
+          "projected_normalized": [
+            -0.168591499328613,
+            0.0916542689005534
+          ],
+          "projected_pixels": [
+            -323.695678710938,
+            98.9866104125977
+          ],
+          "uv": [
+            0.171000003814697,
+            0.388000011444092
+          ],
+          "world": [
+            -113.645111083984,
+            9.3087158203125,
+            -126.163955688477
+          ]
+        },
+        {
+          "id": "right_ridge",
+          "in_frame": true,
+          "projected_normalized": [
+            0.784037844340007,
+            0.130049825597692
+          ],
+          "projected_pixels": [
+            1505.35266113281,
+            140.453811645508
+          ],
+          "uv": [
+            0.805999994277954,
+            0.42399999499321
+          ],
+          "world": [
+            48.2798843383789,
+            5.74668884277344,
+            -125.275840759277
+          ]
+        }
+      ],
+      "lighting_method": "dynamic_tangent_normal_relighting",
+      "local_light_direction": [
+        -0.402692854404449,
+        0.666716575622559,
+        0.627158284187317
+      ],
+      "normal_geometric_facets": 20.0,
+      "normal_map": "res://assets/forest-hamlet/backdrop/normal.png",
+      "normal_strength": 0.8,
+      "normals_enabled": true,
+      "overscan_margin_px": [
+        480.195678710938,
+        194.217315673828,
+        480.19580078125,
+        194.21728515625
+      ],
+      "parallax_enabled": true,
+      "parallax_kind": "single_distant_board",
+      "parallax_strength": 0.35,
+      "peak_screen_target": [
+        0.505,
+        -0.015
+      ],
+      "preset": "day",
+      "projected_quad_corners": [
+        [
+          -480.195678710938,
+          1274.21728515625
+        ],
+        [
+          2400.19580078125,
+          1274.21728515625
+        ],
+        [
+          2400.19580078125,
+          -194.217315673828
+        ],
+        [
+          -480.195678710938,
+          -194.217315673828
+        ]
+      ],
+      "ready": true,
+      "reference_camera_x": 0.0,
+      "source_color_byte_identical": true,
+      "source_dimensions": [
+        1983.0,
+        793.0
+      ],
+      "source_horizontal_offset": -29.7501154327393,
+      "source_sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+      "source_vertical_offset": 27.6216399517434,
+      "source_world_height": 101.974281391831,
+      "view_depth": 135.0,
+      "viewport_coverage_ok": true,
+      "within_camera_far": true
+    },
+    "camera": [
+      0.0,
+      4.08514833450317,
+      14.2712707519531
+    ],
+    "clouds": {
+      "alpha_hash_scale": 1.0,
+      "atmosphere_enabled": true,
+      "attenuation_range": [
+        0.0,
+        0.35
+      ],
+      "caster_layers": 524288,
+      "clock_seconds": 24.0,
+      "cloud_body_attenuation_range": [
+        0.116666666666667,
+        0.35
+      ],
+      "cloud_height_m": 24.0,
+      "cloud_tuning": {
+        "active_attenuation_bounds": [
+          0.0369140624999999,
+          0.35
+        ],
+        "active_bounds_scope": "possible raw density values inside caster; not measured pixel coverage",
+        "active_direct_transmittance_bounds": [
+          0.65,
+          0.9630859375
+        ],
+        "cloud_density": 0.72,
+        "contrast_strength": 0.35,
+        "contrast_unit": "fraction of direct sunlight attenuated by thick cloud",
+        "default_cloud_density": 0.5,
+        "default_contrast_strength": 0.3,
+        "density_bias": 0.44,
+        "hard_attenuation_cap": 0.8,
+        "maximum_attenuation": 0.35,
+        "thin_attenuation": 0.116666666666667,
+        "uniform_calibration_bypasses_user_controls": false
+      },
+      "cloud_width_m": 220.0,
+      "density_transfer": "smooth_clear_edge_then_thin_to_thick",
+      "direct_transmittance_bounds": [
+        0.65,
+        1.0
+      ],
+      "enabled": true,
+      "fog_density": 0.00300000002607703,
+      "light_split": {
+        "base70": {
+          "angular_distance": 0.649999976158142,
+          "available": true,
+          "color": [
+            1.0,
+            0.949999988079071,
+            0.860000014305115
+          ],
+          "direction": [
+            0.402692854404449,
+            -0.798635542392731,
+            -0.447235703468323
+          ],
+          "energy": 0.863404452800751,
+          "light_cull_mask": 4294967295,
+          "name": "SunBase",
+          "shadow_caster_mask": 4294443007,
+          "shadow_enabled": true,
+          "shadow_max_distance": 80.0,
+          "shadow_mode": 2,
+          "shadow_opacity": 1.0,
+          "sky_mode": 1,
+          "visible": true,
+          "volumetric_fog_energy": 3.20000004768372
+        },
+        "base_ratio": 0.65,
+        "cloud30": {
+          "angular_distance": 0.649999976158142,
+          "available": true,
+          "color": [
+            1.0,
+            0.949999988079071,
+            0.860000014305115
+          ],
+          "direction": [
+            0.402692854404449,
+            -0.798635542392731,
+            -0.447235703468323
+          ],
+          "energy": 0.464910089969635,
+          "light_cull_mask": 4294967295,
+          "name": "SunCloud",
+          "shadow_caster_mask": 4294967295,
+          "shadow_enabled": true,
+          "shadow_max_distance": 80.0,
+          "shadow_mode": 2,
+          "shadow_opacity": 1.0,
+          "sky_mode": 1,
+          "visible": true,
+          "volumetric_fog_energy": 3.20000004768372
+        },
+        "cloud_layer_mask": 524288,
+        "cloud_ratio": 0.35,
+        "energy_sum_error": 0.0,
+        "legacy_snapshot_aliases": "base70 and cloud30 identify the same branches at every tuning; read actual ratios and energies",
+        "ordinary_caster_mask": 4294443007,
+        "real_scene_light_count": 2,
+        "source": {
+          "angular_distance": 0.649999976158142,
+          "available": true,
+          "color": [
+            1.0,
+            0.949999988079071,
+            0.860000014305115
+          ],
+          "direction": [
+            0.402692854404449,
+            -0.798635542392731,
+            -0.447235703468323
+          ],
+          "energy": 1.32831454277039,
+          "light_cull_mask": 4294967295,
+          "name": "Sun",
+          "shadow_caster_mask": 4294967295,
+          "shadow_enabled": true,
+          "shadow_max_distance": 80.0,
+          "shadow_mode": 2,
+          "shadow_opacity": 1.0,
+          "sky_mode": 2,
+          "visible": true,
+          "volumetric_fog_energy": 3.20000004768372
+        },
+        "source_is_sky_only": true,
+        "source_total_energy": 1.32831454277039,
+        "total_direct_energy": 1.32831454277039
+      },
+      "mask_body_width": 0.18,
+      "mask_cutoff": 0.515,
+      "mask_edge_width": 0.12,
+      "mask_sha256": "59988042da0ddaecc67df55d02c24bf48ab23caa1cafd8bdc9d7a7c1c5c3c1f8",
+      "mask_size": [
+        256,
+        256
+      ],
+      "motion_enabled": true,
+      "native_shadow_pass": true,
+      "pattern_phase": [
+        0.649999976158142,
+        0.0
+      ],
+      "pattern_span_m": 96.0,
+      "preset": "day",
+      "ray_samples": [
+        {
+          "available": true,
+          "blocked": true,
+          "branch_blocked_coverage": 1.0,
+          "cloud_hit": [
+            -24.0510025024414,
+            24.0,
+            15.383994102478
+          ],
+          "effective_attenuation": 0.35,
+          "expected_direct_transmittance": 0.65,
+          "inside_caster": true,
+          "mask_value": 0.608901374540949,
+          "requested_attenuation": 0.35,
+          "tuned_density": 1.0,
+          "uniform_mode": false,
+          "world_point": [
+            -12.0,
+            0.100000001490116,
+            2.0
+          ]
+        },
+        {
+          "available": true,
+          "blocked": true,
+          "branch_blocked_coverage": 1.0,
+          "cloud_hit": [
+            -12.0510025024414,
+            24.0,
+            15.383994102478
+          ],
+          "effective_attenuation": 0.35,
+          "expected_direct_transmittance": 0.65,
+          "inside_caster": true,
+          "mask_value": 0.567215096333484,
+          "requested_attenuation": 0.35,
+          "tuned_density": 1.0,
+          "uniform_mode": false,
+          "world_point": [
+            0.0,
+            0.100000001490116,
+            2.0
+          ]
+        },
+        {
+          "available": true,
+          "blocked": true,
+          "branch_blocked_coverage": 1.0,
+          "cloud_hit": [
+            -0.0510025024414062,
+            24.0,
+            15.383994102478
+          ],
+          "effective_attenuation": 0.35,
+          "expected_direct_transmittance": 0.65,
+          "inside_caster": true,
+          "mask_value": 0.585114298099597,
+          "requested_attenuation": 0.35,
+          "tuned_density": 1.0,
+          "uniform_mode": false,
+          "world_point": [
+            12.0,
+            0.100000001490116,
+            2.0
+          ]
+        },
+        {
+          "available": true,
+          "blocked": true,
+          "branch_blocked_coverage": 1.0,
+          "cloud_hit": [
+            -14.5802955627441,
+            24.0,
+            7.63999557495117
+          ],
+          "effective_attenuation": 0.35,
+          "expected_direct_transmittance": 0.65,
+          "inside_caster": true,
+          "mask_value": 0.374575891091622,
+          "requested_attenuation": 0.35,
+          "tuned_density": 0.814575891091622,
+          "uniform_mode": false,
+          "world_point": [
+            -5.0,
+            5.0,
+            -3.0
+          ]
+        },
+        {
+          "available": true,
+          "blocked": true,
+          "branch_blocked_coverage": 1.0,
+          "cloud_hit": [
+            -3.08452129364014,
+            24.0,
+            5.19999504089355
+          ],
+          "effective_attenuation": 0.35,
+          "expected_direct_transmittance": 0.65,
+          "inside_caster": true,
+          "mask_value": 0.912793223449247,
+          "requested_attenuation": 0.35,
+          "tuned_density": 1.0,
+          "uniform_mode": false,
+          "world_point": [
+            7.0,
+            4.0,
+            -6.0
+          ]
+        }
+      ],
+      "seed": 20261022,
+      "shadow_method": "alpha_hash_on_variable_cloud_native_directional_branch",
+      "shadow_only": true,
+      "sun_energy": 1.32831454277039,
+      "uniform_attenuation": -1.0,
+      "wind_velocity": [
+        0.319999992847443,
+        0.129999995231628
+      ]
+    },
+    "features": {
+      "atmosphere": true,
+      "backdrop_normals": true,
+      "bloom": true,
+      "clouds": true,
+      "dof": true,
+      "global_light": true,
+      "normals": true,
+      "parallax": true,
+      "wind": true
+    },
+    "framing": {
+      "camera_offset_length": 12.7500009536743,
+      "dof_far": 22.4098434448242,
+      "dof_near": 7.40984344482422,
+      "foot": [
+        0.5,
+        0.626957833766937
+      ],
+      "fov": 39.0,
+      "in_frame": true,
+      "pitch_degrees": 13.9999980926514,
+      "pixel_size": 0.00899999961256981,
+      "profile": "close_reference",
+      "silhouette_rect": [
+        0.464288202921549,
+        0.395535137035229,
+        0.0708475748697917,
+        0.232446712917752
+      ],
+      "view_depth": 12.4098434448242
+    },
+    "global_light": {
+      "ambient_base_energy": 0.55,
+      "ambient_component_seconds": [
+        15.7,
+        24.1,
+        4.7,
+        6.9
+      ],
+      "ambient_energy": 0.530386626720428,
+      "ambient_multiplier": 0.96433936740975,
+      "ambient_multiplier_bounds": [
+        0.9,
+        1.1
+      ],
+      "ambient_seed_offset": 7919,
+      "clock_seconds": 57.0,
+      "component_seed_stride": 104729,
+      "component_weights": [
+        0.47,
+        0.31,
+        0.14,
+        0.08
+      ],
+      "enabled": true,
+      "motion_enabled": true,
+      "native_energy_only": true,
+      "noise_kind": "FastNoiseLite.TYPE_SIMPLEX_SMOOTH",
+      "origin_subtracted": true,
+      "preset": "day",
+      "seed": 20261022,
+      "signal_gain": 1.65,
+      "signal_kind": "seeded_multiscale_time_noise",
+      "sun_base_energy": 1.45,
+      "sun_component_seconds": [
+        11.3,
+        22.7,
+        3.9,
+        6.3
+      ],
+      "sun_energy": 1.32831454277039,
+      "sun_multiplier": 0.91607898173552,
+      "sun_multiplier_bounds": [
+        0.82,
+        1.18
+      ],
+      "sun_seed_offset": 101
+    },
+    "glow": {
+      "bloom": 0.025000000372529,
+      "enabled": true,
+      "intensity": 0.419999986886978,
+      "strength": 0.850000023841858,
+      "threshold": 0.949999988079071
+    },
+    "normal_directions": 4,
+    "occlusion": {
+      "details": [],
+      "faded_names": [],
+      "faded_trees": 0,
+      "geometry_count": 67,
+      "mesh_count": 0,
+      "mode": "billboard_alpha_aware",
+      "occluding_trees": 0,
+      "registered_trees": 67,
+      "sprite_count": 67
+    },
+    "original_color_directions": 4,
+    "player": [
+      0.0,
+      0.000234376639127731,
+      2.5
+    ],
+    "preset": "day",
+    "route_index": 0,
+    "route_running": false,
+    "tree_visibility": {
+      "details": [],
+      "faded_names": [],
+      "faded_trees": 0,
+      "geometry_count": 67,
+      "mesh_count": 0,
+      "mode": "billboard_alpha_aware",
+      "occluding_trees": 0,
+      "registered_trees": 67,
+      "sprite_count": 67
+    }
+  },
+  "failures": [],
+  "initial": {
+    "backdrop": {
+      "board_size": [
+        255.0,
+        130.0
+      ],
+      "camera_x": 0.0,
+      "cast_shadow": 0,
+      "elapsed": 0.745940666666667,
+      "geometry_count": 1,
+      "independent_color_layers": 1,
+      "landmarks": [
+        {
+          "id": "main_peak",
+          "in_frame": false,
+          "projected_normalized": [
+            0.505000019073486,
+            -0.014999986577917
+          ],
+          "projected_pixels": [
+            969.600036621094,
+            -16.1999855041504
+          ],
+          "uv": [
+            0.620000004768372,
+            0.287999987602234
+          ],
+          "world": [
+            0.849885761737823,
+            19.203239440918,
+            -128.630935668945
+          ]
+        },
+        {
+          "id": "main_snow_ridge",
+          "in_frame": true,
+          "projected_normalized": [
+            0.518501853942871,
+            0.0297947812963415
+          ],
+          "projected_pixels": [
+            995.523559570312,
+            32.1783638000488
+          ],
+          "uv": [
+            0.629000008106232,
+            0.330000013113022
+          ],
+          "world": [
+            3.14488673210144,
+            15.0475387573242,
+            -127.594802856445
+          ]
+        },
+        {
+          "id": "left_shoulder",
+          "in_frame": true,
+          "projected_normalized": [
+            0.453993097941081,
+            0.0671238016199183
+          ],
+          "projected_pixels": [
+            871.666748046875,
+            72.4937057495117
+          ],
+          "uv": [
+            0.586000025272369,
+            0.365000009536743
+          ],
+          "world": [
+            -7.82010889053345,
+            11.5844573974609,
+            -126.73136138916
+          ]
+        },
+        {
+          "id": "left_peak",
+          "in_frame": false,
+          "projected_normalized": [
+            -0.168591499328613,
+            0.0916542689005534
+          ],
+          "projected_pixels": [
+            -323.695678710938,
+            98.9866104125977
+          ],
+          "uv": [
+            0.171000003814697,
+            0.388000011444092
+          ],
+          "world": [
+            -113.645111083984,
+            9.3087158203125,
+            -126.163955688477
+          ]
+        },
+        {
+          "id": "right_ridge",
+          "in_frame": true,
+          "projected_normalized": [
+            0.784037844340007,
+            0.130049825597692
+          ],
+          "projected_pixels": [
+            1505.35266113281,
+            140.453811645508
+          ],
+          "uv": [
+            0.805999994277954,
+            0.42399999499321
+          ],
+          "world": [
+            48.2798843383789,
+            5.74668884277344,
+            -125.275840759277
+          ]
+        }
+      ],
+      "lighting_method": "dynamic_tangent_normal_relighting",
+      "local_light_direction": [
+        -0.402692854404449,
+        0.666716575622559,
+        0.627158284187317
+      ],
+      "normal_geometric_facets": 20.0,
+      "normal_map": "res://assets/forest-hamlet/backdrop/normal.png",
+      "normal_strength": 0.8,
+      "normals_enabled": true,
+      "overscan_margin_px": [
+        480.195678710938,
+        194.217315673828,
+        480.19580078125,
+        194.21728515625
+      ],
+      "parallax_enabled": true,
+      "parallax_kind": "single_distant_board",
+      "parallax_strength": 0.35,
+      "peak_screen_target": [
+        0.505,
+        -0.015
+      ],
+      "preset": "day",
+      "projected_quad_corners": [
+        [
+          -480.195678710938,
+          1274.21728515625
+        ],
+        [
+          2400.19580078125,
+          1274.21728515625
+        ],
+        [
+          2400.19580078125,
+          -194.217315673828
+        ],
+        [
+          -480.195678710938,
+          -194.217315673828
+        ]
+      ],
+      "ready": true,
+      "reference_camera_x": 0.0,
+      "source_color_byte_identical": true,
+      "source_dimensions": [
+        1983.0,
+        793.0
+      ],
+      "source_horizontal_offset": -29.7501154327393,
+      "source_sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+      "source_vertical_offset": 27.6216399517434,
+      "source_world_height": 101.974281391831,
+      "view_depth": 135.0,
+      "viewport_coverage_ok": true,
+      "within_camera_far": true
+    },
+    "camera": [
+      0.0,
+      4.08514833450317,
+      14.2712707519531
+    ],
+    "clouds": {
+      "alpha_hash_scale": 1.0,
+      "atmosphere_enabled": true,
+      "attenuation_range": [
+        0.0,
+        0.3
+      ],
+      "caster_layers": 524288,
+      "clock_seconds": 24.0,
+      "cloud_body_attenuation_range": [
+        0.1,
+        0.3
+      ],
+      "cloud_height_m": 24.0,
+      "cloud_tuning": {
+        "active_attenuation_bounds": [
+          0.0,
+          0.3
+        ],
+        "active_bounds_scope": "possible raw density values inside caster; not measured pixel coverage",
+        "active_direct_transmittance_bounds": [
+          0.7,
+          1.0
+        ],
+        "cloud_density": 0.5,
+        "contrast_strength": 0.3,
+        "contrast_unit": "fraction of direct sunlight attenuated by thick cloud",
+        "default_cloud_density": 0.5,
+        "default_contrast_strength": 0.3,
+        "density_bias": 0.0,
+        "hard_attenuation_cap": 0.8,
+        "maximum_attenuation": 0.3,
+        "thin_attenuation": 0.1,
+        "uniform_calibration_bypasses_user_controls": false
+      },
+      "cloud_width_m": 220.0,
+      "density_transfer": "smooth_clear_edge_then_thin_to_thick",
+      "direct_transmittance_bounds": [
+        0.7,
+        1.0
+      ],
+      "enabled": true,
+      "fog_density": 0.00300000002607703,
+      "light_split": {
+        "base70": {
+          "angular_distance": 0.649999976158142,
+          "available": true,
+          "color": [
+            1.0,
+            0.949999988079071,
+            0.860000014305115
+          ],
+          "direction": [
+            0.402692854404449,
+            -0.798635542392731,
+            -0.447235703468323
+          ],
+          "energy": 0.92982017993927,
+          "light_cull_mask": 4294967295,
+          "name": "SunBase",
+          "shadow_caster_mask": 4294443007,
+          "shadow_enabled": true,
+          "shadow_max_distance": 80.0,
+          "shadow_mode": 2,
+          "shadow_opacity": 1.0,
+          "sky_mode": 1,
+          "visible": true,
+          "volumetric_fog_energy": 3.20000004768372
+        },
+        "base_ratio": 0.7,
+        "cloud30": {
+          "angular_distance": 0.649999976158142,
+          "available": true,
+          "color": [
+            1.0,
+            0.949999988079071,
+            0.860000014305115
+          ],
+          "direction": [
+            0.402692854404449,
+            -0.798635542392731,
+            -0.447235703468323
+          ],
+          "energy": 0.398494362831116,
+          "light_cull_mask": 4294967295,
+          "name": "SunCloud",
+          "shadow_caster_mask": 4294967295,
+          "shadow_enabled": true,
+          "shadow_max_distance": 80.0,
+          "shadow_mode": 2,
+          "shadow_opacity": 1.0,
+          "sky_mode": 1,
+          "visible": true,
+          "volumetric_fog_energy": 3.20000004768372
+        },
+        "cloud_layer_mask": 524288,
+        "cloud_ratio": 0.3,
+        "energy_sum_error": 0.0,
+        "legacy_snapshot_aliases": "base70 and cloud30 identify the same branches at every tuning; read actual ratios and energies",
+        "ordinary_caster_mask": 4294443007,
+        "real_scene_light_count": 2,
+        "source": {
+          "angular_distance": 0.649999976158142,
+          "available": true,
+          "color": [
+            1.0,
+            0.949999988079071,
+            0.860000014305115
+          ],
+          "direction": [
+            0.402692854404449,
+            -0.798635542392731,
+            -0.447235703468323
+          ],
+          "energy": 1.32831454277039,
+          "light_cull_mask": 4294967295,
+          "name": "Sun",
+          "shadow_caster_mask": 4294967295,
+          "shadow_enabled": true,
+          "shadow_max_distance": 80.0,
+          "shadow_mode": 2,
+          "shadow_opacity": 1.0,
+          "sky_mode": 2,
+          "visible": true,
+          "volumetric_fog_energy": 3.20000004768372
+        },
+        "source_is_sky_only": true,
+        "source_total_energy": 1.32831454277039,
+        "total_direct_energy": 1.32831454277039
+      },
+      "mask_body_width": 0.18,
+      "mask_cutoff": 0.515,
+      "mask_edge_width": 0.12,
+      "mask_sha256": "59988042da0ddaecc67df55d02c24bf48ab23caa1cafd8bdc9d7a7c1c5c3c1f8",
+      "mask_size": [
+        256,
+        256
+      ],
+      "motion_enabled": true,
+      "native_shadow_pass": true,
+      "pattern_phase": [
+        0.649999976158142,
+        0.0
+      ],
+      "pattern_span_m": 96.0,
+      "preset": "day",
+      "ray_samples": [
+        {
+          "available": true,
+          "blocked": true,
+          "branch_blocked_coverage": 0.688327393599142,
+          "cloud_hit": [
+            -24.0510025024414,
+            24.0,
+            15.383994102478
+          ],
+          "effective_attenuation": 0.206498218079743,
+          "expected_direct_transmittance": 0.793501781920257,
+          "inside_caster": true,
+          "mask_value": 0.608901374540949,
+          "requested_attenuation": 0.206498218079743,
+          "tuned_density": 0.608901374540949,
+          "uniform_mode": false,
+          "world_point": [
+            -12.0,
+            0.100000001490116,
+            2.0
+          ]
+        },
+        {
+          "available": true,
+          "blocked": true,
+          "branch_blocked_coverage": 0.469083746686923,
+          "cloud_hit": [
+            -12.0510025024414,
+            24.0,
+            15.383994102478
+          ],
+          "effective_attenuation": 0.140725124006077,
+          "expected_direct_transmittance": 0.859274875993923,
+          "inside_caster": true,
+          "mask_value": 0.567215096333484,
+          "requested_attenuation": 0.140725124006077,
+          "tuned_density": 0.567215096333484,
+          "uniform_mode": false,
+          "world_point": [
+            0.0,
+            0.100000001490116,
+            2.0
+          ]
+        },
+        {
+          "available": true,
+          "blocked": true,
+          "branch_blocked_coverage": 0.557988355841526,
+          "cloud_hit": [
+            -0.0510025024414062,
+            24.0,
+            15.383994102478
+          ],
+          "effective_attenuation": 0.167396506752458,
+          "expected_direct_transmittance": 0.832603493247542,
+          "inside_caster": true,
+          "mask_value": 0.585114298099597,
+          "requested_attenuation": 0.167396506752458,
+          "tuned_density": 0.585114298099597,
+          "uniform_mode": false,
+          "world_point": [
+            12.0,
+            0.100000001490116,
+            2.0
+          ]
+        },
+        {
+          "available": true,
+          "blocked": false,
+          "branch_blocked_coverage": 0.0,
+          "cloud_hit": [
+            -14.5802955627441,
+            24.0,
+            7.63999557495117
+          ],
+          "effective_attenuation": 0.0,
+          "expected_direct_transmittance": 1.0,
+          "inside_caster": true,
+          "mask_value": 0.374575891091622,
+          "requested_attenuation": 0.0,
+          "tuned_density": 0.374575891091622,
+          "uniform_mode": false,
+          "world_point": [
+            -5.0,
+            5.0,
+            -3.0
+          ]
+        },
+        {
+          "available": true,
+          "blocked": true,
+          "branch_blocked_coverage": 1.0,
+          "cloud_hit": [
+            -3.08452129364014,
+            24.0,
+            5.19999504089355
+          ],
+          "effective_attenuation": 0.3,
+          "expected_direct_transmittance": 0.7,
+          "inside_caster": true,
+          "mask_value": 0.912793223449247,
+          "requested_attenuation": 0.3,
+          "tuned_density": 0.912793223449247,
+          "uniform_mode": false,
+          "world_point": [
+            7.0,
+            4.0,
+            -6.0
+          ]
+        }
+      ],
+      "seed": 20261022,
+      "shadow_method": "alpha_hash_on_variable_cloud_native_directional_branch",
+      "shadow_only": true,
+      "sun_energy": 1.32831454277039,
+      "uniform_attenuation": -1.0,
+      "wind_velocity": [
+        0.319999992847443,
+        0.129999995231628
+      ]
+    },
+    "features": {
+      "atmosphere": true,
+      "backdrop_normals": true,
+      "bloom": true,
+      "clouds": true,
+      "dof": true,
+      "global_light": true,
+      "normals": true,
+      "parallax": true,
+      "wind": true
+    },
+    "framing": {
+      "camera_offset_length": 12.7500009536743,
+      "dof_far": 22.4098434448242,
+      "dof_near": 7.40984344482422,
+      "foot": [
+        0.5,
+        0.626957833766937
+      ],
+      "fov": 39.0,
+      "in_frame": true,
+      "pitch_degrees": 13.9999980926514,
+      "pixel_size": 0.00899999961256981,
+      "profile": "close_reference",
+      "silhouette_rect": [
+        0.464288202921549,
+        0.395535137035229,
+        0.0708475748697917,
+        0.232446712917752
+      ],
+      "view_depth": 12.4098434448242
+    },
+    "global_light": {
+      "ambient_base_energy": 0.55,
+      "ambient_component_seconds": [
+        15.7,
+        24.1,
+        4.7,
+        6.9
+      ],
+      "ambient_energy": 0.530386626720428,
+      "ambient_multiplier": 0.96433936740975,
+      "ambient_multiplier_bounds": [
+        0.9,
+        1.1
+      ],
+      "ambient_seed_offset": 7919,
+      "clock_seconds": 57.0,
+      "component_seed_stride": 104729,
+      "component_weights": [
+        0.47,
+        0.31,
+        0.14,
+        0.08
+      ],
+      "enabled": true,
+      "motion_enabled": true,
+      "native_energy_only": true,
+      "noise_kind": "FastNoiseLite.TYPE_SIMPLEX_SMOOTH",
+      "origin_subtracted": true,
+      "preset": "day",
+      "seed": 20261022,
+      "signal_gain": 1.65,
+      "signal_kind": "seeded_multiscale_time_noise",
+      "sun_base_energy": 1.45,
+      "sun_component_seconds": [
+        11.3,
+        22.7,
+        3.9,
+        6.3
+      ],
+      "sun_energy": 1.32831454277039,
+      "sun_multiplier": 0.91607898173552,
+      "sun_multiplier_bounds": [
+        0.82,
+        1.18
+      ],
+      "sun_seed_offset": 101
+    },
+    "glow": {
+      "bloom": 0.025000000372529,
+      "enabled": true,
+      "intensity": 0.419999986886978,
+      "strength": 0.850000023841858,
+      "threshold": 0.949999988079071
+    },
+    "normal_directions": 4,
+    "occlusion": {
+      "details": [],
+      "faded_names": [],
+      "faded_trees": 0,
+      "geometry_count": 67,
+      "mesh_count": 0,
+      "mode": "billboard_alpha_aware",
+      "occluding_trees": 0,
+      "registered_trees": 67,
+      "sprite_count": 67
+    },
+    "original_color_directions": 4,
+    "player": [
+      0.0,
+      0.000234376639127731,
+      2.5
+    ],
+    "preset": "day",
+    "route_index": 0,
+    "route_running": false,
+    "tree_visibility": {
+      "details": [],
+      "faded_names": [],
+      "faded_trees": 0,
+      "geometry_count": 67,
+      "mesh_count": 0,
+      "mode": "billboard_alpha_aware",
+      "occluding_trees": 0,
+      "registered_trees": 67,
+      "sprite_count": 67
+    }
+  },
+  "passed": true,
+  "restored": {
+    "backdrop": {
+      "board_size": [
+        255.0,
+        130.0
+      ],
+      "camera_x": 0.0,
+      "cast_shadow": 0,
+      "elapsed": 0.745940666666667,
+      "geometry_count": 1,
+      "independent_color_layers": 1,
+      "landmarks": [
+        {
+          "id": "main_peak",
+          "in_frame": false,
+          "projected_normalized": [
+            0.505000019073486,
+            -0.014999986577917
+          ],
+          "projected_pixels": [
+            969.600036621094,
+            -16.1999855041504
+          ],
+          "uv": [
+            0.620000004768372,
+            0.287999987602234
+          ],
+          "world": [
+            0.849885761737823,
+            19.203239440918,
+            -128.630935668945
+          ]
+        },
+        {
+          "id": "main_snow_ridge",
+          "in_frame": true,
+          "projected_normalized": [
+            0.518501853942871,
+            0.0297947812963415
+          ],
+          "projected_pixels": [
+            995.523559570312,
+            32.1783638000488
+          ],
+          "uv": [
+            0.629000008106232,
+            0.330000013113022
+          ],
+          "world": [
+            3.14488673210144,
+            15.0475387573242,
+            -127.594802856445
+          ]
+        },
+        {
+          "id": "left_shoulder",
+          "in_frame": true,
+          "projected_normalized": [
+            0.453993097941081,
+            0.0671238016199183
+          ],
+          "projected_pixels": [
+            871.666748046875,
+            72.4937057495117
+          ],
+          "uv": [
+            0.586000025272369,
+            0.365000009536743
+          ],
+          "world": [
+            -7.82010889053345,
+            11.5844573974609,
+            -126.73136138916
+          ]
+        },
+        {
+          "id": "left_peak",
+          "in_frame": false,
+          "projected_normalized": [
+            -0.168591499328613,
+            0.0916542689005534
+          ],
+          "projected_pixels": [
+            -323.695678710938,
+            98.9866104125977
+          ],
+          "uv": [
+            0.171000003814697,
+            0.388000011444092
+          ],
+          "world": [
+            -113.645111083984,
+            9.3087158203125,
+            -126.163955688477
+          ]
+        },
+        {
+          "id": "right_ridge",
+          "in_frame": true,
+          "projected_normalized": [
+            0.784037844340007,
+            0.130049825597692
+          ],
+          "projected_pixels": [
+            1505.35266113281,
+            140.453811645508
+          ],
+          "uv": [
+            0.805999994277954,
+            0.42399999499321
+          ],
+          "world": [
+            48.2798843383789,
+            5.74668884277344,
+            -125.275840759277
+          ]
+        }
+      ],
+      "lighting_method": "dynamic_tangent_normal_relighting",
+      "local_light_direction": [
+        -0.402692854404449,
+        0.666716575622559,
+        0.627158284187317
+      ],
+      "normal_geometric_facets": 20.0,
+      "normal_map": "res://assets/forest-hamlet/backdrop/normal.png",
+      "normal_strength": 0.8,
+      "normals_enabled": true,
+      "overscan_margin_px": [
+        480.195678710938,
+        194.217315673828,
+        480.19580078125,
+        194.21728515625
+      ],
+      "parallax_enabled": true,
+      "parallax_kind": "single_distant_board",
+      "parallax_strength": 0.35,
+      "peak_screen_target": [
+        0.505,
+        -0.015
+      ],
+      "preset": "day",
+      "projected_quad_corners": [
+        [
+          -480.195678710938,
+          1274.21728515625
+        ],
+        [
+          2400.19580078125,
+          1274.21728515625
+        ],
+        [
+          2400.19580078125,
+          -194.217315673828
+        ],
+        [
+          -480.195678710938,
+          -194.217315673828
+        ]
+      ],
+      "ready": true,
+      "reference_camera_x": 0.0,
+      "source_color_byte_identical": true,
+      "source_dimensions": [
+        1983.0,
+        793.0
+      ],
+      "source_horizontal_offset": -29.7501154327393,
+      "source_sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+      "source_vertical_offset": 27.6216399517434,
+      "source_world_height": 101.974281391831,
+      "view_depth": 135.0,
+      "viewport_coverage_ok": true,
+      "within_camera_far": true
+    },
+    "camera": [
+      0.0,
+      4.08514833450317,
+      14.2712707519531
+    ],
+    "clouds": {
+      "alpha_hash_scale": 1.0,
+      "atmosphere_enabled": true,
+      "attenuation_range": [
+        0.0,
+        0.43
+      ],
+      "caster_layers": 524288,
+      "clock_seconds": 24.0,
+      "cloud_body_attenuation_range": [
+        0.143333333333333,
+        0.43
+      ],
+      "cloud_height_m": 24.0,
+      "cloud_tuning": {
+        "active_attenuation_bounds": [
+          0.0,
+          0.43
+        ],
+        "active_bounds_scope": "possible raw density values inside caster; not measured pixel coverage",
+        "active_direct_transmittance_bounds": [
+          0.57,
+          1.0
+        ],
+        "cloud_density": 0.68,
+        "contrast_strength": 0.43,
+        "contrast_unit": "fraction of direct sunlight attenuated by thick cloud",
+        "default_cloud_density": 0.5,
+        "default_contrast_strength": 0.3,
+        "density_bias": 0.36,
+        "hard_attenuation_cap": 0.8,
+        "maximum_attenuation": 0.43,
+        "thin_attenuation": 0.143333333333333,
+        "uniform_calibration_bypasses_user_controls": false
+      },
+      "cloud_width_m": 220.0,
+      "density_transfer": "smooth_clear_edge_then_thin_to_thick",
+      "direct_transmittance_bounds": [
+        0.57,
+        1.0
+      ],
+      "enabled": true,
+      "fog_density": 0.00300000002607703,
+      "light_split": {
+        "base70": {
+          "angular_distance": 0.649999976158142,
+          "available": true,
+          "color": [
+            1.0,
+            0.949999988079071,
+            0.860000014305115
+          ],
+          "direction": [
+            0.402692854404449,
+            -0.798635542392731,
+            -0.447235703468323
+          ],
+          "energy": 0.757139265537262,
+          "light_cull_mask": 4294967295,
+          "name": "SunBase",
+          "shadow_caster_mask": 4294443007,
+          "shadow_enabled": true,
+          "shadow_max_distance": 80.0,
+          "shadow_mode": 2,
+          "shadow_opacity": 1.0,
+          "sky_mode": 1,
+          "visible": true,
+          "volumetric_fog_energy": 3.20000004768372
+        },
+        "base_ratio": 0.57,
+        "cloud30": {
+          "angular_distance": 0.649999976158142,
+          "available": true,
+          "color": [
+            1.0,
+            0.949999988079071,
+            0.860000014305115
+          ],
+          "direction": [
+            0.402692854404449,
+            -0.798635542392731,
+            -0.447235703468323
+          ],
+          "energy": 0.571175277233124,
+          "light_cull_mask": 4294967295,
+          "name": "SunCloud",
+          "shadow_caster_mask": 4294967295,
+          "shadow_enabled": true,
+          "shadow_max_distance": 80.0,
+          "shadow_mode": 2,
+          "shadow_opacity": 1.0,
+          "sky_mode": 1,
+          "visible": true,
+          "volumetric_fog_energy": 3.20000004768372
+        },
+        "cloud_layer_mask": 524288,
+        "cloud_ratio": 0.43,
+        "energy_sum_error": 0.0,
+        "legacy_snapshot_aliases": "base70 and cloud30 identify the same branches at every tuning; read actual ratios and energies",
+        "ordinary_caster_mask": 4294443007,
+        "real_scene_light_count": 2,
+        "source": {
+          "angular_distance": 0.649999976158142,
+          "available": true,
+          "color": [
+            1.0,
+            0.949999988079071,
+            0.860000014305115
+          ],
+          "direction": [
+            0.402692854404449,
+            -0.798635542392731,
+            -0.447235703468323
+          ],
+          "energy": 1.32831454277039,
+          "light_cull_mask": 4294967295,
+          "name": "Sun",
+          "shadow_caster_mask": 4294967295,
+          "shadow_enabled": true,
+          "shadow_max_distance": 80.0,
+          "shadow_mode": 2,
+          "shadow_opacity": 1.0,
+          "sky_mode": 2,
+          "visible": true,
+          "volumetric_fog_energy": 3.20000004768372
+        },
+        "source_is_sky_only": true,
+        "source_total_energy": 1.32831454277039,
+        "total_direct_energy": 1.32831454277039
+      },
+      "mask_body_width": 0.18,
+      "mask_cutoff": 0.515,
+      "mask_edge_width": 0.12,
+      "mask_sha256": "59988042da0ddaecc67df55d02c24bf48ab23caa1cafd8bdc9d7a7c1c5c3c1f8",
+      "mask_size": [
+        256,
+        256
+      ],
+      "motion_enabled": true,
+      "native_shadow_pass": true,
+      "pattern_phase": [
+        0.649999976158142,
+        0.0
+      ],
+      "pattern_span_m": 96.0,
+      "preset": "day",
+      "ray_samples": [
+        {
+          "available": true,
+          "blocked": true,
+          "branch_blocked_coverage": 1.0,
+          "cloud_hit": [
+            -24.0510025024414,
+            24.0,
+            15.383994102478
+          ],
+          "effective_attenuation": 0.43,
+          "expected_direct_transmittance": 0.57,
+          "inside_caster": true,
+          "mask_value": 0.608901374540949,
+          "requested_attenuation": 0.43,
+          "tuned_density": 0.968901374540949,
+          "uniform_mode": false,
+          "world_point": [
+            -12.0,
+            0.100000001490116,
+            2.0
+          ]
+        },
+        {
+          "available": true,
+          "blocked": true,
+          "branch_blocked_coverage": 1.0,
+          "cloud_hit": [
+            -12.0510025024414,
+            24.0,
+            15.383994102478
+          ],
+          "effective_attenuation": 0.43,
+          "expected_direct_transmittance": 0.57,
+          "inside_caster": true,
+          "mask_value": 0.567215096333484,
+          "requested_attenuation": 0.43,
+          "tuned_density": 0.927215096333484,
+          "uniform_mode": false,
+          "world_point": [
+            0.0,
+            0.100000001490116,
+            2.0
+          ]
+        },
+        {
+          "available": true,
+          "blocked": true,
+          "branch_blocked_coverage": 1.0,
+          "cloud_hit": [
+            -0.0510025024414062,
+            24.0,
+            15.383994102478
+          ],
+          "effective_attenuation": 0.43,
+          "expected_direct_transmittance": 0.57,
+          "inside_caster": true,
+          "mask_value": 0.585114298099597,
+          "requested_attenuation": 0.43,
+          "tuned_density": 0.945114298099597,
+          "uniform_mode": false,
+          "world_point": [
+            12.0,
+            0.100000001490116,
+            2.0
+          ]
+        },
+        {
+          "available": true,
+          "blocked": true,
+          "branch_blocked_coverage": 1.0,
+          "cloud_hit": [
+            -14.5802955627441,
+            24.0,
+            7.63999557495117
+          ],
+          "effective_attenuation": 0.43,
+          "expected_direct_transmittance": 0.57,
+          "inside_caster": true,
+          "mask_value": 0.374575891091622,
+          "requested_attenuation": 0.43,
+          "tuned_density": 0.734575891091622,
+          "uniform_mode": false,
+          "world_point": [
+            -5.0,
+            5.0,
+            -3.0
+          ]
+        },
+        {
+          "available": true,
+          "blocked": true,
+          "branch_blocked_coverage": 1.0,
+          "cloud_hit": [
+            -3.08452129364014,
+            24.0,
+            5.19999504089355
+          ],
+          "effective_attenuation": 0.43,
+          "expected_direct_transmittance": 0.57,
+          "inside_caster": true,
+          "mask_value": 0.912793223449247,
+          "requested_attenuation": 0.43,
+          "tuned_density": 1.0,
+          "uniform_mode": false,
+          "world_point": [
+            7.0,
+            4.0,
+            -6.0
+          ]
+        }
+      ],
+      "seed": 20261022,
+      "shadow_method": "alpha_hash_on_variable_cloud_native_directional_branch",
+      "shadow_only": true,
+      "sun_energy": 1.32831454277039,
+      "uniform_attenuation": -1.0,
+      "wind_velocity": [
+        0.319999992847443,
+        0.129999995231628
+      ]
+    },
+    "features": {
+      "atmosphere": true,
+      "backdrop_normals": true,
+      "bloom": true,
+      "clouds": true,
+      "dof": true,
+      "global_light": true,
+      "normals": true,
+      "parallax": true,
+      "wind": true
+    },
+    "framing": {
+      "camera_offset_length": 12.7500009536743,
+      "dof_far": 22.4098434448242,
+      "dof_near": 7.40984344482422,
+      "foot": [
+        0.5,
+        0.626957833766937
+      ],
+      "fov": 39.0,
+      "in_frame": true,
+      "pitch_degrees": 13.9999980926514,
+      "pixel_size": 0.00899999961256981,
+      "profile": "close_reference",
+      "silhouette_rect": [
+        0.464288202921549,
+        0.395535137035229,
+        0.0708475748697917,
+        0.232446712917752
+      ],
+      "view_depth": 12.4098434448242
+    },
+    "global_light": {
+      "ambient_base_energy": 0.55,
+      "ambient_component_seconds": [
+        15.7,
+        24.1,
+        4.7,
+        6.9
+      ],
+      "ambient_energy": 0.530386626720428,
+      "ambient_multiplier": 0.96433936740975,
+      "ambient_multiplier_bounds": [
+        0.9,
+        1.1
+      ],
+      "ambient_seed_offset": 7919,
+      "clock_seconds": 57.0,
+      "component_seed_stride": 104729,
+      "component_weights": [
+        0.47,
+        0.31,
+        0.14,
+        0.08
+      ],
+      "enabled": true,
+      "motion_enabled": true,
+      "native_energy_only": true,
+      "noise_kind": "FastNoiseLite.TYPE_SIMPLEX_SMOOTH",
+      "origin_subtracted": true,
+      "preset": "day",
+      "seed": 20261022,
+      "signal_gain": 1.65,
+      "signal_kind": "seeded_multiscale_time_noise",
+      "sun_base_energy": 1.45,
+      "sun_component_seconds": [
+        11.3,
+        22.7,
+        3.9,
+        6.3
+      ],
+      "sun_energy": 1.32831454277039,
+      "sun_multiplier": 0.91607898173552,
+      "sun_multiplier_bounds": [
+        0.82,
+        1.18
+      ],
+      "sun_seed_offset": 101
+    },
+    "glow": {
+      "bloom": 0.025000000372529,
+      "enabled": true,
+      "intensity": 0.419999986886978,
+      "strength": 0.850000023841858,
+      "threshold": 0.949999988079071
+    },
+    "normal_directions": 4,
+    "occlusion": {
+      "details": [],
+      "faded_names": [],
+      "faded_trees": 0,
+      "geometry_count": 67,
+      "mesh_count": 0,
+      "mode": "billboard_alpha_aware",
+      "occluding_trees": 0,
+      "registered_trees": 67,
+      "sprite_count": 67
+    },
+    "original_color_directions": 4,
+    "player": [
+      0.0,
+      0.000234376639127731,
+      2.5
+    ],
+    "preset": "day",
+    "route_index": 0,
+    "route_running": false,
+    "tree_visibility": {
+      "details": [],
+      "faded_names": [],
+      "faded_trees": 0,
+      "geometry_count": 67,
+      "mesh_count": 0,
+      "mode": "billboard_alpha_aware",
+      "occluding_trees": 0,
+      "registered_trees": 67,
+      "sprite_count": 67
+    }
+  },
+  "runtime_fingerprint": "",
+  "schema": 1,
+  "scope": "actual scene and HSlider signal integration; real rendered differences and pointer routing are checked separately on GPU",
+  "settings_scope": "isolated file under requested build output; normal user preferences neither read nor overwritten",
+  "source_files": {
+    "scripts/forest_hamlet/cloud_lighting.gd": "c13b224096bcdd1674ef4bbb6f919a1e91d57801d6b1e1b9cb353f1ba38395a2",
+    "scripts/forest_hamlet/scene.gd": "436dbb94e540b5979910f8fe4df022c53dd180d5f18b61741779dfbb10ddf495",
+    "shaders/forest_hamlet/cloud_occluder.gdshader": "e70591cabd53eee8dd4a89c47d93397825c5d36394319acf0902666c689c4b65",
+    "tests/forest_hamlet/cloud_tuning_runtime.gd": "ecfe63738b9729892c09d4c8001485344a77c396a24f88b1e006d755b237fd96"
+  }
+}

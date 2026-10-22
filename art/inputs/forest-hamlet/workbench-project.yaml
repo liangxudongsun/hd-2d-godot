@@ -1,0 +1,29 @@
+schema_version: 1
+confirmed: true
+references: []
+art:
+  style: Forest hamlet pixel material study
+  projection: isometric
+  texture_filter: nearest
+  alpha_policy: binary
+  palette:
+    mode: per-asset
+resolution:
+  logical_canvas: [1280, 720]
+  engine_viewport: [1280, 720]
+  display_scale: 1
+domains:
+  world:
+    tile_size: [64, 32]
+  animation:
+    enabled: false
+  portrait:
+    enabled: false
+  ui:
+    enabled: false
+  godot:
+    enabled: false
+forest_hamlet_scope:
+  specification_basis: User-requested forest hamlet scene implementation and deterministic 256px surface-material processing
+  aesthetic_approval: pending
+  note: AW requires a 64x32 isometric catalog ground; square surface swatches use the supported object-canvas processing branch. The catalog ground is not copied into the 3D game.

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "generator": "tools/forest_hamlet/build_cottage_without_plants.py",
+  "generator_sha256": "08c8ca1699c8b3bc7f62b90ebe8b546f51e88c563fffd12b932b515a5e2e9699",
+  "base_generator": "tools/forest_hamlet/build_assets.py",
+  "base_generator_sha256": "009e5a54183bda73101e0485db972835cb60bef044382b2f36e7266fffe012e3",
+  "blender_version": "5.2.2 LTS",
+  "removed_plant_objects": [
+    "flower leaves",
+    "flower",
+    "flower leaves.001",
+    "flower.001",
+    "flower leaves.002",
+    "flower.002",
+    "flower leaves.003",
+    "flower.003",
+    "flower leaves.004",
+    "flower.004",
+    "flower leaves.005",
+    "flower.005",
+    "flower leaves.006",
+    "flower.006",
+    "flower leaves.007",
+    "flower.007",
+    "flower leaves.008",
+    "flower.008",
+    "flower leaves.009",
+    "flower.009",
+    "flower leaves.010",
+    "flower.010",
+    "flower leaves.011",
+    "flower.011"
+  ],
+  "removed_plant_object_count": 24,
+  "preserved_structural_objects": {
+    "door_handle": 1,
+    "window_boxes": 2
+  },
+  "runtime_plant_geometry_count": 0,
+  "replacement": "Two separately rooted color/normal Sprite3D window flower strips per cottage",
+  "assets": [
+    {
+      "id": "cottage_without_plants",
+      "source": "art/inputs/forest-hamlet/blender-vegetation-r1/cottage_without_plants.blend",
+      "output": "assets/forest-hamlet/models/cottage_without_plants.glb",
+      "sha256": "23028396deea0b568672facd248264c6addffba9cc109d80c02c141dcb3dcaa4",
+      "seed": 20263401,
+      "mesh_objects": 8
+    }
+  ],
+  "source_sha256": "99527e29f745d883c5a276fca620823012a0d5bb425005bbb7c4e743d1280d19",
+  "textures": {
+    "earth.png": "29766d4d4292e0a972bacd80ca99e7e320fa9cfaf14860bed2e6383fd712638b",
+    "grass.png": "359e1f8ee1781481ddefe6ebddf90d56e896c17c0cd7c2afcb255644714b142f",
+    "stone.png": "c42537ac3de1d9f6b9f3c3e68579170e437f029215bb437e2d9fe28846c91195",
+    "wood.png": "3cc3271b77f8ef90409afdab7479e5243ccb38fcec8a2ef2bbab548b3300fa7b"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "method": "manually_annotated_low_frequency_snow_facets",
+  "source": "source/snow-master.png",
+  "coordinate_system": "normalized image UV, U right, V down; tangent normal X right, Y up, Z towards camera",
+  "color_is_height": false,
+  "edge_feather_pixels": 5.0,
+  "mist_fade_begin": 0.56,
+  "mist_fade_end": 0.77,
+  "normal_strength_runtime": 0.8,
+  "notes": "Only geometric mountain facets are annotated. Unannotated sky and lower mist keep exactly the flat normal (128,128,255). Aesthetic color PNG is copied byte for byte. Facets are a stylized low-frequency relighting approximation, not recovered physical terrain.",
+  "massifs": [
+    {"id":"far_left","apex":[0.017,0.447],"left":[0.000,0.540],"right":[0.085,0.541],"ridge_base":[0.026,0.548],"left_normal":[-0.20,0.18,0.96],"right_normal":[0.23,0.12,0.97],"weight":0.55},
+    {"id":"left_back","apex":[0.261,0.405],"left":[0.191,0.531],"right":[0.359,0.558],"ridge_base":[0.272,0.558],"left_normal":[-0.29,0.24,0.93],"right_normal":[0.34,0.13,0.93],"weight":0.65},
+    {"id":"middle_back","apex":[0.354,0.418],"left":[0.285,0.535],"right":[0.439,0.549],"ridge_base":[0.365,0.556],"left_normal":[-0.27,0.23,0.94],"right_normal":[0.31,0.14,0.94],"weight":0.60},
+    {"id":"right_back","apex":[0.914,0.395],"left":[0.843,0.556],"right":[0.999,0.545],"ridge_base":[0.934,0.576],"left_normal":[-0.30,0.24,0.92],"right_normal":[0.34,0.16,0.92],"weight":0.70},
+    {"id":"tall_main","apex":[0.620,0.302],"left":[0.520,0.520],"right":[0.728,0.510],"ridge_base":[0.641,0.555],"left_normal":[-0.43,0.29,0.85],"right_normal":[0.44,0.19,0.88],"weight":1.0},
+    {"id":"left_main","apex":[0.171,0.403],"left":[0.070,0.622],"right":[0.283,0.637],"ridge_base":[0.193,0.653],"left_normal":[-0.43,0.24,0.87],"right_normal":[0.42,0.17,0.89],"weight":0.95},
+    {"id":"center_ridge","apex":[0.477,0.438],"left":[0.373,0.648],"right":[0.580,0.659],"ridge_base":[0.496,0.674],"left_normal":[-0.40,0.27,0.88],"right_normal":[0.44,0.14,0.89],"weight":0.95},
+    {"id":"front_central","apex":[0.550,0.519],"left":[0.480,0.689],"right":[0.640,0.682],"ridge_base":[0.563,0.698],"left_normal":[-0.37,0.24,0.90],"right_normal":[0.40,0.13,0.91],"weight":0.88},
+    {"id":"right_main","apex":[0.726,0.421],"left":[0.635,0.656],"right":[0.824,0.662],"ridge_base":[0.752,0.688],"left_normal":[-0.42,0.29,0.86],"right_normal":[0.44,0.17,0.88],"weight":0.97},
+    {"id":"right_low","apex":[0.806,0.447],"left":[0.765,0.615],"right":[0.883,0.646],"ridge_base":[0.828,0.675],"left_normal":[-0.35,0.24,0.91],"right_normal":[0.37,0.15,0.92],"weight":0.77}
+  ],
+  "landmarks": [
+    {"id":"main_peak","uv":[0.620,0.288]},
+    {"id":"left_peak","uv":[0.171,0.388]},
+    {"id":"right_ridge","uv":[0.806,0.424]}
+  ]
+}

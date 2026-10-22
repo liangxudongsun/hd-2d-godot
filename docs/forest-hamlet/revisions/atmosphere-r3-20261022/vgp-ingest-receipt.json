@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "asset_id": "52975eea-0437-4f23-96a3-13326f54e762",
+  "revision_id": "03bcb906-33ae-4917-a7fa-8120ac8ae6df",
+  "kind": "candidate",
+  "stage": "concept_design",
+  "files": [
+    {
+      "name": "closure-015-snow-master.png",
+      "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+      "size_bytes": 1697185,
+      "role": "source"
+    },
+    {
+      "name": "closure-025-close-day-atmosphere-off.png",
+      "sha256": "381b7288cfcd9793f502ec35fa67477ce18084d0112dbf47afa146ea73eae1a1",
+      "size_bytes": 2619457,
+      "role": "source"
+    },
+    {
+      "name": "closure-026-close-day-clouds-a.png",
+      "sha256": "44e65e84c77f5903e29e76fc08034e897877f6668938796d5937654730686db4",
+      "size_bytes": 2530068,
+      "role": "source"
+    },
+    {
+      "name": "closure-027-close-day-clouds-b.png",
+      "sha256": "b25b8f765030edf0abec356c33c15ce5a3bc65301f015f0201364992c8325838",
+      "size_bytes": 2446437,
+      "role": "source"
+    },
+    {
+      "name": "closure-028-close-day-clouds-natural.png",
+      "sha256": "4130fdf48606e302085bb230370860293d559334b63a1ab39549190de9fa3bb4",
+      "size_bytes": 2530067,
+      "role": "source"
+    },
+    {
+      "name": "closure-029-close-day-clouds-off.png",
+      "sha256": "5801ce6257e3e759fe6c4f9b593249cad4f67617a73f96880a4447cdcbec092c",
+      "size_bytes": 1870743,
+      "role": "source"
+    },
+    {
+      "name": "closure-030-close-day-clouds-thick.png",
+      "sha256": "c89f8f0b4de63540c7dace808988ec9cc82d308f9224a0ac54773aac201b3b7f",
+      "size_bytes": 1838571,
+      "role": "source"
+    },
+    {
+      "name": "closure-031-close-day-clouds-thin.png",
+      "sha256": "49a514530b0c61da98c04b16161a485d8d0bd8caf70f42266642e2e0f482c61c",
+      "size_bytes": 2692890,
+      "role": "source"
+    },
+    {
+      "name": "closure-032-close-day-global-off.png",
+      "sha256": "b382c8db03d52caea226ff3b367f0fc77425af56b7d43498d4abb8e26aed7034",
+      "size_bytes": 1870635,
+      "role": "source"
+    },
+    {
+      "name": "closure-033-close-day-global-strong.png",
+      "sha256": "7eac5b14af1d9460e9ed466a9e3b2edab61f6e1c5145e52a1bffae63c6ff3531",
+      "size_bytes": 1883338,
+      "role": "source"
+    },
+    {
+      "name": "closure-034-close-day-global-weak.png",
+      "sha256": "ba55b8c121c69f4fd5e9e882d36277f06589bca534e65579624edc83e3d742bf",
+      "size_bytes": 1861737,
+      "role": "source"
+    },
+    {
+      "name": "closure-035-close-day-glow-off.png",
+      "sha256": "5df714edfe0b5c943fdbb17acb803fdd3130a39d142dcd95561c8a7fd1029bdc",
+      "size_bytes": 2534503,
+      "role": "source"
+    },
+    {
+      "name": "closure-036-close-dusk-atmosphere.png",
+      "sha256": "d2205e289916f5b464a3ff0fd23d1811cbbd516764fcff7eb2927f1c9a92d1a1",
+      "size_bytes": 2019145,
+      "role": "source"
+    },
+    {
+      "name": "closure-037-close-route-left.png",
+      "sha256": "b7c11c5d1f83f28ec483cb0b001d3e9232b5acfbef4334ff9e7ed510c113331e",
+      "size_bytes": 2443413,
+      "role": "source"
+    },
+    {
+      "name": "closure-038-close-route-right.png",
+      "sha256": "4fbb0b393f913acc98d541fe56b48a3465591b82baf47ffa98a6d1f8a2d8a1c4",
+      "size_bytes": 2747880,
+      "role": "source"
+    },
+    {
+      "name": "closure-039-cloud-direct-clear.png",
+      "sha256": "9bbd2e3c521e24a844cafd036c2faf8d366c84db88406a44f581a1e3d3512d89",
+      "size_bytes": 8447,
+      "role": "source"
+    },
+    {
+      "name": "closure-040-cloud-direct-dark.png",
+      "sha256": "dc8c85544c067903601acdc656634bb197e16c2b636c10efb9f5e8aa8b503f75",
+      "size_bytes": 2380,
+      "role": "source"
+    },
+    {
+      "name": "closure-041-cloud-direct-half-calibration.png",
+      "sha256": "b50feaa74e3d7d4ec45e62a9f25f9b5f69f1c41a99f935af984d3106a5976a4c",
+      "size_bytes": 7969,
+      "role": "source"
+    },
+    {
+      "name": "closure-042-cloud-direct-natural.png",
+      "sha256": "704e712052c423001473cb7e3da22b37ac0cf0920b21b7d2933ff0945b454985",
+      "size_bytes": 227733,
+      "role": "source"
+    },
+    {
+      "name": "closure-043-cloud-direct-thick.png",
+      "sha256": "5de0979867e415bde46b7ead90aca19fbd77cc13aa4d8ab932b78b4fcd2c84a3",
+      "size_bytes": 8164,
+      "role": "source"
+    },
+    {
+      "name": "closure-044-cloud-direct-thin-repeat.png",
+      "sha256": "a61ed6adfad2bf0f61388c5719a7a19550fb09901b219bd2817a1a571f0a0878",
+      "size_bytes": 361955,
+      "role": "source"
+    },
+    {
+      "name": "closure-045-cloud-direct-thin.png",
+      "sha256": "a61ed6adfad2bf0f61388c5719a7a19550fb09901b219bd2817a1a571f0a0878",
+      "size_bytes": 361955,
+      "role": "source"
+    },
+    {
+      "name": "closure-046-cloud-direct-uniform-clear.png",
+      "sha256": "9bbd2e3c521e24a844cafd036c2faf8d366c84db88406a44f581a1e3d3512d89",
+      "size_bytes": 8447,
+      "role": "source"
+    },
+    {
+      "name": "closure-051-snow-left-normals-off.png",
+      "sha256": "1dc425b11fea10c2a12843f56156f8c5e2ebbf93fec7c4c3b41a90c13787f2f2",
+      "size_bytes": 1109121,
+      "role": "source"
+    },
+    {
+      "name": "closure-052-snow-left-normals-on.png",
+      "sha256": "2d1dc0332605267d6083c3b446d7fd08384b63d3f37306d4ce03110f3ec6a3a2",
+      "size_bytes": 1111754,
+      "role": "source"
+    },
+    {
+      "name": "closure-053-snow-right-normals-off.png",
+      "sha256": "1dc425b11fea10c2a12843f56156f8c5e2ebbf93fec7c4c3b41a90c13787f2f2",
+      "size_bytes": 1109121,
+      "role": "source"
+    },
+    {
+      "name": "closure-054-snow-right-normals-on.png",
+      "sha256": "f160e02037640f0b3565549e94cee992cb011a6ca187b604f75883f51b4248bd",
+      "size_bytes": 1115021,
+      "role": "source"
+    },
+    {
+      "name": "evidence.zip",
+      "sha256": "fe3b4282adadc7f3686b914175029343ef926f395677401624e5b49cdcdd7d9c",
+      "size_bytes": 8868338,
+      "role": "source"
+    },
+    {
+      "name": "snow-color.png",
+      "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+      "size_bytes": 1697185,
+      "role": "source"
+    },
+    {
+      "name": "snow-normal.png",
+      "sha256": "9c840176d4002826091098449e7126c45b5b410a67c56eb43a0d3d29893987a6",
+      "size_bytes": 97589,
+      "role": "source"
+    },
+    {
+      "name": "snow-regions.png",
+      "sha256": "ade0cbaba208f37219644571127ced57ab142cb56593aa126b21b3e3c4d1c153",
+      "size_bytes": 126254,
+      "role": "source"
+    }
+  ],
+  "parent_revision_ids": [
+    "bb5be0ab-eed7-4d77-b94d-e058bf001593"
+  ],
+  "original_references": [
+    {
+      "path": "closure-015-snow-master.png",
+      "revision_id": "bb5be0ab-eed7-4d77-b94d-e058bf001593",
+      "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+      "size_bytes": 1697185,
+      "role": "source"
+    },
+    {
+      "path": "closure-015-snow-master.png",
+      "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+      "size_bytes": 1697185,
+      "role": "source"
+    }
+  ],
+  "member_original_references": {
+    "snow-color.png": [
+      {
+        "path": "closure-015-snow-master.png",
+        "revision_id": "bb5be0ab-eed7-4d77-b94d-e058bf001593",
+        "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+        "size_bytes": 1697185,
+        "role": "source"
+      },
+      {
+        "path": "closure-015-snow-master.png",
+        "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+        "size_bytes": 1697185,
+        "role": "source"
+      }
+    ],
+    "snow-normal.png": [
+      {
+        "path": "closure-015-snow-master.png",
+        "revision_id": "bb5be0ab-eed7-4d77-b94d-e058bf001593",
+        "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+        "size_bytes": 1697185,
+        "role": "source"
+      },
+      {
+        "path": "closure-015-snow-master.png",
+        "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+        "size_bytes": 1697185,
+        "role": "source"
+      }
+    ],
+    "snow-regions.png": [
+      {
+        "path": "closure-015-snow-master.png",
+        "revision_id": "bb5be0ab-eed7-4d77-b94d-e058bf001593",
+        "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+        "size_bytes": 1697185,
+        "role": "source"
+      },
+      {
+        "path": "closure-015-snow-master.png",
+        "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+        "size_bytes": 1697185,
+        "role": "source"
+      }
+    ]
+  },
+  "material_groups": {
+    "primary": [
+      "snow-color.png",
+      "snow-normal.png",
+      "snow-regions.png"
+    ],
+    "original": [
+      "closure-015-snow-master.png"
+    ],
+    "dependency": [
+      "closure-025-close-day-atmosphere-off.png",
+      "closure-026-close-day-clouds-a.png",
+      "closure-027-close-day-clouds-b.png",
+      "closure-028-close-day-clouds-natural.png",
+      "closure-029-close-day-clouds-off.png",
+      "closure-030-close-day-clouds-thick.png",
+      "closure-031-close-day-clouds-thin.png",
+      "closure-032-close-day-global-off.png",
+      "closure-033-close-day-global-strong.png",
+      "closure-034-close-day-global-weak.png",
+      "closure-035-close-day-glow-off.png",
+      "closure-036-close-dusk-atmosphere.png",
+      "closure-037-close-route-left.png",
+      "closure-038-close-route-right.png",
+      "closure-039-cloud-direct-clear.png",
+      "closure-040-cloud-direct-dark.png",
+      "closure-041-cloud-direct-half-calibration.png",
+      "closure-042-cloud-direct-natural.png",
+      "closure-043-cloud-direct-thick.png",
+      "closure-044-cloud-direct-thin-repeat.png",
+      "closure-045-cloud-direct-thin.png",
+      "closure-046-cloud-direct-uniform-clear.png",
+      "closure-051-snow-left-normals-off.png",
+      "closure-052-snow-left-normals-on.png",
+      "closure-053-snow-right-normals-off.png",
+      "closure-054-snow-right-normals-on.png",
+      "evidence.zip"
+    ]
+  },
+  "source_receipt_sha256": "88ce71ee883c3033047c3a8684863007fd4d333fa43f4eb13fd98fd875d8de77",
+  "scope": "Native server receipt metadata only; local handles and tokens omitted"
+}

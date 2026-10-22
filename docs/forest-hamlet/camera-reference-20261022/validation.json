@@ -1,0 +1,140 @@
+{
+  "schema": 1,
+  "passed": true,
+  "status": "complete",
+  "scene": "scenes/forest_hamlet_close.tscn",
+  "run": "make forest-close-run",
+  "runtime_fingerprint": "16b370706d96dde87fdcb4426e4f3a367d492eea57ace5a03956d2a9cfde37e8",
+  "gpu": {
+    "adapter": "NVIDIA GeForce RTX 4070 SUPER",
+    "renderer": "forward_plus",
+    "viewport": [
+      1920,
+      1080
+    ],
+    "screenshots": 13,
+    "checks": 55,
+    "passed": true
+  },
+  "runtime": {
+    "checks": 27,
+    "passed": true
+  },
+  "route": {
+    "completed": true,
+    "elapsed_seconds": 22.45,
+    "position": [
+      8.21128196548671e-05,
+      0.000926767534110695,
+      1.5889151096344
+    ],
+    "status": "completed",
+    "total_waypoints": 6,
+    "waypoints": 6
+  },
+  "assets": {
+    "checks": 48,
+    "passed": true,
+    "original_character_files": 345,
+    "changed_originals": []
+  },
+  "camera": {
+    "camera_offset_length": 12.7500009536743,
+    "dof_far": 18.4097442626953,
+    "dof_near": 7.40974426269531,
+    "foot": [
+      0.5,
+      0.626913547515869
+    ],
+    "fov": 39.0,
+    "in_frame": true,
+    "pitch_degrees": 13.9999971389771,
+    "pixel_size": 0.00899999961256981,
+    "profile": "close_reference",
+    "silhouette_rect": [
+      0.464287916819255,
+      0.395489049840856,
+      0.0708481788635254,
+      0.232448549623843
+    ],
+    "view_depth": 12.4097442626953
+  },
+  "visible_front_frame_height_fraction": 0.22118452299008848,
+  "billboard": {
+    "passed": true,
+    "source_bounds": [
+      71,
+      24,
+      184,
+      240
+    ],
+    "probe_dimensions": [
+      [
+        194,
+        370
+      ],
+      [
+        194,
+        370
+      ],
+      [
+        194,
+        370
+      ],
+      [
+        194,
+        370
+      ],
+      [
+        242,
+        463
+      ]
+    ],
+    "aspect_ratio_error_fraction": 0.0022482659650799874
+  },
+  "right_occlusion": {
+    "details": [
+      {
+        "mesh_count": 6,
+        "name": "Broadleaf77",
+        "occluding": true,
+        "transparency": 1.0
+      },
+      {
+        "mesh_count": 6,
+        "name": "Broadleaf78",
+        "occluding": true,
+        "transparency": 1.0
+      }
+    ],
+    "faded_names": [
+      "Broadleaf77",
+      "Broadleaf78"
+    ],
+    "faded_trees": 2,
+    "mesh_count": 402,
+    "occluding_trees": 2,
+    "registered_trees": 67
+  },
+  "restored_occlusion": {
+    "details": [],
+    "faded_names": [],
+    "faded_trees": 0,
+    "mesh_count": 402,
+    "occluding_trees": 0,
+    "registered_trees": 67
+  },
+  "source_reference": "reference.json",
+  "notes": [
+    "Camera and occlusion are isolated in close_scene.gd; overview is a separate existing entrance.",
+    "The camera union is not a single animation frame. Actual front frame has 216 source pixels of visible height.",
+    "AW/VGP runtime asset bytes and original character files are reused."
+  ],
+  "shared_regression": {
+    "command_label": "camera-close-shared-final",
+    "returncode": 0,
+    "passed": true,
+    "elapsed_s": 10.646,
+    "log": "build/forest-hamlet/logs/camera-close-shared-final.log"
+  }
+}

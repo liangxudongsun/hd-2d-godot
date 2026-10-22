@@ -1,0 +1,326 @@
+#!/usr/bin/env python3
+"""Register forest-hamlet materials and models as VGP candidates for review.
+
+Uses the installed VGP CLI and per-project file storage. It never starts a
+server, grants permissions, approves a resource, or claims a later stage.
+Exact requests and returned identities are retained for unchanged retries.
+"""
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import os
+from pathlib import Path
+import shutil
+import subprocess
+import sys
+
+
+NAMES = ("grass", "earth", "wood", "stone")
+MODEL_NAMES = ("cottage", "broadleaf", "fir", "fence", "rock", "lamp", "bench", "sign", "grass")
+
+
+def digest(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def installed_cli(name: str) -> str:
+    detected = shutil.which(name)
+    if detected:
+        return detected
+    fallback = Path.home() / ".local/bin" / name
+    if fallback.is_file() and os.access(fallback, os.X_OK):
+        return str(fallback)
+    raise FileNotFoundError(f"Installed {name} CLI not found in PATH or user .local/bin")
+
+
+def dump(path: Path, value) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def freeze_json(path: Path, value) -> None:
+    if path.exists():
+        if json.loads(path.read_text(encoding="utf-8")) != value:
+            raise RuntimeError(f"Frozen request/input changed: {path}; use a new --run-id")
+    else:
+        dump(path, value)
+
+
+def decode(stdout: str):
+    try:
+        return json.loads(stdout)
+    except json.JSONDecodeError:
+        for index, ch in enumerate(stdout):
+            if ch in "[{":
+                try:
+                    value, end = json.JSONDecoder().raw_decode(stdout[index:])
+                    if not stdout[index + end:].strip():
+                        return value
+                except json.JSONDecodeError:
+                    pass
+        raise RuntimeError("VGP output did not contain one complete JSON result")
+
+
+def locate(value, required: set[str], *, kind: str = "") -> dict:
+    found = []
+
+    def walk(item):
+        if isinstance(item, dict):
+            if required <= item.keys() and (not kind or item.get("type") == kind):
+                found.append(item)
+            for child in item.values():
+                walk(child)
+        elif isinstance(item, list):
+            for child in item:
+                walk(child)
+
+    walk(value)
+    unique = {str(row.get("id", "")): row for row in found}
+    if len(unique) != 1:
+        raise RuntimeError(f"Expected one result object with {sorted(required)}, got {len(unique)}")
+    return next(iter(unique.values()))
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--project", type=Path, default=Path.cwd())
+    parser.add_argument("--run-id", default="forest-hamlet-20261022-r1")
+    parser.add_argument("--aw-run-id", default="forest-hamlet-20261022-r1")
+    parser.add_argument("--previous-run-id", help="Reuse a verified prior run's Project, assets, classification and review Case")
+    args = parser.parse_args()
+    for value in (args.run_id, args.aw_run_id, *([args.previous_run_id] if args.previous_run_id else [])):
+        if not value or any(c not in "abcdefghijklmnopqrstuvwxyz0123456789-_" for c in value):
+            raise ValueError("Run IDs must be lowercase safe directory names")
+    if args.previous_run_id == args.run_id:
+        raise ValueError("A successor run must use a different --run-id")
+    root = args.project.resolve()
+    art = root / "art/inputs/forest-hamlet"
+    state = root / "art/derived/forest-hamlet" / args.run_id / "vgp"
+    state.mkdir(parents=True, exist_ok=True)
+    previous = None
+    previous_state = None
+    previous_assets = {}
+    if args.previous_run_id:
+        previous_state = root / "art/derived/forest-hamlet" / args.previous_run_id / "vgp"
+        previous_summary_path = previous_state / "summary.json"
+        previous = json.loads(previous_summary_path.read_text())
+        for field in ("project_id", "scene_classification_id", "case_id", "assets"):
+            if not previous.get(field):
+                raise RuntimeError(f"Predecessor summary lacks {field}")
+        previous_assets = {item["key"]: item for item in previous["assets"]}
+        if set(previous_assets) != {"materials", "models"}:
+            raise RuntimeError("Predecessor summary must contain exactly materials and models")
+        freeze_json(state / "predecessor.json", {"run_id": args.previous_run_id,
+                    "summary_sha256": digest(previous_summary_path), "summary": previous})
+    aw_summary_path = root / "art/derived/forest-hamlet" / args.aw_run_id / "materials-summary.json"
+    aw_summary = json.loads(aw_summary_path.read_text())
+    if aw_summary.get("execution_status") != "completed":
+        raise RuntimeError("AW materials summary is not completed")
+    for item in aw_summary["outputs"]:
+        if digest(root / item["runtime"]) != item["sha256"]:
+            raise RuntimeError(f"Runtime texture changed after official AW validation: {item['runtime']}")
+    model_manifest_path = art / "blender/manifest.json"
+    model_manifest = json.loads(model_manifest_path.read_text())
+    for item in model_manifest["assets"]:
+        if digest(root / item["output"]) != item["sha256"]:
+            raise RuntimeError(f"Model changed after Blender export: {item['output']}")
+
+    def execute(label: str, command: list[str], *, immutable: bool = True):
+        request = state / f"{label}.command.json"
+        freeze_json(request, command)
+        receipt = state / f"{label}.response.json"
+        if immutable and receipt.exists():
+            return json.loads(receipt.read_text())
+        result = subprocess.run(command, cwd=root, capture_output=True, text=True, timeout=300)
+        (state / f"{label}.stderr.txt").write_text(result.stderr, encoding="utf-8")
+        if result.returncode:
+            (state / f"{label}.failed.txt").write_text(result.stdout, encoding="utf-8")
+            raise RuntimeError(f"VGP {label} failed ({result.returncode}): {result.stderr or result.stdout}")
+        value = decode(result.stdout)
+        dump(receipt, value)
+        return value
+
+    vgp = installed_cli("vgp")
+    if previous:
+        project_id = previous["project_id"]
+    else:
+        registered = execute("project-register", [vgp, "project", "files", "register", "--root", str(root), "--name", "hd-2d-godot"])
+        project = locate(registered, {"id", "name"})
+        project_id = project["id"]
+    base = [vgp, "--project-id", project_id]
+
+    def command(label: str, operation: str, payload: dict, *, target: str | None = None,
+                version: int | None = None, mutation: bool = True):
+        body = {"schema_version": 1, "operation": operation, "payload": payload}
+        if target:
+            body["id"] = target
+        if version is not None:
+            body["expected_version"] = version
+        if mutation:
+            body["idempotency_key"] = f"{args.run_id}:{label}:v1"
+        path = state / f"{label}.request.json"
+        freeze_json(path, body)
+        return execute(label, base + ["command", "--input", str(path)], immutable=mutation)
+
+    if previous:
+        classification_raw = command("scene-existing-get", "classification.get", {},
+                                     target=previous["scene_classification_id"], mutation=False)
+    else:
+        classification_raw = command("scene-create", "classification.create", {
+            "name": "Forest Hamlet / 森林村落范例", "kind": "scene",
+            "description": "HD2D forest scene study with reusable crescent-traveler. Candidate registration does not imply aesthetic approval."})
+    classification = locate(classification_raw, {"id", "name", "kind", "version"})
+    scene_id = classification["id"]
+    if previous and (scene_id != previous["scene_classification_id"] or classification["kind"] != "scene"):
+        raise RuntimeError("Predecessor scene classification identity did not verify")
+
+    source_extra = sorted(p for p in art.iterdir() if p.is_file() and ("prompt" in p.name or "provenance" in p.name))
+    texture_files = [root / f"assets/forest-hamlet/textures/{name}.png" for name in NAMES]
+    material_files = texture_files + [art / "material-atlas.png", art / "materials.recipe.yaml",
+                                     art / "prepared/palette.json", art / "prepared/preparation.json",
+                                     root / "tools/forest_hamlet/prepare_materials.py",
+                                     root / "tools/forest_hamlet/process_materials_aw.py",
+                                     aw_summary_path, root / aw_summary["aw_run"]] + source_extra
+    model_files = [root / f"assets/forest-hamlet/models/{name}.glb" for name in MODEL_NAMES]
+    model_sources = [art / f"blender/{name}.blend" for name in MODEL_NAMES]
+    model_all = model_files + model_sources + [model_manifest_path, root / "tools/forest_hamlet/build_assets.py"] + texture_files
+
+    groups = [
+        {"key": "materials", "asset_key": "forest-hamlet-surfaces", "name": "森林村落 · 四种地面与建筑材质", "type": "image",
+         "files": material_files,
+         "members": [{"id": name, "name": name, "path": f"{name}.png", "original_paths": ["material-atlas.png"],
+                      "processing_target": {"width": 256, "height": 256, "format": "png"}} for name in NAMES],
+         "originals": ["material-atlas.png", "materials.recipe.yaml", "palette.json", "prepare_materials.py"],
+         "report": {"authority": "caller_reported", "workflow": "AW world.compile", "execution_status": "completed",
+                    "source_sha256": aw_summary["source"]["sha256"], "aw_run_sha256": aw_summary["aw_run_sha256"],
+                    "outputs": {f"{name}.png": {"width": 256, "height": 256, "opaque": True, "opposite_edges_equal": True} for name in NAMES}},
+         "source": {"tool": "Asset Workbench", "workflow": "world.compile", "run": aw_summary["aw_run"],
+                    "producer_version": aw_summary.get("producer_version"), "aesthetic_approval": "pending"}},
+        {"key": "models", "asset_key": "forest-hamlet-model-kit", "name": "森林村落 · 九件原创模型组件", "type": "model",
+         "files": model_all,
+         "members": [{"id": name, "name": name, "path": f"{name}.glb", "original_paths": [f"{name}.blend"],
+                      "processing_target": {"format": "glb", "parameters": {"unit": "m", "up_axis": "+Y"}}} for name in MODEL_NAMES],
+         "originals": [f"{name}.blend" for name in MODEL_NAMES] + ["build_assets.py", "manifest.json"] + [f"{name}.png" for name in NAMES],
+         "report": {"authority": "caller_reported", "generator": "tools/forest_hamlet/build_assets.py",
+                    "manifest_sha256": digest(model_manifest_path),
+                    "outputs": {f"{name}.glb": {"unit": "m", "up_axis": "+Y"} for name in MODEL_NAMES}},
+         "source": {"tool": "Blender", "generator": "tools/forest_hamlet/build_assets.py", "seed": model_manifest.get("seed"),
+                    "texture_workflow": "AW world.compile", "aesthetic_approval": "pending"}},
+    ]
+    results = []
+    for group in groups:
+        files = group["files"]
+        basenames = [path.name for path in files]
+        if len(basenames) != len(set(basenames)):
+            raise RuntimeError(f"Ambiguous archived filenames in {group['key']}")
+        frozen_files = [{"path": path.relative_to(root).as_posix(), "name": path.name,
+                         "sha256": digest(path), "bytes": path.stat().st_size} for path in files]
+        freeze_json(state / f"{group['key']}.frozen-files.json", frozen_files)
+        parent_revision_id = None
+        if previous:
+            prior = previous_assets[group["key"]]
+            asset_raw = command(f"{group['key']}-existing-get", "asset.get", {},
+                                target=prior["asset_id"], mutation=False)
+        else:
+            asset_raw = command(f"{group['key']}-create", "asset.create", {
+                "name": group["name"], "type": group["type"], "asset_key": group["asset_key"],
+                "category": "forest-hamlet", "tags": ["forest-hamlet", "HD2D", "candidate"]})
+        asset = locate(asset_raw, {"id", "version", "name", "type"}, kind=group["type"])
+        if previous:
+            if asset["id"] != prior["asset_id"] or asset.get("asset_key") != group["asset_key"] or asset.get("archived"):
+                raise RuntimeError(f"Predecessor {group['key']} Asset identity/type/key did not verify")
+            matches = [item for item in asset_raw.get("revisions", []) if item.get("id") == prior["revision_id"]]
+            if len(matches) != 1 or matches[0].get("asset_id") != asset["id"] or matches[0].get("stage") != "concept_design":
+                raise RuntimeError(f"Predecessor {group['key']} Revision does not belong to the expected Asset/stage")
+            parent_revision_id = matches[0]["id"]
+        primary = {member["path"] for member in group["members"]}
+        originals = set(group["originals"])
+        payload = {"kind": "candidate", "stage": "concept_design",
+                   "materials": {"members": group["members"], "original_paths": group["originals"],
+                                 "dependency_paths": [path.name for path in files if path.name not in primary | originals]},
+                   "source": group["source"], "external_report": group["report"],
+                   "specification": {"purpose": "forest-hamlet playable Godot scene example", "aesthetic_approval": "pending"},
+                   "metadata": {"production_status": "externally_processed", "review_status": "pending",
+                                "stage_note": "Processed materials are first registered as concept candidates because no prior VGP stage decision exists. No engine_ready approval is implied."}}
+        if parent_revision_id:
+            payload["parent_revision_ids"] = [parent_revision_id]
+            payload["source"] = {**payload["source"], "previous_run_id": args.previous_run_id,
+                                 "previous_revision_id": parent_revision_id}
+            payload["metadata"]["stage_note"] = "Successor concept candidate linked to the verified preceding Revision; no later-stage decision or approval is implied."
+        payload_path = state / f"{group['key']}-ingest.payload.json"
+        freeze_json(payload_path, payload)
+        ingest_cmd = base + ["ingest", "--asset-id", asset["id"], "--key", f"{args.run_id}:{group['key']}:ingest:v1",
+                             "--input", str(payload_path)]
+        for file in files:
+            ingest_cmd += ["--file", str(file)]
+        revision_raw = execute(f"{group['key']}-ingest", ingest_cmd)
+        revision = locate(revision_raw, {"id", "asset_id", "kind", "files"})
+        check = command(f"{group['key']}-check", "asset.revision.check", {}, target=revision["id"], mutation=False)
+        if check.get("ready") is not True or check.get("issues"):
+            raise RuntimeError(f"{group['key']} Revision is not ready for review; inspect its check receipt")
+        classify_label = f"{group['key']}-classify"
+        if not previous and not (state / f"{classify_label}.response.json").exists():
+            saved_request = state / f"{classify_label}.request.json"
+            if saved_request.exists():
+                # An earlier request may have committed before its response was
+                # observed. Replay its exact original expected_version and key.
+                execute(classify_label, base + ["command", "--input", str(saved_request)])
+            else:
+                current_raw = command(f"{group['key']}-get", "asset.get", {}, target=asset["id"], mutation=False)
+                current = locate(current_raw, {"id", "version", "name", "type"}, kind=group["type"])
+                command(classify_label, "asset.classify", {"scene_ids": [scene_id], "level_ids": []},
+                        target=asset["id"], version=current["version"])
+        results.append({"key": group["key"], "asset_id": asset["id"], "revision_id": revision["id"],
+                        "stage": "concept_design", "main_output_count": len(group["members"]), "status": "pending_review",
+                        "check_receipt": (state / f"{group['key']}-check.response.json").relative_to(root).as_posix()})
+        if parent_revision_id:
+            results[-1]["previous_revision_id"] = parent_revision_id
+
+    previous_round_id = None
+    if previous:
+        prior_round = json.loads((previous_state / "review-submit.response.json").read_text())
+        if prior_round.get("case_id") != previous["case_id"] or not prior_round.get("id") or not prior_round.get("items"):
+            raise RuntimeError("Predecessor review round receipt does not verify against its Case")
+        previous_round_id = prior_round["id"]
+        case_raw = command("review-existing-get", "review.get", {}, target=previous["case_id"], mutation=False)
+    else:
+        case_raw = command("review-create", "review.create", {"type": "asset_content", "title": "森林村落场景 · 材质与模型候选",
+            "requirements": "Review the four surface materials and nine original models in the assembled Godot forest scene. Assess pixel scale, silhouettes, tiling and cohesion with the reused crescent-traveler. Technical processing evidence is attached; aesthetic approval and later stage decisions remain pending."})
+    case = locate(case_raw, {"id", "version", "title", "type"}, kind="asset_content")
+    if previous and case["id"] != previous["case_id"]:
+        raise RuntimeError("Existing review Case identity did not verify")
+    submit_payload = {"items": [
+        {"subject_key": f"forest-hamlet-{item['key']}", "title": item["key"],
+         "requirements": "Review original sources and processed output together. No automatic approval requested.",
+         "candidates": [{"revision_id": item["revision_id"],
+                         "label": args.run_id if previous else "v1 processed candidate"}]} for item in results]}
+    if previous_round_id:
+        submit_payload["previous_round_id"] = previous_round_id
+    saved_submit = state / "review-submit.request.json"
+    if saved_submit.exists():
+        saved = json.loads(saved_submit.read_text())
+        if saved.get("id") != case["id"] or saved.get("payload") != submit_payload:
+            raise RuntimeError("Saved review submission differs; use a new run ID")
+        submitted = execute("review-submit", base + ["command", "--input", str(saved_submit)])
+    else:
+        submitted = command("review-submit", "review.submit", submit_payload,
+                            target=case["id"], version=case["version"])
+    summary = {"schema_version": 1, "project_id": project_id, "scene_classification_id": scene_id,
+               "case_id": case["id"], "assets": results, "review_status": "pending",
+               "decisions_created": 0, "stage_admissions_created": 0,
+               "note": "Native VGP CLI registration and review submission completed. Later stages require their explicit predecessor decisions; no approval was synthesized."}
+    if previous:
+        summary.update(previous_run_id=args.previous_run_id, previous_round_id=previous_round_id,
+                       round_id=submitted["id"], stable_asset_ids_reused=True)
+    dump(state / "summary.json", summary)
+    print(json.dumps(summary, ensure_ascii=False, indent=2))
+
+
+if __name__ == "__main__":
+    try:
+        main()
+    except Exception as error:
+        print(str(error), file=sys.stderr)
+        raise

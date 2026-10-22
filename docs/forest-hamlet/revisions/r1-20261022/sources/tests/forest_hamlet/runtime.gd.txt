@@ -1,0 +1,111 @@
+extends SceneTree
+## Runtime acceptance for the independent scene; real CharacterBody3D movement.
+var scene: Node3D
+var checks: Array = []
+var failures: Array = []
+var output := "res://build/forest-hamlet/runtime"
+
+func _initialize() -> void:
+    for arg in OS.get_cmdline_user_args():
+        if arg.begins_with("--forest-output="):
+            output = arg.trim_prefix("--forest-output=")
+    output = ProjectSettings.globalize_path(output)
+    DirAccess.make_dir_recursive_absolute(output)
+    call_deferred("run")
+
+func check(condition: bool, label: String) -> void:
+    checks.append({"label":label,"passed":condition})
+    if not condition:
+        failures.append(label)
+        print("ASSERT_FAIL ",label)
+
+func settle(frames: int) -> void:
+    for i in range(frames):
+        await physics_frame
+
+func run() -> void:
+    scene = load("res://scenes/forest_hamlet.tscn").instantiate()
+    root.add_child(scene)
+    await settle(45)
+    check(scene.player.position.y > -.4 and scene.player.position.y < 1.0,"spawn rests on terrain")
+    check(scene.player.is_on_floor(),"spawn has physical floor contact")
+    check(scene.player.color_atlases.size()==4,"four original color directions reused")
+    check(scene.player.normal_atlases.size()==4 and not scene.player.normal_definition.is_empty(),"four original normal directions reused")
+    check(scene.player.silver_atlases.size()==4,"four original silver masks reused")
+    var frames := 0
+    for definition in scene.player.color_definitions:
+        frames += definition.frames.size()
+    check(frames==108,"original 108-frame character retained")
+    var initial_frame: int = scene.player.animation_frame
+    var initial: Vector3 = scene.player.position
+    scene.player.scripted_input = true
+    scene.player.scripted_direction = Vector2.RIGHT
+    await settle(40)
+    check(scene.player.position.x > initial.x + 1.0,"actual CharacterBody3D horizontal movement")
+    check(scene.player.walking,"walk animation follows actual body movement")
+    check(scene.player.animation_clock > .4 and scene.player.animation_frame!=initial_frame,"original animation clock and frames advance")
+    scene.player.scripted_direction = Vector2.ZERO
+    scene.player.scripted_input = false
+    await settle(5)
+    check(not scene.player.walking,"idle resumes when movement stops")
+    check(not scene.set_time_preset("unknown"),"unsupported preset rejected")
+    check(not scene.set_feature("unknown",false),"unsupported feature rejected")
+    scene.set_time_preset("dusk")
+    check(scene.time_preset=="dusk" and scene.main_light.light_color.g<.8,"dusk lighting applied")
+    scene.set_time_preset("day")
+    var saved_energy: float = scene.main_light.light_energy
+    var saved_pose: Vector3 = scene.player.position
+    for id in ["normals","bloom","dof","wind"]:
+        var snapshot: Dictionary = scene.values.duplicate(true)
+        scene.set_feature(id,false)
+        check(scene.values[id]==false,id+" switches off")
+        for other in snapshot:
+            if other != id:
+                check(scene.values[other]==snapshot[other],id+" preserves "+other)
+        scene.set_feature(id,true)
+        check(scene.values[id]==true,id+" restores on")
+    check(scene.world.ground_material.get_shader_parameter("use_normals")==true,"normal toggle reaches ground material")
+    check(scene.environment.glow_enabled,"bloom toggle reaches environment")
+    check(scene.attributes.dof_blur_near_enabled and scene.attributes.dof_blur_far_enabled,"DoF toggle reaches camera attributes")
+    check(is_equal_approx(float(scene.world.foliage_material.get_shader_parameter("wind_strength")),.06),"wind toggle reaches foliage material")
+    check(scene.player.position==saved_pose and scene.main_light.light_energy==saved_energy,"feature comparison does not move actor or change lighting")
+    scene.player.position = Vector3(-8,.2,2.2)
+    scene.player.velocity = Vector3.ZERO
+    scene.player.scripted_input = true
+    scene.player.scripted_direction = Vector2.DOWN
+    await settle(100)
+    check(scene.player.position.z < 3.65 and scene.player.position.y > -.4,"foreground pond rim blocks water entry")
+    scene.player.scripted_input = false
+    scene.player.scripted_direction = Vector2.ZERO
+    scene.player.position = scene.world.spawn
+    scene.player.velocity = Vector3.ZERO
+    await settle(15)
+    scene.start_route()
+    check(scene.route_running and scene.player.scripted_input,"route starts through real actor input")
+    await settle(20)
+    scene.stop_route()
+    check(not scene.route_running and not scene.player.scripted_input and scene.route_result.status=="cancelled","route cancels and restores manual control")
+    scene.player.position = scene.world.spawn
+    scene.player.velocity = Vector3.ZERO
+    await settle(15)
+    scene.start_route()
+    var route_frames := 0
+    var min_y: float = scene.player.position.y
+    while scene.route_running and route_frames < 7200:
+        await physics_frame
+        min_y = minf(min_y,scene.player.position.y)
+        route_frames += 1
+    if scene.route_running:
+        scene.stop_route("timeout")
+    check(scene.route_result.get("completed",false),"six-waypoint physical exploration route completes")
+    check(min_y > -.5,"entire route stays on terrain")
+    check(scene.route_trajectory.size()>30,"route evidence contains actual motion samples")
+    scene.update_camera(true)
+    var screen: Vector2 = scene.camera.unproject_position(scene.player.position+Vector3.UP)
+    var viewport_rect := root.get_visible_rect()
+    check(viewport_rect.has_point(screen),"actor stays inside exploration camera")
+    var report := {"passed":failures.is_empty(),"scope":"headless geometry, state and movement only; no visual approval","checks":checks,"failures":failures,"route":scene.route_result,"state":scene.snapshot_state(),"minimum_route_height":min_y}
+    var file := FileAccess.open(output.path_join("runtime-report.json"),FileAccess.WRITE)
+    file.store_string(JSON.stringify(report,"  ")+"\n")
+    print("FOREST_RUNTIME_DONE checks=",checks.size()," failures=",failures.size()," route=",scene.route_result.get("status","missing"))
+    quit(0 if failures.is_empty() else 1)

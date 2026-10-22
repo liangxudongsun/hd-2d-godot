@@ -1,0 +1,451 @@
+{
+  "schema": 1,
+  "passed": true,
+  "checks": [
+    {
+      "label": "GPU capture contracts passed",
+      "passed": true
+    },
+    {
+      "label": "actual hardware Forward+ is identified",
+      "passed": true
+    },
+    {
+      "label": "close-day-clouds-a.png: retained PNG hash matches GPU read-back",
+      "passed": true
+    },
+    {
+      "label": "close-day-clouds-a.png: image retains 1920x1080 GPU resolution",
+      "passed": true
+    },
+    {
+      "label": "close-day-clouds-off.png: retained PNG hash matches GPU read-back",
+      "passed": true
+    },
+    {
+      "label": "close-day-clouds-off.png: image retains 1920x1080 GPU resolution",
+      "passed": true
+    },
+    {
+      "label": "close-day-clouds-b.png: retained PNG hash matches GPU read-back",
+      "passed": true
+    },
+    {
+      "label": "close-day-clouds-b.png: image retains 1920x1080 GPU resolution",
+      "passed": true
+    },
+    {
+      "label": "close-day-glow-off.png: retained PNG hash matches GPU read-back",
+      "passed": true
+    },
+    {
+      "label": "close-day-glow-off.png: image retains 1920x1080 GPU resolution",
+      "passed": true
+    },
+    {
+      "label": "close-day-atmosphere-off.png: retained PNG hash matches GPU read-back",
+      "passed": true
+    },
+    {
+      "label": "close-day-atmosphere-off.png: image retains 1920x1080 GPU resolution",
+      "passed": true
+    },
+    {
+      "label": "close-dusk-atmosphere.png: retained PNG hash matches GPU read-back",
+      "passed": true
+    },
+    {
+      "label": "close-dusk-atmosphere.png: image retains 1920x1080 GPU resolution",
+      "passed": true
+    },
+    {
+      "label": "close-route-left.png: retained PNG hash matches GPU read-back",
+      "passed": true
+    },
+    {
+      "label": "close-route-left.png: image retains 1920x1080 GPU resolution",
+      "passed": true
+    },
+    {
+      "label": "close-route-right.png: retained PNG hash matches GPU read-back",
+      "passed": true
+    },
+    {
+      "label": "close-route-right.png: image retains 1920x1080 GPU resolution",
+      "passed": true
+    },
+    {
+      "label": "snow-left-normals-on.png: retained PNG hash matches GPU read-back",
+      "passed": true
+    },
+    {
+      "label": "snow-left-normals-on.png: image retains 1920x1080 GPU resolution",
+      "passed": true
+    },
+    {
+      "label": "snow-left-normals-off.png: retained PNG hash matches GPU read-back",
+      "passed": true
+    },
+    {
+      "label": "snow-left-normals-off.png: image retains 1920x1080 GPU resolution",
+      "passed": true
+    },
+    {
+      "label": "snow-right-normals-on.png: retained PNG hash matches GPU read-back",
+      "passed": true
+    },
+    {
+      "label": "snow-right-normals-on.png: image retains 1920x1080 GPU resolution",
+      "passed": true
+    },
+    {
+      "label": "snow-right-normals-off.png: retained PNG hash matches GPU read-back",
+      "passed": true
+    },
+    {
+      "label": "snow-right-normals-off.png: image retains 1920x1080 GPU resolution",
+      "passed": true
+    },
+    {
+      "label": "ground: real rendered receiver changes under cloud occlusion",
+      "passed": true
+    },
+    {
+      "label": "house: real rendered receiver changes under cloud occlusion",
+      "passed": true
+    },
+    {
+      "label": "vegetation: real rendered receiver changes under cloud occlusion",
+      "passed": true
+    },
+    {
+      "label": "moving cloud mask changes the fixed-camera scene",
+      "passed": true
+    },
+    {
+      "label": "sun energy direction and color remain identical in cloud comparison",
+      "passed": true
+    },
+    {
+      "label": "ambient fill is not globally animated to fake cloud coverage",
+      "passed": true
+    },
+    {
+      "label": "cloud drift produces spatially nonuniform changes across scene tiles",
+      "passed": true
+    },
+    {
+      "label": "native Glow creates an actual visible halo contribution",
+      "passed": true
+    },
+    {
+      "label": "Glow avoids washing the frame into near-white",
+      "passed": true
+    },
+    {
+      "label": "native volumetric atmosphere changes real rendered light",
+      "passed": true
+    },
+    {
+      "label": "left: actual background material responds to normal toggle",
+      "passed": true
+    },
+    {
+      "label": "right: actual background material responds to normal toggle",
+      "passed": true
+    },
+    {
+      "label": "normal relighting responds to light direction beyond flat baseline",
+      "passed": true
+    },
+    {
+      "label": "physical left-right route completed",
+      "passed": true
+    },
+    {
+      "label": "actual GPU snow-ridge motion matches expected parallax",
+      "passed": true
+    }
+  ],
+  "scope": "Independent GPU RGB read-back; normal toggle and light direction; cloud receivers, spatial drift, native Glow and fog; visual design approval remains external",
+  "capture_sha256": "e12192f279b3345bba16a4aaa6c3db3f7d1c1c477da65735bc330492e4c6f34c",
+  "runtime_fingerprint": "dddfa0e75fd426491a5d3e6b55b1725dd250e60aaf369e12407b597194c5f232",
+  "cloud_receivers": [
+    {
+      "receiver": "ground",
+      "crop_px": [
+        1075,
+        745,
+        1440,
+        961
+      ],
+      "cloud_a_vs_off": {
+        "pixels": 78840,
+        "changed_pixels_over_2": 78840,
+        "changed_fraction": 1.0,
+        "mean_absolute_rgb_difference": 67.58083882969727
+      },
+      "cloud_b_vs_off": {
+        "pixels": 78840,
+        "changed_pixels_over_2": 78840,
+        "changed_fraction": 1.0,
+        "mean_absolute_rgb_difference": 72.43239895146287
+      },
+      "cloud_motion": {
+        "pixels": 78840,
+        "changed_pixels_over_2": 32461,
+        "changed_fraction": 0.4117326230339929,
+        "mean_absolute_rgb_difference": 4.926674277016743
+      }
+    },
+    {
+      "receiver": "house",
+      "crop_px": [
+        365,
+        313,
+        672,
+        475
+      ],
+      "cloud_a_vs_off": {
+        "pixels": 49734,
+        "changed_pixels_over_2": 49732,
+        "changed_fraction": 0.999959786061849,
+        "mean_absolute_rgb_difference": 61.44575139743435
+      },
+      "cloud_b_vs_off": {
+        "pixels": 49734,
+        "changed_pixels_over_2": 48489,
+        "changed_fraction": 0.9749668235010255,
+        "mean_absolute_rgb_difference": 6.920027881663785
+      },
+      "cloud_motion": {
+        "pixels": 49734,
+        "changed_pixels_over_2": 48956,
+        "changed_fraction": 0.9843567780592754,
+        "mean_absolute_rgb_difference": 55.37599361938848
+      }
+    },
+    {
+      "receiver": "vegetation",
+      "crop_px": [
+        1718,
+        130,
+        1897,
+        346
+      ],
+      "cloud_a_vs_off": {
+        "pixels": 38664,
+        "changed_pixels_over_2": 38373,
+        "changed_fraction": 0.9924736188702669,
+        "mean_absolute_rgb_difference": 13.127129457203944
+      },
+      "cloud_b_vs_off": {
+        "pixels": 38664,
+        "changed_pixels_over_2": 38441,
+        "changed_fraction": 0.9942323608524726,
+        "mean_absolute_rgb_difference": 20.69497896406649
+      },
+      "cloud_motion": {
+        "pixels": 38664,
+        "changed_pixels_over_2": 38318,
+        "changed_fraction": 0.9910511069728947,
+        "mean_absolute_rgb_difference": 10.990964894130629
+      }
+    }
+  ],
+  "cloud_motion": {
+    "pixels": 2073600,
+    "changed_pixels_over_2": 1448546,
+    "changed_fraction": 0.6985657793209876,
+    "mean_absolute_rgb_difference": 26.943400688014403
+  },
+  "cloud_tile_difference_std": 28.475730563938864,
+  "cloud_tile_mean_differences": [
+    22.60326244212963,
+    54.24493634259259,
+    64.13791232638889,
+    21.16746238425926,
+    2.453884548611111,
+    1.5854673032407407,
+    46.23455584490741,
+    71.98314525462963,
+    68.44947193287037,
+    63.6021412037037,
+    26.09078414351852,
+    48.021809895833336,
+    64.55038339120371,
+    32.6708984375,
+    4.044379340277778,
+    17.02907986111111,
+    45.861002604166664,
+    61.160843460648145,
+    102.38194444444446,
+    74.20254629629629,
+    70.48589409722221,
+    48.25050636574074,
+    41.13689959490741,
+    46.7749927662037,
+    56.86226851851851,
+    68.21299913194444,
+    86.5642722800926,
+    91.73253038194444,
+    45.12109375,
+    53.42140480324074,
+    32.42621527777778,
+    12.235243055555555,
+    2.492693865740741,
+    6.380172164351852,
+    11.76902488425926,
+    12.834671585648147,
+    9.320601851851853,
+    13.642758969907407,
+    26.8203125,
+    25.9501953125,
+    21.51837384259259,
+    15.806712962962962,
+    3.154658564814815,
+    0.012152777777777778,
+    0.002242476851851852,
+    0.0020616319444444445,
+    0.001193576388888889,
+    0.00025318287037037036,
+    0.5801504629629629,
+    2.4910300925925926
+  ],
+  "glow": {
+    "pixels": 2073600,
+    "changed_pixels_over_2": 25032,
+    "changed_fraction": 0.01207175925925926,
+    "mean_absolute_rgb_difference": 0.48623328189300413
+  },
+  "near_white_fraction": 0.001148244598765432,
+  "volumetric_atmosphere": {
+    "pixels": 2073600,
+    "changed_pixels_over_2": 798432,
+    "changed_fraction": 0.3850462962962963,
+    "mean_absolute_rgb_difference": 2.9004586226851856
+  },
+  "snow_normals": {
+    "left": {
+      "pixels": 2073600,
+      "changed_pixels_over_2": 367480,
+      "changed_fraction": 0.17721836419753087,
+      "mean_absolute_rgb_difference": 1.2820198366769546
+    },
+    "right": {
+      "pixels": 2073600,
+      "changed_pixels_over_2": 332063,
+      "changed_fraction": 0.16013840663580248,
+      "mean_absolute_rgb_difference": 1.0322942386831275
+    },
+    "directional_on": {
+      "pixels": 2073600,
+      "changed_pixels_over_2": 389578,
+      "changed_fraction": 0.18787519290123456,
+      "mean_absolute_rgb_difference": 2.2840237590020576
+    },
+    "directional_off": {
+      "pixels": 2073600,
+      "changed_pixels_over_2": 0,
+      "changed_fraction": 0.0,
+      "mean_absolute_rgb_difference": 0.0
+    }
+  },
+  "parallax": {
+    "passed": true,
+    "landmarks": [
+      {
+        "id": "left_peak",
+        "usable": false,
+        "reason": "projected landmark too close to viewport boundary"
+      },
+      {
+        "id": "left_shoulder",
+        "usable": false,
+        "left_center_px": [
+          922,
+          72
+        ],
+        "predicted_right_center_px": [
+          825,
+          72
+        ],
+        "matched_right_center_px": [
+          837,
+          69
+        ],
+        "expected_displacement_px": [
+          -96.57049560546898,
+          3.814697259940658e-05
+        ],
+        "measured_displacement_px": [
+          -85,
+          -3
+        ],
+        "patch_std": 77.90903859508555,
+        "best_mean_absolute_luma_error": 82.19742883379247,
+        "unmoved_mean_absolute_luma_error": 73.6831955922865
+      },
+      {
+        "id": "main_peak",
+        "usable": false,
+        "reason": "projected landmark too close to viewport boundary"
+      },
+      {
+        "id": "main_snow_ridge",
+        "usable": true,
+        "left_center_px": [
+          1046,
+          32
+        ],
+        "predicted_right_center_px": [
+          949,
+          32
+        ],
+        "matched_right_center_px": [
+          949,
+          32
+        ],
+        "expected_displacement_px": [
+          -96.57049560546898,
+          0.0
+        ],
+        "measured_displacement_px": [
+          -97,
+          0
+        ],
+        "patch_std": 6.705265850331661,
+        "best_mean_absolute_luma_error": 0.8273645546372819,
+        "unmoved_mean_absolute_luma_error": 48.89990817263544
+      },
+      {
+        "id": "right_ridge",
+        "usable": false,
+        "left_center_px": [
+          1556,
+          140
+        ],
+        "predicted_right_center_px": [
+          1459,
+          140
+        ],
+        "matched_right_center_px": [
+          1449,
+          140
+        ],
+        "expected_displacement_px": [
+          -96.57055664062,
+          -3.0517577982891453e-05
+        ],
+        "measured_displacement_px": [
+          -107,
+          0
+        ],
+        "patch_std": 13.345363172705914,
+        "best_mean_absolute_luma_error": 17.012855831037648,
+        "unmoved_mean_absolute_luma_error": 41.83011937557392
+      }
+    ],
+    "method": "33x33 luminance patches; search ±12 horizontal/±4 vertical pixels around independently projected landmark; compare with zero-motion hypothesis"
+  }
+}

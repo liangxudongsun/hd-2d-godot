@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "selected_source": "art/inputs/forest-hamlet/snow-r1/source/snow-master.png",
+  "source_sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+  "basis": "User selected the simplified snow mountain illustration by asking to add this distant view to the existing game scene with normal-based lighting, overhead occlusion and Glow.",
+  "quoted_instruction": "刚才的游戏场景加入远景，并使用法线模拟光照；同时，在天空增加遮挡，使得环境光照强度不均匀的洒落到场景物品中，营造一种场景光线有胴体啊的感觉，通过给世界环境增加 glow 效果，有光晕的效果。",
+  "interpretation": "Implement moving spatially nonuniform illumination plus independently controllable irregular global light variation; preserve the selected distant-only soft snow image.",
+  "additional_scope": "The later user direction adds independent irregular global light intensity changes alongside the cloud shadows; r1 evidence is preserved and this r2 run verifies the expanded behavior.",
+  "selection": "selected",
+  "human_aesthetic_approval": "pending",
+  "approval_boundary": "Implementation authorization does not create an art-review approval or VGP decision."
+}

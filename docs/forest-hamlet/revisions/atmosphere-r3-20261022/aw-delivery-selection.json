@@ -1,0 +1,151 @@
+{
+  "asset_key": "forest-hamlet-snow-atmosphere",
+  "variant_key": "forest-hamlet-20261022-atmosphere-r3",
+  "purpose": "Deliver unchanged snow PNGs, selected runtime sources and validation-tool source copies from the completed native Godot input snapshot. Native AW executes only the declared headless runtime test. The 18 scene PNGs, eight calibrated transmission PNGs and their pixel checks are separately captured and frozen by the project, not AW-generated or AW-rendered.",
+  "outputs": [
+    {
+      "path": "inputs/project/assets/forest-hamlet/backdrop/color.png",
+      "role": "runtime",
+      "name": "snow-color"
+    },
+    {
+      "path": "inputs/project/assets/forest-hamlet/backdrop/normal.png",
+      "role": "runtime",
+      "name": "snow-normal"
+    },
+    {
+      "path": "inputs/project/assets/forest-hamlet/backdrop/regions.png",
+      "role": "runtime",
+      "name": "snow-regions"
+    },
+    {
+      "path": "inputs/input.json",
+      "role": "recipe",
+      "name": "godot-verify"
+    },
+    {
+      "path": "run.json",
+      "role": "evidence",
+      "name": "godot-run"
+    },
+    {
+      "path": "steps/atmosphere-runtime/attempt-001/atmosphere-runtime-report.json",
+      "role": "evidence",
+      "name": "atmosphere-runtime"
+    },
+    {
+      "path": "inputs/project/assets/forest-hamlet/backdrop/manifest.json",
+      "role": "evidence",
+      "name": "backdrop-manifest"
+    },
+    {
+      "path": "inputs/project/project.godot",
+      "role": "editable",
+      "name": "runtime-source-00"
+    },
+    {
+      "path": "inputs/project/scenes/forest_hamlet.tscn",
+      "role": "editable",
+      "name": "runtime-source-01"
+    },
+    {
+      "path": "inputs/project/scenes/forest_hamlet_close.tscn",
+      "role": "editable",
+      "name": "runtime-source-02"
+    },
+    {
+      "path": "inputs/project/scripts/forest_hamlet/scene.gd",
+      "role": "editable",
+      "name": "runtime-source-03"
+    },
+    {
+      "path": "inputs/project/scripts/forest_hamlet/close_scene.gd",
+      "role": "editable",
+      "name": "runtime-source-04"
+    },
+    {
+      "path": "inputs/project/scripts/forest_hamlet/snow_backdrop.gd",
+      "role": "editable",
+      "name": "runtime-source-05"
+    },
+    {
+      "path": "inputs/project/scripts/forest_hamlet/cloud_lighting.gd",
+      "role": "editable",
+      "name": "runtime-source-06"
+    },
+    {
+      "path": "inputs/project/scripts/forest_hamlet/global_lighting.gd",
+      "role": "editable",
+      "name": "runtime-source-07"
+    },
+    {
+      "path": "inputs/project/shaders/forest_hamlet/snow_backdrop.gdshader",
+      "role": "editable",
+      "name": "runtime-source-08"
+    },
+    {
+      "path": "inputs/project/shaders/forest_hamlet/cloud_occluder.gdshader",
+      "role": "editable",
+      "name": "runtime-source-09"
+    },
+    {
+      "path": "inputs/project/tests/forest_hamlet/atmosphere_runtime.gd",
+      "role": "editable",
+      "name": "runtime-source-10"
+    },
+    {
+      "path": "inputs/project/tests/check_project.py",
+      "role": "editable",
+      "name": "runtime-source-11"
+    },
+    {
+      "path": "inputs/project/tools/forest_hamlet/capture.gd",
+      "role": "editable",
+      "name": "runtime-source-12"
+    },
+    {
+      "path": "inputs/project/tools/forest_hamlet/capture_atmosphere.gd",
+      "role": "editable",
+      "name": "runtime-source-13"
+    },
+    {
+      "path": "inputs/project/tools/forest_hamlet/capture_cloud_transmission.gd",
+      "role": "editable",
+      "name": "runtime-source-14"
+    },
+    {
+      "path": "inputs/project/tools/project.py",
+      "role": "editable",
+      "name": "runtime-source-15"
+    },
+    {
+      "path": "inputs/project/tools/forest_hamlet/run.py",
+      "role": "editable",
+      "name": "runtime-source-16"
+    },
+    {
+      "path": "inputs/project/tools/forest_hamlet/run_atmosphere.py",
+      "role": "editable",
+      "name": "runtime-source-17"
+    },
+    {
+      "path": "inputs/project/tools/forest_hamlet/atmosphere_checks.py",
+      "role": "editable",
+      "name": "runtime-source-18"
+    },
+    {
+      "path": "inputs/project/tools/forest_hamlet/cloud_transmission_checks.py",
+      "role": "editable",
+      "name": "runtime-source-19"
+    }
+  ],
+  "review_media": [
+    {
+      "path": "inputs/project/assets/forest-hamlet/backdrop/color.png",
+      "source_paths": [
+        "inputs/project/assets/forest-hamlet/backdrop/color.png"
+      ]
+    }
+  ],
+  "entrypoints": []
+}

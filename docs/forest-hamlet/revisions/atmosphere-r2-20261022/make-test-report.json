@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "command": [
+    "make",
+    "test"
+  ],
+  "returncode": 0,
+  "passed": true,
+  "elapsed_s": 8.946
+}

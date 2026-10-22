@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "command": [
+    "make",
+    "test"
+  ],
+  "passed": true,
+  "returncode": 0,
+  "elapsed_s": 9.33,
+  "log_sha256": "fa6f5e6ce5c81109ef222b0d20aeb40f19b39407193549ba3c7264df68526bd4"
+}

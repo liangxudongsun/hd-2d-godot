@@ -1,0 +1,523 @@
+{
+  "schema_version": 1,
+  "id": "forest.hamlet.vegetation.r2.canvas",
+  "sheets": [
+    {
+      "id": "opaque-preview",
+      "path": "preview-ground.png",
+      "grid": [
+        1,
+        1
+      ],
+      "background": {
+        "mode": "alpha",
+        "color": [
+          255,
+          0,
+          255
+        ],
+        "tolerance": 0
+      }
+    },
+    {
+      "id": "broadleaf_a",
+      "path": "prepared/broadleaf_a.png",
+      "grid": [
+        1,
+        1
+      ],
+      "background": {
+        "mode": "alpha",
+        "color": [
+          255,
+          0,
+          255
+        ],
+        "tolerance": 0
+      }
+    },
+    {
+      "id": "broadleaf_b",
+      "path": "prepared/broadleaf_b.png",
+      "grid": [
+        1,
+        1
+      ],
+      "background": {
+        "mode": "alpha",
+        "color": [
+          255,
+          0,
+          255
+        ],
+        "tolerance": 0
+      }
+    },
+    {
+      "id": "fir",
+      "path": "prepared/fir.png",
+      "grid": [
+        1,
+        1
+      ],
+      "background": {
+        "mode": "alpha",
+        "color": [
+          255,
+          0,
+          255
+        ],
+        "tolerance": 0
+      }
+    },
+    {
+      "id": "grass",
+      "path": "prepared/grass.png",
+      "grid": [
+        1,
+        1
+      ],
+      "background": {
+        "mode": "alpha",
+        "color": [
+          255,
+          0,
+          255
+        ],
+        "tolerance": 0
+      }
+    },
+    {
+      "id": "fern",
+      "path": "prepared/fern.png",
+      "grid": [
+        1,
+        1
+      ],
+      "background": {
+        "mode": "alpha",
+        "color": [
+          255,
+          0,
+          255
+        ],
+        "tolerance": 0
+      }
+    },
+    {
+      "id": "reeds",
+      "path": "prepared/reeds.png",
+      "grid": [
+        1,
+        1
+      ],
+      "background": {
+        "mode": "alpha",
+        "color": [
+          255,
+          0,
+          255
+        ],
+        "tolerance": 0
+      }
+    },
+    {
+      "id": "flowers_white",
+      "path": "prepared/flowers_white.png",
+      "grid": [
+        1,
+        1
+      ],
+      "background": {
+        "mode": "alpha",
+        "color": [
+          255,
+          0,
+          255
+        ],
+        "tolerance": 0
+      }
+    },
+    {
+      "id": "flowers_pink",
+      "path": "prepared/flowers_pink.png",
+      "grid": [
+        1,
+        1
+      ],
+      "background": {
+        "mode": "alpha",
+        "color": [
+          255,
+          0,
+          255
+        ],
+        "tolerance": 0
+      }
+    },
+    {
+      "id": "window_flowers",
+      "path": "prepared/window_flowers.png",
+      "grid": [
+        1,
+        1
+      ],
+      "background": {
+        "mode": "alpha",
+        "color": [
+          255,
+          0,
+          255
+        ],
+        "tolerance": 0
+      }
+    },
+    {
+      "id": "lily_pad",
+      "path": "prepared/lily_pad.png",
+      "grid": [
+        1,
+        1
+      ],
+      "background": {
+        "mode": "alpha",
+        "color": [
+          255,
+          0,
+          255
+        ],
+        "tolerance": 0
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "preview.ground",
+      "sheet": "opaque-preview",
+      "slot": [
+        0,
+        0
+      ],
+      "kind": "ground",
+      "ground_projection": "topdown_repeat",
+      "trim": [
+        0.015625,
+        0.015625,
+        0.984375,
+        0.984375
+      ],
+      "size": [
+        64,
+        32
+      ],
+      "pivot": [
+        32,
+        16
+      ],
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "plant.broadleaf_a",
+      "sheet": "broadleaf_a",
+      "slot": [
+        0,
+        0
+      ],
+      "kind": "prop",
+      "size": [
+        512,
+        544
+      ],
+      "pivot": [
+        256,
+        536
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "visual_scale": {
+        "width": 496,
+        "source_anchor": [
+          0.501010101010101,
+          1.001934235976789
+        ]
+      }
+    },
+    {
+      "id": "plant.broadleaf_b",
+      "sheet": "broadleaf_b",
+      "slot": [
+        0,
+        0
+      ],
+      "kind": "prop",
+      "size": [
+        384,
+        576
+      ],
+      "pivot": [
+        192,
+        568
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "visual_scale": {
+        "width": 348,
+        "source_anchor": [
+          0.5014409221902018,
+          1.0018416206261511
+        ]
+      }
+    },
+    {
+      "id": "plant.fir",
+      "sheet": "fir",
+      "slot": [
+        0,
+        0
+      ],
+      "kind": "prop",
+      "size": [
+        384,
+        640
+      ],
+      "pivot": [
+        192,
+        632
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "visual_scale": {
+        "width": 333,
+        "source_anchor": [
+          0.5030120481927711,
+          1.0016051364365972
+        ]
+      }
+    },
+    {
+      "id": "plant.grass",
+      "sheet": "grass",
+      "slot": [
+        0,
+        0
+      ],
+      "kind": "prop",
+      "size": [
+        128,
+        128
+      ],
+      "pivot": [
+        64,
+        123
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "visual_scale": {
+        "width": 104,
+        "source_anchor": [
+          0.5048543689320388,
+          1.0112359550561798
+        ]
+      }
+    },
+    {
+      "id": "plant.fern",
+      "sheet": "fern",
+      "slot": [
+        0,
+        0
+      ],
+      "kind": "prop",
+      "size": [
+        192,
+        128
+      ],
+      "pivot": [
+        96,
+        124
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "visual_scale": {
+        "width": 152,
+        "source_anchor": [
+          0.5033112582781457,
+          1.009009009009009
+        ]
+      }
+    },
+    {
+      "id": "plant.reeds",
+      "sheet": "reeds",
+      "slot": [
+        0,
+        0
+      ],
+      "kind": "prop",
+      "size": [
+        128,
+        160
+      ],
+      "pivot": [
+        64,
+        156
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "visual_scale": {
+        "width": 120,
+        "source_anchor": [
+          0.5042016806722689,
+          1.0084745762711864
+        ]
+      }
+    },
+    {
+      "id": "plant.flowers_white",
+      "sheet": "flowers_white",
+      "slot": [
+        0,
+        0
+      ],
+      "kind": "prop",
+      "size": [
+        128,
+        160
+      ],
+      "pivot": [
+        64,
+        156
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "visual_scale": {
+        "width": 120,
+        "source_anchor": [
+          0.5042016806722689,
+          1.0084033613445378
+        ]
+      }
+    },
+    {
+      "id": "plant.flowers_pink",
+      "sheet": "flowers_pink",
+      "slot": [
+        0,
+        0
+      ],
+      "kind": "prop",
+      "size": [
+        128,
+        160
+      ],
+      "pivot": [
+        64,
+        156
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "visual_scale": {
+        "width": 120,
+        "source_anchor": [
+          0.5042016806722689,
+          1.0101010101010102
+        ]
+      }
+    },
+    {
+      "id": "plant.window_flowers",
+      "sheet": "window_flowers",
+      "slot": [
+        0,
+        0
+      ],
+      "kind": "prop",
+      "size": [
+        256,
+        96
+      ],
+      "pivot": [
+        128,
+        92
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "visual_scale": {
+        "width": 216,
+        "source_anchor": [
+          0.5023255813953489,
+          1.0121951219512195
+        ]
+      }
+    },
+    {
+      "id": "plant.lily_pad",
+      "sheet": "lily_pad",
+      "slot": [
+        0,
+        0
+      ],
+      "kind": "prop",
+      "size": [
+        192,
+        64
+      ],
+      "pivot": [
+        96,
+        60
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "visual_scale": {
+        "width": 152,
+        "source_anchor": [
+          0.5033112582781457,
+          1.02
+        ]
+      }
+    }
+  ],
+  "map": {
+    "width": 1,
+    "height": 1,
+    "default_ground": "preview.ground",
+    "cells": [],
+    "instances": []
+  },
+  "processing": {
+    "palette_size": 192,
+    "alpha_threshold": 128,
+    "require_visual_scale": true,
+    "palette_file": "palette.json"
+  },
+  "production_notes": {
+    "intended_output": "Ten camera-facing HD2D vegetation color cutouts",
+    "normal_policy": "Normal images bypass this color-only workflow; pair validation rejects any alpha or canvas change",
+    "source_geometry": "Prepared cutout canvas and visible dimensions are preserved exactly",
+    "discarded_preview": "Native catalog-required ground uses the existing opaque 64x64 grass surface; its compiled preview is never used in the game",
+    "review_status": "pending"
+  }
+}

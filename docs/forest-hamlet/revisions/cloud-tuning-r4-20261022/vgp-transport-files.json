@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "run_id": "forest-hamlet-20261022-cloud-tuning-r4",
+  "files": [
+    {
+      "source": "art/inputs/forest-hamlet/snow-r1/source/snow-master.png",
+      "archive_name": "closure-015-snow-master.png",
+      "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+      "bytes": 1697185,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-cloud-tuning-r4/vgp/bundle/closure-015-snow-master.png",
+      "kind": "direct",
+      "role": "original"
+    },
+    {
+      "source": "assets/forest-hamlet/backdrop/color.png",
+      "archive_name": "snow-color.png",
+      "sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+      "bytes": 1697185,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-cloud-tuning-r4/vgp/bundle/snow-color.png",
+      "kind": "direct",
+      "role": "primary"
+    },
+    {
+      "source": "assets/forest-hamlet/backdrop/normal.png",
+      "archive_name": "snow-normal.png",
+      "sha256": "9c840176d4002826091098449e7126c45b5b410a67c56eb43a0d3d29893987a6",
+      "bytes": 97589,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-cloud-tuning-r4/vgp/bundle/snow-normal.png",
+      "kind": "direct",
+      "role": "primary"
+    },
+    {
+      "source": "assets/forest-hamlet/backdrop/regions.png",
+      "archive_name": "snow-regions.png",
+      "sha256": "ade0cbaba208f37219644571127ced57ab142cb56593aa126b21b3e3c4d1c153",
+      "bytes": 126254,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-cloud-tuning-r4/vgp/bundle/snow-regions.png",
+      "kind": "direct",
+      "role": "primary"
+    },
+    {
+      "source": "build/forest-hamlet/cloud-tuning-r4-final/cloud-tuning-contrast-low.png",
+      "archive_name": "closure-021-cloud-tuning-contrast-low.png",
+      "sha256": "68c0b815d592b538a9fdf85c2e5774e5a47fc564106dbacccc0ad34a835c75e8",
+      "bytes": 2192408,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-cloud-tuning-r4/vgp/bundle/closure-021-cloud-tuning-contrast-low.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "source": "build/forest-hamlet/cloud-tuning-r4-final/cloud-tuning-contrast-maximum.png",
+      "archive_name": "closure-022-cloud-tuning-contrast-maximum.png",
+      "sha256": "d514e9950e537b4f5d4005988ef2a03e78ea7d7dceaa867a395942b4b1f8712f",
+      "bytes": 1707307,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-cloud-tuning-r4/vgp/bundle/closure-022-cloud-tuning-contrast-maximum.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "source": "build/forest-hamlet/cloud-tuning-r4-final/cloud-tuning-contrast-zero.png",
+      "archive_name": "closure-023-cloud-tuning-contrast-zero.png",
+      "sha256": "fcb1b0dfaa7259677d8ec93313799bfad3235ec2a2fa84e38e1a5ef7bfe57861",
+      "bytes": 1871836,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-cloud-tuning-r4/vgp/bundle/closure-023-cloud-tuning-contrast-zero.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "source": "build/forest-hamlet/cloud-tuning-r4-final/cloud-tuning-default.png",
+      "archive_name": "closure-024-cloud-tuning-default.png",
+      "sha256": "44e65e84c77f5903e29e76fc08034e897877f6668938796d5937654730686db4",
+      "bytes": 2530068,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-cloud-tuning-r4/vgp/bundle/closure-024-cloud-tuning-default.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "source": "build/forest-hamlet/cloud-tuning-r4-final/cloud-tuning-density-full.png",
+      "archive_name": "closure-025-cloud-tuning-density-full.png",
+      "sha256": "2db32c79cc675dd4394bbed13c4202522dca6b38566a0348e8700cd2fd06673d",
+      "bytes": 1838157,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-cloud-tuning-r4/vgp/bundle/closure-025-cloud-tuning-density-full.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "source": "build/forest-hamlet/cloud-tuning-r4-final/cloud-tuning-density-zero.png",
+      "archive_name": "closure-026-cloud-tuning-density-zero.png",
+      "sha256": "447f5e20afe3d428086cb12f194351ac99334db515d8889cdb6476c3859aa685",
+      "bytes": 1870618,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-cloud-tuning-r4/vgp/bundle/closure-026-cloud-tuning-density-zero.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "source": "build/forest-hamlet/cloud-tuning-r4-final/cloud-tuning-input-720.png",
+      "archive_name": "closure-028-cloud-tuning-input-720.png",
+      "sha256": "d77c84ae022ef3affb2c1791b830c2c0112813da1cf7c4db1d20b1992ccb8066",
+      "bytes": 939335,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-cloud-tuning-r4/vgp/bundle/closure-028-cloud-tuning-input-720.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "source": "build/forest-hamlet/cloud-tuning-r4-final/cloud-tuning-panel-1080.png",
+      "archive_name": "closure-029-cloud-tuning-panel-1080.png",
+      "sha256": "f91658ccde251bb59f9547913154186264242888df7a8d76fdd07089d344456b",
+      "bytes": 2406637,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-cloud-tuning-r4/vgp/bundle/closure-029-cloud-tuning-panel-1080.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "source": "build/forest-hamlet/cloud-tuning-r4-final/cloud-tuning-panel-720.png",
+      "archive_name": "closure-030-cloud-tuning-panel-720.png",
+      "sha256": "d07517d4a778fb9e70bab024065d6f8168ae051b3050495193fe932677d90e77",
+      "bytes": 1143947,
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-cloud-tuning-r4/vgp/bundle/closure-030-cloud-tuning-panel-720.png",
+      "kind": "direct",
+      "role": "dependency"
+    },
+    {
+      "archive_name": "evidence.zip",
+      "path": "art/derived/forest-hamlet/forest-hamlet-20261022-cloud-tuning-r4/vgp/transport/evidence.zip",
+      "sha256": "e1ad5910c4d2577359f6c6709f5aa434bea3dd9fd860e91018ea89750794528c",
+      "bytes": 7637544,
+      "kind": "evidence_zip",
+      "role": "dependency",
+      "index_sha256": "c21909519603ed56e135f6aa4addfefc2aad65445d582b6fe6d0c03a596eabb7",
+      "member_count": 58
+    }
+  ],
+  "logical_frozen": "art/derived/forest-hamlet/forest-hamlet-20261022-cloud-tuning-r4/vgp/atmosphere.frozen-files.json",
+  "logical_frozen_sha256": "7be32ab6921cbe2e0854d28650b8c29e7ebe2747effa732e8cbd04a579301816",
+  "packed_manifest": "art/derived/forest-hamlet/forest-hamlet-20261022-cloud-tuning-r4/vgp/packed-dependencies.json",
+  "packed_manifest_sha256": "172195dbe46d7448379f095120a65c5f41c72bda85114e47d76f6abc12719d41"
+}

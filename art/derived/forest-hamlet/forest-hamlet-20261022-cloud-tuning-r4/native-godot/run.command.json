@@ -1,0 +1,17 @@
+[
+  "aw",
+  "--project",
+  ".",
+  "--project-config",
+  "art/inputs/forest-hamlet/cloud-tuning-r4/workbench-project.yaml",
+  "workflow",
+  "run",
+  "godot.verify",
+  "--input",
+  "art/inputs/forest-hamlet/cloud-tuning-native-r4/godot-verify.recipe.json",
+  "--output",
+  "art/derived/workbench/godot/forest-hamlet-20261022-cloud-tuning-r4",
+  "--godot",
+  "Godot_v4.7.2-stable_linux.x86_64",
+  "--json"
+]

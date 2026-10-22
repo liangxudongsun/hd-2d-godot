@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "run_id": "forest-hamlet-20261022-vegetation-r2-canvas",
+  "inputs": [
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/preparation.json",
+      "sha256": "2640f46a295545cd51d63c5c10e02323b4ae0dfa9906233e8410b9ccbea55b38"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/workbench-project.yaml",
+      "sha256": "ad6be3ae4181f51805f3d9db0ee27139b90ca430189847e632b55b62525ba797"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/vegetation.recipe.yaml",
+      "sha256": "9bd080bd53b6ae40867e0173c542dbaa2a56ebe9f619d94fba6b9222872f1bc9"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/broadleaf_a.png",
+      "sha256": "1160af1dabf451eb0654379e9143705fedc8d7a356fbeb6f6e7537a46a59ec45"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/broadleaf_a_normal.png",
+      "sha256": "129bce14c6ef017ab12ab6c744d0cd90c07c7b9c89332097a1e77ad76963313e"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/broadleaf_b.png",
+      "sha256": "eccd24dc3b5b55e716ce9b9c81061981f6ea652d3e564adda8238e2dddcfaa0c"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/broadleaf_b_normal.png",
+      "sha256": "493fb378e06d44452752b91e75128096d1ee10ed989b238fcdd73ee8f436580f"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/fir.png",
+      "sha256": "511925b02e21dc639a1e26e8938f6428334eab2e5d2a0572decfd3c34c4a2dc3"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/fir_normal.png",
+      "sha256": "37e7909bb703452c001289379252c8c8234b20905cc21e0f2d4f6ec296322df5"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/grass.png",
+      "sha256": "c0369dc63e622912b69707f1075e2240338217a7708152ab44cd0e0522e2faf8"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/grass_normal.png",
+      "sha256": "4fb7e9d0133bae2fe5c0df6a9f49689c77e7be7092cf44599df9248c0ef3342a"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/fern.png",
+      "sha256": "f4713192de32d83d22f29de3de97ea6c914f22eb11fbbccbfbe6d82de54b92c1"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/fern_normal.png",
+      "sha256": "6ba706eb3091e94d8d57607c78c9fe6e6cf1c3fc0f6e534472db73781c67c224"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/reeds.png",
+      "sha256": "0291fa361d83c130c84d6b888f294b044e50d01d6257037acd54ee4411593e0a"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/reeds_normal.png",
+      "sha256": "cf66ba5b9e94ff0549370dc4bc0e58bf01455e19ef11e78d2896549f85ecce0f"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/flowers_white.png",
+      "sha256": "b34e86d73b58966200d250d86b345f4076a2aeb77cd5e14c4ade7ba3094f2d32"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/flowers_white_normal.png",
+      "sha256": "dd4d7ca8a96d00665b910e42d07363bb3f6bc762cb8d29380da6f16e074abb27"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/flowers_pink.png",
+      "sha256": "2d81ca81e682d99410b537900b0b7e4c0b219214272f711e68a9dbf5870f7d70"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/flowers_pink_normal.png",
+      "sha256": "454ba154d10ad8101287105aae7aab7e5c152db92cc9d829529a535a475dd561"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/window_flowers.png",
+      "sha256": "227ac46cb511f3e6fe1a09f44ed852e2f72d2fb5db794f066afde3d1482d9e51"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/window_flowers_normal.png",
+      "sha256": "2baefaa2287570504d123f6102941cebac4ecd6cf50eb2bef1f5798757f1972b"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/lily_pad.png",
+      "sha256": "064b949956eefa2b0ad9354d4130723af782c2e7340a865616ceff3f65bd7d5b"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/lily_pad_normal.png",
+      "sha256": "20084036fdbaf87f1d3def5d37c816708d76211dcbbfbfa8e2703b0a0381d6ea"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/source/tree-atlas.png",
+      "sha256": "a5189eb46d8e75a41af9d72399a89246c4c8e53f9667969cbed7503da2cb133d"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/source/understory-atlas.png",
+      "sha256": "e6b2309dce4caad3fd33b2aaf36cf02c78a95c5df10b533895c530e0fdd84069"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/source/trees-prompt.txt",
+      "sha256": "d020d8fda2556a238e08ef56288dae27cf81949098ad08afa5e320d462c1cd0f"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/source/understory-prompt.txt",
+      "sha256": "97967a1cd47096742166dd636bce2eef71f9d2d1ef43950fbaa22f9acba87655"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/source/provenance.json",
+      "sha256": "59241c428ae412fc54eb2dfc2d38b42ec3841040fc94977868dd28bd7914a798"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/source/user-vegetation-reference.png",
+      "sha256": "2688d482e11a5c0c5664975cb5c9fe62c62a7582d8048d9d127d1bce88706c16"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/atlas-isolation.json",
+      "sha256": "37b7cb465f64cab5f8db98cca44d9e65f5148d129eb46ad3af636886364f87d8"
+    },
+    {
+      "path": "tools/forest_hamlet/prepare_vegetation.py",
+      "sha256": "a559e442f75170fd3a90ee1b7c23b82fe61a1f8d3478b97063c86d51b89abf2d"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/preparation.json",
+      "sha256": "5b29eef82446609facab5403171df09b5374fa84607db1b04ed23bf3fe0aa81d"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/normal-rig.json",
+      "sha256": "79ce7f41cf3ff9c8920724767ac6871d77c76ffad12f374fe599d461bd4c3399"
+    },
+    {
+      "path": "tools/forest_hamlet/pad_vegetation_for_aw.py",
+      "sha256": "41ff8dce0bf78300975bf885726919a33dc1da743985006058c55282322ebde3"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/palette.json",
+      "sha256": "b208cf56408f5e0cce53e80ad60bb0182f272174d011806b789d64ae4a39a8da"
+    }
+  ],
+  "driver_sha256": "7605ae506e5563c45232d8470e36f5ad8f768bdc0a5b1056fc2ff106692774bf",
+  "normal_convention": "OpenGL tangent +X right, +Y up, +Z outward"
+}

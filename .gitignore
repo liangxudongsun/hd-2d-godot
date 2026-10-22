@@ -12,3 +12,28 @@ docs/ancient-canal/layout-r5-20261008/render/route.mp4
 docs/ancient-canal/layout-r5-20261008/validation/make-test-final/transcript.txt.gz
 # Godot creates these beside historical profiler snapshots during import.
 docs/ancient-canal/profiling/20261008/**/*.gd.uid
+
+# Local workflow state and unmodified native receipts retain machine paths.
+# Portable forest-hamlet provenance and material summaries remain versionable.
+.asset-workbench/
+.vgp/
+art/derived/workbench/world/forest-hamlet-*/
+art/derived/forest-hamlet/*/*.stdout.json
+art/derived/forest-hamlet/*/*.stderr.txt
+art/derived/forest-hamlet/*/vgp/
+.vgp-local/
+.resource-trash/
+/.resource-policy.json
+
+# AW execution copies, transport receipts and logs stay local. Canonical frozen
+# inputs and portable acceptance evidence are versioned under art/inputs and docs.
+art/derived/workbench/godot/forest-hamlet-*/
+art/derived/workbench/delivery/forest-hamlet-*/
+art/derived/workbench/**/forest-hamlet-*.lock
+art/derived/forest-hamlet/*/*.stdout.txt
+# Raw commands/responses contain host paths, including their frozen copies.
+# Public projections bind the untouched originals by SHA-256 in docs/forest-hamlet.
+art/derived/forest-hamlet/*/native-godot/run.response.json
+art/derived/forest-hamlet/**/aw-delivery-*.response.json
+art/derived/forest-hamlet/*/frozen-source/art/derived/workbench/
+art/derived/forest-hamlet/*-vegetation-*/*.command.json

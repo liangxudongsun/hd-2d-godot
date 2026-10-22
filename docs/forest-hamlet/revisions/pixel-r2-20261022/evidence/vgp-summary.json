@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "project_id": "5af64d90-66bc-471c-ab66-dcabe72ed9d3",
+  "scene_classification_id": "fa2c56c8-722e-4f41-b9d2-04d839544457",
+  "case_id": "65750774-e5a4-4a18-822d-e9a203599ab2",
+  "assets": [
+    {
+      "key": "materials",
+      "asset_id": "11ca0657-74c6-4cc7-9500-358ead5c083a",
+      "revision_id": "9d76b0b4-a475-4d78-91ff-21256eefa690",
+      "stage": "concept_design",
+      "main_output_count": 4,
+      "status": "pending_review",
+      "check_receipt": "art/derived/forest-hamlet/forest-hamlet-20261022-pixel-r2/vgp/materials-check.response.json",
+      "previous_revision_id": "4cfd7f59-a17d-4286-b977-4eab09f50b64"
+    },
+    {
+      "key": "models",
+      "asset_id": "a41c4be6-7064-4c1a-b44d-92e4cbb6a848",
+      "revision_id": "c85777cc-509b-467d-9481-fc3bb45bacfc",
+      "stage": "concept_design",
+      "main_output_count": 9,
+      "status": "pending_review",
+      "check_receipt": "art/derived/forest-hamlet/forest-hamlet-20261022-pixel-r2/vgp/models-check.response.json",
+      "previous_revision_id": "a9fea2af-c3b0-4b2d-912a-cac9279a194d"
+    }
+  ],
+  "review_status": "pending",
+  "decisions_created": 0,
+  "stage_admissions_created": 0,
+  "note": "Native VGP CLI registration and review submission completed. Later stages require their explicit predecessor decisions; no approval was synthesized.",
+  "previous_run_id": "forest-hamlet-20261022-r2",
+  "previous_round_id": "839d100c-4db3-47ac-8a81-2378a9c56656",
+  "round_id": "73c96be4-8dd8-4205-8f25-a7851bf4040e",
+  "stable_asset_ids_reused": true
+}

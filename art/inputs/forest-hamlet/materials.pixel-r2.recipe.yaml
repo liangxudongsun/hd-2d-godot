@@ -1,0 +1,69 @@
+schema_version: 1
+id: forest.hamlet.materials.pixel-r2
+sheets:
+  - id: materials
+    path: prepared-pixel-r2/material-sheet.png
+    grid: [2, 2]
+    background:
+      mode: alpha
+      color: [255, 0, 255]
+      tolerance: 0
+assets:
+  - id: preview.ground
+    sheet: materials
+    slot: [0, 0]
+    kind: ground
+    ground_projection: topdown_repeat
+    size: [64, 32]
+    pivot: [32, 16]
+    footprint: [1, 1]
+  - id: surface.grass
+    sheet: materials
+    slot: [0, 0]
+    kind: prop
+    size: [64, 64]
+    pivot: [32, 32]
+    footprint: [1, 1]
+    visual_scale: {width: 64, source_anchor: [0.5, 0.5]}
+  - id: surface.earth
+    sheet: materials
+    slot: [1, 0]
+    kind: prop
+    size: [64, 64]
+    pivot: [32, 32]
+    footprint: [1, 1]
+    visual_scale: {width: 64, source_anchor: [0.5, 0.5]}
+  - id: surface.wood
+    sheet: materials
+    slot: [0, 1]
+    kind: prop
+    size: [64, 64]
+    pivot: [32, 32]
+    footprint: [1, 1]
+    visual_scale: {width: 64, source_anchor: [0.5, 0.5]}
+  - id: surface.stone
+    sheet: materials
+    slot: [1, 1]
+    kind: prop
+    size: [64, 64]
+    pivot: [32, 32]
+    footprint: [1, 1]
+    visual_scale: {width: 64, source_anchor: [0.5, 0.5]}
+map:
+  width: 1
+  height: 1
+  default_ground: preview.ground
+  cells: []
+  instances: []
+processing:
+  palette_size: 64
+  palette_file: prepared-pixel-r2/palette.json
+  alpha_threshold: 128
+  require_visual_scale: true
+production_notes:
+  intended_output: Four 64x64 seamless surface textures for the Godot forest hamlet
+  source_preparation: prepare_materials.py --tile-size 64 --palette-colors 16 retains the original atlas; it crops, nearest-resizes, mirrors and pads source inputs only
+  aw_processing: Official world.compile freezes inputs, performs fixed-source-palette mapping, verifies canvas and visible scale, and emits a catalog plus technical receipt
+  square_canvas_reason: The world v1 ground branch is fixed at 64x32; surface swatches use the supported prop canvas branch and remain opaque square textures
+  discarded_preview: preview.ground is required only by the AW catalog schema
+  review_status: pending

@@ -1,0 +1,227 @@
+{
+  "schema": 1,
+  "preparation": "art/inputs/forest-hamlet/vegetation-r2-canvas/preparation.json",
+  "preparation_sha256": "2640f46a295545cd51d63c5c10e02323b4ae0dfa9906233e8410b9ccbea55b38",
+  "source_provenance": [
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/source/provenance.json",
+      "record": {
+        "schema": 1,
+        "generator": "image_gen.imagegen",
+        "date": "2026-10-22",
+        "seed": null,
+        "model_version": null,
+        "art_revision": "r2 following the supplied autumn HD2D screenshot; prior green preview rejected by user",
+        "generation_calls": 2,
+        "transparent_background": true,
+        "images": [
+          {
+            "path": "art/inputs/forest-hamlet/vegetation-r2/source/tree-atlas.png",
+            "sha256": "a5189eb46d8e75a41af9d72399a89246c4c8e53f9667969cbed7503da2cb133d",
+            "size": [
+              1684,
+              934
+            ]
+          },
+          {
+            "path": "art/inputs/forest-hamlet/vegetation-r2/source/understory-atlas.png",
+            "sha256": "e6b2309dce4caad3fd33b2aaf36cf02c78a95c5df10b533895c530e0fdd84069",
+            "size": [
+              1774,
+              887
+            ]
+          }
+        ],
+        "use": "Original game vegetation colour sprites; no runtime geometry baked from the old models",
+        "normal_source": "Independent editable form annotations, analytic surface vectors, not diffuse brightness"
+      }
+    }
+  ],
+  "source_files": [
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/source/tree-atlas.png",
+      "sha256": "a5189eb46d8e75a41af9d72399a89246c4c8e53f9667969cbed7503da2cb133d"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/source/understory-atlas.png",
+      "sha256": "e6b2309dce4caad3fd33b2aaf36cf02c78a95c5df10b533895c530e0fdd84069"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/source/trees-prompt.txt",
+      "sha256": "d020d8fda2556a238e08ef56288dae27cf81949098ad08afa5e320d462c1cd0f"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/source/understory-prompt.txt",
+      "sha256": "97967a1cd47096742166dd636bce2eef71f9d2d1ef43950fbaa22f9acba87655"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/source/provenance.json",
+      "sha256": "59241c428ae412fc54eb2dfc2d38b42ec3841040fc94977868dd28bd7914a798"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/source/user-vegetation-reference.png",
+      "sha256": "2688d482e11a5c0c5664975cb5c9fe62c62a7582d8048d9d127d1bce88706c16"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/atlas-isolation.json",
+      "sha256": "37b7cb465f64cab5f8db98cca44d9e65f5148d129eb46ad3af636886364f87d8"
+    },
+    {
+      "path": "tools/forest_hamlet/prepare_vegetation.py",
+      "sha256": "a559e442f75170fd3a90ee1b7c23b82fe61a1f8d3478b97063c86d51b89abf2d"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/preparation.json",
+      "sha256": "5b29eef82446609facab5403171df09b5374fa84607db1b04ed23bf3fe0aa81d"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/normal-rig.json",
+      "sha256": "79ce7f41cf3ff9c8920724767ac6871d77c76ffad12f374fe599d461bd4c3399"
+    },
+    {
+      "path": "tools/forest_hamlet/pad_vegetation_for_aw.py",
+      "sha256": "41ff8dce0bf78300975bf885726919a33dc1da743985006058c55282322ebde3"
+    },
+    {
+      "path": "assets/forest-hamlet/textures/grass.png",
+      "sha256": "359e1f8ee1781481ddefe6ebddf90d56e896c17c0cd7c2afcb255644714b142f"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/preview-ground.png",
+      "sha256": "359e1f8ee1781481ddefe6ebddf90d56e896c17c0cd7c2afcb255644714b142f"
+    }
+  ],
+  "normal_recipe": "art/inputs/forest-hamlet/vegetation-r2-canvas/normal-rig.json",
+  "normal_recipe_sha256": "79ce7f41cf3ff9c8920724767ac6871d77c76ffad12f374fe599d461bd4c3399",
+  "normal_method": "r2 manual re-annotation of the retained autumn sprite silhouettes: small visible leaf-spray ellipsoids, actual bark forks and stems, separate conifer hanging branch fans, flower disks and lily pads. Analytic vectors, normalized before 8-bit encoding. No diffuse-brightness height conversion. Each lobe uses a smoothstep outer feather to avoid geometric circular lighting seams; colors and alpha are untouched.",
+  "normal_basis": "OpenGL tangent X right, Y up, Z towards camera",
+  "normal_workflow": "Hand-annotated r2 canopy boughs, fronds and flower heads; analytic surface vectors independent of diffuse luminance",
+  "normal_convention": "OpenGL tangent +X right, +Y up, +Z outward",
+  "normal_generation": "Independently authored geometric relief; linear vector PNGs are paired with native AW color output",
+  "normal_source_bytes_equal_runtime": true,
+  "all_pair_alpha_equal": true,
+  "maximum_normal_length_error": 0.00590749151945269,
+  "pairs": [
+    {
+      "name": "broadleaf_a",
+      "size": [
+        512,
+        544
+      ],
+      "runtime": "assets/forest-hamlet/vegetation/broadleaf_a.png",
+      "sha256": "ce3ae95992235bbec254f832c966a9d9583bb055b200a192d39a8b406df67500",
+      "normal_source": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/broadleaf_a_normal.png",
+      "normal_runtime": "assets/forest-hamlet/vegetation/broadleaf_a_normal.png",
+      "normal_sha256": "129bce14c6ef017ab12ab6c744d0cd90c07c7b9c89332097a1e77ad76963313e"
+    },
+    {
+      "name": "broadleaf_b",
+      "size": [
+        384,
+        576
+      ],
+      "runtime": "assets/forest-hamlet/vegetation/broadleaf_b.png",
+      "sha256": "21853968e75567ebb7b441dd8419f2eb4d1466e66fca10ab4dd03c9910aa6b9d",
+      "normal_source": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/broadleaf_b_normal.png",
+      "normal_runtime": "assets/forest-hamlet/vegetation/broadleaf_b_normal.png",
+      "normal_sha256": "493fb378e06d44452752b91e75128096d1ee10ed989b238fcdd73ee8f436580f"
+    },
+    {
+      "name": "fir",
+      "size": [
+        384,
+        640
+      ],
+      "runtime": "assets/forest-hamlet/vegetation/fir.png",
+      "sha256": "0dc21b44f2786f5ab76fa7255018729944bdd0d8506dc7e29d128b4ec3e0b1d9",
+      "normal_source": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/fir_normal.png",
+      "normal_runtime": "assets/forest-hamlet/vegetation/fir_normal.png",
+      "normal_sha256": "37e7909bb703452c001289379252c8c8234b20905cc21e0f2d4f6ec296322df5"
+    },
+    {
+      "name": "grass",
+      "size": [
+        128,
+        128
+      ],
+      "runtime": "assets/forest-hamlet/vegetation/grass.png",
+      "sha256": "70b2ab8da64908afb528c5c6dab66631a337cdda7b1298d176dd754816655174",
+      "normal_source": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/grass_normal.png",
+      "normal_runtime": "assets/forest-hamlet/vegetation/grass_normal.png",
+      "normal_sha256": "4fb7e9d0133bae2fe5c0df6a9f49689c77e7be7092cf44599df9248c0ef3342a"
+    },
+    {
+      "name": "fern",
+      "size": [
+        192,
+        128
+      ],
+      "runtime": "assets/forest-hamlet/vegetation/fern.png",
+      "sha256": "10225adfc151fdce83c4da321f5217a0cfeeff4c4a75ac84b0894b45b2524263",
+      "normal_source": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/fern_normal.png",
+      "normal_runtime": "assets/forest-hamlet/vegetation/fern_normal.png",
+      "normal_sha256": "6ba706eb3091e94d8d57607c78c9fe6e6cf1c3fc0f6e534472db73781c67c224"
+    },
+    {
+      "name": "reeds",
+      "size": [
+        128,
+        160
+      ],
+      "runtime": "assets/forest-hamlet/vegetation/reeds.png",
+      "sha256": "cbcd6b66c280dbfc4da216d4021d47a0b06897b4aac724bb5297e5c4e140b90a",
+      "normal_source": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/reeds_normal.png",
+      "normal_runtime": "assets/forest-hamlet/vegetation/reeds_normal.png",
+      "normal_sha256": "cf66ba5b9e94ff0549370dc4bc0e58bf01455e19ef11e78d2896549f85ecce0f"
+    },
+    {
+      "name": "flowers_white",
+      "size": [
+        128,
+        160
+      ],
+      "runtime": "assets/forest-hamlet/vegetation/flowers_white.png",
+      "sha256": "e1b08f47a658c02c07396868fa9f189159048125ec242ebed9448f7919998f6c",
+      "normal_source": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/flowers_white_normal.png",
+      "normal_runtime": "assets/forest-hamlet/vegetation/flowers_white_normal.png",
+      "normal_sha256": "dd4d7ca8a96d00665b910e42d07363bb3f6bc762cb8d29380da6f16e074abb27"
+    },
+    {
+      "name": "flowers_pink",
+      "size": [
+        128,
+        160
+      ],
+      "runtime": "assets/forest-hamlet/vegetation/flowers_pink.png",
+      "sha256": "e0b8f9a4b14ca871254cef6fa7745fea8e5fb4341a39b374ed2c6b275c07e277",
+      "normal_source": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/flowers_pink_normal.png",
+      "normal_runtime": "assets/forest-hamlet/vegetation/flowers_pink_normal.png",
+      "normal_sha256": "454ba154d10ad8101287105aae7aab7e5c152db92cc9d829529a535a475dd561"
+    },
+    {
+      "name": "window_flowers",
+      "size": [
+        256,
+        96
+      ],
+      "runtime": "assets/forest-hamlet/vegetation/window_flowers.png",
+      "sha256": "fda272edc36934e4de6160f5b8f14eee603dd05fd38c8f1251157aec35e1198f",
+      "normal_source": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/window_flowers_normal.png",
+      "normal_runtime": "assets/forest-hamlet/vegetation/window_flowers_normal.png",
+      "normal_sha256": "2baefaa2287570504d123f6102941cebac4ecd6cf50eb2bef1f5798757f1972b"
+    },
+    {
+      "name": "lily_pad",
+      "size": [
+        192,
+        64
+      ],
+      "runtime": "assets/forest-hamlet/vegetation/lily_pad.png",
+      "sha256": "53bc13187963bfa7b1c4a539bd7ba3389494a83684aebbee7be43475b446b384",
+      "normal_source": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/lily_pad_normal.png",
+      "normal_runtime": "assets/forest-hamlet/vegetation/lily_pad_normal.png",
+      "normal_sha256": "20084036fdbaf87f1d3def5d37c816708d76211dcbbfbfa8e2703b0a0381d6ea"
+    }
+  ],
+  "artistic_approval": "pending"
+}

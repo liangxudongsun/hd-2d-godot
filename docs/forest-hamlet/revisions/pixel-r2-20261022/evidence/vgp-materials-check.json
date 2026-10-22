@@ -1,0 +1,92 @@
+{
+  "issues": [],
+  "legacy": false,
+  "outputs": [
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 64,
+        "width": 64
+      },
+      "caller_reported": {
+        "height": 64,
+        "opaque": true,
+        "opposite_edges_equal": true,
+        "width": 64
+      },
+      "member_id": "grass",
+      "path": "grass.png",
+      "target": {
+        "format": "png",
+        "height": 64,
+        "width": 64
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 64,
+        "width": 64
+      },
+      "caller_reported": {
+        "height": 64,
+        "opaque": true,
+        "opposite_edges_equal": true,
+        "width": 64
+      },
+      "member_id": "earth",
+      "path": "earth.png",
+      "target": {
+        "format": "png",
+        "height": 64,
+        "width": 64
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 64,
+        "width": 64
+      },
+      "caller_reported": {
+        "height": 64,
+        "opaque": true,
+        "opposite_edges_equal": true,
+        "width": 64
+      },
+      "member_id": "wood",
+      "path": "wood.png",
+      "target": {
+        "format": "png",
+        "height": 64,
+        "width": 64
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 64,
+        "width": 64
+      },
+      "caller_reported": {
+        "height": 64,
+        "opaque": true,
+        "opposite_edges_equal": true,
+        "width": 64
+      },
+      "member_id": "stone",
+      "path": "stone.png",
+      "target": {
+        "format": "png",
+        "height": 64,
+        "width": 64
+      }
+    }
+  ],
+  "ready": true,
+  "rules_version": 1
+}

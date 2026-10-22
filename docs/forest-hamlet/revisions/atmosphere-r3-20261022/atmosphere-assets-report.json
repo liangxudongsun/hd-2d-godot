@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "passed": true,
+  "checks": [
+    {
+      "label": "approved color bytes are preserved in the runtime image",
+      "passed": true
+    },
+    {
+      "label": "color.png: actual bytes match the runtime manifest",
+      "passed": true
+    },
+    {
+      "label": "normal.png: actual bytes match the runtime manifest",
+      "passed": true
+    },
+    {
+      "label": "regions.png: actual bytes match the runtime manifest",
+      "passed": true
+    },
+    {
+      "label": "normal rig source hash is current",
+      "passed": true
+    },
+    {
+      "label": "technical data generator source hash is current",
+      "passed": true
+    },
+    {
+      "label": "all data textures align with the original color dimensions",
+      "passed": true
+    },
+    {
+      "label": "the original wide panorama aspect is retained",
+      "passed": true
+    },
+    {
+      "label": "open sky stays exactly flat in the normal data",
+      "passed": true
+    },
+    {
+      "label": "bottom mist stays exactly flat in the normal data",
+      "passed": true
+    },
+    {
+      "label": "quantized tangent normals retain unit length",
+      "passed": true
+    },
+    {
+      "label": "nonflat mountain normals occupy a finite controlled region",
+      "passed": true
+    },
+    {
+      "label": "mountain facet directions include opposing slopes",
+      "passed": true
+    },
+    {
+      "label": "normal construction explicitly avoids RGB-as-height",
+      "passed": true
+    },
+    {
+      "label": "single source board is not mislabeled as independently layered art",
+      "passed": true
+    }
+  ],
+  "scope": "Source immutability, technical normal encoding and truthful single-board provenance; visual response is measured on the GPU separately",
+  "manifest_sha256": "d951c0be245d782a49e1edec327bbbc81cd07965cadd344de99886ad0a037cb6",
+  "source_sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+  "normal_max_unit_error": 0.0055981378551527294,
+  "normal_tilted_fraction": 0.17098108194559175,
+  "dimensions": [
+    1983,
+    793
+  ]
+}

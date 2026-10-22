@@ -1,0 +1,121 @@
+{
+  "schema": 1,
+  "sheets": [
+    {
+      "sheet": "tree-atlas",
+      "method": "8-connected alpha >=128; detached components assigned by exact nearest main silhouette",
+      "main_components": [
+        {
+          "slot": 0,
+          "bounds": [
+            13,
+            131,
+            743,
+            776
+          ],
+          "pixels": 289034
+        },
+        {
+          "slot": 1,
+          "bounds": [
+            735,
+            155,
+            478,
+            748
+          ],
+          "pixels": 169386
+        },
+        {
+          "slot": 2,
+          "bounds": [
+            1199,
+            33,
+            465,
+            871
+          ],
+          "pixels": 217101
+        }
+      ],
+      "alpha_pixels_retained": 675586,
+      "alpha_pixels_original": 675586
+    },
+    {
+      "sheet": "understory-atlas",
+      "method": "8-connected alpha >=128; detached components assigned by exact nearest main silhouette",
+      "main_components": [
+        {
+          "slot": 0,
+          "bounds": [
+            36,
+            131,
+            398,
+            348
+          ],
+          "pixels": 50812
+        },
+        {
+          "slot": 1,
+          "bounds": [
+            510,
+            157,
+            450,
+            331
+          ],
+          "pixels": 70346
+        },
+        {
+          "slot": 2,
+          "bounds": [
+            993,
+            113,
+            370,
+            368
+          ],
+          "pixels": 62538
+        },
+        {
+          "slot": 3,
+          "bounds": [
+            1418,
+            164,
+            325,
+            325
+          ],
+          "pixels": 51232
+        },
+        {
+          "slot": 4,
+          "bounds": [
+            50,
+            527,
+            362,
+            303
+          ],
+          "pixels": 52658
+        },
+        {
+          "slot": 5,
+          "bounds": [
+            449,
+            597,
+            663,
+            258
+          ],
+          "pixels": 74637
+        },
+        {
+          "slot": 6,
+          "bounds": [
+            1101,
+            677,
+            388,
+            129
+          ],
+          "pixels": 30578
+        }
+      ],
+      "alpha_pixels_retained": 394261,
+      "alpha_pixels_original": 394261
+    }
+  ]
+}

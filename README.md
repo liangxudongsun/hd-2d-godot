@@ -6,6 +6,10 @@
 
 原默认驿站和其他历史场景保留为存档、技术比较与美术参考，需要单独打开。它们的场景文件、素材、制作来源和历史验收证据保持。
 
+## 新增范例：林间小村
+
+[林间小村 · HD-2D 场景范例](docs/forest-hamlet/README.md)依据参考视频的森林村落镜头实现暖土路、木屋、树冠、石岸池塘与日光／黄昏，继续使用原月饰少女。执行 `make forest-run`，或打开 `scenes/forest_hamlet.tscn` 后按 F6。新增材质经 AW 正式加工，模型来源与 VGP 候选历史一并保存，详细见[制作工作流](docs/forest-hamlet/pipeline.md)。
+
 ## 启动与操作
 
 在包含 `project.godot` 的目录执行：

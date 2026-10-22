@@ -1,0 +1,7 @@
+{
+  "command_label": "camera-close-shared-final",
+  "returncode": 0,
+  "passed": true,
+  "elapsed_s": 10.646,
+  "log": "build/forest-hamlet/logs/camera-close-shared-final.log"
+}

@@ -1,0 +1,24 @@
+shader_type spatial;
+render_mode diffuse_burley, cull_disabled;
+uniform sampler2D leaf_texture : source_color, filter_nearest_mipmap, repeat_enable;
+uniform float wind_strength : hint_range(0.0,0.3) = 0.06;
+varying vec3 world_point;
+void vertex() {
+    world_point=(MODEL_MATRIX*vec4(VERTEX,1.0)).xyz;
+    float phase=dot(MODEL_MATRIX[3].xz,vec2(.63,.81));
+    float weight=clamp(VERTEX.y*.65+.3,0.0,1.0);
+    VERTEX.x+=sin(TIME*1.15+phase+VERTEX.y*.8)*wind_strength*weight;
+    VERTEX.z+=cos(TIME*.8+phase)*wind_strength*.4*weight;
+}
+void fragment() {
+    vec3 grain=texture(leaf_texture,world_point.xz*.08+world_point.y*.045).rgb;
+    vec3 leaf_color=COLOR.rgb;
+    if(length(leaf_color)>1.65) leaf_color=vec3(.32,.46,.17);
+    // Blender's vertex colors arrive in linear space. Forest canopies need
+    // considerably less reflectance than the pale first-look leaf swatches.
+    float clusters=floor(clamp(grain.g*2.2,0.0,1.0)*4.0)/4.0;
+    ALBEDO=leaf_color*vec3(.41,.48,.37)*(.68+clusters*.84);
+    ROUGHNESS=.95;
+    SPECULAR=.12;
+    BACKLIGHT=ALBEDO*.07;
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "workflow": "godot.verify",
+  "status": "completed",
+  "producer_version": "0.6.1",
+  "engine": {
+    "version": "4.7.2.stable.official.ed1daf0bf",
+    "sha256": "8d106cbe6144c2dc7e881d61d2429c1a8a76e6b22ef48bd5e48dcf934953f71e"
+  },
+  "recipe": "art/inputs/forest-hamlet/cloud-tuning-native-r4/godot-verify.recipe.json",
+  "recipe_sha256": "03f4e61c5a3b6a3aa73037cd9738072de1a6e6b849a04406f42a63bb84f3a00c",
+  "source_receipt": "art/derived/workbench/godot/forest-hamlet-20261022-cloud-tuning-r4/run.json",
+  "source_receipt_sha256": "972ba92de1964ea3be6eab2f6480a482b7f2bb6d4f9ce916e862ab06352b00a4",
+  "scope": "Public projection of the verified original native run receipt; host-specific source and executable paths are omitted. The unchanged original receipt is bound by its SHA256."
+}

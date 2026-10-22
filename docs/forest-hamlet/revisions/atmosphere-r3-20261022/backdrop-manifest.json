@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "forest-hamlet-snow-backdrop-r1",
+  "source": "art/inputs/forest-hamlet/snow-r1/source/snow-master.png",
+  "source_sha256": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+  "rig": "art/inputs/forest-hamlet/snow-r1/normal-rig.json",
+  "rig_sha256": "69fe9e7fb842ef046013241c8b88283f24198ca54a2229bbdcd5dad9cd07dad6",
+  "generator": "tools/forest_hamlet/prepare_snow_backdrop.py",
+  "generator_sha256": "d7dc2b2e6bede49406e29c32a308fbeb42fa00aa5778dbc4a0e70ae67abf4ac1",
+  "dimensions": [
+    1983,
+    793
+  ],
+  "color": "assets/forest-hamlet/backdrop/color.png",
+  "normal": "assets/forest-hamlet/backdrop/normal.png",
+  "regions": "assets/forest-hamlet/backdrop/regions.png",
+  "files": {
+    "color.png": "fa11b07fc545379570c1a86f8f5c70a5d5fe01c38aa4ffd2306ad6c5d381ce8c",
+    "normal.png": "9c840176d4002826091098449e7126c45b5b410a67c56eb43a0d3d29893987a6",
+    "regions.png": "ade0cbaba208f37219644571127ced57ab142cb56593aa126b21b3e3c4d1c153"
+  },
+  "normal_method": "manually_annotated_low_frequency_snow_facets",
+  "normal_convention": "tangent space OpenGL; X right, Y up, positive Z",
+  "normal_strength": 0.8,
+  "normal_max_unit_error": 0.005598127841949463,
+  "geometry_count": 1,
+  "parallax_kind": "single_distant_board",
+  "independent_color_layers": 1,
+  "geometric_facets": 20,
+  "normal_region_fraction": 0.1940033792914426,
+  "landmarks": [
+    {
+      "id": "main_peak",
+      "uv": [
+        0.62,
+        0.288
+      ]
+    },
+    {
+      "id": "left_peak",
+      "uv": [
+        0.171,
+        0.388
+      ]
+    },
+    {
+      "id": "right_ridge",
+      "uv": [
+        0.806,
+        0.424
+      ]
+    }
+  ],
+  "validation": {
+    "passed": true,
+    "checks": {
+      "approved_color_byte_identical": true,
+      "exact_source_dimensions": true,
+      "normal_matches_color_dimensions": true,
+      "sky_is_flat_normal": true,
+      "bottom_mist_is_flat_normal": true,
+      "normal_unit_error_under_0_007": true,
+      "opposing_ridge_faces": true,
+      "terrain_not_brightness_derived": true
+    }
+  },
+  "limitations": [
+    "Original illustration contains painted illumination; this is restrained dynamic normal relighting, not photometric reconstruction.",
+    "A single complete board has real relative parallax but no independent range-to-range motion."
+  ]
+}

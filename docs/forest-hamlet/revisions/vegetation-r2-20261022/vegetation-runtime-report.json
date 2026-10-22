@@ -1,0 +1,241 @@
+{
+  "checks": [
+    {
+      "label": "no legacy plant GLB, flower MultiMesh or original 3D leaf surface is instantiated",
+      "passed": true
+    },
+    {
+      "label": "houses use the plant-free structural model",
+      "passed": true
+    },
+    {
+      "label": "old tree and grass GLBs remain outside runtime model cache",
+      "passed": true
+    },
+    {
+      "label": "all live world plant Sprite3D instances are registered exactly once",
+      "passed": true
+    },
+    {
+      "label": "no unregistered world sprite escapes plant validation",
+      "passed": true
+    },
+    {
+      "label": "live color-plus-normal Sprite3D family: broadleaf_a",
+      "passed": true
+    },
+    {
+      "label": "live color-plus-normal Sprite3D family: broadleaf_b",
+      "passed": true
+    },
+    {
+      "label": "live color-plus-normal Sprite3D family: fir",
+      "passed": true
+    },
+    {
+      "label": "live color-plus-normal Sprite3D family: grass",
+      "passed": true
+    },
+    {
+      "label": "live color-plus-normal Sprite3D family: fern",
+      "passed": true
+    },
+    {
+      "label": "live color-plus-normal Sprite3D family: reeds",
+      "passed": true
+    },
+    {
+      "label": "live color-plus-normal Sprite3D family: flowers_white",
+      "passed": true
+    },
+    {
+      "label": "live color-plus-normal Sprite3D family: flowers_pink",
+      "passed": true
+    },
+    {
+      "label": "live color-plus-normal Sprite3D family: window_flowers",
+      "passed": true
+    },
+    {
+      "label": "live color-plus-normal Sprite3D family: lily_pad",
+      "passed": true
+    },
+    {
+      "label": "only the ten produced plant families are active",
+      "passed": true
+    },
+    {
+      "label": "every plant binds its real matching color and normal textures to the dedicated shader",
+      "passed": true
+    },
+    {
+      "label": "every plant uses uniform scaling, nearest-sampled cutout pixels and full billboard mode",
+      "passed": true
+    },
+    {
+      "label": "vegetation normal switch reaches every actual plant material",
+      "passed": true
+    },
+    {
+      "label": "vegetation normals restore across every plant family",
+      "passed": true
+    },
+    {
+      "label": "vegetation normal switch preserves terrain and original character materials",
+      "passed": true
+    },
+    {
+      "label": "close camera occlusion protects live Sprite3D trees without legacy mesh occluders",
+      "passed": true
+    },
+    {
+      "label": "real tree cutout provides opaque pixels and transparent space inside its image bounds",
+      "passed": true
+    },
+    {
+      "label": "finite sight segment detects opaque pixels on actual camera-facing tree plane",
+      "passed": true
+    },
+    {
+      "label": "transparent tree cutout space does not count as solid obstruction",
+      "passed": true
+    },
+    {
+      "label": "tree behind sight segment endpoint does not obscure the character",
+      "passed": true
+    },
+    {
+      "label": "vegetation replacement preserves accepted near-camera framing",
+      "passed": true
+    },
+    {
+      "label": "original character size and aspect remain unchanged",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "forbidden_geometry": [],
+  "framing": {
+    "camera_offset_length": 12.7500009536743,
+    "dof_far": 22.4097442626953,
+    "dof_near": 7.40974426269531,
+    "foot": [
+      0.5,
+      0.626913547515869
+    ],
+    "fov": 39.0,
+    "in_frame": true,
+    "pitch_degrees": 13.9999971389771,
+    "pixel_size": 0.00899999961256981,
+    "profile": "close_reference",
+    "silhouette_rect": [
+      0.464287916819255,
+      0.395489049840856,
+      0.0708481788635254,
+      0.232448549623843
+    ],
+    "view_depth": 12.4097442626953
+  },
+  "live_world_sprites": 218,
+  "loaded_models": [
+    "res://assets/forest-hamlet/models/cottage_without_plants.glb",
+    "res://assets/forest-hamlet/models/cottage_without_plants.glb",
+    "res://assets/forest-hamlet/models/cottage_without_plants.glb",
+    "res://assets/forest-hamlet/models/fence.glb",
+    "res://assets/forest-hamlet/models/fence.glb",
+    "res://assets/forest-hamlet/models/fence.glb",
+    "res://assets/forest-hamlet/models/fence.glb",
+    "res://assets/forest-hamlet/models/fence.glb",
+    "res://assets/forest-hamlet/models/fence.glb",
+    "res://assets/forest-hamlet/models/lamp.glb",
+    "res://assets/forest-hamlet/models/lamp.glb",
+    "res://assets/forest-hamlet/models/bench.glb",
+    "res://assets/forest-hamlet/models/sign.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb",
+    "res://assets/forest-hamlet/models/rock.glb"
+  ],
+  "occlusion": {
+    "details": [],
+    "faded_names": [],
+    "faded_trees": 0,
+    "geometry_count": 67,
+    "mesh_count": 0,
+    "mode": "billboard_alpha_aware",
+    "occluding_trees": 0,
+    "registered_trees": 67,
+    "sprite_count": 67
+  },
+  "passed": true,
+  "registered_sprites": 218,
+  "scope": "live scene structure, actual shader texture bindings and alpha-aware visibility; source PNG math, complete route and GPU appearance have separate reports",
+  "species_counts": {
+    "broadleaf_a": 15,
+    "broadleaf_b": 17,
+    "fern": 28,
+    "fir": 35,
+    "flowers_pink": 12,
+    "flowers_white": 18,
+    "grass": 72,
+    "lily_pad": 4,
+    "reeds": 11,
+    "window_flowers": 6
+  }
+}

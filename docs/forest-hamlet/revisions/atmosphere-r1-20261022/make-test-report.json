@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "command": [
+    "make",
+    "test"
+  ],
+  "returncode": 0,
+  "passed": true,
+  "elapsed_s": 10.959,
+  "log": "build/forest-hamlet/logs/make-test-atmosphere.log"
+}

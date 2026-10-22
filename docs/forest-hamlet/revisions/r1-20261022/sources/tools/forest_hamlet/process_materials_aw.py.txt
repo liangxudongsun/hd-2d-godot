@@ -1,0 +1,118 @@
+#!/usr/bin/env python3
+"""Run installed AW world.compile, then copy verified official output bytes.
+
+Run after tools/forest_hamlet/prepare_materials.py. This never imports a nearby
+Asset Workbench checkout and never creates an approval or starts a service.
+"""
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import os
+from pathlib import Path
+import shutil
+import subprocess
+
+from PIL import Image
+
+
+NAMES = ("grass", "earth", "wood", "stone")
+
+
+def sha(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def installed_cli(name: str) -> str:
+    detected = shutil.which(name)
+    if detected:
+        return detected
+    fallback = Path.home() / ".local/bin" / name
+    if fallback.is_file() and os.access(fallback, os.X_OK):
+        return str(fallback)
+    raise FileNotFoundError(f"Installed {name} CLI not found in PATH or user .local/bin")
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--project", type=Path, default=Path.cwd())
+    parser.add_argument("--run-id", default="forest-hamlet-20261022-r1")
+    args = parser.parse_args()
+    if not args.run_id or any(ch not in "abcdefghijklmnopqrstuvwxyz0123456789-_" for ch in args.run_id):
+        raise ValueError("run-id must be a lowercase safe directory name")
+    root = args.project.resolve()
+    source_dir = root / "art/inputs/forest-hamlet"
+    config = source_dir / "workbench-project.yaml"
+    recipe = source_dir / "materials.recipe.yaml"
+    run = root / "art/derived/workbench/world" / args.run_id
+    evidence = root / "art/derived/forest-hamlet" / args.run_id
+    evidence.mkdir(parents=True, exist_ok=True)
+    cli = [installed_cli("aw"), "--project", str(root), "--project-config", str(config)]
+
+    def execute(label: str, command: list[str]) -> None:
+        receipt = subprocess.run(command, cwd=root, capture_output=True, text=True, timeout=300)
+        (evidence / f"{label}.stdout.json").write_text(receipt.stdout, encoding="utf-8")
+        (evidence / f"{label}.stderr.txt").write_text(receipt.stderr, encoding="utf-8")
+        if receipt.returncode:
+            print(receipt.stdout)
+            print(receipt.stderr)
+            raise RuntimeError(f"{label} failed with exit {receipt.returncode}; evidence retained")
+
+    if run.exists():
+        execute("aw-resume", cli + ["workflow", "resume", "--run", str(run), "--json"])
+    else:
+        execute("aw-validate", cli + ["workflow", "validate", "world.compile", "--input", str(recipe), "--json"])
+        execute("aw-run", cli + ["workflow", "run", "world.compile", "--input", str(recipe),
+                                 "--output", str(run), "--bypass-rectify", "--json"])
+
+    record = json.loads((run / "run.json").read_text(encoding="utf-8"))
+    if record.get("status") != "completed" or record.get("workflow") != "world.compile":
+        raise RuntimeError(f"Official AW run is not completed world.compile: {record.get('status')}")
+    palette_document = json.loads((source_dir / "prepared/palette.json").read_text())
+    if palette_document.get("schema_version") != 1:
+        raise RuntimeError("Frozen palette schema is not version 1")
+    palette = {tuple(int(color[index:index + 2], 16) for index in (1, 3, 5))
+               for color in palette_document["colors"]}
+    original = json.loads((source_dir / "prepared/preparation.json").read_text())
+    outputs = []
+    target_dir = root / "assets/forest-hamlet/textures"
+    target_dir.mkdir(parents=True, exist_ok=True)
+    for name in NAMES:
+        candidates = [p for p in run.rglob(f"surface.{name}.png") if p.parent.name == "images" and "steps" in p.parts]
+        if len(candidates) != 1:
+            raise RuntimeError(f"Expected one official compiled output for {name}; got {candidates}")
+        source = candidates[0]
+        with Image.open(source) as opened:
+            image = opened.convert("RGBA")
+        if image.size != (256, 256) or image.getextrema()[3] != (255, 255):
+            raise RuntimeError(f"{name} is not opaque 256x256")
+        if image.crop((0, 0, 1, 256)).tobytes() != image.crop((255, 0, 256, 256)).tobytes():
+            raise RuntimeError(f"{name} X seam differs")
+        if image.crop((0, 0, 256, 1)).tobytes() != image.crop((0, 255, 256, 256)).tobytes():
+            raise RuntimeError(f"{name} Y seam differs")
+        colors = set(image.convert("RGB").getdata())
+        if not colors <= palette:
+            raise RuntimeError(f"{name} contains pixels outside the frozen source-color palette")
+        target = target_dir / f"{name}.png"
+        before = sha(target) if target.exists() else None
+        shutil.copyfile(source, target)
+        outputs.append({"name": name, "source": source.relative_to(root).as_posix(),
+                        "runtime": target.relative_to(root).as_posix(), "sha256": sha(target),
+                        "previous_runtime_sha256": before, "runtime_bytes_changed": before != sha(target),
+                        "size": [256, 256], "opaque": True, "palette_colors": len(colors),
+                        "source_palette_only": True, "equal_opposite_edges": True})
+    summary = {"schema_version": 1, "workflow": "world.compile", "execution_status": "completed",
+               "aw_run": (run / "run.json").relative_to(root).as_posix(), "aw_run_sha256": sha(run / "run.json"),
+               "producer_version": record.get("producer_version"), "implementation": record.get("implementation"),
+               "source": original["source"], "palette": original["palette"], "outputs": outputs,
+               "human_aesthetic_approval": "pending", "native_godot_validation": "separate_scene_evidence",
+               "note": "AW compiled square surface swatches using its supported prop-canvas branch; the schema-required 64x32 preview ground is not consumed by the 3D game."}
+    summary_path = evidence / "materials-summary.json"
+    summary_path.write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"status": "completed", "summary": summary_path.relative_to(root).as_posix(),
+                      "outputs": outputs}, ensure_ascii=False, indent=2))
+
+
+if __name__ == "__main__":
+    main()

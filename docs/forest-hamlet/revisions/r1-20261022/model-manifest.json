@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "generator": "tools/forest_hamlet/build_assets.py",
+  "generator_sha256": "009e5a54183bda73101e0485db972835cb60bef044382b2f36e7266fffe012e3",
+  "seed": 20261022,
+  "blender_version": "5.2.2 LTS",
+  "textures": {
+    "earth.png": "ac4e6d19ec49abb932c231bfef129286030f935ebb2bc8cae9651aa939eb3d7d",
+    "grass.png": "8ee39affc6d279340742e050a101be99c292a1c6872eea3fd31274589488c5a2",
+    "stone.png": "eb736f594600d283e7120564391afffb9c5aed68a96849b7293a7eac90317f8a",
+    "wood.png": "f98e2824b8e81c655699d33c7e08dcf4bbff732b0fe8d8b4f0c60c81c141e829"
+  },
+  "coordinate_system": "Blender Z up; glTF exporter performs Y-up conversion once",
+  "copyright": "Original procedural geometry; reference video supplies visual direction only",
+  "assets": [
+    {
+      "id": "cottage",
+      "source": "art/inputs/forest-hamlet/blender/cottage.blend",
+      "output": "assets/forest-hamlet/models/cottage.glb",
+      "sha256": "66465145ad0ac428acc283a2444cd1efaebf31b27175fbe67da5da517aa934e8",
+      "seed": 20261765,
+      "mesh_objects": 11
+    },
+    {
+      "id": "broadleaf",
+      "source": "art/inputs/forest-hamlet/blender/broadleaf.blend",
+      "output": "assets/forest-hamlet/models/broadleaf.glb",
+      "sha256": "d530a06f51dfce4d5471d2bb0fc935b37663652cb0fb80be1cbb207b947f1465",
+      "seed": 20261950,
+      "mesh_objects": 6
+    },
+    {
+      "id": "fir",
+      "source": "art/inputs/forest-hamlet/blender/fir.blend",
+      "output": "assets/forest-hamlet/models/fir.glb",
+      "sha256": "bbfaa6eb1534a6a1e7f4d4b2da456727e64de2061202d8281815e0cd4dca0961",
+      "seed": 20261343,
+      "mesh_objects": 6
+    },
+    {
+      "id": "fence",
+      "source": "art/inputs/forest-hamlet/blender/fence.blend",
+      "output": "assets/forest-hamlet/models/fence.glb",
+      "sha256": "d14c4a4d0ab94f9520acb39f107197e709969c078b4b921a65c12811366cf0cd",
+      "seed": 20261535,
+      "mesh_objects": 1
+    },
+    {
+      "id": "rock",
+      "source": "art/inputs/forest-hamlet/blender/rock.blend",
+      "output": "assets/forest-hamlet/models/rock.glb",
+      "sha256": "76ca47248feced640c13655ad445e88f764ec96de8162309c692142d79a79b3e",
+      "seed": 20261453,
+      "mesh_objects": 1
+    },
+    {
+      "id": "lamp",
+      "source": "art/inputs/forest-hamlet/blender/lamp.blend",
+      "output": "assets/forest-hamlet/models/lamp.glb",
+      "sha256": "6c83a650a0911941dfcd9486f6e09fd7f427885391e61f458e6808c2370d2d74",
+      "seed": 20261448,
+      "mesh_objects": 3
+    },
+    {
+      "id": "bench",
+      "source": "art/inputs/forest-hamlet/blender/bench.blend",
+      "output": "assets/forest-hamlet/models/bench.glb",
+      "sha256": "5c792bbb5b92c2baca3e76279b60e99f880e5ddc4e95ddf7ad0e85635edda2cb",
+      "seed": 20261534,
+      "mesh_objects": 2
+    },
+    {
+      "id": "sign",
+      "source": "art/inputs/forest-hamlet/blender/sign.blend",
+      "output": "assets/forest-hamlet/models/sign.glb",
+      "sha256": "778f8d44e58500fdff9952814eee42cf5da19f5b8c18240751829b871bc9efcc",
+      "seed": 20261455,
+      "mesh_objects": 2
+    },
+    {
+      "id": "grass",
+      "source": "art/inputs/forest-hamlet/blender/grass.blend",
+      "output": "assets/forest-hamlet/models/grass.glb",
+      "sha256": "2439a1865553c5ee46616617d424e9760f781c1c21bc64077ce9f9ad0cc2a4e4",
+      "seed": 20261566,
+      "mesh_objects": 1
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "project_id": "5af64d90-66bc-471c-ab66-dcabe72ed9d3",
+  "scene_classification_id": "fa2c56c8-722e-4f41-b9d2-04d839544457",
+  "case_id": "65750774-e5a4-4a18-822d-e9a203599ab2",
+  "round_id": "cca9b78c-9745-4792-872a-302754b1ded1",
+  "previous_round_id": "73c96be4-8dd8-4205-8f25-a7851bf4040e",
+  "context_run_id": "forest-hamlet-20261022-pixel-r2",
+  "assets": [
+    {
+      "key": "vegetation",
+      "asset_id": "a64415f5-d8fe-413c-ac8d-7a20f74ccbdd",
+      "revision_id": "6dcd4a7a-3384-497f-8687-a1cb59b50500",
+      "stage": "concept_design",
+      "main_output_count": 20,
+      "status": "pending_review",
+      "check_receipt": "art/derived/forest-hamlet/forest-hamlet-20261022-vegetation-r2-review/vgp/vegetation-check.response.json"
+    }
+  ],
+  "review_status": "pending",
+  "decisions_created": 0,
+  "stage_admissions_created": 0,
+  "supporting_integration_files": [
+    {
+      "source": "assets/forest-hamlet/models/cottage_without_plants.glb",
+      "archive_name": "integration-cottage_without_plants.glb",
+      "sha256": "23028396deea0b568672facd248264c6addffba9cc109d80c02c141dcb3dcaa4",
+      "role": "supporting scene integration evidence; not a primary image output or independent model review"
+    },
+    {
+      "source": "art/inputs/forest-hamlet/blender-vegetation-r1/manifest.json",
+      "archive_name": "integration-manifest.json",
+      "sha256": "4a6a0ec1875f613b2279f03c2c854ab881f3362fca747a72a01edbc6c4e55afc",
+      "role": "supporting scene integration evidence; not a primary image output or independent model review"
+    },
+    {
+      "source": "tools/forest_hamlet/build_cottage_without_plants.py",
+      "archive_name": "integration-build_cottage_without_plants.py",
+      "sha256": "08c8ca1699c8b3bc7f62b90ebe8b546f51e88c563fffd12b932b515a5e2e9699",
+      "role": "supporting scene integration evidence; not a primary image output or independent model review"
+    }
+  ],
+  "note": "Native VGP image candidate and review-round submission completed. AW compiled colors only; authored linear normal vectors were paired and validated separately. No approval was synthesized.",
+  "existing_asset_id_reused": "a64415f5-d8fe-413c-ac8d-7a20f74ccbdd"
+}

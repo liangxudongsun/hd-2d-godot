@@ -1,0 +1,12 @@
+{
+  "source": "user-provided attachment image(20261022-060818).png",
+  "purpose": "camera composition reference only; not a runtime texture",
+  "file": "art/inputs/forest-hamlet/camera-reference-20261022.png",
+  "sha256": "9046d2e2a350566e9c42b8f8bcf5d6e5fb9619046218a215b5ade12e075b7405",
+  "bytes": 962844,
+  "reference_observation": {
+    "actor_height_fraction": "approximately 0.12-0.13",
+    "actor_foot_y_fraction": "approximately 0.56",
+    "composition": "pond lower-left; road across centre; houses and forest above; horizon excluded"
+  }
+}

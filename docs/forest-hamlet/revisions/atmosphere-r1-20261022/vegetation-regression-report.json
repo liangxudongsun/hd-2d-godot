@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "command": [
+    "python3",
+    "tools/forest_hamlet/run.py",
+    "test-vegetation",
+    "--output",
+    "build/forest-hamlet/atmosphere-r1-final"
+  ],
+  "returncode": 0,
+  "passed": true,
+  "elapsed_s": 51.342,
+  "log": "build/forest-hamlet/logs/vegetation-regression-atmosphere.log"
+}

@@ -1,5 +1,9 @@
 # Plan · HD-2D 河畔驿站
 
+## 林间小村参考范例 · 2026-10-22
+
+按用户要求新增独立 [林间小村场景](features/forest-hamlet.md)，参考视频 BV1TFjz6eEK7 的地面、环境与模型表现，复用月饰少女，通过 AW 加工与 VGP 候选登记保存来源。架构见 [ADR-23](../ADR/23-forest-hamlet-reference-study.md)。技术与视觉结果在本轮完成后独立归档。
+
 ## 横向河街与夜空 · 2026-10-08
 
 用户已批准 [横河重构计划](features/ancient-horizontal-night.md)。保留 Ancient 正面 F/W、跟随与角色动画，重排为酒肆、民居、摊位、低拱桥、码头和五名驻点 NPC，接入平面柳树与缓存星空。采用 [ADR-22](../ADR/22-horizontal-canal-night-sky.md)，验收和原始证据独立归档，本轮不提交或推送。

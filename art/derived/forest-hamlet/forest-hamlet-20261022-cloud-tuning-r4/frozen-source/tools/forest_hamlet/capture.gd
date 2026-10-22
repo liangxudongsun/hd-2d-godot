@@ -1,0 +1,217 @@
+extends SceneTree
+## Actual GPU evidence in an independent no-focus 1920x1080 SubViewport.
+var viewport: SubViewport
+var scene: Node3D
+var output := "res://build/forest-hamlet/gpu"
+var screenshots: Array = []
+var failed: Array = []
+var runtime_fingerprint := ""
+var include_route := true
+var comparison_frozen := false
+
+func _initialize() -> void:
+    root.set_flag(Window.FLAG_NO_FOCUS,true)
+    root.gui_embed_subwindows = true
+    viewport = SubViewport.new()
+    viewport.size = Vector2i(1920,1080)
+    viewport.own_world_3d = true
+    viewport.gui_embed_subwindows = true
+    viewport.render_target_update_mode = SubViewport.UPDATE_ALWAYS
+    root.add_child(viewport)
+    for arg in OS.get_cmdline_user_args():
+        if arg.begins_with("--forest-output="):
+            output = arg.trim_prefix("--forest-output=")
+        if arg.begins_with("--forest-fingerprint="):
+            runtime_fingerprint = arg.trim_prefix("--forest-fingerprint=")
+        if arg == "--forest-no-route":
+            include_route = false
+    output = ProjectSettings.globalize_path(output)
+    DirAccess.make_dir_recursive_absolute(output)
+    call_deferred("run")
+
+func _process(_delta: float) -> bool:
+    RenderingServer.force_draw()
+    return false
+
+func snapshot(label: String) -> void:
+    for i in range(8):
+        await process_frame
+    await RenderingServer.frame_post_draw
+    var image: Image = viewport.get_texture().get_image()
+    var path := output.path_join(label+".png")
+    var error := image.save_png(path)
+    if error != OK:
+        failed.append("capture failed: "+label+" error="+str(error))
+    var motion := {"comparison_frozen":comparison_frozen,"scene_clock_paused":scene.frozen,"actor_physics_paused":not scene.player.is_physics_processing(),"wind_strength":scene.world.foliage_material.get_shader_parameter("wind_strength"),"water_flow_speed":scene.world.water_material.get_shader_parameter("flow_speed"),"sky":"static ProceduralSkyMaterial; no time-driven sky update"}
+    if comparison_frozen and (not motion.scene_clock_paused or not motion.actor_physics_paused or not is_zero_approx(float(motion.wind_strength)) or not is_zero_approx(float(motion.water_flow_speed))):
+        failed.append("comparison motion was not frozen: "+label)
+    var counters := {"visible_draw_calls":viewport.get_render_info(Viewport.RENDER_INFO_TYPE_VISIBLE,Viewport.RENDER_INFO_DRAW_CALLS_IN_FRAME),"visible_objects":viewport.get_render_info(Viewport.RENDER_INFO_TYPE_VISIBLE,Viewport.RENDER_INFO_OBJECTS_IN_FRAME),"visible_primitives":viewport.get_render_info(Viewport.RENDER_INFO_TYPE_VISIBLE,Viewport.RENDER_INFO_PRIMITIVES_IN_FRAME),"shadow_draw_calls":viewport.get_render_info(Viewport.RENDER_INFO_TYPE_SHADOW,Viewport.RENDER_INFO_DRAW_CALLS_IN_FRAME)}
+    screenshots.append({"file":label+".png","sha256":FileAccess.get_sha256(path),"size":[image.get_width(),image.get_height()],"state":scene.snapshot_state(),"motion":motion,"render_counts":counters,"scope":"actual hardware GPU frame; artistic approval remains external"})
+    print("FOREST_CAPTURE_FRAME ",label)
+
+func capture_billboard_probes() -> void:
+    # Render the actual actor shader on a clear background. Read-back silhouette
+    # bounds can detect pitch compression and dropped model scale independently.
+    var saved_camera: Transform3D = scene.camera.transform
+    var saved_background: int = scene.environment.background_mode
+    var saved_color: Color = scene.environment.background_color
+    var saved_fog: bool = scene.environment.fog_enabled
+    var saved_dof: bool = scene.values.dof
+    var saved_bloom: bool = scene.values.bloom
+    var saved_direction: int = scene.player.direction_override
+    var saved_frame: int = scene.player.frame_override
+    var saved_paused: bool = scene.player.paused
+    var saved_scale: Vector3 = scene.player.sprite.scale
+    var saved_debug: Variant = scene.player.surface.get_shader_parameter("normal_debug")
+    var hidden_sprites: Array[Sprite3D] = []
+    scene.world.hide()
+    for child in scene.player.get_children():
+        if child is Sprite3D and child != scene.player.sprite and child.visible:
+            hidden_sprites.append(child)
+            child.hide()
+    scene.environment.background_mode = Environment.BG_COLOR
+    scene.environment.background_color = Color.BLACK
+    scene.environment.fog_enabled = false
+    scene.set_feature("dof",false)
+    scene.set_feature("bloom",false)
+    scene.player.direction_override = 0
+    scene.player.frame_override = 0
+    scene.player.paused = true
+    scene.player.update_animation()
+    scene.player.surface.set_shader_parameter("normal_debug",true)
+    scene.camera_locked = true
+    for pose in [["billboard-pitch15",15.0,0.0,1.0],["billboard-pitch35",35.0,0.0,1.0],["billboard-pitch60",60.0,0.0,1.0],["billboard-yaw55",35.0,55.0,1.0],["billboard-scale125",35.0,0.0,1.25]]:
+        var pitch := deg_to_rad(float(pose[1]))
+        var yaw := deg_to_rad(float(pose[2]))
+        var back := Vector3(sin(yaw)*cos(pitch),sin(pitch),cos(yaw)*cos(pitch))
+        scene.camera.position = scene.player.position + back*8.0
+        scene.camera.look_at(scene.player.position,Vector3.UP)
+        scene.camera.position += scene.camera.global_basis.y*1.02
+        scene.player.sprite.scale = saved_scale*float(pose[3])
+        await snapshot(pose[0])
+    scene.player.sprite.scale = saved_scale
+    scene.player.direction_override = saved_direction
+    scene.player.frame_override = saved_frame
+    scene.player.paused = saved_paused
+    scene.player.update_animation()
+    scene.player.surface.set_shader_parameter("normal_debug",saved_debug)
+    scene.environment.background_mode = saved_background
+    scene.environment.background_color = saved_color
+    scene.environment.fog_enabled = saved_fog
+    scene.world.show()
+    for child in hidden_sprites:
+        child.show()
+    scene.set_feature("dof",saved_dof)
+    scene.set_feature("bloom",saved_bloom)
+    scene.camera.transform = saved_camera
+    scene.camera_locked = false
+    scene.update_camera(true)
+
+func run() -> void:
+    if DisplayServer.get_name() == "headless":
+        push_error("Actual GPU capture requires a graphical display.")
+        quit(2)
+        return
+    DisplayServer.window_set_flag(DisplayServer.WINDOW_FLAG_NO_FOCUS,true)
+    DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_MINIMIZED)
+    scene = load("res://scenes/forest_hamlet.tscn").instantiate()
+    viewport.add_child(scene)
+    for i in range(45):
+        await physics_frame
+    scene.frozen = true
+    scene.player.controls_enabled = false
+    scene.player.set_physics_process(false)
+    scene.player.velocity = Vector3.ZERO
+    scene.update_camera(true)
+    scene.overlay.hide()
+    scene.set_time_preset("day")
+    await snapshot("day-overview")
+    scene.set_time_preset("dusk")
+    await snapshot("dusk-overview")
+    scene.set_time_preset("day")
+    # Stop shader wind and water motion for isolated material/post A-B pairs.
+    scene.set_feature("wind",false)
+    var original_flow: Variant = scene.world.water_material.get_shader_parameter("flow_speed")
+    scene.world.water_material.set_shader_parameter("flow_speed",0.0)
+    comparison_frozen = true
+    await snapshot("comparison-baseline")
+    scene.set_feature("normals",false)
+    await snapshot("ground-normals-off")
+    scene.set_feature("normals",true)
+    scene.set_feature("dof",false)
+    await snapshot("dof-off")
+    scene.set_feature("dof",true)
+    scene.set_feature("bloom",false)
+    await snapshot("bloom-off")
+    scene.set_feature("bloom",true)
+    scene.set_time_preset("dusk")
+    await snapshot("dusk-glow-on")
+    scene.set_feature("bloom",false)
+    await snapshot("dusk-glow-off")
+    scene.set_feature("bloom",true)
+    scene.set_time_preset("day")
+    scene.camera_locked = true
+    scene.camera.position = Vector3(-0.8,2.5,5.0)
+    scene.camera.look_at(Vector3(-1.7,0.0,1.7))
+    scene.set_feature("dof",false)
+    await snapshot("ground-detail-normals-on")
+    scene.set_feature("normals",false)
+    await snapshot("ground-detail-normals-off")
+    scene.set_feature("normals",true)
+    scene.set_feature("dof",true)
+    scene.camera_locked = false
+    scene.update_camera(true)
+    scene.set_feature("wind",true)
+    scene.world.water_material.set_shader_parameter("flow_speed",original_flow)
+    comparison_frozen = false
+    scene.overlay.show()
+    scene.panel.show()
+    await snapshot("controls")
+    scene.overlay.hide()
+    # Close inspection of the reused original character under this environment.
+    scene.camera_locked = true
+    scene.camera.position = scene.player.position + Vector3(0,2.4,5.0)
+    scene.camera.look_at(scene.player.position+Vector3.UP*1.02)
+    scene.set_feature("dof",false)
+    await snapshot("crescent-traveler-close")
+    scene.camera_locked = false
+    scene.set_feature("dof",true)
+    scene.update_camera(true)
+    await capture_billboard_probes()
+    var route_report := {"scope":"not run", "completed":false}
+    if include_route:
+        scene.frozen = false
+        scene.player.controls_enabled = true
+        scene.player.set_physics_process(true)
+        scene.start_route()
+        var captured: Dictionary = {}
+        var frames := 0
+        while scene.route_running and frames < 7200:
+            await physics_frame
+            frames += 1
+            if scene.route_index in [1,2,3,4,5] and not captured.has(scene.route_index):
+                captured[scene.route_index] = true
+                scene.frozen = true
+                scene.player.set_physics_process(false)
+                scene.update_camera(true)
+                await snapshot("route-point-"+str(scene.route_index))
+                scene.player.set_physics_process(true)
+                scene.frozen = false
+        if scene.route_running:
+            scene.stop_route("timeout")
+        route_report = scene.route_result
+        if not route_report.get("completed",false):
+            failed.append("actual physics route did not complete")
+    var adapter := RenderingServer.get_video_adapter_name()
+    var renderer := RenderingServer.get_current_rendering_method()
+    if renderer != "forward_plus":
+        failed.append("unexpected renderer: "+renderer)
+    if adapter.is_empty():
+        failed.append("GPU adapter not reported")
+    if scene.player.normal_atlases.size() != 4 or scene.player.color_atlases.size() != 4:
+        failed.append("original character materials incomplete")
+    var report := {"passed":failed.is_empty(),"failures":failed,"scope":"GPU rendering and runtime checks; visual similarity and human approval are not implied","runtime_fingerprint":runtime_fingerprint,"gpu":true,"adapter":adapter,"renderer":renderer,"viewport":[1920,1080],"no_focus":root.get_flag(Window.FLAG_NO_FOCUS),"main_window_minimized":DisplayServer.window_get_mode()==DisplayServer.WINDOW_MODE_MINIMIZED,"asset_instances":scene.world.asset_instances,"terrain_triangles":scene.world.terrain_triangles,"screenshots":screenshots,"route":route_report}
+    var file := FileAccess.open(output.path_join("gpu-report.json"),FileAccess.WRITE)
+    file.store_string(JSON.stringify(report,"  ")+"\n")
+    print("FOREST_CAPTURE_DONE passed=",report.passed," screenshots=",screenshots.size()," route=",route_report.get("status","not-run")," adapter=",adapter)
+    quit(0 if failed.is_empty() else 1)

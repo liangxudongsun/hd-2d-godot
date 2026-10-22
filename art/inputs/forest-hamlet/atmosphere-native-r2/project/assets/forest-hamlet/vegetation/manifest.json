@@ -1,0 +1,246 @@
+{
+  "schema": 1,
+  "normal_convention": "OpenGL",
+  "assets": [
+    {
+      "id": "broadleaf_a",
+      "color": "broadleaf_a.png",
+      "normal": "broadleaf_a_normal.png",
+      "size_px": [
+        512,
+        544
+      ],
+      "pivot_px": [
+        256,
+        536
+      ],
+      "visible_rect_px": [
+        8,
+        18,
+        496,
+        518
+      ],
+      "height_m": 5.3,
+      "wind_weight": 1.0,
+      "color_sha256": "ce3ae95992235bbec254f832c966a9d9583bb055b200a192d39a8b406df67500",
+      "normal_sha256": "129bce14c6ef017ab12ab6c744d0cd90c07c7b9c89332097a1e77ad76963313e",
+      "alpha_sha256": "9fb290ade44758cc6f06cc0a40303f7dd883df2965f4b6f837612147e3cdeea4"
+    },
+    {
+      "id": "broadleaf_b",
+      "color": "broadleaf_b.png",
+      "normal": "broadleaf_b_normal.png",
+      "size_px": [
+        384,
+        576
+      ],
+      "pivot_px": [
+        192,
+        568
+      ],
+      "visible_rect_px": [
+        18,
+        24,
+        348,
+        544
+      ],
+      "height_m": 5.2,
+      "wind_weight": 1.0,
+      "color_sha256": "21853968e75567ebb7b441dd8419f2eb4d1466e66fca10ab4dd03c9910aa6b9d",
+      "normal_sha256": "493fb378e06d44452752b91e75128096d1ee10ed989b238fcdd73ee8f436580f",
+      "alpha_sha256": "f4551f6cf3c59169ecb5fa964c830c153a7a9aa8e37a805a85bdc5b519a70bce"
+    },
+    {
+      "id": "fir",
+      "color": "fir.png",
+      "normal": "fir_normal.png",
+      "size_px": [
+        384,
+        640
+      ],
+      "pivot_px": [
+        192,
+        632
+      ],
+      "visible_rect_px": [
+        25,
+        8,
+        333,
+        624
+      ],
+      "height_m": 5.4,
+      "wind_weight": 0.85,
+      "color_sha256": "0dc21b44f2786f5ab76fa7255018729944bdd0d8506dc7e29d128b4ec3e0b1d9",
+      "normal_sha256": "37e7909bb703452c001289379252c8c8234b20905cc21e0f2d4f6ec296322df5",
+      "alpha_sha256": "8a89653cb658377b4089ba02a03950ce883e4662298b9d28b30f36b7d93ba80e"
+    },
+    {
+      "id": "grass",
+      "color": "grass.png",
+      "normal": "grass_normal.png",
+      "size_px": [
+        128,
+        128
+      ],
+      "pivot_px": [
+        64,
+        123
+      ],
+      "visible_rect_px": [
+        12,
+        33,
+        104,
+        90
+      ],
+      "height_m": 0.45,
+      "wind_weight": 1.0,
+      "color_sha256": "70b2ab8da64908afb528c5c6dab66631a337cdda7b1298d176dd754816655174",
+      "normal_sha256": "4fb7e9d0133bae2fe5c0df6a9f49689c77e7be7092cf44599df9248c0ef3342a",
+      "alpha_sha256": "1dab4f8f2d6e5a65e8ddc67973d2cb6bd5e566e26e634a419bb8c938f64657fc"
+    },
+    {
+      "id": "fern",
+      "color": "fern.png",
+      "normal": "fern_normal.png",
+      "size_px": [
+        192,
+        128
+      ],
+      "pivot_px": [
+        96,
+        124
+      ],
+      "visible_rect_px": [
+        20,
+        12,
+        152,
+        112
+      ],
+      "height_m": 0.56,
+      "wind_weight": 0.75,
+      "color_sha256": "10225adfc151fdce83c4da321f5217a0cfeeff4c4a75ac84b0894b45b2524263",
+      "normal_sha256": "6ba706eb3091e94d8d57607c78c9fe6e6cf1c3fc0f6e534472db73781c67c224",
+      "alpha_sha256": "a93c367976f27593f1f62f894acdbaafb2a0c2195989b050f6e3e536d43081e6"
+    },
+    {
+      "id": "reeds",
+      "color": "reeds.png",
+      "normal": "reeds_normal.png",
+      "size_px": [
+        128,
+        160
+      ],
+      "pivot_px": [
+        64,
+        156
+      ],
+      "visible_rect_px": [
+        4,
+        37,
+        120,
+        119
+      ],
+      "height_m": 1.05,
+      "wind_weight": 1.0,
+      "color_sha256": "cbcd6b66c280dbfc4da216d4021d47a0b06897b4aac724bb5297e5c4e140b90a",
+      "normal_sha256": "cf66ba5b9e94ff0549370dc4bc0e58bf01455e19ef11e78d2896549f85ecce0f",
+      "alpha_sha256": "ab791a5b5027fb28bc8df5e9b9f2598b593c4e36d78fd8c4015a5e552930f43e"
+    },
+    {
+      "id": "flowers_white",
+      "color": "flowers_white.png",
+      "normal": "flowers_white_normal.png",
+      "size_px": [
+        128,
+        160
+      ],
+      "pivot_px": [
+        64,
+        156
+      ],
+      "visible_rect_px": [
+        4,
+        36,
+        120,
+        120
+      ],
+      "height_m": 0.52,
+      "wind_weight": 0.65,
+      "color_sha256": "e1b08f47a658c02c07396868fa9f189159048125ec242ebed9448f7919998f6c",
+      "normal_sha256": "dd4d7ca8a96d00665b910e42d07363bb3f6bc762cb8d29380da6f16e074abb27",
+      "alpha_sha256": "f2069bac0bd1f886970aef5d1fd306987df19ec6b637e2a7bae475aeb66514c1"
+    },
+    {
+      "id": "flowers_pink",
+      "color": "flowers_pink.png",
+      "normal": "flowers_pink_normal.png",
+      "size_px": [
+        128,
+        160
+      ],
+      "pivot_px": [
+        64,
+        156
+      ],
+      "visible_rect_px": [
+        4,
+        56,
+        120,
+        100
+      ],
+      "height_m": 0.52,
+      "wind_weight": 0.65,
+      "color_sha256": "e0b8f9a4b14ca871254cef6fa7745fea8e5fb4341a39b374ed2c6b275c07e277",
+      "normal_sha256": "454ba154d10ad8101287105aae7aab7e5c152db92cc9d829529a535a475dd561",
+      "alpha_sha256": "bab5eafc3c51c1b5297b492ca83e8d1553402ce8a785075bf8ccecc54a1eb370"
+    },
+    {
+      "id": "window_flowers",
+      "color": "window_flowers.png",
+      "normal": "window_flowers_normal.png",
+      "size_px": [
+        256,
+        96
+      ],
+      "pivot_px": [
+        128,
+        92
+      ],
+      "visible_rect_px": [
+        20,
+        9,
+        216,
+        83
+      ],
+      "height_m": 0.34,
+      "wind_weight": 0.45,
+      "color_sha256": "fda272edc36934e4de6160f5b8f14eee603dd05fd38c8f1251157aec35e1198f",
+      "normal_sha256": "2baefaa2287570504d123f6102941cebac4ecd6cf50eb2bef1f5798757f1972b",
+      "alpha_sha256": "b19fcb83bd5e5a56b741a15d0cb9cbdda373a41f87710aea06bac11454ec8d7d"
+    },
+    {
+      "id": "lily_pad",
+      "color": "lily_pad.png",
+      "normal": "lily_pad_normal.png",
+      "size_px": [
+        192,
+        64
+      ],
+      "pivot_px": [
+        96,
+        60
+      ],
+      "visible_rect_px": [
+        20,
+        9,
+        152,
+        51
+      ],
+      "height_m": 0.18,
+      "wind_weight": 0.18,
+      "color_sha256": "53bc13187963bfa7b1c4a539bd7ba3389494a83684aebbee7be43475b446b384",
+      "normal_sha256": "20084036fdbaf87f1d3def5d37c816708d76211dcbbfbfa8e2703b0a0381d6ea",
+      "alpha_sha256": "f5beacccb77ab4b77c79f18a7529c9f03e2d5cf28fe1bdee043b3184b5d8f710"
+    }
+  ]
+}

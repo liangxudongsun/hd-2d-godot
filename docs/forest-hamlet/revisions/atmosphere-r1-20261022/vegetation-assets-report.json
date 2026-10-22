@@ -1,0 +1,729 @@
+{
+  "schema": 1,
+  "passed": true,
+  "checks": [
+    {
+      "label": "manifest has all ten unique vegetation species",
+      "passed": true
+    },
+    {
+      "label": "normal convention is explicit OpenGL",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_a: both sources are RGBA",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_a: color and normal dimensions agree with manifest",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_a: color and normal alpha bytes align exactly",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_a: transparent cutout includes visible pixels",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_a: visible rectangle matches actual shader alpha cutoff",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_a: pixel pivot and world height are valid",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_a: quantized normal vectors retain unit length",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_a: normals use the outward tangent hemisphere",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_a: normal map contains real directional detail",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_a: color_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_a: normal_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_a: alpha_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_b: both sources are RGBA",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_b: color and normal dimensions agree with manifest",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_b: color and normal alpha bytes align exactly",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_b: transparent cutout includes visible pixels",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_b: visible rectangle matches actual shader alpha cutoff",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_b: pixel pivot and world height are valid",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_b: quantized normal vectors retain unit length",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_b: normals use the outward tangent hemisphere",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_b: normal map contains real directional detail",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_b: color_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_b: normal_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "broadleaf_b: alpha_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "fir: both sources are RGBA",
+      "passed": true
+    },
+    {
+      "label": "fir: color and normal dimensions agree with manifest",
+      "passed": true
+    },
+    {
+      "label": "fir: color and normal alpha bytes align exactly",
+      "passed": true
+    },
+    {
+      "label": "fir: transparent cutout includes visible pixels",
+      "passed": true
+    },
+    {
+      "label": "fir: visible rectangle matches actual shader alpha cutoff",
+      "passed": true
+    },
+    {
+      "label": "fir: pixel pivot and world height are valid",
+      "passed": true
+    },
+    {
+      "label": "fir: quantized normal vectors retain unit length",
+      "passed": true
+    },
+    {
+      "label": "fir: normals use the outward tangent hemisphere",
+      "passed": true
+    },
+    {
+      "label": "fir: normal map contains real directional detail",
+      "passed": true
+    },
+    {
+      "label": "fir: color_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "fir: normal_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "fir: alpha_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "grass: both sources are RGBA",
+      "passed": true
+    },
+    {
+      "label": "grass: color and normal dimensions agree with manifest",
+      "passed": true
+    },
+    {
+      "label": "grass: color and normal alpha bytes align exactly",
+      "passed": true
+    },
+    {
+      "label": "grass: transparent cutout includes visible pixels",
+      "passed": true
+    },
+    {
+      "label": "grass: visible rectangle matches actual shader alpha cutoff",
+      "passed": true
+    },
+    {
+      "label": "grass: pixel pivot and world height are valid",
+      "passed": true
+    },
+    {
+      "label": "grass: quantized normal vectors retain unit length",
+      "passed": true
+    },
+    {
+      "label": "grass: normals use the outward tangent hemisphere",
+      "passed": true
+    },
+    {
+      "label": "grass: normal map contains real directional detail",
+      "passed": true
+    },
+    {
+      "label": "grass: color_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "grass: normal_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "grass: alpha_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "fern: both sources are RGBA",
+      "passed": true
+    },
+    {
+      "label": "fern: color and normal dimensions agree with manifest",
+      "passed": true
+    },
+    {
+      "label": "fern: color and normal alpha bytes align exactly",
+      "passed": true
+    },
+    {
+      "label": "fern: transparent cutout includes visible pixels",
+      "passed": true
+    },
+    {
+      "label": "fern: visible rectangle matches actual shader alpha cutoff",
+      "passed": true
+    },
+    {
+      "label": "fern: pixel pivot and world height are valid",
+      "passed": true
+    },
+    {
+      "label": "fern: quantized normal vectors retain unit length",
+      "passed": true
+    },
+    {
+      "label": "fern: normals use the outward tangent hemisphere",
+      "passed": true
+    },
+    {
+      "label": "fern: normal map contains real directional detail",
+      "passed": true
+    },
+    {
+      "label": "fern: color_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "fern: normal_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "fern: alpha_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "reeds: both sources are RGBA",
+      "passed": true
+    },
+    {
+      "label": "reeds: color and normal dimensions agree with manifest",
+      "passed": true
+    },
+    {
+      "label": "reeds: color and normal alpha bytes align exactly",
+      "passed": true
+    },
+    {
+      "label": "reeds: transparent cutout includes visible pixels",
+      "passed": true
+    },
+    {
+      "label": "reeds: visible rectangle matches actual shader alpha cutoff",
+      "passed": true
+    },
+    {
+      "label": "reeds: pixel pivot and world height are valid",
+      "passed": true
+    },
+    {
+      "label": "reeds: quantized normal vectors retain unit length",
+      "passed": true
+    },
+    {
+      "label": "reeds: normals use the outward tangent hemisphere",
+      "passed": true
+    },
+    {
+      "label": "reeds: normal map contains real directional detail",
+      "passed": true
+    },
+    {
+      "label": "reeds: color_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "reeds: normal_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "reeds: alpha_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "flowers_white: both sources are RGBA",
+      "passed": true
+    },
+    {
+      "label": "flowers_white: color and normal dimensions agree with manifest",
+      "passed": true
+    },
+    {
+      "label": "flowers_white: color and normal alpha bytes align exactly",
+      "passed": true
+    },
+    {
+      "label": "flowers_white: transparent cutout includes visible pixels",
+      "passed": true
+    },
+    {
+      "label": "flowers_white: visible rectangle matches actual shader alpha cutoff",
+      "passed": true
+    },
+    {
+      "label": "flowers_white: pixel pivot and world height are valid",
+      "passed": true
+    },
+    {
+      "label": "flowers_white: quantized normal vectors retain unit length",
+      "passed": true
+    },
+    {
+      "label": "flowers_white: normals use the outward tangent hemisphere",
+      "passed": true
+    },
+    {
+      "label": "flowers_white: normal map contains real directional detail",
+      "passed": true
+    },
+    {
+      "label": "flowers_white: color_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "flowers_white: normal_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "flowers_white: alpha_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "flowers_pink: both sources are RGBA",
+      "passed": true
+    },
+    {
+      "label": "flowers_pink: color and normal dimensions agree with manifest",
+      "passed": true
+    },
+    {
+      "label": "flowers_pink: color and normal alpha bytes align exactly",
+      "passed": true
+    },
+    {
+      "label": "flowers_pink: transparent cutout includes visible pixels",
+      "passed": true
+    },
+    {
+      "label": "flowers_pink: visible rectangle matches actual shader alpha cutoff",
+      "passed": true
+    },
+    {
+      "label": "flowers_pink: pixel pivot and world height are valid",
+      "passed": true
+    },
+    {
+      "label": "flowers_pink: quantized normal vectors retain unit length",
+      "passed": true
+    },
+    {
+      "label": "flowers_pink: normals use the outward tangent hemisphere",
+      "passed": true
+    },
+    {
+      "label": "flowers_pink: normal map contains real directional detail",
+      "passed": true
+    },
+    {
+      "label": "flowers_pink: color_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "flowers_pink: normal_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "flowers_pink: alpha_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "window_flowers: both sources are RGBA",
+      "passed": true
+    },
+    {
+      "label": "window_flowers: color and normal dimensions agree with manifest",
+      "passed": true
+    },
+    {
+      "label": "window_flowers: color and normal alpha bytes align exactly",
+      "passed": true
+    },
+    {
+      "label": "window_flowers: transparent cutout includes visible pixels",
+      "passed": true
+    },
+    {
+      "label": "window_flowers: visible rectangle matches actual shader alpha cutoff",
+      "passed": true
+    },
+    {
+      "label": "window_flowers: pixel pivot and world height are valid",
+      "passed": true
+    },
+    {
+      "label": "window_flowers: quantized normal vectors retain unit length",
+      "passed": true
+    },
+    {
+      "label": "window_flowers: normals use the outward tangent hemisphere",
+      "passed": true
+    },
+    {
+      "label": "window_flowers: normal map contains real directional detail",
+      "passed": true
+    },
+    {
+      "label": "window_flowers: color_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "window_flowers: normal_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "window_flowers: alpha_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "lily_pad: both sources are RGBA",
+      "passed": true
+    },
+    {
+      "label": "lily_pad: color and normal dimensions agree with manifest",
+      "passed": true
+    },
+    {
+      "label": "lily_pad: color and normal alpha bytes align exactly",
+      "passed": true
+    },
+    {
+      "label": "lily_pad: transparent cutout includes visible pixels",
+      "passed": true
+    },
+    {
+      "label": "lily_pad: visible rectangle matches actual shader alpha cutoff",
+      "passed": true
+    },
+    {
+      "label": "lily_pad: pixel pivot and world height are valid",
+      "passed": true
+    },
+    {
+      "label": "lily_pad: quantized normal vectors retain unit length",
+      "passed": true
+    },
+    {
+      "label": "lily_pad: normals use the outward tangent hemisphere",
+      "passed": true
+    },
+    {
+      "label": "lily_pad: normal map contains real directional detail",
+      "passed": true
+    },
+    {
+      "label": "lily_pad: color_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "lily_pad: normal_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "lily_pad: alpha_sha256 matches source bytes",
+      "passed": true
+    },
+    {
+      "label": "plant-free cottage model exists",
+      "passed": true
+    },
+    {
+      "label": "plant-free cottage is a valid glTF binary",
+      "passed": true
+    },
+    {
+      "label": "plant-free cottage contains no leaf or colored flower primitive",
+      "passed": true
+    },
+    {
+      "label": "gold door handle is retained without old gold flower geometry",
+      "passed": true
+    }
+  ],
+  "manifest_sha256": "d602fe7c8b95f1f3f76e29486a74f2050a320f6fae131054afac88daf55b58d0",
+  "scope": "Independent PNG alpha, dimension, pivot and encoded normal checks; no GPU or artistic approval",
+  "assets": [
+    {
+      "id": "broadleaf_a",
+      "size": [
+        512,
+        544
+      ],
+      "visible_rect": [
+        8,
+        18,
+        496,
+        518
+      ],
+      "visible_pixels": 128833,
+      "normal_max_length_error": 0.00590749151945269,
+      "normal_xy_rms": 0.2053108985505019,
+      "tilted_fraction": 0.9001342823655429,
+      "color_sha256": "ce3ae95992235bbec254f832c966a9d9583bb055b200a192d39a8b406df67500",
+      "normal_sha256": "129bce14c6ef017ab12ab6c744d0cd90c07c7b9c89332097a1e77ad76963313e",
+      "alpha_sha256": "9fb290ade44758cc6f06cc0a40303f7dd883df2965f4b6f837612147e3cdeea4"
+    },
+    {
+      "id": "broadleaf_b",
+      "size": [
+        384,
+        576
+      ],
+      "visible_rect": [
+        18,
+        24,
+        348,
+        544
+      ],
+      "visible_pixels": 89669,
+      "normal_max_length_error": 0.005845613085600387,
+      "normal_xy_rms": 0.18509312142964274,
+      "tilted_fraction": 0.9021400930087321,
+      "color_sha256": "21853968e75567ebb7b441dd8419f2eb4d1466e66fca10ab4dd03c9910aa6b9d",
+      "normal_sha256": "493fb378e06d44452752b91e75128096d1ee10ed989b238fcdd73ee8f436580f",
+      "alpha_sha256": "f4551f6cf3c59169ecb5fa964c830c153a7a9aa8e37a805a85bdc5b519a70bce"
+    },
+    {
+      "id": "fir",
+      "size": [
+        384,
+        640
+      ],
+      "visible_rect": [
+        25,
+        8,
+        333,
+        624
+      ],
+      "visible_pixels": 111361,
+      "normal_max_length_error": 0.005350724198155743,
+      "normal_xy_rms": 0.1638979747701151,
+      "tilted_fraction": 0.918625012347231,
+      "color_sha256": "0dc21b44f2786f5ab76fa7255018729944bdd0d8506dc7e29d128b4ec3e0b1d9",
+      "normal_sha256": "37e7909bb703452c001289379252c8c8234b20905cc21e0f2d4f6ec296322df5",
+      "alpha_sha256": "8a89653cb658377b4089ba02a03950ce883e4662298b9d28b30f36b7d93ba80e"
+    },
+    {
+      "id": "grass",
+      "size": [
+        128,
+        128
+      ],
+      "visible_rect": [
+        12,
+        33,
+        104,
+        90
+      ],
+      "visible_pixels": 3495,
+      "normal_max_length_error": 0.005597559347107817,
+      "normal_xy_rms": 0.27198093002759904,
+      "tilted_fraction": 0.9104434907010014,
+      "color_sha256": "70b2ab8da64908afb528c5c6dab66631a337cdda7b1298d176dd754816655174",
+      "normal_sha256": "4fb7e9d0133bae2fe5c0df6a9f49689c77e7be7092cf44599df9248c0ef3342a",
+      "alpha_sha256": "1dab4f8f2d6e5a65e8ddc67973d2cb6bd5e566e26e634a419bb8c938f64657fc"
+    },
+    {
+      "id": "fern",
+      "size": [
+        192,
+        128
+      ],
+      "visible_rect": [
+        20,
+        12,
+        152,
+        112
+      ],
+      "visible_pixels": 8054,
+      "normal_max_length_error": 0.0056587298725438995,
+      "normal_xy_rms": 0.24324562307567282,
+      "tilted_fraction": 0.905636950583561,
+      "color_sha256": "10225adfc151fdce83c4da321f5217a0cfeeff4c4a75ac84b0894b45b2524263",
+      "normal_sha256": "6ba706eb3091e94d8d57607c78c9fe6e6cf1c3fc0f6e534472db73781c67c224",
+      "alpha_sha256": "a93c367976f27593f1f62f894acdbaafb2a0c2195989b050f6e3e536d43081e6"
+    },
+    {
+      "id": "reeds",
+      "size": [
+        128,
+        160
+      ],
+      "visible_rect": [
+        4,
+        37,
+        120,
+        119
+      ],
+      "visible_pixels": 6575,
+      "normal_max_length_error": 0.005230458024859441,
+      "normal_xy_rms": 0.26533253084057484,
+      "tilted_fraction": 0.9133079847908745,
+      "color_sha256": "cbcd6b66c280dbfc4da216d4021d47a0b06897b4aac724bb5297e5c4e140b90a",
+      "normal_sha256": "cf66ba5b9e94ff0549370dc4bc0e58bf01455e19ef11e78d2896549f85ecce0f",
+      "alpha_sha256": "ab791a5b5027fb28bc8df5e9b9f2598b593c4e36d78fd8c4015a5e552930f43e"
+    },
+    {
+      "id": "flowers_white",
+      "size": [
+        128,
+        160
+      ],
+      "visible_rect": [
+        4,
+        36,
+        120,
+        120
+      ],
+      "visible_pixels": 7008,
+      "normal_max_length_error": 0.005352840026259464,
+      "normal_xy_rms": 0.17358890089823356,
+      "tilted_fraction": 0.9018264840182648,
+      "color_sha256": "e1b08f47a658c02c07396868fa9f189159048125ec242ebed9448f7919998f6c",
+      "normal_sha256": "dd4d7ca8a96d00665b910e42d07363bb3f6bc762cb8d29380da6f16e074abb27",
+      "alpha_sha256": "f2069bac0bd1f886970aef5d1fd306987df19ec6b637e2a7bae475aeb66514c1"
+    },
+    {
+      "id": "flowers_pink",
+      "size": [
+        128,
+        160
+      ],
+      "visible_rect": [
+        4,
+        56,
+        120,
+        100
+      ],
+      "visible_pixels": 5801,
+      "normal_max_length_error": 0.005842219128255666,
+      "normal_xy_rms": 0.17278909944413826,
+      "tilted_fraction": 0.8953628684709533,
+      "color_sha256": "e0b8f9a4b14ca871254cef6fa7745fea8e5fb4341a39b374ed2c6b275c07e277",
+      "normal_sha256": "454ba154d10ad8101287105aae7aab7e5c152db92cc9d829529a535a475dd561",
+      "alpha_sha256": "bab5eafc3c51c1b5297b492ca83e8d1553402ce8a785075bf8ccecc54a1eb370"
+    },
+    {
+      "id": "window_flowers",
+      "size": [
+        256,
+        96
+      ],
+      "visible_rect": [
+        20,
+        9,
+        216,
+        83
+      ],
+      "visible_pixels": 7781,
+      "normal_max_length_error": 0.005108061122221619,
+      "normal_xy_rms": 0.15197623619380626,
+      "tilted_fraction": 0.8878036242128261,
+      "color_sha256": "fda272edc36934e4de6160f5b8f14eee603dd05fd38c8f1251157aec35e1198f",
+      "normal_sha256": "2baefaa2287570504d123f6102941cebac4ecd6cf50eb2bef1f5798757f1972b",
+      "alpha_sha256": "b19fcb83bd5e5a56b741a15d0cb9cbdda373a41f87710aea06bac11454ec8d7d"
+    },
+    {
+      "id": "lily_pad",
+      "size": [
+        192,
+        64
+      ],
+      "visible_rect": [
+        20,
+        9,
+        152,
+        51
+      ],
+      "visible_pixels": 4732,
+      "normal_max_length_error": 0.005352840026259464,
+      "normal_xy_rms": 0.31049205546432473,
+      "tilted_fraction": 0.9600591715976331,
+      "color_sha256": "53bc13187963bfa7b1c4a539bd7ba3389494a83684aebbee7be43475b446b384",
+      "normal_sha256": "20084036fdbaf87f1d3def5d37c816708d76211dcbbfbfa8e2703b0a0381d6ea",
+      "alpha_sha256": "f5beacccb77ab4b77c79f18a7529c9f03e2d5cf28fe1bdee043b3184b5d8f710"
+    }
+  ],
+  "plant_free_cottage": {
+    "sha256": "23028396deea0b568672facd248264c6addffba9cc109d80c02c141dcb3dcaa4",
+    "materials": [
+      "beam",
+      "flower_gold",
+      "glass",
+      "iron",
+      "plaster",
+      "roof",
+      "stone",
+      "timber"
+    ],
+    "gold_triangles": 20,
+    "forbidden_plant_materials": []
+  }
+}

@@ -1,0 +1,13 @@
+[
+  "aw",
+  "--project",
+  ".",
+  "--project-config",
+  "art/inputs/forest-hamlet/atmosphere-r3/workbench-project.yaml",
+  "workflow",
+  "validate",
+  "godot.verify",
+  "--input",
+  "art/inputs/forest-hamlet/atmosphere-native-r3/godot-verify.recipe.json",
+  "--json"
+]

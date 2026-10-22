@@ -135,3 +135,15 @@ canal-camera-test:
 	$(PYTHON) tools/ancient_canal/validate.py --mode camera
 canal-export canal-package:
 	$(PYTHON) tools/ancient_canal/package.py $(patsubst canal-%,%,$@)
+
+# Original woodland reference study; preserves the existing default scene.
+.PHONY: forest-run forest-import forest-models forest-assets forest-test forest-capture
+forest-run forest-import forest-models forest-assets forest-test forest-capture:
+	$(PYTHON) tools/forest_hamlet/run.py $(patsubst forest-%,%,$@)
+
+.PHONY: forest-close-run forest-close-test
+forest-close-run:
+	$(PYTHON) tools/forest_hamlet/run.py run-close
+
+forest-close-test:
+	$(PYTHON) tools/forest_hamlet/run.py test-close --output build/forest-hamlet/close-runtime

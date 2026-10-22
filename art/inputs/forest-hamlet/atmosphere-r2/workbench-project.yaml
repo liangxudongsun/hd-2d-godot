@@ -1,0 +1,27 @@
+schema_version: 1
+confirmed: true
+references: []
+art:
+  style: Soft HD2D distant snow panorama; reduced high-frequency detail
+  projection: perspective
+  texture_filter: linear-background / nearest-near
+  alpha_policy: opaque
+  palette:
+    mode: per-asset
+resolution:
+  logical_canvas: [1983, 793]
+  engine_viewport: [1920, 1080]
+  display_scale: 1
+domains:
+  godot:
+    enabled: true
+    engine_version: 4.7.2
+forest_hamlet_scope:
+  specification_basis: User selected the revised distant snow illustration and requested scene integration, normal relighting, moving cloud shadows, independent irregular global light variation and WorldEnvironment Glow.
+  source_size: [1983, 793]
+  source_color_policy: Preserve original PNG bytes; no palette mapping or resampling.
+  near_texture_filter: nearest
+  background_texture_filter: linear
+  normal_policy: Authored low-frequency geometric normals; no color-brightness height conversion.
+  aesthetic_approval: pending
+  confirmation_scope: Existing task and style authorization only; no user aesthetic acceptance or VGP decision is created.

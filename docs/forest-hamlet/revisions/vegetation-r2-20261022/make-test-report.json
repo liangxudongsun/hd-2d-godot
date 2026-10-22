@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "command": [
+    "make",
+    "test"
+  ],
+  "returncode": 0,
+  "passed": true,
+  "elapsed_s": 11.031,
+  "log": "build/forest-hamlet/vegetation-r2-final/make-test.log"
+}

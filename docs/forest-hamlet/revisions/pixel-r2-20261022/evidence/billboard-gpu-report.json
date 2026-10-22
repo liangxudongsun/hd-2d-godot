@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "passed": true,
+  "scope": "Actual GPU pixel read-back; same unchanged front frame, constant distance and FOV, black background, normal debug emission",
+  "source": "assets/characters/crescent-traveler/v1/down/frames/00000.png",
+  "source_sha256": "db659beb52d684656dac145451c234c9547dbb12d10c3a1d32fe11135ba00e53",
+  "source_bounds": [
+    71,
+    24,
+    184,
+    240
+  ],
+  "distance": 8.0,
+  "fov": 39.0,
+  "checks": [
+    {
+      "file": "billboard-pitch15.png",
+      "scale": 1.0,
+      "bounds": [
+        862,
+        364,
+        1056,
+        734
+      ],
+      "size": [
+        194,
+        370
+      ],
+      "expected_size": [
+        193.854559814281,
+        370.55384884853714
+      ],
+      "source_aspect_preserved": true,
+      "camera_angle_invariant": true
+    },
+    {
+      "file": "billboard-pitch35.png",
+      "scale": 1.0,
+      "bounds": [
+        862,
+        364,
+        1056,
+        734
+      ],
+      "size": [
+        194,
+        370
+      ],
+      "expected_size": [
+        193.854559814281,
+        370.55384884853714
+      ],
+      "source_aspect_preserved": true,
+      "camera_angle_invariant": true
+    },
+    {
+      "file": "billboard-pitch60.png",
+      "scale": 1.0,
+      "bounds": [
+        862,
+        364,
+        1056,
+        734
+      ],
+      "size": [
+        194,
+        370
+      ],
+      "expected_size": [
+        193.854559814281,
+        370.55384884853714
+      ],
+      "source_aspect_preserved": true,
+      "camera_angle_invariant": true
+    },
+    {
+      "file": "billboard-yaw55.png",
+      "scale": 1.0,
+      "bounds": [
+        862,
+        364,
+        1056,
+        734
+      ],
+      "size": [
+        194,
+        370
+      ],
+      "expected_size": [
+        193.854559814281,
+        370.55384884853714
+      ],
+      "source_aspect_preserved": true,
+      "camera_angle_invariant": true
+    },
+    {
+      "file": "billboard-scale125.png",
+      "scale": 1.25,
+      "bounds": [
+        838,
+        271,
+        1080,
+        734
+      ],
+      "size": [
+        242,
+        463
+      ],
+      "expected_size": [
+        242.31819976785124,
+        463.19231106067144
+      ],
+      "source_aspect_preserved": true,
+      "camera_angle_invariant": true
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "run_id": "forest-hamlet-20261022-vegetation-r2",
+  "inputs": [
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/preparation.json",
+      "sha256": "5b29eef82446609facab5403171df09b5374fa84607db1b04ed23bf3fe0aa81d"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/workbench-project.yaml",
+      "sha256": "ad6be3ae4181f51805f3d9db0ee27139b90ca430189847e632b55b62525ba797"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/vegetation.recipe.yaml",
+      "sha256": "24ec9487f521261085806e3a2a4d30b2ad5b7bf2dcbfdc2bcd777d820849db18"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/prepared/broadleaf_a.png",
+      "sha256": "fb9a66fc625d936e9eb0cd2f175bb63ef8b0b1a50c274e444039b21bfa6694aa"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/prepared/broadleaf_a_normal.png",
+      "sha256": "b1c72d1950ab15978d01441f930dc9c8405e283d6925300c3ac87a7136dd2157"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/prepared/broadleaf_b.png",
+      "sha256": "31c7fee9480bf95ec3af8ea8fa85fbe48721b4161756cfec39b1060bee24fbd2"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/prepared/broadleaf_b_normal.png",
+      "sha256": "c2f9e7013f69ae8925db50716120ddcb82f78975fc877a90fa2545852092ca88"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/prepared/fir.png",
+      "sha256": "8649494ab3109b147fa716ef623f07f95de988f82ed0d64bf73e81c198789e7f"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/prepared/fir_normal.png",
+      "sha256": "8b3ce45f04e8770927add6b3e77930b2764ac9827538ee3879e8a297b2e5cbbd"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/prepared/grass.png",
+      "sha256": "99dc50d6cc0dac2f478219b8f3dcd92c9658c805d433f787eaea67e92cbc6ad9"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/prepared/grass_normal.png",
+      "sha256": "c6e6bf265aede47cad0e6315b86db4851240fa902a84edca60a7708ecd0b6b42"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/prepared/fern.png",
+      "sha256": "f36f1cc16a959de675b2195c7307b525b46f561534f8d7dd57e684a91f6d1aa5"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/prepared/fern_normal.png",
+      "sha256": "875a4caf30e539fe81320a6f33c489969304b73167d7cdd36b423f61c1ad399e"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/prepared/reeds.png",
+      "sha256": "a34291d4ee7afea3adc47a09d7788d86b57bca9c573f8afee96494bcf6e33c8f"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/prepared/reeds_normal.png",
+      "sha256": "d20ce3a595c8cdfde85413c2041c85d79ccf009575a76dd1d7bb727c54fb38e3"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/prepared/flowers_white.png",
+      "sha256": "1eec545ee2ef035b8b96451d05b5d818da9b6a18968d59a84b56be59247c658a"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/prepared/flowers_white_normal.png",
+      "sha256": "190475cccb0e98c988e4186c61e03d3068d220a91499b298f5bae752fc4f65f2"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/prepared/flowers_pink.png",
+      "sha256": "266cb627fa4020d32c110b550ac81c87ed64ae3cbcd33afe2934cb00ff1f6ae3"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/prepared/flowers_pink_normal.png",
+      "sha256": "96d5d08bb983e2d393be492a78bc6293e290dc1e2a0f4a0c8b1541a6a915f9c8"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/prepared/window_flowers.png",
+      "sha256": "c3af15ac403f66007de1b263245fb03c02c6190553465c4e23865c61d8fbe17d"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/prepared/window_flowers_normal.png",
+      "sha256": "0026c97b9ee642b590c651c47d0fcbfcaa7316737399948b3fa5773f178611c7"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/prepared/lily_pad.png",
+      "sha256": "d672849af39c153e342f640b22ae42747f4dbb51b757e87263aa6e210e64676c"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/prepared/lily_pad_normal.png",
+      "sha256": "123c1f4ac326a2f59bdd3b6736e8516b227342c05ee46ab1343a3ce474c7554d"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/source/tree-atlas.png",
+      "sha256": "a5189eb46d8e75a41af9d72399a89246c4c8e53f9667969cbed7503da2cb133d"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/source/understory-atlas.png",
+      "sha256": "e6b2309dce4caad3fd33b2aaf36cf02c78a95c5df10b533895c530e0fdd84069"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/source/trees-prompt.txt",
+      "sha256": "d020d8fda2556a238e08ef56288dae27cf81949098ad08afa5e320d462c1cd0f"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/source/understory-prompt.txt",
+      "sha256": "97967a1cd47096742166dd636bce2eef71f9d2d1ef43950fbaa22f9acba87655"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/source/provenance.json",
+      "sha256": "59241c428ae412fc54eb2dfc2d38b42ec3841040fc94977868dd28bd7914a798"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/source/user-vegetation-reference.png",
+      "sha256": "2688d482e11a5c0c5664975cb5c9fe62c62a7582d8048d9d127d1bce88706c16"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/atlas-isolation.json",
+      "sha256": "37b7cb465f64cab5f8db98cca44d9e65f5148d129eb46ad3af636886364f87d8"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/normal-rig.json",
+      "sha256": "91699a1a6a9e257e9c1c1de8e10889dad3b32def0bd67e92bfd2f6130ca40be2"
+    },
+    {
+      "path": "tools/forest_hamlet/prepare_vegetation.py",
+      "sha256": "6f859b1fa6840afb925e3740b1ca9b3682e00c30b81274ef3c9913a183aac05b"
+    },
+    {
+      "path": "art/inputs/forest-hamlet/vegetation-r2/palette.json",
+      "sha256": "b208cf56408f5e0cce53e80ad60bb0182f272174d011806b789d64ae4a39a8da"
+    }
+  ],
+  "driver_sha256": "d743e288076a9ccdb413bfe5dfb89c1fc8441435963716264f677ef8662b3ef1",
+  "normal_convention": "OpenGL tangent +X right, +Y up, +Z outward"
+}

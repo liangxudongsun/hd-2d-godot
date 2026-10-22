@@ -1,0 +1,595 @@
+{
+  "schema_version": 1,
+  "seed": 20261022,
+  "art_revision": "r2 autumn reference; native pixel-preserving canvas padding",
+  "predecessor_preparation": "art/inputs/forest-hamlet/vegetation-r2/preparation.json",
+  "predecessor_native_run": "forest-hamlet-20261022-vegetation-r2 (validation rejected nonmultiple canvas; retained)",
+  "generator": "tools/forest_hamlet/pad_vegetation_for_aw.py",
+  "generator_sha256": "41ff8dce0bf78300975bf885726919a33dc1da743985006058c55282322ebde3",
+  "assets": [
+    {
+      "name": "broadleaf_a",
+      "color": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/broadleaf_a.png",
+      "normal": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/broadleaf_a_normal.png",
+      "size": [
+        512,
+        544
+      ],
+      "pivot": [
+        256,
+        536
+      ],
+      "visible_rect": [
+        8,
+        18,
+        496,
+        518
+      ],
+      "height_m": 5.3,
+      "wind_weight": 1.0,
+      "source": "art/inputs/forest-hamlet/vegetation-r2/source/tree-atlas.png",
+      "source_crop": [
+        0,
+        0,
+        1684,
+        934
+      ],
+      "isolated_sprite_index": 0,
+      "source_alpha_bounds_in_crop": [
+        13,
+        131,
+        756,
+        907
+      ],
+      "sampled_size": [
+        496,
+        518
+      ],
+      "sampling": "uniform nearest; alpha threshold 128; original retained",
+      "color_sha256": "1160af1dabf451eb0654379e9143705fedc8d7a356fbeb6f6e7537a46a59ec45",
+      "normal_sha256": "129bce14c6ef017ab12ab6c744d0cd90c07c7b9c89332097a1e77ad76963313e",
+      "normal_max_length_error": 0.00590747594833374,
+      "native_canvas": [
+        512,
+        544
+      ],
+      "padding_offset": [
+        0,
+        0,
+        512,
+        544
+      ],
+      "native_color_source": "art/inputs/forest-hamlet/vegetation-r2/prepared/broadleaf_a.png",
+      "native_pixels_unchanged": true
+    },
+    {
+      "name": "broadleaf_b",
+      "color": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/broadleaf_b.png",
+      "normal": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/broadleaf_b_normal.png",
+      "size": [
+        384,
+        576
+      ],
+      "pivot": [
+        192,
+        568
+      ],
+      "visible_rect": [
+        18,
+        24,
+        348,
+        544
+      ],
+      "height_m": 5.2,
+      "wind_weight": 1.0,
+      "source": "art/inputs/forest-hamlet/vegetation-r2/source/tree-atlas.png",
+      "source_crop": [
+        0,
+        0,
+        1684,
+        934
+      ],
+      "isolated_sprite_index": 1,
+      "source_alpha_bounds_in_crop": [
+        735,
+        155,
+        1213,
+        903
+      ],
+      "sampled_size": [
+        348,
+        544
+      ],
+      "sampling": "uniform nearest; alpha threshold 128; original retained",
+      "color_sha256": "eccd24dc3b5b55e716ce9b9c81061981f6ea652d3e564adda8238e2dddcfaa0c",
+      "normal_sha256": "493fb378e06d44452752b91e75128096d1ee10ed989b238fcdd73ee8f436580f",
+      "normal_max_length_error": 0.005845606327056885,
+      "native_canvas": [
+        384,
+        560
+      ],
+      "padding_offset": [
+        0,
+        16,
+        384,
+        576
+      ],
+      "native_color_source": "art/inputs/forest-hamlet/vegetation-r2/prepared/broadleaf_b.png",
+      "native_pixels_unchanged": true
+    },
+    {
+      "name": "fir",
+      "color": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/fir.png",
+      "normal": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/fir_normal.png",
+      "size": [
+        384,
+        640
+      ],
+      "pivot": [
+        192,
+        632
+      ],
+      "visible_rect": [
+        25,
+        8,
+        333,
+        624
+      ],
+      "height_m": 5.4,
+      "wind_weight": 0.85,
+      "source": "art/inputs/forest-hamlet/vegetation-r2/source/tree-atlas.png",
+      "source_crop": [
+        0,
+        0,
+        1684,
+        934
+      ],
+      "isolated_sprite_index": 2,
+      "source_alpha_bounds_in_crop": [
+        1199,
+        33,
+        1664,
+        904
+      ],
+      "sampled_size": [
+        333,
+        624
+      ],
+      "sampling": "uniform nearest; alpha threshold 128; original retained",
+      "color_sha256": "511925b02e21dc639a1e26e8938f6428334eab2e5d2a0572decfd3c34c4a2dc3",
+      "normal_sha256": "37e7909bb703452c001289379252c8c8234b20905cc21e0f2d4f6ec296322df5",
+      "normal_max_length_error": 0.005350708961486816,
+      "native_canvas": [
+        352,
+        640
+      ],
+      "padding_offset": [
+        16,
+        0,
+        368,
+        640
+      ],
+      "native_color_source": "art/inputs/forest-hamlet/vegetation-r2/prepared/fir.png",
+      "native_pixels_unchanged": true
+    },
+    {
+      "name": "grass",
+      "color": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/grass.png",
+      "normal": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/grass_normal.png",
+      "size": [
+        128,
+        128
+      ],
+      "pivot": [
+        64,
+        123
+      ],
+      "visible_rect": [
+        12,
+        33,
+        104,
+        90
+      ],
+      "height_m": 0.45,
+      "wind_weight": 1.0,
+      "source": "art/inputs/forest-hamlet/vegetation-r2/source/understory-atlas.png",
+      "source_crop": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "isolated_sprite_index": 0,
+      "source_alpha_bounds_in_crop": [
+        36,
+        131,
+        434,
+        479
+      ],
+      "sampled_size": [
+        104,
+        91
+      ],
+      "sampling": "uniform nearest; alpha threshold 128; original retained",
+      "color_sha256": "c0369dc63e622912b69707f1075e2240338217a7708152ab44cd0e0522e2faf8",
+      "normal_sha256": "4fb7e9d0133bae2fe5c0df6a9f49689c77e7be7092cf44599df9248c0ef3342a",
+      "normal_max_length_error": 0.005597591400146484,
+      "native_canvas": [
+        112,
+        112
+      ],
+      "padding_offset": [
+        8,
+        16,
+        120,
+        128
+      ],
+      "native_color_source": "art/inputs/forest-hamlet/vegetation-r2/prepared/grass.png",
+      "native_pixels_unchanged": true
+    },
+    {
+      "name": "fern",
+      "color": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/fern.png",
+      "normal": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/fern_normal.png",
+      "size": [
+        192,
+        128
+      ],
+      "pivot": [
+        96,
+        124
+      ],
+      "visible_rect": [
+        20,
+        12,
+        152,
+        112
+      ],
+      "height_m": 0.56,
+      "wind_weight": 0.75,
+      "source": "art/inputs/forest-hamlet/vegetation-r2/source/understory-atlas.png",
+      "source_crop": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "isolated_sprite_index": 1,
+      "source_alpha_bounds_in_crop": [
+        510,
+        157,
+        960,
+        488
+      ],
+      "sampled_size": [
+        152,
+        112
+      ],
+      "sampling": "uniform nearest; alpha threshold 128; original retained",
+      "color_sha256": "f4713192de32d83d22f29de3de97ea6c914f22eb11fbbccbfbe6d82de54b92c1",
+      "normal_sha256": "6ba706eb3091e94d8d57607c78c9fe6e6cf1c3fc0f6e534472db73781c67c224",
+      "normal_max_length_error": 0.005658745765686035,
+      "native_canvas": [
+        160,
+        128
+      ],
+      "padding_offset": [
+        16,
+        0,
+        176,
+        128
+      ],
+      "native_color_source": "art/inputs/forest-hamlet/vegetation-r2/prepared/fern.png",
+      "native_pixels_unchanged": true
+    },
+    {
+      "name": "reeds",
+      "color": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/reeds.png",
+      "normal": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/reeds_normal.png",
+      "size": [
+        128,
+        160
+      ],
+      "pivot": [
+        64,
+        156
+      ],
+      "visible_rect": [
+        4,
+        37,
+        120,
+        119
+      ],
+      "height_m": 1.05,
+      "wind_weight": 1.0,
+      "source": "art/inputs/forest-hamlet/vegetation-r2/source/understory-atlas.png",
+      "source_crop": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "isolated_sprite_index": 2,
+      "source_alpha_bounds_in_crop": [
+        993,
+        113,
+        1363,
+        481
+      ],
+      "sampled_size": [
+        120,
+        119
+      ],
+      "sampling": "uniform nearest; alpha threshold 128; original retained",
+      "color_sha256": "0291fa361d83c130c84d6b888f294b044e50d01d6257037acd54ee4411593e0a",
+      "normal_sha256": "cf66ba5b9e94ff0549370dc4bc0e58bf01455e19ef11e78d2896549f85ecce0f",
+      "normal_max_length_error": 0.005230426788330078,
+      "native_canvas": [
+        128,
+        160
+      ],
+      "padding_offset": [
+        0,
+        0,
+        128,
+        160
+      ],
+      "native_color_source": "art/inputs/forest-hamlet/vegetation-r2/prepared/reeds.png",
+      "native_pixels_unchanged": true
+    },
+    {
+      "name": "flowers_white",
+      "color": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/flowers_white.png",
+      "normal": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/flowers_white_normal.png",
+      "size": [
+        128,
+        160
+      ],
+      "pivot": [
+        64,
+        156
+      ],
+      "visible_rect": [
+        4,
+        36,
+        120,
+        120
+      ],
+      "height_m": 0.52,
+      "wind_weight": 0.65,
+      "source": "art/inputs/forest-hamlet/vegetation-r2/source/understory-atlas.png",
+      "source_crop": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "isolated_sprite_index": 3,
+      "source_alpha_bounds_in_crop": [
+        1418,
+        164,
+        1743,
+        489
+      ],
+      "sampled_size": [
+        120,
+        120
+      ],
+      "sampling": "uniform nearest; alpha threshold 128; original retained",
+      "color_sha256": "b34e86d73b58966200d250d86b345f4076a2aeb77cd5e14c4ade7ba3094f2d32",
+      "normal_sha256": "dd4d7ca8a96d00665b910e42d07363bb3f6bc762cb8d29380da6f16e074abb27",
+      "normal_max_length_error": 0.0053528547286987305,
+      "native_canvas": [
+        128,
+        144
+      ],
+      "padding_offset": [
+        0,
+        16,
+        128,
+        160
+      ],
+      "native_color_source": "art/inputs/forest-hamlet/vegetation-r2/prepared/flowers_white.png",
+      "native_pixels_unchanged": true
+    },
+    {
+      "name": "flowers_pink",
+      "color": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/flowers_pink.png",
+      "normal": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/flowers_pink_normal.png",
+      "size": [
+        128,
+        160
+      ],
+      "pivot": [
+        64,
+        156
+      ],
+      "visible_rect": [
+        4,
+        56,
+        120,
+        100
+      ],
+      "height_m": 0.52,
+      "wind_weight": 0.65,
+      "source": "art/inputs/forest-hamlet/vegetation-r2/source/understory-atlas.png",
+      "source_crop": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "isolated_sprite_index": 4,
+      "source_alpha_bounds_in_crop": [
+        50,
+        527,
+        412,
+        830
+      ],
+      "sampled_size": [
+        120,
+        100
+      ],
+      "sampling": "uniform nearest; alpha threshold 128; original retained",
+      "color_sha256": "2d81ca81e682d99410b537900b0b7e4c0b219214272f711e68a9dbf5870f7d70",
+      "normal_sha256": "454ba154d10ad8101287105aae7aab7e5c152db92cc9d829529a535a475dd561",
+      "normal_max_length_error": 0.0058422088623046875,
+      "native_canvas": [
+        128,
+        144
+      ],
+      "padding_offset": [
+        0,
+        16,
+        128,
+        160
+      ],
+      "native_color_source": "art/inputs/forest-hamlet/vegetation-r2/prepared/flowers_pink.png",
+      "native_pixels_unchanged": true
+    },
+    {
+      "name": "window_flowers",
+      "color": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/window_flowers.png",
+      "normal": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/window_flowers_normal.png",
+      "size": [
+        256,
+        96
+      ],
+      "pivot": [
+        128,
+        92
+      ],
+      "visible_rect": [
+        20,
+        9,
+        216,
+        83
+      ],
+      "height_m": 0.34,
+      "wind_weight": 0.45,
+      "source": "art/inputs/forest-hamlet/vegetation-r2/source/understory-atlas.png",
+      "source_crop": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "isolated_sprite_index": 5,
+      "source_alpha_bounds_in_crop": [
+        437,
+        597,
+        1112,
+        855
+      ],
+      "sampled_size": [
+        216,
+        83
+      ],
+      "sampling": "uniform nearest; alpha threshold 128; original retained",
+      "color_sha256": "227ac46cb511f3e6fe1a09f44ed852e2f72d2fb5db794f066afde3d1482d9e51",
+      "normal_sha256": "2baefaa2287570504d123f6102941cebac4ecd6cf50eb2bef1f5798757f1972b",
+      "normal_max_length_error": 0.0051081180572509766,
+      "native_canvas": [
+        224,
+        96
+      ],
+      "padding_offset": [
+        16,
+        0,
+        240,
+        96
+      ],
+      "native_color_source": "art/inputs/forest-hamlet/vegetation-r2/prepared/window_flowers.png",
+      "native_pixels_unchanged": true
+    },
+    {
+      "name": "lily_pad",
+      "color": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/lily_pad.png",
+      "normal": "art/inputs/forest-hamlet/vegetation-r2-canvas/prepared/lily_pad_normal.png",
+      "size": [
+        192,
+        64
+      ],
+      "pivot": [
+        96,
+        60
+      ],
+      "visible_rect": [
+        20,
+        9,
+        152,
+        51
+      ],
+      "height_m": 0.18,
+      "wind_weight": 0.18,
+      "source": "art/inputs/forest-hamlet/vegetation-r2/source/understory-atlas.png",
+      "source_crop": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "isolated_sprite_index": 6,
+      "source_alpha_bounds_in_crop": [
+        1101,
+        677,
+        1489,
+        806
+      ],
+      "sampled_size": [
+        152,
+        51
+      ],
+      "sampling": "uniform nearest; alpha threshold 128; original retained",
+      "color_sha256": "064b949956eefa2b0ad9354d4130723af782c2e7340a865616ceff3f65bd7d5b",
+      "normal_sha256": "20084036fdbaf87f1d3def5d37c816708d76211dcbbfbfa8e2703b0a0381d6ea",
+      "normal_max_length_error": 0.0053528547286987305,
+      "native_canvas": [
+        160,
+        64
+      ],
+      "padding_offset": [
+        16,
+        0,
+        176,
+        64
+      ],
+      "native_color_source": "art/inputs/forest-hamlet/vegetation-r2/prepared/lily_pad.png",
+      "native_pixels_unchanged": true
+    }
+  ],
+  "palette_size": 192,
+  "palette": {
+    "path": "art/inputs/forest-hamlet/vegetation-r2-canvas/palette.json"
+  },
+  "normal_recipe": "art/inputs/forest-hamlet/vegetation-r2-canvas/normal-rig.json",
+  "normal_convention": "OpenGL tangent: X right, Y up, Z towards viewer",
+  "normal_workflow": "Hand-annotated r2 canopy boughs, fronds and flower heads; analytic surface vectors independent of diffuse luminance",
+  "source_files": [
+    "art/inputs/forest-hamlet/vegetation-r2/source/tree-atlas.png",
+    "art/inputs/forest-hamlet/vegetation-r2/source/understory-atlas.png",
+    "art/inputs/forest-hamlet/vegetation-r2/source/trees-prompt.txt",
+    "art/inputs/forest-hamlet/vegetation-r2/source/understory-prompt.txt",
+    "art/inputs/forest-hamlet/vegetation-r2/source/provenance.json",
+    "art/inputs/forest-hamlet/vegetation-r2/source/user-vegetation-reference.png",
+    "art/inputs/forest-hamlet/vegetation-r2/atlas-isolation.json",
+    "tools/forest_hamlet/prepare_vegetation.py",
+    "art/inputs/forest-hamlet/vegetation-r2/preparation.json",
+    "art/inputs/forest-hamlet/vegetation-r2-canvas/normal-rig.json",
+    "tools/forest_hamlet/pad_vegetation_for_aw.py"
+  ],
+  "source_hashes": {
+    "art/inputs/forest-hamlet/vegetation-r2/source/tree-atlas.png": "a5189eb46d8e75a41af9d72399a89246c4c8e53f9667969cbed7503da2cb133d",
+    "art/inputs/forest-hamlet/vegetation-r2/source/understory-atlas.png": "e6b2309dce4caad3fd33b2aaf36cf02c78a95c5df10b533895c530e0fdd84069",
+    "art/inputs/forest-hamlet/vegetation-r2/source/trees-prompt.txt": "d020d8fda2556a238e08ef56288dae27cf81949098ad08afa5e320d462c1cd0f",
+    "art/inputs/forest-hamlet/vegetation-r2/source/understory-prompt.txt": "97967a1cd47096742166dd636bce2eef71f9d2d1ef43950fbaa22f9acba87655",
+    "art/inputs/forest-hamlet/vegetation-r2/source/provenance.json": "59241c428ae412fc54eb2dfc2d38b42ec3841040fc94977868dd28bd7914a798",
+    "art/inputs/forest-hamlet/vegetation-r2/source/user-vegetation-reference.png": "2688d482e11a5c0c5664975cb5c9fe62c62a7582d8048d9d127d1bce88706c16",
+    "art/inputs/forest-hamlet/vegetation-r2/atlas-isolation.json": "37b7cb465f64cab5f8db98cca44d9e65f5148d129eb46ad3af636886364f87d8",
+    "tools/forest_hamlet/prepare_vegetation.py": "a559e442f75170fd3a90ee1b7c23b82fe61a1f8d3478b97063c86d51b89abf2d",
+    "art/inputs/forest-hamlet/vegetation-r2/preparation.json": "5b29eef82446609facab5403171df09b5374fa84607db1b04ed23bf3fe0aa81d",
+    "art/inputs/forest-hamlet/vegetation-r2-canvas/normal-rig.json": "79ce7f41cf3ff9c8920724767ac6871d77c76ffad12f374fe599d461bd4c3399",
+    "tools/forest_hamlet/pad_vegetation_for_aw.py": "41ff8dce0bf78300975bf885726919a33dc1da743985006058c55282322ebde3"
+  },
+  "padding_policy": "Only transparent borders added to meet native AW prop 64x32 canvas multiples; every drawn color pixel retained exactly"
+}

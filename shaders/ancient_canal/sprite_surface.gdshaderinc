@@ -7,6 +7,8 @@ uniform bool use_normals = true;
 uniform bool flip_y = false;
 uniform bool clay_mode = false;
 uniform bool normal_debug = false;
+// Opt-in for the forest scene; existing upright scenes keep their original pose.
+uniform bool camera_facing_billboard = false;
 uniform float normal_strength = 0.8;
 uniform float silver_specular = 0.75;
 varying float material_specular;
@@ -35,6 +37,15 @@ void vertex() {
     mat4 facing = mat4(vec4(standing[0], 0.0), vec4(standing[1], 0.0), vec4(standing[2], 0.0), MODEL_MATRIX[3]);
     MODELVIEW_MATRIX = VIEW_MATRIX * facing;
     MODELVIEW_NORMAL_MATRIX = mat3(MODELVIEW_MATRIX);
+    if (camera_facing_billboard) {
+        // Rotate around the original Sprite3D feet pivot, including camera pitch.
+        // The MAIN camera also controls the shadow pass, never the light's view.
+        vec3 model_scale = vec3(length(MODEL_MATRIX[0].xyz),length(MODEL_MATRIX[1].xyz),length(MODEL_MATRIX[2].xyz));
+        mat3 view_basis = mat3(normalize(MAIN_CAM_INV_VIEW_MATRIX[0].xyz),normalize(MAIN_CAM_INV_VIEW_MATRIX[1].xyz),normalize(MAIN_CAM_INV_VIEW_MATRIX[2].xyz));
+        facing = mat4(vec4(view_basis[0]*model_scale.x,0.0),vec4(view_basis[1]*model_scale.y,0.0),vec4(view_basis[2]*model_scale.z,0.0),MODEL_MATRIX[3]);
+        MODELVIEW_MATRIX = VIEW_MATRIX * facing;
+        MODELVIEW_NORMAL_MATRIX = transpose(inverse(mat3(MODELVIEW_MATRIX)));
+    }
 }
 
 void fragment() {

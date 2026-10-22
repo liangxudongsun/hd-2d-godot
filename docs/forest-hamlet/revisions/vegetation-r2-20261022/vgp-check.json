@@ -1,0 +1,428 @@
+{
+  "issues": [],
+  "legacy": false,
+  "outputs": [
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 544,
+        "width": 512
+      },
+      "caller_reported": {
+        "height": 544,
+        "paired_alpha_equal": true,
+        "role": "color",
+        "width": 512
+      },
+      "member_id": "broadleaf-a-color",
+      "path": "broadleaf_a.png",
+      "target": {
+        "format": "png",
+        "height": 544,
+        "width": 512
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 544,
+        "width": 512
+      },
+      "caller_reported": {
+        "height": 544,
+        "paired_alpha_equal": true,
+        "role": "normal",
+        "width": 512
+      },
+      "member_id": "broadleaf-a-normal",
+      "path": "broadleaf_a_normal.png",
+      "target": {
+        "format": "png",
+        "height": 544,
+        "width": 512
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 576,
+        "width": 384
+      },
+      "caller_reported": {
+        "height": 576,
+        "paired_alpha_equal": true,
+        "role": "color",
+        "width": 384
+      },
+      "member_id": "broadleaf-b-color",
+      "path": "broadleaf_b.png",
+      "target": {
+        "format": "png",
+        "height": 576,
+        "width": 384
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 576,
+        "width": 384
+      },
+      "caller_reported": {
+        "height": 576,
+        "paired_alpha_equal": true,
+        "role": "normal",
+        "width": 384
+      },
+      "member_id": "broadleaf-b-normal",
+      "path": "broadleaf_b_normal.png",
+      "target": {
+        "format": "png",
+        "height": 576,
+        "width": 384
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 640,
+        "width": 384
+      },
+      "caller_reported": {
+        "height": 640,
+        "paired_alpha_equal": true,
+        "role": "color",
+        "width": 384
+      },
+      "member_id": "fir-color",
+      "path": "fir.png",
+      "target": {
+        "format": "png",
+        "height": 640,
+        "width": 384
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 640,
+        "width": 384
+      },
+      "caller_reported": {
+        "height": 640,
+        "paired_alpha_equal": true,
+        "role": "normal",
+        "width": 384
+      },
+      "member_id": "fir-normal",
+      "path": "fir_normal.png",
+      "target": {
+        "format": "png",
+        "height": 640,
+        "width": 384
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 128,
+        "width": 128
+      },
+      "caller_reported": {
+        "height": 128,
+        "paired_alpha_equal": true,
+        "role": "color",
+        "width": 128
+      },
+      "member_id": "grass-color",
+      "path": "grass.png",
+      "target": {
+        "format": "png",
+        "height": 128,
+        "width": 128
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 128,
+        "width": 128
+      },
+      "caller_reported": {
+        "height": 128,
+        "paired_alpha_equal": true,
+        "role": "normal",
+        "width": 128
+      },
+      "member_id": "grass-normal",
+      "path": "grass_normal.png",
+      "target": {
+        "format": "png",
+        "height": 128,
+        "width": 128
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 128,
+        "width": 192
+      },
+      "caller_reported": {
+        "height": 128,
+        "paired_alpha_equal": true,
+        "role": "color",
+        "width": 192
+      },
+      "member_id": "fern-color",
+      "path": "fern.png",
+      "target": {
+        "format": "png",
+        "height": 128,
+        "width": 192
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 128,
+        "width": 192
+      },
+      "caller_reported": {
+        "height": 128,
+        "paired_alpha_equal": true,
+        "role": "normal",
+        "width": 192
+      },
+      "member_id": "fern-normal",
+      "path": "fern_normal.png",
+      "target": {
+        "format": "png",
+        "height": 128,
+        "width": 192
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 160,
+        "width": 128
+      },
+      "caller_reported": {
+        "height": 160,
+        "paired_alpha_equal": true,
+        "role": "color",
+        "width": 128
+      },
+      "member_id": "reeds-color",
+      "path": "reeds.png",
+      "target": {
+        "format": "png",
+        "height": 160,
+        "width": 128
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 160,
+        "width": 128
+      },
+      "caller_reported": {
+        "height": 160,
+        "paired_alpha_equal": true,
+        "role": "normal",
+        "width": 128
+      },
+      "member_id": "reeds-normal",
+      "path": "reeds_normal.png",
+      "target": {
+        "format": "png",
+        "height": 160,
+        "width": 128
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 160,
+        "width": 128
+      },
+      "caller_reported": {
+        "height": 160,
+        "paired_alpha_equal": true,
+        "role": "color",
+        "width": 128
+      },
+      "member_id": "flowers-white-color",
+      "path": "flowers_white.png",
+      "target": {
+        "format": "png",
+        "height": 160,
+        "width": 128
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 160,
+        "width": 128
+      },
+      "caller_reported": {
+        "height": 160,
+        "paired_alpha_equal": true,
+        "role": "normal",
+        "width": 128
+      },
+      "member_id": "flowers-white-normal",
+      "path": "flowers_white_normal.png",
+      "target": {
+        "format": "png",
+        "height": 160,
+        "width": 128
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 160,
+        "width": 128
+      },
+      "caller_reported": {
+        "height": 160,
+        "paired_alpha_equal": true,
+        "role": "color",
+        "width": 128
+      },
+      "member_id": "flowers-pink-color",
+      "path": "flowers_pink.png",
+      "target": {
+        "format": "png",
+        "height": 160,
+        "width": 128
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 160,
+        "width": 128
+      },
+      "caller_reported": {
+        "height": 160,
+        "paired_alpha_equal": true,
+        "role": "normal",
+        "width": 128
+      },
+      "member_id": "flowers-pink-normal",
+      "path": "flowers_pink_normal.png",
+      "target": {
+        "format": "png",
+        "height": 160,
+        "width": 128
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 96,
+        "width": 256
+      },
+      "caller_reported": {
+        "height": 96,
+        "paired_alpha_equal": true,
+        "role": "color",
+        "width": 256
+      },
+      "member_id": "window-flowers-color",
+      "path": "window_flowers.png",
+      "target": {
+        "format": "png",
+        "height": 96,
+        "width": 256
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 96,
+        "width": 256
+      },
+      "caller_reported": {
+        "height": 96,
+        "paired_alpha_equal": true,
+        "role": "normal",
+        "width": 256
+      },
+      "member_id": "window-flowers-normal",
+      "path": "window_flowers_normal.png",
+      "target": {
+        "format": "png",
+        "height": 96,
+        "width": 256
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 64,
+        "width": 192
+      },
+      "caller_reported": {
+        "height": 64,
+        "paired_alpha_equal": true,
+        "role": "color",
+        "width": 192
+      },
+      "member_id": "lily-pad-color",
+      "path": "lily_pad.png",
+      "target": {
+        "format": "png",
+        "height": 64,
+        "width": 192
+      }
+    },
+    {
+      "actual": {
+        "authority": "measured",
+        "format": "png",
+        "height": 64,
+        "width": 192
+      },
+      "caller_reported": {
+        "height": 64,
+        "paired_alpha_equal": true,
+        "role": "normal",
+        "width": 192
+      },
+      "member_id": "lily-pad-normal",
+      "path": "lily_pad_normal.png",
+      "target": {
+        "format": "png",
+        "height": 64,
+        "width": 192
+      }
+    }
+  ],
+  "ready": true,
+  "rules_version": 1
+}

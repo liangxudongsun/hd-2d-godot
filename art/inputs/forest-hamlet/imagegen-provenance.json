@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "source": "material-atlas.png",
+  "sha256": "fea6c0c48d91eed01d0f77a181994700d2f813124b6c37a0542c1e178a450f26",
+  "image_size": [
+    1254,
+    1254
+  ],
+  "tool": "built-in image_gen",
+  "model_version": null,
+  "seed": null,
+  "created_date": "2026-10-22",
+  "purpose": "Original albedo material source for forest-hamlet; four equal quadrants: grass, earth, wood, stone.",
+  "prompt": "material-atlas.prompt.txt",
+  "reference_video": "https://www.bilibili.com/video/BV1TFjz6eEK7/",
+  "reference_runtime_usage": false,
+  "review_status": "candidate; generated source inspected by assistant, user visual approval pending"
+}
